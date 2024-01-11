@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private CardInteractionManager cardInteractionManager;
 
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
@@ -22,7 +23,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform bottomLeftCorner;
 
     private List<CardObject> cards = new List<CardObject>();
-    private CardObject[] cardSelection = new CardObject[2];
+
+    [Header("Start Animation")]
+    [SerializeField] private Transform startCardsPosition;
+    [SerializeField] private float cardLayoutDelay = 0.15f;
+    [SerializeField] private float cardTraversalTime = .25f;
+    [SerializeField] private AudioClip[] startAnimationCardSound = new AudioClip[0];
+    private Coroutine startAnimation;
 
     private void Start()
     {
@@ -54,27 +61,89 @@ public class GameManager : MonoBehaviour
         
         List<Vector2> cardPositions = new List<Vector2>(GetTablePositions(cards.Count));
 
+        startAnimation = StartCoroutine(StartGameAnimation(cardPositions));
+    }
+
+    private IEnumerator StartGameAnimation(List<Vector2> cardPositions)
+    {
+        yield return new WaitForSeconds(0.25f);
+
+        cardInteractionManager.EnableCardInteractions(false);
+
+        List<(CardObject, Vector3)> traversingCards = new List<(CardObject, Vector3)>();
+
         for (int i = 0; i < cards.Count; i++)
         {
             int posIndex = Random.Range(0, cardPositions.Count);
 
-            //Setting up card Transform
-            cards[i].transform.position = new Vector3(cardPositions[posIndex].x, cardY, cardPositions[posIndex].y);
+            traversingCards.Add((cards[i], new Vector3(cardPositions[posIndex].x, cardY, cardPositions[posIndex].y)));
+
+            cards[i].transform.position = startCardsPosition.position;
             cards[i].transform.localScale = new Vector3(cardScale, cardScale, cardScale);
 
             cardPositions.RemoveAt(posIndex);
         }
+
+        //Moving cards towards their destination
+        float timer = 0;
+        float animationTime = traversingCards.Count * cardLayoutDelay + cardTraversalTime;
+        while (timer < animationTime)
+        {
+            for (int i = 0; i < traversingCards.Count; i++)
+            {
+                if (timer >= i * cardLayoutDelay)
+                {
+                    if (traversingCards[i].Item1.transform.position == startCardsPosition.position)
+                        AudioManager.PlaySound(startAnimationCardSound);
+
+                    float blend = Mathf.Clamp01((timer - i * cardLayoutDelay) / cardTraversalTime);
+                    traversingCards[i].Item1.transform.position = Vector3.Lerp(startCardsPosition.position, traversingCards[i].Item2, blend);
+                }
+                else
+                    break;
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.25f);
+
+        cardInteractionManager.EnableCardInteractions(true);
     }
 
     [ContextMenu("Clear")]
     public void ClearCards()
     {
+        if (startAnimation != null)
+            StopCoroutine(startAnimation);
+
         for (int i = 0; i < cards.Count; i++)
         {
             Destroy(cards[i].gameObject);
         }
 
         cards.Clear();
+    }
+
+    public void RemoveCard(CardObject card)
+    {
+        if (cards.Contains(card))
+            cards.Remove(card);
+
+        if (cards.Count == 0)
+            OnLevelFinished();
+    }
+
+    private void OnLevelFinished()
+    {
+        StartCoroutine(LevelFinished());
+    }
+
+    private IEnumerator LevelFinished()
+    {
+        yield return new WaitForSeconds(1.5f);
+        StartGame();
     }
 
     #region Functions

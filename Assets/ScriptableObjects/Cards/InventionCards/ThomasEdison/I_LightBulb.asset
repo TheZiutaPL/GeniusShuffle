@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
-  m_Name: C_NikolaTesla
+  m_Name: I_LightBulb
   m_EditorClassIdentifier: 
-  cardName: Nikola Tesla
-  cardDescription: Tesla desc
-  cardSprite: {fileID: 21300000, guid: 1dd8627fc0c64514c951f8b1b3260f5e, type: 3}
+  cardName: Light Bulb
+  cardDescription: Light Bulb desc
+  cardSprite: {fileID: 21300000, guid: da4d608d3c6c9564b8daf47ae56af66a, type: 3}
