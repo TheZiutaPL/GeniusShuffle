@@ -135,7 +135,7 @@ MonoBehaviour:
   isInteractable: 1
   cardAnimator: {fileID: 101552489136177557}
   cardSpriteRenderer: {fileID: 6207463962317821164}
-  cardHoverClip: {fileID: 8300000, guid: 09e371bf294e16147a94990160e88b8e, type: 3}
+  cardHoverClip: {fileID: 8300000, guid: 0b0301dafa66de84887ea72e264027bb, type: 3}
   cardUnHoverClip: {fileID: 0}
   cardFlipClip: {fileID: 8300000, guid: 4cf2201036979f24e995fab54215539f, type: 3}
 --- !u!65 &2687596526552593552
