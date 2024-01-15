@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9d5a07cdfcc6d914990bead20655b63e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7183e44f505d4a488fd617150966de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteractable: 1
   cardAnimator: {fileID: 101552489136177557}
   cardSpriteRenderer: {fileID: 6207463962317821164}
 --- !u!65 &2687596526552593552
@@ -228,7 +229,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c39c86a7aeb7a9748800ff6b1ac04bff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
