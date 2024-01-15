@@ -16,6 +16,12 @@ public class CardObject : MonoBehaviour
 
     [SerializeField] private SpriteRenderer cardSpriteRenderer;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip cardHoverClip;
+    [SerializeField] private AudioClip cardUnHoverClip;
+    [Space(5)]
+    [SerializeField] private AudioClip cardFlipClip;
+
     public void SetCardData(CardData cardData)
     {
         this.cardData = cardData;
@@ -32,9 +38,18 @@ public class CardObject : MonoBehaviour
 
     #region Visual
 
-    public void SetHover(bool hover) => cardAnimator.SetBool(CARD_HOVER_KEY, hover);
+    public void SetHover(bool hover)
+    {
+        cardAnimator.SetBool(CARD_HOVER_KEY, hover);
 
-    public void SetFlip(bool flip) => cardAnimator.SetBool(CARD_FLIP_KEY, flip);
+        AudioManager.PlaySound(hover ? cardHoverClip : cardUnHoverClip);
+    }
 
+    public void SetFlip(bool flip)
+    {
+        cardAnimator.SetBool(CARD_FLIP_KEY, flip);
+
+        AudioManager.PlaySound(cardFlipClip);
+    }
     #endregion
 }
