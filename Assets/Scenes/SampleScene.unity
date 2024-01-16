@@ -5894,6 +5894,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882404748}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &892487922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892487923}
+  m_Layer: 0
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892487923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892487922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1353613616}
+  - {fileID: 996297477}
+  m_Father: {fileID: 1807918903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &908863050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6077,6 +6110,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1551043004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &996297477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+    type: 3}
+  m_PrefabInstance: {fileID: 1275373011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1130597633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,6 +6214,89 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1664858841}
   m_LocalEulerAnglesHint: {x: 43.708, y: 90, z: 0}
+--- !u!1001 &1275373011
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 892487923}
+    m_Modifications:
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.656
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 959113519949773947, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882262663442071068, guid: b2e0483bec9d3ff498f84ebe3fecd423,
+        type: 3}
+      propertyPath: m_Name
+      value: Toggle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2e0483bec9d3ff498f84ebe3fecd423, type: 3}
 --- !u!1 &1284132013
 GameObject:
   m_ObjectHideFlags: 0
@@ -6276,9 +6398,9 @@ GameObject:
   - component: {fileID: 1328171987}
   - component: {fileID: 1328171986}
   - component: {fileID: 1328171985}
-  - component: {fileID: 1328171984}
+  - component: {fileID: 1328171988}
   m_Layer: 0
-  m_Name: TestButton
+  m_Name: MoveButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6300,33 +6422,6 @@ Transform:
   - {fileID: 2095741007}
   m_Father: {fileID: 1807918903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328171984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328171982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 480d67d813ebc414fb13094377e289b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 330585548}
-        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
-        m_MethodName: MoveTo
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2095741007}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1328171985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6398,6 +6493,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328171982}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1328171988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328171982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 330585548}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: MoveTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2095741007}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1332956977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,6 +6691,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1353613616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+    type: 3}
+  m_PrefabInstance: {fileID: 3058882990788242935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1449592246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,9 +6858,9 @@ GameObject:
   - component: {fileID: 1520413614}
   - component: {fileID: 1520413613}
   - component: {fileID: 1520413612}
-  - component: {fileID: 1520413611}
+  - component: {fileID: 1520413615}
   m_Layer: 0
-  m_Name: TestButton (3)
+  m_Name: MoveButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6750,33 +6882,6 @@ Transform:
   - {fileID: 1156349348}
   m_Father: {fileID: 1807918903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1520413611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520413609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 480d67d813ebc414fb13094377e289b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 330585548}
-        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
-        m_MethodName: MoveTo
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1156349348}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1520413612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6848,6 +6953,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520413609}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1520413615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520413609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 330585548}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: MoveTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1156349348}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1551043003
 GameObject:
   m_ObjectHideFlags: 0
@@ -6979,9 +7115,9 @@ GameObject:
   - component: {fileID: 1592983795}
   - component: {fileID: 1592983794}
   - component: {fileID: 1592983793}
-  - component: {fileID: 1592983792}
+  - component: {fileID: 1592983796}
   m_Layer: 0
-  m_Name: TestButton (1)
+  m_Name: MoveButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7003,33 +7139,6 @@ Transform:
   - {fileID: 640511991}
   m_Father: {fileID: 1807918903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1592983792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592983790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 480d67d813ebc414fb13094377e289b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 330585548}
-        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
-        m_MethodName: MoveTo
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 640511991}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1592983793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7101,6 +7210,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592983790}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1592983796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592983790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 330585548}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: MoveTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 640511991}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1664858840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7113,9 +7253,9 @@ GameObject:
   - component: {fileID: 1664858845}
   - component: {fileID: 1664858844}
   - component: {fileID: 1664858843}
-  - component: {fileID: 1664858842}
+  - component: {fileID: 1664858846}
   m_Layer: 0
-  m_Name: TestButton (2)
+  m_Name: MoveButton4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7137,33 +7277,6 @@ Transform:
   - {fileID: 1268965136}
   m_Father: {fileID: 1807918903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1664858842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664858840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 480d67d813ebc414fb13094377e289b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 330585548}
-        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
-        m_MethodName: MoveTo
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1268965136}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1664858843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7235,6 +7348,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664858840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1664858846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664858840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 330585548}
+        m_TargetAssemblyTypeName: CameraMovement, Assembly-CSharp
+        m_MethodName: MoveTo
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1268965136}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1665775701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7519,6 +7663,7 @@ Transform:
   - {fileID: 1592983791}
   - {fileID: 1520413610}
   - {fileID: 1664858841}
+  - {fileID: 892487923}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1936516177
@@ -7838,7 +7983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
 --- !u!4 &2132441970
 Transform:
   m_ObjectHideFlags: 0
@@ -7854,6 +7999,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1130597634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3058882990788242935
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 892487923}
+    m_Modifications:
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176743292337392409, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995012055053118932, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      propertyPath: m_Name
+      value: List
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 200018419996828593, guid: 24093827e63ca0e499d6af3f7308c299,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 24093827e63ca0e499d6af3f7308c299, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
