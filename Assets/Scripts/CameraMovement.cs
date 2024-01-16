@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
-    [SerializeField] float rotationSpeed = 0.5f;
+    [SerializeField] float speed = 1f;
+    [SerializeField] AnimationCurve speedCurve;
 
     Transform cam;
+
+    Vector3 startPosition;
+    Quaternion startRotation;
     Transform destination;
 
     bool moving = false;
@@ -23,19 +26,27 @@ public class CameraMovement : MonoBehaviour
     {
         if (moving)
         {
-            cam.transform.position = Vector3.Slerp(cam.transform.position, destination.position, moveSpeed / 100f);
-            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, destination.rotation, rotationSpeed / 100f);
+            float distancePercentage = Vector3.Distance(startPosition, cam.position) / Vector3.Distance(startPosition, destination.position);
+            float t = distancePercentage + (Time.deltaTime * speed * speedCurve.Evaluate(distancePercentage));
 
-            // Because == operator between vectors is really unreliable this uses the difference between
-            // current position and the destination to determine when to stop moving
-            if ((cam.transform.position - destination.position).magnitude < 0.0001f)
+            cam.transform.position = Vector3.Lerp(startPosition, destination.position, t);
+            cam.transform.rotation = Quaternion.Slerp(startRotation, destination.rotation, t);
+
+            if (distancePercentage == 1f) // So when the destination is reached
                 moving = false;
         }
     }
 
     public void MoveTo(Transform destination)
     {
+        if (moving)
+            return;
+
+        startPosition = cam.position;
+        startRotation = cam.rotation;
+
         this.destination = destination;
+
         moving = true;
     }
 }
