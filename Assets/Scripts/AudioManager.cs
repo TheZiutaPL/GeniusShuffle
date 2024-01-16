@@ -8,6 +8,10 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioSource soundSource;
 
+    public static string MASTER_KEY = "MasterVolume";
+    public static string SFX_KEY = "SFXVolume";
+    public static string MUSIC_KEY = "MusicVolume";
+
     private void Awake()
     {
         if (instance == null)

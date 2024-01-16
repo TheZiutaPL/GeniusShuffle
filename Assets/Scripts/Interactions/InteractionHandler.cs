@@ -10,7 +10,7 @@ public class InteractionHandler : MonoBehaviour
     [SerializeField] private UnityEvent clickActions;
     [SerializeField] private UnityEvent<bool> hoverActions;
 
-    public void ClickAction() => clickActions?.Invoke();
+    public virtual void ClickAction() => clickActions?.Invoke();
 
-    public void HoverAction(bool hover) => hoverActions?.Invoke(hover);
+    public virtual void HoverAction(bool hover) => hoverActions?.Invoke(hover);
 }
