@@ -7,6 +7,37 @@ public class CardGraveyard : MonoBehaviour
     private List<CardData> cardGraveyard = new List<CardData>();
     [SerializeField] private float travelTime = .3f;
     [SerializeField] private AnimationCurve cardTravelCurve;
+    [SerializeField] private InteractionHandler graveyardInteraction;
+
+    [Header("Visuals")]
+    [SerializeField] private Animator graveyardAnimator;
+    [SerializeField] private Transform graveyardMeshTransform;
+    [SerializeField] private float sizePerCard = 0.1f;
+    private float graveyardMeshScale = 0;
+
+    private const string GRAVEYARD_CLEAR_ANIM = "EmptyGraveyard";
+
+    private void Awake()
+    {
+        graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
+    }
+
+    private void AddGraveyardMeshSize()
+    {
+        graveyardMeshScale += sizePerCard;
+
+        graveyardMeshTransform.localScale = new Vector3(1, graveyardMeshScale, 1);
+
+        graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
+    }
+
+    private void SetGraveyardScale(float scale = 0)
+    {
+        graveyardMeshScale = scale;
+
+        graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
+    }
+
     public void AddCardToGraveyard(CardObject card) 
     {
         cardGraveyard.Add(card.cardData);
@@ -14,6 +45,15 @@ public class CardGraveyard : MonoBehaviour
         card.GetComponent<InteractionHandler>().isInteractable = false;
 
         StartCoroutine(GoToGraveyard(card.transform));
+    }
+
+    public void ClearGraveyard()
+    {
+        cardGraveyard.Clear();
+
+        graveyardInteraction.isInteractable = false;
+
+        graveyardAnimator.Play(GRAVEYARD_CLEAR_ANIM);
     }
 
     IEnumerator GoToGraveyard(Transform card)
@@ -29,6 +69,8 @@ public class CardGraveyard : MonoBehaviour
 
             yield return null;
         }
+
+        AddGraveyardMeshSize();
 
         Destroy(card.gameObject);
     }
