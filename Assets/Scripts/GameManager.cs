@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Vector2 maxOffset;
     [SerializeField] private Transform topRightCorner;
     [SerializeField] private Transform bottomLeftCorner;
+    [SerializeField] private CardGraveyard cardGraveyard;
 
     private List<CardObject> cards = new List<CardObject>();
 
@@ -142,7 +143,8 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator LevelFinished()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
+        cardGraveyard.ClearGraveyard();
         StartGame();
     }
 
