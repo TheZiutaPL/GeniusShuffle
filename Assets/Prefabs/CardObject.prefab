@@ -94,6 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2647561436063510890}
+  - component: {fileID: 4413778816756909392}
   - component: {fileID: 1097717813780963346}
   - component: {fileID: 2687596526552593552}
   - component: {fileID: 101552489136177557}
@@ -120,6 +121,49 @@ Transform:
   - {fileID: 1897248944222835405}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 180, z: 0}
+--- !u!114 &4413778816756909392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215533772935865366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097717813780963346}
+        m_TargetAssemblyTypeName: CardObject, Assembly-CSharp
+        m_MethodName: ClickAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1097717813780963346}
+        m_TargetAssemblyTypeName: CardObject, Assembly-CSharp
+        m_MethodName: SetHover
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097717813780963346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +180,7 @@ MonoBehaviour:
   cardAnimator: {fileID: 101552489136177557}
   cardSpriteRenderer: {fileID: 6207463962317821164}
   cardHoverClip: {fileID: 8300000, guid: 0b0301dafa66de84887ea72e264027bb, type: 3}
-  cardUnHoverClip: {fileID: 0}
+  cardUnHoverClip: {fileID: 8300000, guid: 59150dc6aa434b946af1a83683744471, type: 3}
   cardFlipClip: {fileID: 8300000, guid: 4cf2201036979f24e995fab54215539f, type: 3}
 --- !u!65 &2687596526552593552
 BoxCollider:

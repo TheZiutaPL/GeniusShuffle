@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private CardInteractionManager cardInteractionManager;
+    [SerializeField] private InteractionManager interactionManager;
 
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
-    [SerializeField] private List<CardMatch> cardMatches = new List<CardMatch>();
+    [SerializeField] private CardCollection cardCollection;
     [SerializeField] private float cardScale = .2f;
 
     [Header("Table Setup")]
@@ -40,10 +40,10 @@ public class GameManager : MonoBehaviour
     [ContextMenu("Start Game")]
     public void StartGame()
     {
-        if (cardMatches.Count == 0)
+        if (cardCollection == null)
             return;
 
-        List<CardMatch> matches = GetGameMatches();
+        List<CardMatch> matches = GetGameMatches(cardCollection);
 
         ClearCards();
 
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
 
-        cardInteractionManager.EnableCardInteractions(false);
+        interactionManager.EnableInteractions(false);
 
         List<(CardObject, Vector3)> traversingCards = new List<(CardObject, Vector3)>();
 
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.25f);
 
-        cardInteractionManager.EnableCardInteractions(true);
+        interactionManager.EnableInteractions(true);
     }
 
     [ContextMenu("Clear")]
@@ -210,9 +210,9 @@ public class GameManager : MonoBehaviour
         return cardObject;
     }
 
-    private List<CardMatch> GetGameMatches()
+    private List<CardMatch> GetGameMatches(CardCollection cardCollection)
     {
-        List<CardMatch> availableMatches = new List<CardMatch>(cardMatches);
+        List<CardMatch> availableMatches = cardCollection.GetCardMatches();
 
         List<CardMatch> chosenMatches = new List<CardMatch>();
 

@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class CardObject : MonoBehaviour
 {
-    private CardData cardData;
+    public CardData cardData { get; private set; }
     public CardObject matchingCard { get; private set; }
-
-    [HideInInspector] public bool isInteractable = true;
 
     [SerializeField] private Animator cardAnimator;
     private const string CARD_HOVER_KEY = "hover";
@@ -34,6 +32,19 @@ public class CardObject : MonoBehaviour
     public void RefreshCardDisplay()
     {
         cardSpriteRenderer.sprite = cardData.cardSprite;
+    }
+
+    public void ClickAction()
+    {
+        if (CardSelectionManager.IsCardInSelection(this))
+        {
+            //Show card view
+            Debug.Log("Card View");
+
+            return;
+        }
+        else
+            CardSelectionManager.AddCardToSelection(this);
     }
 
     #region Visual

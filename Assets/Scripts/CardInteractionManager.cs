@@ -33,7 +33,7 @@ public class CardInteractionManager : MonoBehaviour
 
         if(canInteract && Physics.Raycast(RectTransformUtility.ScreenPointToRay(Camera.main, mouseScreenPosition), out RaycastHit hit, interactionMask))
         {
-            if (hit.transform.TryGetComponent(out CardObject cardObj) && !cardObj.isInteractable) cardObj = null;
+            if (hit.transform.TryGetComponent(out CardObject cardObj)) cardObj = null;
 
             if (currentTarget == cardObj)
                 return;
@@ -143,7 +143,6 @@ public class CardInteractionManager : MonoBehaviour
         Vector3[] startPositions = new Vector3[cardSelection.Length];
         for (int i = 0; i < cardSelection.Length; i++)
         {
-            cardSelection[i].isInteractable = false;
             startPositions[i] = cardSelection[i].transform.position;
         }
         
