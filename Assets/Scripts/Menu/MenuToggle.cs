@@ -8,7 +8,12 @@ public class MenuToggle : InteractionHandler
 
     public override void ClickAction()
     {
-        isOn = !isOn;
+        SetStatus(!isOn);
         base.ClickAction();
+    }
+
+    public void SetStatus(bool isOn)
+    {
+        this.isOn = isOn;
     }
 }
