@@ -10,13 +10,13 @@ using TMPro;
 public class Settings : MonoBehaviour
 {
     [Header("Window settings")]
-    [SerializeField] private TMP_Dropdown resolutionDropdown;
-    [SerializeField] private Toggle fullscreenToggle;
+    [SerializeField] private MenuList resolutionList;
+    [SerializeField] private MenuToggle fullscreenToggle;
 
     [Header("Audio settings")]
-    [SerializeField] private Slider masterVolumeSlider;
-    [SerializeField] private Slider musicVolumeSlider;
-    [SerializeField] private Slider sfxVolumeSlider;
+    [SerializeField] private MenuSlider masterVolumeSlider;
+    [SerializeField] private MenuSlider musicVolumeSlider;
+    [SerializeField] private MenuSlider sfxVolumeSlider;
     [SerializeField] private AudioMixer audioMixer;
     private float[] savedValues; // This is needed to restore previous settings when current ones are not applied
 
@@ -24,17 +24,17 @@ public class Settings : MonoBehaviour
     {
         // Window settings
         if (fullscreenToggle != null)
-            fullscreenToggle.isOn = Screen.fullScreen;
+            fullscreenToggle.SetStatus(Screen.fullScreen);
 
-        if (resolutionDropdown != null)
+        if (resolutionList != null)
             LoadResolutions();
 
         // Audio settings
         if (masterVolumeSlider != null)
         {
-            masterVolumeSlider.value = PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f);
-            musicVolumeSlider.value = PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f);
-            sfxVolumeSlider.value = PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f);
+            masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f));
+            musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f));
+            sfxVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f));
 
             savedValues = new float[3] { masterVolumeSlider.value, musicVolumeSlider.value, sfxVolumeSlider.value };
 
@@ -52,8 +52,8 @@ public class Settings : MonoBehaviour
     public void SaveChanges()
     {
         // Window settings
-        if (resolutionDropdown != null)
-            SetResolution(resolutionDropdown.value);
+        if (resolutionList != null)
+            SetResolution(resolutionList.currentOption);
         if (fullscreenToggle != null)
             SetFullscreen(fullscreenToggle.isOn);
 
@@ -70,14 +70,14 @@ public class Settings : MonoBehaviour
     public void RestorePreviousSettings()
     {
         // Window settings
-        if (resolutionDropdown != null) 
+        if (resolutionList != null) 
         { 
             string currentResolution = Screen.width + "x" + Screen.height;
-            resolutionDropdown.value = resolutionDropdown.options.FindIndex(option => option.text == currentResolution);
+            resolutionList.currentOption = resolutionList.allOptions.FindIndex(option => option == currentResolution);
         }
 
         if (fullscreenToggle != null)
-            fullscreenToggle.isOn = Screen.fullScreen;
+            fullscreenToggle.SetStatus(Screen.fullScreen);
 
         // Audio settings
         if (masterVolumeSlider != null)
@@ -91,7 +91,7 @@ public class Settings : MonoBehaviour
     #region Window settings
     private void LoadResolutions()
     {
-        resolutionDropdown.ClearOptions();
+        resolutionList.Clear();
 
         Resolution[] resolutions = Screen.resolutions; // List of all, unfiltered resolution options
         List<string> resolutionOptions = new List<string>(); // List of only unique resolutions, will later be added to the dropdown
@@ -111,9 +111,8 @@ public class Settings : MonoBehaviour
             }
         }
 
-        resolutionDropdown.AddOptions(resolutionOptions);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
+        resolutionList.AddOptions(resolutionOptions);
+        resolutionList.SetOption(currentResolutionIndex);
     }
 
     private void SetFullscreen(bool value)
@@ -123,7 +122,7 @@ public class Settings : MonoBehaviour
 
     private void SetResolution(int resolutionIndex)
     {
-        string[] resolution = resolutionDropdown.options[resolutionIndex].text.Split('x');
+        string[] resolution = resolutionList.allOptions[resolutionIndex].Split('x');
         Screen.SetResolution(int.Parse(resolution[0]), int.Parse(resolution[1]), Screen.fullScreen);
     }
     #endregion
