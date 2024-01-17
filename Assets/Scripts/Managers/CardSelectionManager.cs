@@ -62,9 +62,9 @@ public class CardSelectionManager : MonoBehaviour
 
     private static IEnumerator MatchCoroutine(bool success)
     {
-        instance.interactionManager.EnableInteractions(false);
-
         yield return new WaitForSeconds(instance.matchWaitTime);
+
+        instance.interactionManager.EnableInteractions(false);
 
         if (success)
         {
