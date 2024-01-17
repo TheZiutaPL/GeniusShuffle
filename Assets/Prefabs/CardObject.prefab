@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811519428002455805}
   - component: {fileID: 598970623439843047}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CardShape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1097717813780963346}
   - component: {fileID: 2687596526552593552}
   - component: {fileID: 101552489136177557}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CardObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7183e44f505d4a488fd617150966de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
   cardAnimator: {fileID: 101552489136177557}
+  realCardTransform: {fileID: 1897248944222835405}
   cardSpriteRenderer: {fileID: 6207463962317821164}
   cardHoverClip: {fileID: 8300000, guid: 0b0301dafa66de84887ea72e264027bb, type: 3}
   cardUnHoverClip: {fileID: 8300000, guid: 59150dc6aa434b946af1a83683744471, type: 3}
@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2410859969109355265}
   - component: {fileID: 6207463962317821164}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CardIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1897248944222835405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CardOffset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6398791108735151133}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CardVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -299,6 +299,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1551043004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &325034296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3134569127105134958, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7553484183146175561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5cda9cb4e9c0b4ebf9e7fbb18a19f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6641,25 +6653,9 @@ MonoBehaviour:
     m_ActionName: Game/InteractionKey[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuInputHandler, Assembly-CSharp
-        m_MethodName: OnPointerMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 4c666839-8932-40a6-8cd5-7360d61efbbe
-    m_ActionName: Menu/MousePosition[/Mouse/position,/Pen/position]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuInputHandler, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 325034296}
+        m_TargetAssemblyTypeName: CardView, Assembly-CSharp
+        m_MethodName: HideCardViewInput
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7808,13 +7804,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999679323}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.65}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.0000014482473, y: 0.00000017881393, z: 0.6500001}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 330585546}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2071163306
 GameObject:
   m_ObjectHideFlags: 0
@@ -8071,6 +8067,89 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 24093827e63ca0e499d6af3f7308c299, type: 3}
+--- !u!1001 &7553484183146175561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 568980967586962846, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2647561436063510890, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134569127105134958, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1332956978}
+    - target: {fileID: 3134569127105134958, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: cardViewReferenceTransform
+      value: 
+      objectReference: {fileID: 1999679324}
+    - target: {fileID: 5215533772935865366, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1,
+        type: 3}
+      propertyPath: m_Name
+      value: CardView
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8086,3 +8165,4 @@ SceneRoots:
   - {fileID: 772472521}
   - {fileID: 1807918903}
   - {fileID: 2110315506}
+  - {fileID: 7553484183146175561}

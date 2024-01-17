@@ -72,6 +72,34 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
             ]
         },
         {
+            ""name"": ""CardView"",
+            ""id"": ""a45b7b3b-91e0-4683-90d2-8d2f6c9bf7cd"",
+            ""actions"": [
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""c8eb3585-b9ec-4d87-b0ce-b81e7ee6eaeb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""14b3dc02-cab2-4549-a0d9-e861780f3c01"",
+                    ""path"": ""<Pointer>/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""UI"",
             ""id"": ""8f68b0e8-6bb1-402e-9eef-60a93a77c8f1"",
             ""actions"": [
@@ -586,54 +614,6 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""Menu"",
-            ""id"": ""a45b7b3b-91e0-4683-90d2-8d2f6c9bf7cd"",
-            ""actions"": [
-                {
-                    ""name"": ""MousePosition"",
-                    ""type"": ""Value"",
-                    ""id"": ""4c666839-8932-40a6-8cd5-7360d61efbbe"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Click"",
-                    ""type"": ""Button"",
-                    ""id"": ""c8eb3585-b9ec-4d87-b0ce-b81e7ee6eaeb"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""9a0252ae-4e59-4e00-8813-4ab488fe2b39"",
-                    ""path"": ""<Pointer>/position"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""MousePosition"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""14b3dc02-cab2-4549-a0d9-e861780f3c01"",
-                    ""path"": ""<Pointer>/press"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Click"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": []
@@ -642,6 +622,9 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_Game = asset.FindActionMap("Game", throwIfNotFound: true);
         m_Game_MousePosition = m_Game.FindAction("MousePosition", throwIfNotFound: true);
         m_Game_InteractionKey = m_Game.FindAction("InteractionKey", throwIfNotFound: true);
+        // CardView
+        m_CardView = asset.FindActionMap("CardView", throwIfNotFound: true);
+        m_CardView_Click = m_CardView.FindAction("Click", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -654,10 +637,6 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
-        // Menu
-        m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
-        m_Menu_MousePosition = m_Menu.FindAction("MousePosition", throwIfNotFound: true);
-        m_Menu_Click = m_Menu.FindAction("Click", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -769,6 +748,52 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         }
     }
     public GameActions @Game => new GameActions(this);
+
+    // CardView
+    private readonly InputActionMap m_CardView;
+    private List<ICardViewActions> m_CardViewActionsCallbackInterfaces = new List<ICardViewActions>();
+    private readonly InputAction m_CardView_Click;
+    public struct CardViewActions
+    {
+        private @GameInputs m_Wrapper;
+        public CardViewActions(@GameInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Click => m_Wrapper.m_CardView_Click;
+        public InputActionMap Get() { return m_Wrapper.m_CardView; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CardViewActions set) { return set.Get(); }
+        public void AddCallbacks(ICardViewActions instance)
+        {
+            if (instance == null || m_Wrapper.m_CardViewActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_CardViewActionsCallbackInterfaces.Add(instance);
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
+        }
+
+        private void UnregisterCallbacks(ICardViewActions instance)
+        {
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
+        }
+
+        public void RemoveCallbacks(ICardViewActions instance)
+        {
+            if (m_Wrapper.m_CardViewActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ICardViewActions instance)
+        {
+            foreach (var item in m_Wrapper.m_CardViewActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_CardViewActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public CardViewActions @CardView => new CardViewActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -887,64 +912,14 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
-
-    // Menu
-    private readonly InputActionMap m_Menu;
-    private List<IMenuActions> m_MenuActionsCallbackInterfaces = new List<IMenuActions>();
-    private readonly InputAction m_Menu_MousePosition;
-    private readonly InputAction m_Menu_Click;
-    public struct MenuActions
-    {
-        private @GameInputs m_Wrapper;
-        public MenuActions(@GameInputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @MousePosition => m_Wrapper.m_Menu_MousePosition;
-        public InputAction @Click => m_Wrapper.m_Menu_Click;
-        public InputActionMap Get() { return m_Wrapper.m_Menu; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MenuActions set) { return set.Get(); }
-        public void AddCallbacks(IMenuActions instance)
-        {
-            if (instance == null || m_Wrapper.m_MenuActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_MenuActionsCallbackInterfaces.Add(instance);
-            @MousePosition.started += instance.OnMousePosition;
-            @MousePosition.performed += instance.OnMousePosition;
-            @MousePosition.canceled += instance.OnMousePosition;
-            @Click.started += instance.OnClick;
-            @Click.performed += instance.OnClick;
-            @Click.canceled += instance.OnClick;
-        }
-
-        private void UnregisterCallbacks(IMenuActions instance)
-        {
-            @MousePosition.started -= instance.OnMousePosition;
-            @MousePosition.performed -= instance.OnMousePosition;
-            @MousePosition.canceled -= instance.OnMousePosition;
-            @Click.started -= instance.OnClick;
-            @Click.performed -= instance.OnClick;
-            @Click.canceled -= instance.OnClick;
-        }
-
-        public void RemoveCallbacks(IMenuActions instance)
-        {
-            if (m_Wrapper.m_MenuActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IMenuActions instance)
-        {
-            foreach (var item in m_Wrapper.m_MenuActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_MenuActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public MenuActions @Menu => new MenuActions(this);
     public interface IGameActions
     {
         void OnMousePosition(InputAction.CallbackContext context);
         void OnInteractionKey(InputAction.CallbackContext context);
+    }
+    public interface ICardViewActions
+    {
+        void OnClick(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
@@ -958,10 +933,5 @@ public partial class @GameInputs: IInputActionCollection2, IDisposable
         void OnRightClick(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
-    }
-    public interface IMenuActions
-    {
-        void OnMousePosition(InputAction.CallbackContext context);
-        void OnClick(InputAction.CallbackContext context);
     }
 }

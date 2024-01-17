@@ -9,6 +9,7 @@ public class CardObject : MonoBehaviour
     public CardObject matchingCard { get; private set; }
 
     [SerializeField] private Animator cardAnimator;
+    [SerializeField] private Transform realCardTransform;
     private const string CARD_HOVER_KEY = "hover";
     private const string CARD_FLIP_KEY = "flip";
 
@@ -19,6 +20,8 @@ public class CardObject : MonoBehaviour
     [SerializeField] private AudioClip cardUnHoverClip;
     [Space(5)]
     [SerializeField] private AudioClip cardFlipClip;
+
+    public Transform GetRealCardTransform() => realCardTransform;
 
     public void SetCardData(CardData cardData)
     {
@@ -40,6 +43,7 @@ public class CardObject : MonoBehaviour
         {
             //Show card view
             Debug.Log("Card View");
+            CardView.ShowCardView(this);
 
             return;
         }
