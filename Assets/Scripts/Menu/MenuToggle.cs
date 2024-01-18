@@ -14,10 +14,10 @@ public class MenuToggle : InteractionHandler
     [SerializeField] Transform onPosition;
     [SerializeField] Transform offPosition;
 
-    public override void ClickAction()
+    public override void ClickAction(Vector3 hitPoint)
     {
         SetStatus(!isOn);
-        base.ClickAction();
+        base.ClickAction(hitPoint);
     }
 
     public void SetStatus(bool isOn)

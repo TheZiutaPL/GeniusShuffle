@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MenuSlider : MonoBehaviour
+public class MenuSlider : InteractionHandler
 {
     [SerializeField] float step = 0.1f;
     public float minValue = 0f;

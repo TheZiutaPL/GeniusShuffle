@@ -16,6 +16,8 @@ public class InteractionManager : MonoBehaviour
 
     private InteractionHandler currentTarget;
 
+    private Vector3 interactionHitPoint;
+
     private void Awake()
     {
         playerCamera = Camera.main;
@@ -44,7 +46,7 @@ public class InteractionManager : MonoBehaviour
             if (!interaction.isInteractable) interaction = null;
 
             if (interaction != currentTarget)
-                SwitchTarget(interaction);
+                SwitchTarget(interaction, hit.point);
         }
         else if (currentTarget != null)
             SwitchTarget();
@@ -55,10 +57,10 @@ public class InteractionManager : MonoBehaviour
         if (!ctx.canceled || currentTarget == null)
             return;
 
-        currentTarget.ClickAction();
+        currentTarget.ClickAction(interactionHitPoint);
     }
 
-    private void SwitchTarget(InteractionHandler interaction = null)
+    private void SwitchTarget(InteractionHandler interaction = null, Vector3 hitPoint = new Vector3())
     {
         if (currentTarget != null)
             currentTarget.HoverAction(false);
@@ -66,6 +68,7 @@ public class InteractionManager : MonoBehaviour
         if (interaction != null)
             interaction.HoverAction(true);
 
+        interactionHitPoint = hitPoint;
         currentTarget = interaction;
     }
 }
