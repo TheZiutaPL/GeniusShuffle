@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Card Match", menuName = "ScriptableObjects/Card Match")]
+[CreateAssetMenu(fileName = "New Card Match", menuName = "Scriptable Objects/Cards/Card Match")]
 public class CardMatch : ScriptableObject
 {
     public CardData inventorCard;
