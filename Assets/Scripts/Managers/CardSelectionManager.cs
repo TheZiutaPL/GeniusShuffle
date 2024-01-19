@@ -21,6 +21,15 @@ public class CardSelectionManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    [SerializeField] private UnityEngine.UI.Button nextTurnButton;
+    private bool success;
+
+    private void Start()
+    {
+        nextTurnButton.onClick.AddListener(() => NextTurn(success));
+        nextTurnButton.gameObject.SetActive(false);
+    }
+
     public static void AddCardToSelection(CardObject cardObject)
     {
         if (cardObject == null)
@@ -62,16 +71,19 @@ public class CardSelectionManager : MonoBehaviour
 
     private static IEnumerator MatchCoroutine(bool success)
     {
-        if (success)
-        {
-            yield return new WaitForSeconds(instance.matchWaitTime);
-
-            for (int i = 0; i < cardSelection.Length; i++)
-                cardSelection[i].successfullMatchParticles.Play();
-        }
-
         yield return new WaitForSeconds(instance.matchWaitTime);
 
+        if (success)
+            for (int i = 0; i < cardSelection.Length; i++)
+                cardSelection[i].successfullMatchParticles.Play();
+
+        instance.success = success;
+
+        instance.nextTurnButton.gameObject.SetActive(true);
+    }
+
+    public static void NextTurn(bool success)
+    {
         instance.interactionManager.EnableInteractions(false);
 
         if (success)
@@ -88,6 +100,8 @@ public class CardSelectionManager : MonoBehaviour
                 cardSelection[i].SetFlip(false);
 
         instance.interactionManager.EnableInteractions(true);
+
+        instance.nextTurnButton.gameObject.SetActive(false);
 
         ClearSelection();
     }
