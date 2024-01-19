@@ -24,6 +24,10 @@ namespace FlawareStudios.Translation
 
         private Vector2 scrollPosition;
 
+        private bool filterSettingsToggle;
+        private bool errorReturnsToggle;
+        private bool toolsToggle;
+
         #region Styles
 
         private Vector2 minEditorSize = new Vector2(350, 500);
@@ -31,7 +35,7 @@ namespace FlawareStudios.Translation
         //Base styles
         private GUIStyle headerTextStyle;
         private GUIStyle textStyle;
-        private GUIStyle boldTextStyle;
+        private GUIStyle clickableTextStyle;
         private GUIStyle editableTextStyle;
         private GUIStyle nonEditableTextStyle;
 
@@ -40,14 +44,14 @@ namespace FlawareStudios.Translation
 
         private const float ENUM_FIELD_WIDTH = 75;
 
-        private const float SHOWN_TRANSLATION_HEAD_HEIGHT = 35;
+        private const float SHOWN_TRANSLATION_HEAD_HEIGHT = 40;
 
         private const float SHOWN_TRANSLATION_KEY_MIN_WIDTH = 75;
         private const float SHOWN_TRANSLATION_KEY_MAX_WIDTH = 150;
         private const float SHOWN_TRANSLATION_MIN_WIDTH = 100;
         private const float SHOWN_TRANSLATION_MAX_WIDTH = 250;
 
-        private const float TOOLS_SECTION_MAX_HEIGHT = 175;
+        private const float TOOLS_SECTION_MAX_HEIGHT = 0;
 
         GUILayoutOption[] listItemKeyLayoutOptions;
         GUILayoutOption[] listItemLayoutOptions;
@@ -93,13 +97,15 @@ namespace FlawareStudios.Translation
                 }
             };
 
-            boldTextStyle = new GUIStyle(textStyle)
+            clickableTextStyle = new GUIStyle(textStyle)
             {
                 stretchHeight = true,
 
                 fontStyle = FontStyle.Bold,
 
                 alignment = TextAnchor.MiddleLeft,
+
+                padding = new RectOffset(3, 3, 3, 3),
             };
 
             editableTextStyle = new GUIStyle(textStyle)
@@ -218,9 +224,19 @@ namespace FlawareStudios.Translation
             if (translationModule != null)
             {
                 EditorGUILayout.BeginVertical(GUILayout.MaxHeight(TOOLS_SECTION_MAX_HEIGHT));
-                DrawFilterOptions();
-                DrawErrorReturns();
-                DrawToolkit();
+
+                if (GUILayout.Button("Filter Settings", clickableTextStyle)) filterSettingsToggle = !filterSettingsToggle;
+                if (filterSettingsToggle)
+                    DrawFilterOptions();
+
+                if (GUILayout.Button("Error Returns", clickableTextStyle)) errorReturnsToggle = !errorReturnsToggle;
+                if (errorReturnsToggle)
+                    DrawErrorReturns();
+
+                if (GUILayout.Button("Tools", clickableTextStyle)) toolsToggle = !toolsToggle;
+                if (toolsToggle)
+                    DrawToolkit();
+
                 EditorGUILayout.EndVertical();
 
                 EditorGUILayout.Space(5);
@@ -243,8 +259,6 @@ namespace FlawareStudios.Translation
 
         private void DrawFilterOptions()
         {
-            EditorGUILayout.LabelField("Filter Settings", boldTextStyle);
-
             EditorGUILayout.BeginHorizontal();
             searchText = EditorGUILayout.TextField(searchText, EditorStyles.toolbarSearchField);
             currentFilterType = (TranslationType)EditorGUILayout.EnumPopup(currentFilterType, GUILayout.Width(ENUM_FIELD_WIDTH));
@@ -253,9 +267,6 @@ namespace FlawareStudios.Translation
 
         private void DrawToolkit()
         {
-            EditorGUILayout.BeginVertical();
-            EditorGUILayout.LabelField("Languages", boldTextStyle);
-
             EditorGUILayout.BeginHorizontal();
             languageCount = EditorGUILayout.IntField(languageCount);
 
@@ -282,21 +293,15 @@ namespace FlawareStudios.Translation
             if (GUILayout.Button("Add SpriteT")) { translationModule.AddEmptyTranslation(ref translationModule.spriteTranslations); GUIUtility.keyboardControl = 0; }
             if (GUILayout.Button("Add AudioT")) { translationModule.AddEmptyTranslation(ref translationModule.audioTranslations); GUIUtility.keyboardControl = 0; }
             EditorGUILayout.EndHorizontal();
-            EditorGUILayout.EndVertical();
         }
 
         private void DrawErrorReturns()
         {
-            EditorGUILayout.BeginVertical();
-            EditorGUILayout.LabelField("Error Returns", boldTextStyle, GUILayout.Width(100));
-
             EditorGUILayout.BeginHorizontal();
-
             translationModule.errorText = EditorGUILayout.TextArea(translationModule.errorText, editableTextStyle, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
             translationModule.errorSprite = (Sprite)EditorGUILayout.ObjectField(translationModule.errorSprite, typeof(Sprite), false, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
             translationModule.errorAudio = (AudioClip)EditorGUILayout.ObjectField(translationModule.errorAudio, typeof(AudioClip), false, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
             EditorGUILayout.EndHorizontal();
-            EditorGUILayout.EndVertical();
         }
 
         private void DrawTranslationList()

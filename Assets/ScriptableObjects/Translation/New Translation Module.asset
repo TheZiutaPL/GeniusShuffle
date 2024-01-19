@@ -16,40 +16,12 @@ MonoBehaviour:
   - English
   - Polish
   textTranslations:
-  - key: TRANSLATION_1
+  - key: TEST_TEXT_TRANSLATION
     translations:
-    - English translation
-    - Polish translation
-  - key: NewKey
-    translations:
-    - 
-    - 
-  - key: NewKey
-    translations:
-    - 
-    - 
+    - English text translation
+    - Polish text translation
   errorText: TRANSLATION_NOT_FOUND
-  spriteTranslations:
-  - key: spr1
-    translations:
-    - {fileID: 0}
-    - {fileID: 0}
-  - key: spr2
-    translations:
-    - {fileID: 0}
-    - {fileID: 0}
+  spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
-  audioTranslations:
-  - key: au1
-    translations:
-    - {fileID: 0}
-    - {fileID: 0}
-  - key: NewKey
-    translations:
-    - {fileID: 0}
-    - {fileID: 0}
-  - key: NewKey
-    translations:
-    - {fileID: 0}
-    - {fileID: 0}
+  audioTranslations: []
   errorAudio: {fileID: 0}
