@@ -14,40 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   translatedLanguages:
   - English
+  - Polish
   textTranslations:
   - key: TRANSLATION_1
-    defaultTranslation: aaaa mog us uususuusu susys amogsuaaaaaaaaaaaaaaaaaaaaaaaaa
-      holy duck it is working looooool i wasnt expecting that shit to work
     translations:
+    - English translation
+    - Polish translation
+  - key: NewKey
+    translations:
+    - 
     - 
   - key: NewKey
-    defaultTranslation: I love flowers
     translations:
     - 
-  - key: NewKey
-    defaultTranslation: 
-    translations:
     - 
+  errorText: TRANSLATION_NOT_FOUND
   spriteTranslations:
   - key: spr1
-    defaultTranslation: {fileID: 21300000, guid: 1dd8627fc0c64514c951f8b1b3260f5e,
-      type: 3}
     translations:
+    - {fileID: 0}
     - {fileID: 0}
   - key: spr2
-    defaultTranslation: {fileID: 0}
     translations:
     - {fileID: 0}
+    - {fileID: 0}
+  errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations:
   - key: au1
-    defaultTranslation: {fileID: 0}
     translations:
+    - {fileID: 0}
     - {fileID: 0}
   - key: NewKey
-    defaultTranslation: {fileID: 0}
     translations:
+    - {fileID: 0}
     - {fileID: 0}
   - key: NewKey
-    defaultTranslation: {fileID: 0}
     translations:
     - {fileID: 0}
+    - {fileID: 0}
+  errorAudio: {fileID: 0}

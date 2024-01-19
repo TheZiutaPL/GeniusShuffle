@@ -34,7 +34,8 @@ namespace FlawareStudios.Translation
         private GUIStyle boldTextStyle;
         private GUIStyle editableTextStyle;
         private GUIStyle nonEditableTextStyle;
-        private const float OBJECT_FIELD_WIDTH = 220;
+
+        private const float OBJECT_FIELD_WIDTH = 280;
         private const float OBJECT_FIELD_HEIGHT = 30;
 
         private const float ENUM_FIELD_WIDTH = 75;
@@ -46,11 +47,14 @@ namespace FlawareStudios.Translation
         private const float SHOWN_TRANSLATION_MIN_WIDTH = 100;
         private const float SHOWN_TRANSLATION_MAX_WIDTH = 250;
 
+        private const float TOOLS_SECTION_MAX_HEIGHT = 175;
+
         GUILayoutOption[] listItemKeyLayoutOptions;
         GUILayoutOption[] listItemLayoutOptions;
 
         //Group styles
         private GUIStyle headerStyle;
+        private GUIStyle mainStyle;
         private GUIStyle toolsStyle;
         private GUIStyle listStyle;
 
@@ -91,7 +95,11 @@ namespace FlawareStudios.Translation
 
             boldTextStyle = new GUIStyle(textStyle)
             {
+                stretchHeight = true,
+
                 fontStyle = FontStyle.Bold,
+
+                alignment = TextAnchor.MiddleLeft,
             };
 
             editableTextStyle = new GUIStyle(textStyle)
@@ -125,18 +133,7 @@ namespace FlawareStudios.Translation
                 }
             };
 
-            toolsStyle = new GUIStyle()
-            {
-                stretchWidth = true,
-                stretchHeight = false,
-
-                normal = new GUIStyleState()
-                {
-                    background = MakeTex(1, 1, new Color(0.15f, 0.15f, 0.15f)),
-                }
-            };
-
-            listStyle = new GUIStyle()
+            mainStyle = new GUIStyle()
             {
                 stretchWidth = true,
                 stretchHeight = true,
@@ -147,6 +144,18 @@ namespace FlawareStudios.Translation
                 {
                     background = MakeTex(1, 1, new Color(0.15f, 0.15f, 0.15f)),
                 }
+            };
+
+            toolsStyle = new GUIStyle()
+            {
+                stretchWidth = true,
+                stretchHeight = false,
+            };
+
+            listStyle = new GUIStyle()
+            {
+                stretchWidth = true,
+                stretchHeight = true,
             };
 
             listItemStyle = new GUIStyle()
@@ -162,7 +171,6 @@ namespace FlawareStudios.Translation
                     background = MakeTex(1, 1, new Color(0.12f, 0.12f, 0.12f)),
                 },
             };
-
 
             listItemKeyLayoutOptions = new GUILayoutOption[]
             {
@@ -206,29 +214,36 @@ namespace FlawareStudios.Translation
             DrawTranslationModuleSelection();
             EditorGUILayout.EndVertical();
 
-            EditorGUILayout.BeginVertical(listStyle);
+            EditorGUILayout.BeginVertical(mainStyle);
             if (translationModule != null)
             {
-                EditorGUILayout.BeginVertical(toolsStyle);
+                EditorGUILayout.BeginVertical(GUILayout.MaxHeight(TOOLS_SECTION_MAX_HEIGHT));
                 DrawFilterOptions();
+                DrawErrorReturns();
                 DrawToolkit();
-                EditorGUILayout.EndScrollView();
+                EditorGUILayout.EndVertical();
 
                 EditorGUILayout.Space(5);
+
+                EditorGUILayout.BeginVertical(listStyle, GUILayout.ExpandHeight(false));
 
                 scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
                 DrawTranslationList();
                 EditorGUILayout.EndScrollView();
+
+                GUILayout.FlexibleSpace();
+
+                EditorGUILayout.EndVertical();
             }
             EditorGUILayout.EndVertical();
 
-            if(translationModule != null)
+            if (translationModule != null)
                 EditorUtility.SetDirty(translationModule);
         }
 
         private void DrawFilterOptions()
         {
-            EditorGUILayout.LabelField("Filter Settings", boldTextStyle, GUILayout.Width(OBJECT_FIELD_WIDTH));
+            EditorGUILayout.LabelField("Filter Settings", boldTextStyle);
 
             EditorGUILayout.BeginHorizontal();
             searchText = EditorGUILayout.TextField(searchText, EditorStyles.toolbarSearchField);
@@ -238,6 +253,7 @@ namespace FlawareStudios.Translation
 
         private void DrawToolkit()
         {
+            EditorGUILayout.BeginVertical();
             EditorGUILayout.LabelField("Languages", boldTextStyle);
 
             EditorGUILayout.BeginHorizontal();
@@ -247,30 +263,49 @@ namespace FlawareStudios.Translation
             if (GUILayout.Button("Set Language Count"))
             {
                 translationModule.SetLanguageCount(languageCount);
+                GUIUtility.keyboardControl = 0;
             }
             GUI.enabled = true;
 
             if (GUILayout.Button("Optimize"))
             {
                 translationModule.SetLanguageCount(translationModule.translatedLanguages.Length, true);
+
+                translationModule.DeleteEmptyKeys();
+
+                GUIUtility.keyboardControl = 0;
             }
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("Add TextT")) translationModule.AddEmptyTranslation(ref translationModule.textTranslations);
-            if (GUILayout.Button("Add SpriteT")) translationModule.AddEmptyTranslation(ref translationModule.spriteTranslations);
-            if (GUILayout.Button("Add AudioT")) translationModule.AddEmptyTranslation(ref translationModule.audioTranslations);
+            if (GUILayout.Button("Add TextT")) { translationModule.AddEmptyTranslation(ref translationModule.textTranslations); GUIUtility.keyboardControl = 0; }
+            if (GUILayout.Button("Add SpriteT")) { translationModule.AddEmptyTranslation(ref translationModule.spriteTranslations); GUIUtility.keyboardControl = 0; }
+            if (GUILayout.Button("Add AudioT")) { translationModule.AddEmptyTranslation(ref translationModule.audioTranslations); GUIUtility.keyboardControl = 0; }
             EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndVertical();
+        }
+
+        private void DrawErrorReturns()
+        {
+            EditorGUILayout.BeginVertical();
+            EditorGUILayout.LabelField("Error Returns", boldTextStyle, GUILayout.Width(100));
+
+            EditorGUILayout.BeginHorizontal();
+
+            translationModule.errorText = EditorGUILayout.TextArea(translationModule.errorText, editableTextStyle, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
+            translationModule.errorSprite = (Sprite)EditorGUILayout.ObjectField(translationModule.errorSprite, typeof(Sprite), false, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
+            translationModule.errorAudio = (AudioClip)EditorGUILayout.ObjectField(translationModule.errorAudio, typeof(AudioClip), false, GUILayout.MinHeight(30), GUILayout.ExpandWidth(true));
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.EndVertical();
         }
 
         private void DrawTranslationList()
         {
             int translatedLanguages = translationModule.translatedLanguages.Length;
 
-            EditorGUILayout.BeginHorizontal(listItemStyle, GUILayout.Height(SHOWN_TRANSLATION_HEAD_HEIGHT));
+            EditorGUILayout.BeginHorizontal(listItemStyle, GUILayout.MinHeight(SHOWN_TRANSLATION_HEAD_HEIGHT));
             GUI.enabled = false;
             EditorGUILayout.TextField("Key", nonEditableTextStyle, listItemKeyLayoutOptions);
-            EditorGUILayout.TextField("Default", nonEditableTextStyle, listItemLayoutOptions);
             GUI.enabled = true;
             for (int i = 0; i < translatedLanguages; i++)
             {
@@ -310,12 +345,20 @@ namespace FlawareStudios.Translation
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
                 item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
-                item.defaultTranslation = EditorGUILayout.TextArea(item.defaultTranslation, editableTextStyle, listItemLayoutOptions);
 
                 for (int i = 0; i < translatedLanguages; i++)
                 {
                     item.translations[i] = EditorGUILayout.TextArea(item.translations[i], editableTextStyle, listItemLayoutOptions);
                 }
+
+                /*
+                if (GUILayout.Button("D"))
+                {
+                    TranslationCell<string> cachedItem = item;
+                    Debug.Log("Deleting " + cachedItem.key);
+                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.textTranslations, cachedItem);
+                }
+                */
 
                 EditorGUILayout.EndHorizontal();
             }
@@ -331,12 +374,20 @@ namespace FlawareStudios.Translation
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
                 item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
-                item.defaultTranslation = (Sprite)EditorGUILayout.ObjectField(item.defaultTranslation, typeof(Sprite), false, listItemLayoutOptions);
 
                 for (int i = 0; i < translatedLanguages; i++)
                 {
                     item.translations[i] = (Sprite)EditorGUILayout.ObjectField(item.translations[i], typeof(Sprite), false, listItemLayoutOptions);
                 }
+
+                /*
+                if (GUILayout.Button("D"))
+                {
+                    TranslationCell<Sprite> cachedItem = item;
+                    Debug.Log("Deleting " + cachedItem.key);
+                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.spriteTranslations, cachedItem);
+                }
+                */
 
                 EditorGUILayout.EndHorizontal();
             }
@@ -352,12 +403,20 @@ namespace FlawareStudios.Translation
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
                 item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
-                item.defaultTranslation = (AudioClip)EditorGUILayout.ObjectField(item.defaultTranslation, typeof(AudioClip), false, listItemLayoutOptions);
 
                 for (int i = 0; i < translatedLanguages; i++)
                 {
                     item.translations[i] = (AudioClip)EditorGUILayout.ObjectField(item.translations[i], typeof(AudioClip), false, listItemLayoutOptions);
                 }
+
+                /*
+                if (GUILayout.Button("D"))
+                {
+                    TranslationCell<AudioClip> cachedItem = item;
+                    Debug.Log("Deleting " + cachedItem.key);
+                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.audioTranslations, cachedItem);
+                }
+                */
 
                 EditorGUILayout.EndHorizontal();
             }

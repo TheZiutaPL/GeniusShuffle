@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,33 @@ namespace FlawareStudios.Translation
     public class TranslationModule : ScriptableObject
     {
         [HideInInspector] public string[] translatedLanguages = new string[] { "English" };
+        public int GetLanguageIndex(string language)
+        {
+            for (int i = 0; i < translatedLanguages.Length; i++)
+            {
+                if (translatedLanguages[i] == language)
+                    return i;
+            }
+
+            Debug.LogError($"{name} does not contain translation for {language} languange!");
+            return -1;
+        }
 
         public TranslationCell<string>[] textTranslations = new TranslationCell<string>[0];
+        public string errorText = "TRANSLATION_NOT_FOUND";
+        public string GetTextTranslation(string translationKey, int languageIndex) 
+            => TranslationAssetsUtility.GetTranslation(ref textTranslations, translationKey, languageIndex, errorText);
+
         public TranslationCell<Sprite>[] spriteTranslations = new TranslationCell<Sprite>[0];
+        public Sprite errorSprite;
+        public Sprite GetSpriteTranslation(string translationKey, int languageIndex)
+            => TranslationAssetsUtility.GetTranslation(ref spriteTranslations, translationKey, languageIndex, errorSprite);
+
         public TranslationCell<AudioClip>[] audioTranslations = new TranslationCell<AudioClip>[0];
+        public AudioClip errorAudio;
+        public AudioClip GetAudioTranslation(string translationKey, int languageIndex)
+            => TranslationAssetsUtility.GetTranslation(ref audioTranslations, translationKey, languageIndex, errorAudio);
+
 
         public void AddEmptyTranslation<T>(ref T[] translationArray) where T : new()
         {
@@ -19,6 +43,36 @@ namespace FlawareStudios.Translation
             translationArray[translationArray.Length - 1] = new();
 
             SetLanguageCount(translatedLanguages.Length, false);
+        }
+
+        public void DeleteEmptyKeys()
+        {
+            if (textTranslations.Length > 0)
+            {
+                for (int i = textTranslations.Length - 1; i >= 0; i--)
+                {
+                    if (string.IsNullOrWhiteSpace(textTranslations[i].key))
+                        TranslationAssetsUtility.RemoveTranslation(ref textTranslations, textTranslations[i]);
+                }
+            }
+
+            if (spriteTranslations.Length > 0)
+            {
+                for (int i = spriteTranslations.Length - 1; i >= 0; i--)
+                {
+                    if (string.IsNullOrWhiteSpace(spriteTranslations[i].key))
+                        TranslationAssetsUtility.RemoveTranslation(ref spriteTranslations, spriteTranslations[i]);
+                }
+            }
+
+            if (audioTranslations.Length > 0)
+            {
+                for (int i = audioTranslations.Length - 1; i >= 0; i--)
+                {
+                    if (string.IsNullOrWhiteSpace(audioTranslations[i].key))
+                        TranslationAssetsUtility.RemoveTranslation(ref audioTranslations, audioTranslations[i]);
+                }
+            }
         }
 
         public void SetLanguageCount(int count, bool optimize = false)
