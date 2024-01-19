@@ -62,6 +62,14 @@ public class CardSelectionManager : MonoBehaviour
 
     private static IEnumerator MatchCoroutine(bool success)
     {
+        if (success)
+        {
+            yield return new WaitForSeconds(instance.matchWaitTime);
+
+            for (int i = 0; i < cardSelection.Length; i++)
+                cardSelection[i].successfullMatchParticles.Play();
+        }
+
         yield return new WaitForSeconds(instance.matchWaitTime);
 
         instance.interactionManager.EnableInteractions(false);

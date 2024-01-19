@@ -14,6 +14,7 @@ public class CardObject : MonoBehaviour
     private const string CARD_FLIP_KEY = "flip";
 
     [SerializeField] private SpriteRenderer cardSpriteRenderer;
+    public ParticleSystem successfullMatchParticles;
 
     [Header("Sounds")]
     [SerializeField] private AudioClip cardHoverClip;

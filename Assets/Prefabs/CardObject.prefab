@@ -179,6 +179,7 @@ MonoBehaviour:
   cardAnimator: {fileID: 101552489136177557}
   realCardTransform: {fileID: 1897248944222835405}
   cardSpriteRenderer: {fileID: 6207463962317821164}
+  successfullMatchParticles: {fileID: 6907796910765131134}
   cardHoverClip: {fileID: 8300000, guid: 0b0301dafa66de84887ea72e264027bb, type: 3}
   cardUnHoverClip: {fileID: 8300000, guid: 59150dc6aa434b946af1a83683744471, type: 3}
   cardFlipClip: {fileID: 8300000, guid: 4cf2201036979f24e995fab54215539f, type: 3}
@@ -372,5 +373,86 @@ Transform:
   m_Children:
   - {fileID: 1811519428002455805}
   - {fileID: 2410859969109355265}
+  - {fileID: 1697106333132084255}
   m_Father: {fileID: 1897248944222835405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8878160150641968644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6398791108735151133}
+    m_Modifications:
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141626100013380024, guid: 0e30198e7b68ff8418906fa91c1d4069,
+        type: 3}
+      propertyPath: m_Name
+      value: MatchSuccessParticles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e30198e7b68ff8418906fa91c1d4069, type: 3}
+--- !u!4 &1697106333132084255 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7834251974188749339, guid: 0e30198e7b68ff8418906fa91c1d4069,
+    type: 3}
+  m_PrefabInstance: {fileID: 8878160150641968644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6907796910765131134 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2659625369366774650, guid: 0e30198e7b68ff8418906fa91c1d4069,
+    type: 3}
+  m_PrefabInstance: {fileID: 8878160150641968644}
+  m_PrefabAsset: {fileID: 0}
