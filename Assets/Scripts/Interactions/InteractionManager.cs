@@ -45,8 +45,10 @@ public class InteractionManager : MonoBehaviour
 
             if (!interaction.isInteractable) interaction = null;
 
+            interactionHitPoint = hit.point;
+
             if (interaction != currentTarget)
-                SwitchTarget(interaction, hit.point);
+                SwitchTarget(interaction);
         }
         else if (currentTarget != null)
             SwitchTarget();
@@ -60,7 +62,7 @@ public class InteractionManager : MonoBehaviour
         currentTarget.ClickAction(interactionHitPoint);
     }
 
-    private void SwitchTarget(InteractionHandler interaction = null, Vector3 hitPoint = new Vector3())
+    private void SwitchTarget(InteractionHandler interaction = null)
     {
         if (currentTarget != null)
             currentTarget.HoverAction(false);
@@ -68,7 +70,6 @@ public class InteractionManager : MonoBehaviour
         if (interaction != null)
             interaction.HoverAction(true);
 
-        interactionHitPoint = hitPoint;
         currentTarget = interaction;
     }
 }
