@@ -11,6 +11,7 @@ public class MenuSlider : InteractionHandler
     [SerializeField] float step = 0.1f;
     public float minValue = 0f;
     public float maxValue = 1f;
+    [SerializeField] private float displayedValueMultiplier = 100;
 
     [SerializeField] TMP_Text displayText;
 
@@ -45,7 +46,7 @@ public class MenuSlider : InteractionHandler
         onValueChanged?.Invoke(value);
 
         if (displayText != null)
-            displayText.text = value.ToString(); // TODO: Some animations
+            displayText.text = $"{value * displayedValueMultiplier}%"; // TODO: Some animations
 
         if (sliderValueBar != null)
             sliderValueBar.localScale = new Vector3(value / maxValue, sliderValueBar.localScale.y, sliderValueBar.localScale.z);

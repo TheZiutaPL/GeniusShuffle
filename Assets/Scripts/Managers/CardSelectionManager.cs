@@ -13,6 +13,8 @@ public class CardSelectionManager : MonoBehaviour
 
     [SerializeField] private float matchWaitTime = .5f;
 
+    private bool playerMatched;
+
     private void Awake()
     {
         if (instance == null)
@@ -32,7 +34,7 @@ public class CardSelectionManager : MonoBehaviour
 
     public static void AddCardToSelection(CardObject cardObject)
     {
-        if (cardObject == null)
+        if (cardObject == null && !instance.playerMatched)
             return;
 
         for (int i = 0; i < cardSelection.Length; i++)
@@ -47,6 +49,9 @@ public class CardSelectionManager : MonoBehaviour
             if (i < cardSelection.Length - 1)
                 return;
         }
+
+        if (instance.playerMatched)
+            return;
 
         //Check for winning condition (match)
         bool playerMatchedSuccessfully = IsCardInSelection(cardSelection[0].matchingCard);
@@ -71,6 +76,8 @@ public class CardSelectionManager : MonoBehaviour
 
     private static IEnumerator MatchCoroutine(bool success)
     {
+        instance.playerMatched = true;
+
         yield return new WaitForSeconds(instance.matchWaitTime);
 
         if (success)
@@ -104,5 +111,6 @@ public class CardSelectionManager : MonoBehaviour
         instance.nextTurnButton.gameObject.SetActive(false);
 
         ClearSelection();
+        instance.playerMatched = false;
     }
 }
