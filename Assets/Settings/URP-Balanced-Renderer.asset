@@ -104,7 +104,7 @@ MonoBehaviour:
     passOperation: 1
     failOperation: 4
     zFailOperation: 6
-  m_ShadowTransparentReceive: 1
+  m_ShadowTransparentReceive: 0
   m_RenderingMode: 2
   m_DepthPrimingMode: 0
   m_CopyDepthMode: 0

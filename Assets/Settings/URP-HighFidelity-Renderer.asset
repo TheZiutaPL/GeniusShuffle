@@ -55,8 +55,8 @@ MonoBehaviour:
   - {fileID: -1878332245247344467}
   - {fileID: 6894640792351146717}
   m_RendererFeatureMap: adc0de57c6d2eee5dd02027245afae5f
-  m_UseNativeRenderPass: 1
-  postProcessData: {fileID: 0}
+  m_UseNativeRenderPass: 0
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
     zFailOperation: 0
   m_ShadowTransparentReceive: 0
   m_RenderingMode: 0
-  m_DepthPrimingMode: 1
+  m_DepthPrimingMode: 0
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 1
   m_IntermediateTextureMode: 0
@@ -111,6 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   passMaterial: {fileID: 2100000, guid: 9cf080552d0127a408ab1c6ecce6198b, type: 2}
-  injectionPoint: 600
-  requirements: -9
+  injectionPoint: 450
+  requirements: 7
   passIndex: 0
