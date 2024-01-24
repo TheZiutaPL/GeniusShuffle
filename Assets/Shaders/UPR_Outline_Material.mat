@@ -98,13 +98,12 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _B_W_Strenght: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorThreshold: 10
+    - _ColorThreshold: 0.57
     - _Cull: 2
     - _Cutoff: 0.5
     - _Deph_Angle: 0.01
@@ -121,7 +120,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NormalThreshold: 1.39
+    - _NormalThreshold: 0.77
     - _OVERLAY: 1
     - _OcclusionStrength: 1
     - _Outline_Strenght: 1
@@ -139,7 +138,6 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _B_W_Color: {r: 0.9339623, g: 0.8756483, b: 0.621173, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
