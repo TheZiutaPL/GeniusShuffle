@@ -98,6 +98,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _B_W_Strenght: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -123,7 +124,7 @@ Material:
     - _NormalThreshold: 0.77
     - _OVERLAY: 1
     - _OcclusionStrength: 1
-    - _Outline_Strenght: 1
+    - _Outline_Strenght: 0
     - _Overlay_Strenght: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
@@ -138,6 +139,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _B_W_Color: {r: 0.9716981, g: 0.9513853, b: 0.61877, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
