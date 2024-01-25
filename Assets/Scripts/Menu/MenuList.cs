@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MenuList : MonoBehaviour
 {
     public int currentOption;
     public List<string> allOptions;
 
+    public UnityEvent<int> onValueChanged;
     [SerializeField] TMP_Text displayText;
 
     public void NextOption() => SetOption(currentOption < allOptions.Count - 1 ? ++currentOption : 0);
@@ -16,6 +18,8 @@ public class MenuList : MonoBehaviour
     public void SetOption(int option)
     {
         currentOption = Mathf.Clamp(option, 0, allOptions.Count - 1);
+
+        onValueChanged?.Invoke(currentOption);
 
         if (displayText != null)
             displayText.text = allOptions[currentOption]; // TODO: Some animations

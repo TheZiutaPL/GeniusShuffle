@@ -9,6 +9,8 @@ using TMPro;
 
 public class Settings : MonoBehaviour
 {
+    [SerializeField] bool saveOnChange = true;
+
     [Header("Window settings")]
     [SerializeField] private MenuList resolutionList;
     [SerializeField] private MenuToggle fullscreenToggle;
@@ -24,10 +26,19 @@ public class Settings : MonoBehaviour
     {
         // Window settings
         if (fullscreenToggle != null)
+        {
             fullscreenToggle.SetStatus(Screen.fullScreen);
+            if (saveOnChange)
+                fullscreenToggle.onValueChanged.AddListener(_ => SaveChanges()); 
+                // This is done in such a weird way so it accepts a function with different parameters
+        }
 
         if (resolutionList != null)
+        {
             LoadResolutions();
+            if (saveOnChange)
+                resolutionList.onValueChanged.AddListener(_ => SaveChanges());
+        }
 
         // Audio settings
         if (masterVolumeSlider != null)
@@ -46,6 +57,13 @@ public class Settings : MonoBehaviour
 
             sfxVolumeSlider.onValueChanged.AddListener(ChangeSFXVolume);
             sfxVolumeSlider.minValue = 0.001f;
+
+            if (saveOnChange)
+            {
+                masterVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+                musicVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+                sfxVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+            }
         }
     }
 
