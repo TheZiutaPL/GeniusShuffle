@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 // Allows selection of values between minValue and maxValue in the form of a slider
 
@@ -30,6 +31,12 @@ public class MenuSlider : InteractionHandler
     [SerializeField] Transform sliderValueTransform; // The part that's scaled/moved based on the value
     [SerializeField] Transform startPoint;
     [SerializeField] Transform endPoint; // The position where the slider's value should be the highest - used to calculate slider's direction
+
+    public override void HeldDownAction(Vector3 hitPoint)
+    {
+        ClickAction(hitPoint);
+        base.HeldDownAction(hitPoint);
+    }
 
     public override void ClickAction(Vector3 hitPoint)
     {
