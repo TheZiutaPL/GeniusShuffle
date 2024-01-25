@@ -53,14 +53,16 @@ public class MenuSlider : InteractionHandler
 
     public void SetValue(float newValue)
     {
-        value = Mathf.Round(Mathf.Clamp(newValue, minValue, maxValue) * 100f) / 100f;
+        value = Mathf.Round(newValue * 100f) / 100f;
         if (snapToStep)
             value = Mathf.Round(value / step) * step;
+        value = Mathf.Clamp(value, minValue, maxValue);
 
         onValueChanged?.Invoke(value);
 
         if (displayText != null)
-            displayText.text = $"{value * displayedValueMultiplier}";
+            displayText.text = $"{Mathf.Round(value * 100f) / 100f * displayedValueMultiplier}"; 
+            // This has to be rounded again so min or max value don't affect the display
 
         if (sliderValueTransform != null)
         {
