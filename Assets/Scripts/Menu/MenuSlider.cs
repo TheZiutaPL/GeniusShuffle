@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 // Allows selection of values between minValue and maxValue in the form of a slider
 
-public class MenuSlider : InteractionHandler
+public class MenuSlider : MenuElement
 {
     [SerializeField] float step = 0.1f;
     public float minValue = 0f;
@@ -51,12 +51,17 @@ public class MenuSlider : InteractionHandler
     public void Raise() => SetValue(value + step);
     public void Lower() => SetValue(value - step);
 
-    public void SetValue(float newValue)
+    public void SetValue(float newValue, bool playSound)
     {
-        value = Mathf.Round(newValue * 100f) / 100f;
+        newValue = Mathf.Round(newValue * 100f) / 100f;
         if (snapToStep)
-            value = Mathf.Round(value / step) * step;
-        value = Mathf.Clamp(value, minValue, maxValue);
+            newValue = Mathf.Round(newValue / step) * step;
+        newValue = Mathf.Clamp(newValue, minValue, maxValue);
+
+        if (value != newValue && playSound)
+            PlayClickSound();
+
+        value = newValue;
 
         onValueChanged?.Invoke(value);
 
@@ -71,5 +76,11 @@ public class MenuSlider : InteractionHandler
             else
                 sliderValueTransform.position = Vector3.Lerp(startPoint.position, endPoint.position, value / maxValue);
         }
+    }
+
+    // For use in UnityEvents set through the inspector
+    public void SetValue(float newValue)
+    {
+        SetValue(newValue, true);
     }
 }

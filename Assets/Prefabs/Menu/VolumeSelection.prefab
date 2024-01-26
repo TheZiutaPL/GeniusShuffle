@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5014755475400764713}
+  - component: {fileID: 7366874250503608985}
   m_Layer: 0
   m_Name: VolumeSelection
   m_TagString: Untagged
@@ -32,6 +33,103 @@ Transform:
   - {fileID: 4058256490603882523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7366874250503608985
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141148305854928916}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1331557690023474776, guid: bab13cdf53d915248a80f35c4f72ad20,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 90771d7e4d3d9f1418fcafec865b479b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1820805154717533875
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,9 +181,17 @@ MonoBehaviour:
   clickActions:
     m_PersistentCalls:
       m_Calls: []
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  onHover:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  onUnhover: []
+  onClick:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
@@ -172,9 +278,17 @@ MonoBehaviour:
   clickActions:
     m_PersistentCalls:
       m_Calls: []
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  onHover:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  onUnhover: []
+  onClick:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
@@ -325,9 +439,17 @@ MonoBehaviour:
   clickActions:
     m_PersistentCalls:
       m_Calls: []
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  onHover:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  onUnhover: []
+  onClick:
+  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
@@ -499,10 +621,80 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5014755475400764713}
     m_Modifications:
+    - target: {fileID: 1601913412621671097, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.20392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1601913412621671097, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 872415232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393537163732959084, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393537163732959084, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393537163732959084, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393537163732959084, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440240693619750855, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440240693619750855, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440240693619750855, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3440240693619750855, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 3838363983190554275, guid: 190fe715e8d73184eac95f3b2261b67a,
         type: 3}
       propertyPath: m_Name
       value: Radio
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372982612905686625, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372982612905686625, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372982612905686625, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372982612905686625, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 5443289958122907643, guid: 190fe715e8d73184eac95f3b2261b67a,
         type: 3}
@@ -553,6 +745,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819796420378851041, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.20392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819796420378851041, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 872415232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948121183989540630, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0.20392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948121183989540630, guid: 190fe715e8d73184eac95f3b2261b67a,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 872415232
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

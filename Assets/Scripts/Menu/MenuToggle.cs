@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 // A simple on/off toggle button
 
-public class MenuToggle : InteractionHandler
+public class MenuToggle : MenuElement
 {
     public bool isOn = false;
     [SerializeField] GameObject display;
@@ -30,6 +30,7 @@ public class MenuToggle : InteractionHandler
         this.isOn = isOn;
 
         onValueChanged?.Invoke(isOn);
+        PlayClickSound();
 
         display?.SetActive(isOn);
         if (onPosition != null && onPosition != null)

@@ -22,7 +22,7 @@ public class Settings : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     private float[] savedValues; // This is needed to restore previous settings when current ones are not applied
 
-    private void Awake()
+    private void Start()
     {
         // Window settings
         if (fullscreenToggle != null)
@@ -43,9 +43,9 @@ public class Settings : MonoBehaviour
         // Audio settings
         if (masterVolumeSlider != null)
         {
-            masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f));
-            musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f));
-            sfxVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f));
+            masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f), false);
+            musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f), false);
+            sfxVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f), false);
 
             savedValues = new float[3] { masterVolumeSlider.value, musicVolumeSlider.value, sfxVolumeSlider.value };
 
