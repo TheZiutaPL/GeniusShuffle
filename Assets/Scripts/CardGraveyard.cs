@@ -59,10 +59,11 @@ public class CardGraveyard : MonoBehaviour
     {
         cardGraveyard.Clear();
 
-        graveyardInteraction.isInteractable = false;
-
         graveyardAnimator.Play(GRAVEYARD_CLEAR_ANIM);
     }
+
+    public void EnableGraveyard() => graveyardInteraction.isInteractable = true;
+    public void DisableGraveyard() => graveyardInteraction.isInteractable = false;
 
     IEnumerator GoToGraveyard(Transform card)
     {
