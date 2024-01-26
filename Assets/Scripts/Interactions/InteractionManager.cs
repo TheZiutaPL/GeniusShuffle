@@ -51,7 +51,7 @@ public class InteractionManager : MonoBehaviour
                 SwitchTarget(interaction);
 
             if (Pointer.current.press.isPressed)
-                currentTarget.HeldDownAction(interactionHitPoint);
+                currentTarget?.HeldDownAction(interactionHitPoint);
         }
         else if (currentTarget != null)
             SwitchTarget();

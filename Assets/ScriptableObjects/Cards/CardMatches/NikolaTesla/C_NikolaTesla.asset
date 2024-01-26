@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
-  m_Name: C_ThomasEdison
+  m_Name: C_NikolaTesla
   m_EditorClassIdentifier: 
-  cardName: Thomas Edison
-  cardDescription: Edison desc
-  cardSprite: {fileID: 21300000, guid: fb2b020f3a854a84f990b0ba88158d2d, type: 3}
+  cardName: Nikola Tesla
+  translateName: 0
+  cardDescription: CARD_NIKOLATESLA_C_DESC
+  translateDescription: 1
+  cardSprite: {fileID: 21300000, guid: 1dd8627fc0c64514c951f8b1b3260f5e, type: 3}
