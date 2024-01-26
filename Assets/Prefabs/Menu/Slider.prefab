@@ -90,13 +90,16 @@ MonoBehaviour:
   step: 0.1
   minValue: 0
   maxValue: 1
+  displayedValueMultiplier: 100
   displayText: {fileID: 4821795184911850619}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   value: 0
+  mode: 0
   snapToStep: 1
-  sliderValueBar: {fileID: 4689256120221595460}
+  sliderValueTransform: {fileID: 4689256120221595460}
+  startPoint: {fileID: 6047474795190687750}
   endPoint: {fileID: 8298215717314343292}
 --- !u!65 &8925653101973616638
 BoxCollider:
@@ -460,6 +463,7 @@ Transform:
   m_Children:
   - {fileID: 7393664223599121895}
   - {fileID: 4689256120221595460}
+  - {fileID: 6047474795190687750}
   - {fileID: 8298215717314343292}
   m_Father: {fileID: 7527063504702879541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -539,6 +543,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.475, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1794998430702707244}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5596178843555044132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6047474795190687750}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6047474795190687750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596178843555044132}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.475, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

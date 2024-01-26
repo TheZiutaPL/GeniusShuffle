@@ -9,6 +9,8 @@ using TMPro;
 
 public class Settings : MonoBehaviour
 {
+    [SerializeField] bool saveOnChange = true;
+
     [Header("Window settings")]
     [SerializeField] private MenuList resolutionList;
     [SerializeField] private MenuToggle fullscreenToggle;
@@ -20,21 +22,30 @@ public class Settings : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     private float[] savedValues; // This is needed to restore previous settings when current ones are not applied
 
-    private void Awake()
+    private void Start()
     {
         // Window settings
         if (fullscreenToggle != null)
+        {
             fullscreenToggle.SetStatus(Screen.fullScreen);
+            if (saveOnChange)
+                fullscreenToggle.onValueChanged.AddListener(_ => SaveChanges()); 
+                // This is done in such a weird way so it accepts a function with different parameters
+        }
 
         if (resolutionList != null)
+        {
             LoadResolutions();
+            if (saveOnChange)
+                resolutionList.onValueChanged.AddListener(_ => SaveChanges());
+        }
 
         // Audio settings
         if (masterVolumeSlider != null)
         {
-            masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f));
-            musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f));
-            sfxVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f));
+            masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f), false);
+            musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f), false);
+            sfxVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f), false);
 
             savedValues = new float[3] { masterVolumeSlider.value, musicVolumeSlider.value, sfxVolumeSlider.value };
 
@@ -46,6 +57,13 @@ public class Settings : MonoBehaviour
 
             sfxVolumeSlider.onValueChanged.AddListener(ChangeSFXVolume);
             sfxVolumeSlider.minValue = 0.001f;
+
+            if (saveOnChange)
+            {
+                masterVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+                musicVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+                sfxVolumeSlider.onValueChanged.AddListener(_ => SaveChanges());
+            }
         }
     }
 

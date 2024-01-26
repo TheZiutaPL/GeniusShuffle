@@ -5,7 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card Data", menuName = "Scriptable Objects/Cards/Card Data")]
 public class CardData : ScriptableObject
 {
-    public string cardName;
-    public string cardDescription;
+    [SerializeField] private string cardName;
+    [SerializeField] private bool translateName = false;
+    public string GetCardName() => translateName ? TranslationHandler.GetTextTranslation(cardName) : cardName;
+
+    [SerializeField] private string cardDescription;
+    [SerializeField] private bool translateDescription = true;
+    public string GetCardDescription() => translateDescription ? TranslationHandler.GetTextTranslation(cardDescription) : cardDescription;
+
     public Sprite cardSprite;
 }

@@ -22,6 +22,14 @@ public class CardGraveyard : MonoBehaviour
         graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
     }
 
+    public void OpenGraveyardInspection()
+    {
+        if (cardGraveyard.Count == 0)
+            return;
+
+        MultiCardInspection.ShowMultiCardInspection(cardGraveyard.ToArray());
+    }
+
     private void AddGraveyardMeshSize()
     {
         graveyardMeshScale += sizePerCard;
@@ -51,10 +59,11 @@ public class CardGraveyard : MonoBehaviour
     {
         cardGraveyard.Clear();
 
-        graveyardInteraction.isInteractable = false;
-
         graveyardAnimator.Play(GRAVEYARD_CLEAR_ANIM);
     }
+
+    public void EnableGraveyard() => graveyardInteraction.isInteractable = true;
+    public void DisableGraveyard() => graveyardInteraction.isInteractable = false;
 
     IEnumerator GoToGraveyard(Transform card)
     {
