@@ -78,7 +78,7 @@ public class CardSelectionManager : MonoBehaviour
     {
         instance.playerMatched = true;
 
-        yield return new WaitForSeconds(instance.matchWaitTime);
+        yield return new WaitForSeconds(instance.matchWaitTime);        
 
         if (success)
             for (int i = 0; i < cardSelection.Length; i++)

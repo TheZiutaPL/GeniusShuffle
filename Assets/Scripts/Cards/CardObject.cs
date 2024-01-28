@@ -14,6 +14,7 @@ public class CardObject : MonoBehaviour
     private const string CARD_FLIP_KEY = "flip";
 
     [SerializeField] private SpriteRenderer cardSpriteRenderer;
+    [SerializeField] private ParticleSystem selectionParticles;
     public ParticleSystem successfullMatchParticles;
 
     [Header("Sounds")]
@@ -59,6 +60,11 @@ public class CardObject : MonoBehaviour
         cardAnimator.SetBool(CARD_HOVER_KEY, hover);
 
         AudioManager.PlaySound(hover ? cardHoverClip : cardUnHoverClip);
+
+        if (hover)
+            selectionParticles.Play();
+        else
+            selectionParticles.Stop();
     }
 
     public void SetFlip(bool flip)
