@@ -194,6 +194,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 73fe9d806674c3a4da626b90c37e8f62, type: 2}
+  - {fileID: 2100000, guid: 3ce33dba4f74fec4784806cd8ec61265, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -327,7 +328,7 @@ MonoBehaviour:
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
-    m_SubmeshIndex: 0
+    m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
     m_TextureGroup: -1
@@ -427,7 +428,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 791417387}
-  m_VersionIndex: 333
+  m_VersionIndex: 337
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -1358,7 +1359,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7387fd5a778f1de4e984bf057415386e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7497
+      value: 0.8131
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7387fd5a778f1de4e984bf057415386e,
         type: 3}
@@ -1400,6 +1401,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.41553232
+      objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.8342743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32437173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.16156198
+      objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -127.046005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8667326687206900072, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 42.492996
+      objectReference: {fileID: 0}
     - target: {fileID: -6652725513331149018, guid: 7387fd5a778f1de4e984bf057415386e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1409,7 +1440,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3277b8a168488644fa01733026e6ce32, type: 2}
+      objectReference: {fileID: 2100000, guid: e66b4bf911e727746a161d2dda10fd96, type: 2}
     - target: {fileID: 919132149155446097, guid: 7387fd5a778f1de4e984bf057415386e,
         type: 3}
       propertyPath: m_Name
@@ -1445,6 +1476,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 109.093
       objectReference: {fileID: 0}
+    - target: {fileID: 8449996119470504636, guid: 7387fd5a778f1de4e984bf057415386e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3277b8a168488644fa01733026e6ce32, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2326,6 +2362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 1
   clickActions:
+    m_PersistentCalls:
+      m_Calls: []
+  heldDownActions:
     m_PersistentCalls:
       m_Calls: []
   hoverActions:
@@ -7244,14 +7283,24 @@ Mesh:
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 36
+    indexCount: 30
     topology: 0
     baseVertex: 0
     firstVertex: 0
-    vertexCount: 24
+    vertexCount: 20
     localAABB:
       m_Center: {x: -0.5, y: 2, z: 1.5}
       m_Extent: {x: 3.5, y: 2, z: 4.5}
+  - serializedVersion: 2
+    firstByte: 60
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 20
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: -0.5, y: 0, z: 1.5}
+      m_Extent: {x: 3.5, y: 0, z: 4.5}
   m_Shapes:
     vertices: []
     shapes: []
@@ -8182,6 +8231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd35c15a791ddb4d9cfa8c867e5ab1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saveOnChange: 1
   resolutionList: {fileID: 1532023702}
   fullscreenToggle: {fileID: 881357869}
   masterVolumeSlider: {fileID: 1756057504}
@@ -9005,6 +9055,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
@@ -9694,6 +9747,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
@@ -10420,6 +10476,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
@@ -10715,6 +10774,7 @@ GameObject:
   - component: {fileID: 1567774658}
   - component: {fileID: 1567774660}
   - component: {fileID: 1567774659}
+  - component: {fileID: 1567774661}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -10787,6 +10847,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567774657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1567774661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567774657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1592983790
 GameObject:
   m_ObjectHideFlags: 0
@@ -10922,6 +11003,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
@@ -11066,6 +11150,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
@@ -11806,6 +11893,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
