@@ -7,7 +7,7 @@ public class UICard : MonoBehaviour
 {
     private CardData cardData;
 
-    [SerializeField] private Image cardImage;
+    [SerializeField] private RawImage cardImage;
 
     public void SetCardData(CardData cardData)
     {
@@ -23,6 +23,6 @@ public class UICard : MonoBehaviour
 
     private void RefreshDisplay()
     {
-        cardImage.sprite = cardData.cardSprite;
+        cardImage.texture = cardData.cardSprite;
     }
 }

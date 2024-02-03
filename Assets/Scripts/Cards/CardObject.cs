@@ -13,9 +13,13 @@ public class CardObject : MonoBehaviour
     private const string CARD_HOVER_KEY = "hover";
     private const string CARD_FLIP_KEY = "flip";
 
-    [SerializeField] private SpriteRenderer cardSpriteRenderer;
     [SerializeField] private ParticleSystem selectionParticles;
     public ParticleSystem successfullMatchParticles;
+
+    [Header("Display")]
+    [SerializeField] private MeshRenderer cardMeshRenderer;
+    [SerializeField] private int faceMaterialIndex = 2;
+    [SerializeField] private string textureVariableName = "_CardFace";
 
     [Header("Sounds")]
     [SerializeField] private AudioClip cardHoverClip;
@@ -36,7 +40,7 @@ public class CardObject : MonoBehaviour
 
     public void RefreshCardDisplay()
     {
-        cardSpriteRenderer.sprite = cardData.cardSprite;
+        cardMeshRenderer.materials[faceMaterialIndex].SetTexture(textureVariableName, cardData.cardSprite);
     }
 
     public void ClickAction()
