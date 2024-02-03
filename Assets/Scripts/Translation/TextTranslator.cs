@@ -2,23 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using FlawareStudios.Translation;
 
-[RequireComponent(typeof(TMP_Text))]
-public class TextTranslator : MonoBehaviour
+namespace FlawareStudios.Translation
 {
-    private TMP_Text textHolder;
-    [SerializeField] private string translationKey;
-
-    private void Awake()
+    [RequireComponent(typeof(TMP_Text))]
+    public class TextTranslator : MonoBehaviour
     {
-        textHolder = GetComponent<TMP_Text>();
-    }
+        private TMP_Text textHolder;
+        [SerializeField] private string translationKey;
+        [SerializeField] private bool subscribeToHandler;
 
-    private void Start()
-    {
-        GetTranslation();
-    }
+        private void Awake()
+        {
+            textHolder = GetComponent<TMP_Text>();
+        }
 
-    private void GetTranslation() => textHolder.SetText(TranslationHandler.GetTextTranslation(translationKey));
+        private void OnEnable() => TranslationHandler.SubscribeTranslator(GetTranslation);
+        private void OnDisable() => TranslationHandler.UnsubscribeTranslator(GetTranslation);
+
+        private void Start()
+        {
+            GetTranslation();
+        }
+
+        private void GetTranslation() => textHolder.SetText(TranslationHandler.GetTextTranslation(translationKey));
+    }
 }

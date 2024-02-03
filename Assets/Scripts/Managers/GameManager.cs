@@ -9,10 +9,16 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
+    public void SetCardPairsCount(int newCardPairs) => cardPairsCount = newCardPairs;
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
     [SerializeField] private CardCollection cardCollection;
+    public void SetStartCollection(CardCollection newCardCollection) 
+    { 
+        cardCollection = newCardCollection;
+        ClearCards();
+    }
     [SerializeField] private float cardScale = .2f;
 
     [Header("Table Setup")]
