@@ -34,7 +34,7 @@ public class CardGraveyard : MonoBehaviour
     {
         graveyardMeshScale += sizePerCard;
 
-        graveyardMeshTransform.localScale = new Vector3(1, graveyardMeshScale, 1);
+        graveyardMeshTransform.localScale = new Vector3(graveyardMeshTransform.localScale.x, graveyardMeshTransform.localScale.y, graveyardMeshScale);
 
         graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
     }
