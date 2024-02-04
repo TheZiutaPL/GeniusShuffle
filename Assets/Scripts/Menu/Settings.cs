@@ -150,4 +150,9 @@ public class Settings : MonoBehaviour
     private void ChangeMusicVolume(float volume) => audioMixer.SetFloat(AudioManager.MUSIC_KEY, Mathf.Log10(volume) * 20);
     private void ChangeSFXVolume(float volume) => audioMixer.SetFloat(AudioManager.SFX_KEY, Mathf.Log10(volume) * 20);
     #endregion
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
