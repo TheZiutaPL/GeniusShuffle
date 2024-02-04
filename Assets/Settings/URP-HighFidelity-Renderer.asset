@@ -85,8 +85,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_DefaultStencilState:
-    overrideStencilState: 0
-    stencilReference: 0
+    overrideStencilState: 1
+    stencilReference: 1
     stencilCompareFunction: 8
     passOperation: 2
     failOperation: 0
@@ -111,6 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   passMaterial: {fileID: 2100000, guid: 9cf080552d0127a408ab1c6ecce6198b, type: 2}
-  injectionPoint: 450
-  requirements: 7
-  passIndex: 0
+  injectionPoint: 550
+  requirements: -9
+  passIndex: 1
