@@ -1,28 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 namespace FlawareStudios.Translation
 {
-    [RequireComponent(typeof(TMP_Text))]
-    public class TextTranslator : MonoBehaviour
+    [RequireComponent(typeof(SpriteRenderer))]
+    public class SpriteTranslator : MonoBehaviour
     {
-        private TMP_Text textHolder;
+        private SpriteRenderer spriteRenderer;
         [SerializeField] private string translationKey;
         [SerializeField] private bool subscribeToHandler;
 
         private void Awake()
         {
-            textHolder = GetComponent<TMP_Text>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        private void OnEnable()
+        private void OnEnable() 
         {
             if (!subscribeToHandler)
                 return;
 
-            TranslationHandler.SubscribeTranslator(GetTranslation);
+            TranslationHandler.SubscribeTranslator(GetTranslation); 
         }
 
         private void OnDisable()
@@ -38,6 +37,6 @@ namespace FlawareStudios.Translation
             GetTranslation();
         }
 
-        private void GetTranslation() => textHolder.SetText(TranslationHandler.GetTextTranslation(translationKey));
+        private void GetTranslation() => spriteRenderer.sprite = TranslationHandler.GetSpriteTranslation(translationKey);
     }
 }

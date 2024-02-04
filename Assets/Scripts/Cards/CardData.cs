@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FlawareStudios.Translation;
 
 [CreateAssetMenu(fileName = "New Card Data", menuName = "Scriptable Objects/Cards/Card Data")]
 public class CardData : ScriptableObject
