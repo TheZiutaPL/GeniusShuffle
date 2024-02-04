@@ -188,10 +188,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onHover:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
   onClick:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
@@ -285,10 +285,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onHover:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
   onClick:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
@@ -446,10 +446,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onHover:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
   onClick:
-  - {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
   step: 0.1
   minValue: 0
   maxValue: 1
