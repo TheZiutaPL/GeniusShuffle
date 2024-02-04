@@ -12,14 +12,20 @@ public class CardGraveyard : MonoBehaviour
     [Header("Visuals")]
     [SerializeField] private Animator graveyardAnimator;
     [SerializeField] private Transform graveyardMeshTransform;
+    [SerializeField] private float startSize = 0.1f;
     [SerializeField] private float sizePerCard = 0.1f;
     private float graveyardMeshScale = 0;
 
     private const string GRAVEYARD_CLEAR_ANIM = "EmptyGraveyard";
 
+    [SerializeField] private float indentYOffsetAmount = 0.01f;
+    private int cardYOffsetIndent;
+
     private void Awake()
     {
         graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
+
+        SetGraveyardScale();
     }
 
     public void OpenGraveyardInspection()
@@ -39,9 +45,12 @@ public class CardGraveyard : MonoBehaviour
         graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
     }
 
-    private void SetGraveyardScale(float scale = 0)
+    private void SetGraveyardScale(float scale = -1)
     {
+        if (scale < 0) scale = startSize;
+
         graveyardMeshScale = scale;
+        graveyardMeshTransform.localScale = new Vector3(graveyardMeshTransform.localScale.x, graveyardMeshTransform.localScale.y, graveyardMeshScale);
 
         graveyardMeshTransform.gameObject.SetActive(graveyardMeshScale != 0);
     }
@@ -67,14 +76,18 @@ public class CardGraveyard : MonoBehaviour
 
     IEnumerator GoToGraveyard(Transform card)
     {
+        float indentYOffset = cardYOffsetIndent * indentYOffsetAmount;
+        cardYOffsetIndent++;
+
         Vector3 startPos = card.position;
+        Vector3 endPos = graveyardMeshTransform.position + new Vector3(0, indentYOffset, 0);
 
         float timer = 0;
         while(timer < travelTime)
         {
             timer += Time.deltaTime;
 
-            card.position = Vector3.Lerp(startPos, transform.position, cardTravelCurve.Evaluate(timer / travelTime));
+            card.position = Vector3.Lerp(startPos, endPos, cardTravelCurve.Evaluate(timer / travelTime));
 
             yield return null;
         }
@@ -82,5 +95,6 @@ public class CardGraveyard : MonoBehaviour
         AddGraveyardMeshSize();
 
         Destroy(card.gameObject);
+        cardYOffsetIndent--;
     }
 }

@@ -110,7 +110,9 @@ MonoBehaviour:
   graveyardInteraction: {fileID: 2148203239330999684}
   graveyardAnimator: {fileID: 6884567861116990790}
   graveyardMeshTransform: {fileID: 6921189896584973407}
+  startSize: 0.02
   sizePerCard: 0.0075
+  indentYOffsetAmount: 0.0075
 --- !u!95 &6884567861116990790
 Animator:
   serializedVersion: 5

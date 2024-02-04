@@ -122,7 +122,7 @@ public class MultiCardInspection : MonoBehaviour
 
         descriptionText.pageToDisplay = currentPage;
 
-        leftPageButton.interactable = currentPage > 0;
+        leftPageButton.interactable = currentPage > 1;
         rightPageButton.interactable = currentPage < pageCount;
     }
 
