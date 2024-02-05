@@ -47,7 +47,7 @@ public class MultiCardInspection : MonoBehaviour
         rightPageButton.onClick.AddListener(NextPage);
     }
 
-    public static void ShowMultiCardInspection(CardData[] cardDatas)
+    public static void ShowMultiCardInspection((CardData, Color, Color)[] cardDatas)
     {
         instance.UnselectDisplayedCard();
         instance.scrollRect.normalizedPosition = new Vector2(0, 0);
@@ -59,13 +59,15 @@ public class MultiCardInspection : MonoBehaviour
         int index = 0;
         while (index < cardDatas.Length)
         {
+            (CardData, Color, Color)  temp = cardDatas[index];
+
             if (index < instance.uiCardObjects.Count)
             {
                 instance.uiCardObjects[index].gameObject.SetActive(true);
-                instance.uiCardObjects[index].SetCardData(cardDatas[index]);
+                instance.uiCardObjects[index].SetCardData(temp.Item1, temp.Item2, temp.Item3);
             }
             else
-                CreateNewCard(cardDatas[index]);
+                CreateNewCard(temp);
 
             index++;
         }
@@ -85,12 +87,12 @@ public class MultiCardInspection : MonoBehaviour
     }    
 
     #region Selected Card Display
-    public static void SelectDisplayedCard(CardData cardData)
+    public static void SelectDisplayedCard((CardData, Color, Color) cardData)
     {
-        instance.displayCard.SetCardData(cardData);
+        instance.displayCard.SetCardData(cardData.Item1, cardData.Item2, cardData.Item3);
 
-        instance.nameText.SetText(cardData.GetCardName());
-        instance.descriptionText.SetText(cardData.GetCardDescription());
+        instance.nameText.SetText(cardData.Item1.GetCardName());
+        instance.descriptionText.SetText(cardData.Item1.GetCardDescription());
 
         instance.StartCoroutine(InvokeNextFrame(() => instance.SetDescriptionPage()));
 
@@ -138,7 +140,7 @@ public class MultiCardInspection : MonoBehaviour
 
         for (int i = 0; i < prePooledObjects; i++)
         {
-            UICard temp = CreateNewCard(null);
+            UICard temp = CreateNewCard();
             temp.gameObject.SetActive(false);
             uiCardObjects.Add(temp);
         }
@@ -152,12 +154,17 @@ public class MultiCardInspection : MonoBehaviour
         uiCardObjects.Clear();
     }
 
-    private static UICard CreateNewCard(CardData cardData)
+    private static UICard CreateNewCard()
     {
         UICard temp = Instantiate(instance.uiCardPrefab, instance.uiCardParent);
 
-        if(cardData != null)
-            temp.SetCardData(cardData);
+        return temp;
+    }
+    private static UICard CreateNewCard((CardData, Color, Color) cardData)
+    {
+        UICard temp = Instantiate(instance.uiCardPrefab, instance.uiCardParent);
+
+        temp.SetCardData(cardData.Item1, cardData.Item2, cardData.Item3);
 
         return temp;
     }

@@ -36,7 +36,7 @@ public class CardView : MonoBehaviour
 
     public static void ShowCardView(CardObject cardObject, Action callbackAction = null)
     {
-        instance.cardObject.SetCardData(cardObject.cardData);
+        instance.cardObject.SetCardData(cardObject.cardData, cardObject.innerBackgroundColor, cardObject.outerBackgroundColor);
         instance.StartCoroutine(instance.CardViewOnAnimation(cardObject.GetRealCardTransform(), callbackAction));
     }
 

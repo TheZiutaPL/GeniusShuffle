@@ -14,5 +14,5 @@ public class CardData : ScriptableObject
     [SerializeField] private bool translateDescription = true;
     public string GetCardDescription() => translateDescription ? TranslationHandler.GetTextTranslation(cardDescription) : cardDescription;
 
-    public Texture2D cardSprite;
+    public Texture2D cardTexture;
 }

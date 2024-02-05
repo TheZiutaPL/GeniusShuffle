@@ -56,8 +56,8 @@ public class GameManager : MonoBehaviour
 
         foreach (CardMatch match in matches)
         {
-            CardObject inventorCard = CreateCardObject(match.inventorCard);
-            CardObject inventionCard = CreateCardObject(match.GetRandomInventionCard());
+            CardObject inventorCard = CreateCardObject(match.inventorCard, match.innerBackgroundColor, match.outerBackgroundColor);
+            CardObject inventionCard = CreateCardObject(match.GetRandomInventionCard(), match.innerBackgroundColor, match.outerBackgroundColor);
 
             inventorCard.SetMatchingCard(inventionCard);
             inventionCard.SetMatchingCard(inventorCard);
@@ -210,10 +210,10 @@ public class GameManager : MonoBehaviour
         return rows;
     }
 
-    private CardObject CreateCardObject(CardData cardData)
+    private CardObject CreateCardObject(CardData cardData, Color innerColor, Color outerColor)
     {
         CardObject cardObject = Instantiate(cardObjectPrefab);
-        cardObject.SetCardData(cardData);
+        cardObject.SetCardData(cardData, innerColor, outerColor);
 
         return cardObject;
     }

@@ -8,6 +8,9 @@ public class CardObject : MonoBehaviour
     public CardData cardData { get; private set; }
     public CardObject matchingCard { get; private set; }
 
+    public Color innerBackgroundColor { get; private set; }
+    public Color outerBackgroundColor { get; private set; }
+
     [SerializeField] private Animator cardAnimator;
     [SerializeField] private Transform realCardTransform;
     private const string CARD_HOVER_KEY = "hover";
@@ -19,7 +22,10 @@ public class CardObject : MonoBehaviour
     [Header("Display")]
     [SerializeField] private MeshRenderer cardMeshRenderer;
     [SerializeField] private int faceMaterialIndex = 2;
-    [SerializeField] private string textureVariableName = "_CardFace";
+
+    public const string FACE_TEXTURE_KEY = "_MainTex";
+    public const string BACKGROUND_INNER_COLOR_KEY = "_BgInnerColor";
+    public const string BACKGROUND_OUTER_COLOR_KEY = "_BgOuterColor";
 
     [Header("Sounds")]
     [SerializeField] private AudioClip cardHoverClip;
@@ -29,19 +35,20 @@ public class CardObject : MonoBehaviour
 
     public Transform GetRealCardTransform() => realCardTransform;
 
-    public void SetCardData(CardData cardData)
+    public void SetCardData(CardData cardData, Color innerColor, Color outerColor)
     {
         this.cardData = cardData;
 
-        RefreshCardDisplay();
+        cardMeshRenderer.materials[faceMaterialIndex].SetTexture(FACE_TEXTURE_KEY, cardData.cardTexture);
+
+        innerBackgroundColor = innerColor;
+        outerBackgroundColor = outerColor;
+
+        cardMeshRenderer.materials[faceMaterialIndex].SetColor(BACKGROUND_INNER_COLOR_KEY, innerColor);
+        cardMeshRenderer.materials[faceMaterialIndex].SetColor(BACKGROUND_OUTER_COLOR_KEY, outerColor);
     }
 
     public void SetMatchingCard(CardObject matchingCard) => this.matchingCard = matchingCard;
-
-    public void RefreshCardDisplay()
-    {
-        cardMeshRenderer.materials[faceMaterialIndex].SetTexture(textureVariableName, cardData.cardSprite);
-    }
 
     public void ClickAction()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardGraveyard : MonoBehaviour
 {
-    private List<CardData> cardGraveyard = new List<CardData>();
+    private List<(CardData, Color, Color)> cardGraveyard = new List<(CardData, Color, Color)>();
     [SerializeField] private float travelTime = .3f;
     [SerializeField] private AnimationCurve cardTravelCurve;
     [SerializeField] private InteractionHandler graveyardInteraction;
@@ -57,7 +57,7 @@ public class CardGraveyard : MonoBehaviour
 
     public void AddCardToGraveyard(CardObject card) 
     {
-        cardGraveyard.Add(card.cardData);
+        cardGraveyard.Add((card.cardData, card.innerBackgroundColor, card.outerBackgroundColor));
 
         card.GetComponent<InteractionHandler>().isInteractable = false;
 
