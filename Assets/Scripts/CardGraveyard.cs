@@ -59,7 +59,7 @@ public class CardGraveyard : MonoBehaviour
     {
         cardGraveyard.Add((card.cardData, card.innerBackgroundColor, card.outerBackgroundColor));
 
-        card.GetComponent<InteractionHandler>().isInteractable = false;
+        card.GetComponent<InteractionHandler>().SetInteractable(false);
 
         StartCoroutine(GoToGraveyard(card.transform));
     }
@@ -71,8 +71,8 @@ public class CardGraveyard : MonoBehaviour
         graveyardAnimator.Play(GRAVEYARD_CLEAR_ANIM);
     }
 
-    public void EnableGraveyard() => graveyardInteraction.isInteractable = true;
-    public void DisableGraveyard() => graveyardInteraction.isInteractable = false;
+    public void EnableGraveyard() => graveyardInteraction.SetInteractable(true);
+    public void DisableGraveyard() => graveyardInteraction.SetInteractable(false);
 
     IEnumerator GoToGraveyard(Transform card)
     {

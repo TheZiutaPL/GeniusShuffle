@@ -12,6 +12,7 @@ public class CardSelectionManager : MonoBehaviour
     private static CardObject[] cardSelection = new CardObject[2];
 
     [SerializeField] private float matchWaitTime = .5f;
+    [SerializeField] private InteractionHandler nextTurnButton;
 
     private bool playerMatched;
 
@@ -23,14 +24,7 @@ public class CardSelectionManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    [SerializeField] private UnityEngine.UI.Button nextTurnButton;
     private bool success;
-
-    private void Start()
-    {
-        nextTurnButton.onClick.AddListener(() => NextTurn(success));
-        nextTurnButton.gameObject.SetActive(false);
-    }
 
     public static void AddCardToSelection(CardObject cardObject)
     {
@@ -86,11 +80,13 @@ public class CardSelectionManager : MonoBehaviour
 
         instance.success = success;
 
-        instance.nextTurnButton.gameObject.SetActive(true);
+        instance.nextTurnButton.SetInteractable(true);
     }
 
-    public static void NextTurn(bool success)
+    public static void NextTurn()
     {
+        bool success = instance.success;
+
         instance.interactionManager.EnableInteractions(false);
 
         if (success)
@@ -107,8 +103,6 @@ public class CardSelectionManager : MonoBehaviour
                 cardSelection[i].SetFlip(false);
 
         instance.interactionManager.EnableInteractions(true);
-
-        instance.nextTurnButton.gameObject.SetActive(false);
 
         ClearSelection();
         instance.playerMatched = false;

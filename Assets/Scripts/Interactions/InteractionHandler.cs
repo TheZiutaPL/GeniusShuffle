@@ -5,11 +5,26 @@ using UnityEngine.Events;
 
 public class InteractionHandler : MonoBehaviour
 {
-    [HideInInspector] public bool isInteractable = true;
+    [SerializeField] private bool isInteractableFromStart = true;
+    public bool isInteractable { get; private set; } = true;
+
+    [Space(10)]
 
     [SerializeField] private UnityEvent clickActions;
     [SerializeField] private UnityEvent heldDownActions; // Continuously check if pointer is pressed
     [SerializeField] private UnityEvent<bool> hoverActions;
+    [SerializeField] private UnityEvent<bool> settingInteractableActions;
+
+    private void Awake()
+    {
+        isInteractable = isInteractableFromStart;
+    }
+
+    public void SetInteractable(bool enable)
+    {
+        isInteractable = enable;
+        settingInteractableActions?.Invoke(enable);
+    }
 
     public virtual void ClickAction(Vector3 hitPoint) => clickActions?.Invoke();
 
