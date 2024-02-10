@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
     public void SetCardPairsCount(int newCardPairs) => cardPairsCount = newCardPairs;
+    public void SetCardPairsCount(float newCardPairs) => cardPairsCount = Mathf.RoundToInt(newCardPairs);
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
