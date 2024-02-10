@@ -32,7 +32,9 @@ public class MenuToggle : MenuElement
         onValueChanged?.Invoke(isOn);
         PlayClickSound();
 
-        display?.SetActive(isOn);
+        if (display != null)
+            display.SetActive(isOn);
+
         if (onPosition != null && onPosition != null)
             buttonObject?.ForceMoveTo(isOn ? onPosition : offPosition);
     }
