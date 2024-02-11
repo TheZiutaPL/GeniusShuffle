@@ -26,6 +26,14 @@ public class CardSelectionManager : MonoBehaviour
 
     private bool success;
 
+    public static void SetGame()
+    {
+        cardSelection = new CardObject[2];
+
+        instance.playerMatched = false;
+        instance.nextTurnButton.SetInteractable(false);
+    }
+
     public static void AddCardToSelection(CardObject cardObject)
     {
         if (cardObject == null && !instance.playerMatched)

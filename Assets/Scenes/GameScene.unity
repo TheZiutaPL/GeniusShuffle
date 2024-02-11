@@ -9294,6 +9294,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1183042730}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1185547899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3942296280033129788, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243512427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1211930580
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,12 +9522,28 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1243512427}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1185547899}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1224530254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185547899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 250c04b8bc4ff184dad90bfcf197bdf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1852026513}
+  animationHandlerType: 1
+  animatorKeyOn: enabled
+  animatorKeyOff: enabled
 --- !u!1 &1238519837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 906109756634092799, guid: fb0da6156bcedf243944dbc301d6ca95,
@@ -9613,6 +9635,66 @@ PrefabInstance:
       propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1482181167}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1224530254}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1852026513}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractableAnimationHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: settingInteractableActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1885436463865746496, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9751,7 +9833,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3942296280033129788, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1224530254}
   m_SourcePrefab: {fileID: 100100000, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5, type: 3}
 --- !u!1 &1284132013
 GameObject:
@@ -11361,6 +11447,12 @@ MonoBehaviour:
   settingInteractableActions:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &1852026513 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 34577080119955555, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243512427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1901588155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5907868054699704024, guid: cbab5b2cf9ebc874e8eb26a1dfcd3d5b,

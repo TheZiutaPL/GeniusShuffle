@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
 
         List<CardMatch> matches = GetGameMatches(cardCollection);
 
+        CardSelectionManager.SetGame();
         ClearCards();
 
         foreach (CardMatch match in matches)
