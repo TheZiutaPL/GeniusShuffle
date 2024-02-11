@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CanvasGroup_Show
+  m_Name: CG_Fade_FadeIn
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
