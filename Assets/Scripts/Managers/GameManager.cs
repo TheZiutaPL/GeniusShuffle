@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour
         List<CardMatch> matches = GetGameMatches(cardCollection);
 
         CardSelectionManager.SetGame();
+        cardGraveyard.ClearGraveyard();
+
         ClearCards();
 
         foreach (CardMatch match in matches)
