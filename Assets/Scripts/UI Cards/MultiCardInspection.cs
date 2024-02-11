@@ -26,13 +26,7 @@ public class MultiCardInspection : MonoBehaviour
     [SerializeField] private Animator displayAnimator;
     [SerializeField] private UICard displayCard;
     [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private TextMeshProUGUI descriptionText;
-
-    [SerializeField] private GameObject descriptionPagesTooltip;
-    [SerializeField] private TextMeshProUGUI descriptionPagesText;
-    [SerializeField] private Button leftPageButton;
-    [SerializeField] private Button rightPageButton;
-    private int currentPage = 1;
+    [SerializeField] private TextPagesHandler descriptionHandler;    
 
     private void Awake()
     {
@@ -42,9 +36,6 @@ public class MultiCardInspection : MonoBehaviour
             Destroy(this);
 
         PoolObjects();
-
-        leftPageButton.onClick.AddListener(PrevPage);
-        rightPageButton.onClick.AddListener(NextPage);
     }
 
     public static void ShowMultiCardInspection((CardData, Color, Color)[] cardDatas)
@@ -92,9 +83,7 @@ public class MultiCardInspection : MonoBehaviour
         instance.displayCard.SetCardData(cardData.Item1, cardData.Item2, cardData.Item3);
 
         instance.nameText.SetText(cardData.Item1.GetCardName());
-        instance.descriptionText.SetText(cardData.Item1.GetCardDescription());
-
-        instance.StartCoroutine(InvokeNextFrame(() => instance.SetDescriptionPage()));
+        instance.descriptionHandler.SetText(cardData.Item1.GetCardDescription());
 
         instance.displayedCardGroup.SetActive(true);
         instance.displayAnimator.SetBool(SHOW_ANIMATION_KEY, true);
@@ -105,32 +94,6 @@ public class MultiCardInspection : MonoBehaviour
         instance.displayAnimator.SetBool(SHOW_ANIMATION_KEY, false);
         displayedCardGroup.SetActive(false);
     }
-    #endregion
-
-    #region Description Pages
-    private void SetDescriptionPage(int page = 1)
-    {
-        int pageCount = descriptionText.textInfo.pageCount;
-        currentPage = Mathf.Clamp(page, 1, pageCount);
-
-        bool multiplePages = pageCount > 1;
-
-        descriptionPagesTooltip.SetActive(multiplePages);
-
-        if (!multiplePages)
-            return;
-
-        descriptionPagesText.SetText($"({currentPage}/{pageCount})");
-
-        descriptionText.pageToDisplay = currentPage;
-
-        leftPageButton.interactable = currentPage > 1;
-        rightPageButton.interactable = currentPage < pageCount;
-    }
-
-    private void PrevPage() => SetDescriptionPage(currentPage - 1);
-
-    private void NextPage() => SetDescriptionPage(currentPage + 1);
     #endregion
 
     #region Object Pooling
@@ -169,11 +132,4 @@ public class MultiCardInspection : MonoBehaviour
         return temp;
     }
     #endregion
-
-    private static IEnumerator InvokeNextFrame(System.Action action)
-    {
-        yield return new WaitForEndOfFrame();
-
-        action?.Invoke();
-    }
 }

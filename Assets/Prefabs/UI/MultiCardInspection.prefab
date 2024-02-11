@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7166340709520448606}
   - component: {fileID: 7703901504660523187}
+  - component: {fileID: 2634834426900377249}
   - component: {fileID: 381459975368100552}
   - component: {fileID: 3682172783873021091}
   m_Layer: 5
@@ -266,11 +267,24 @@ MonoBehaviour:
   displayAnimator: {fileID: 9053992418453412076}
   displayCard: {fileID: 6108598660479132054}
   nameText: {fileID: 4319640743035777915}
-  descriptionText: {fileID: 4627367164409828599}
-  descriptionPagesTooltip: {fileID: 1987164051545305517}
-  descriptionPagesText: {fileID: 8721437136933535478}
-  leftPageButton: {fileID: 4917885870037441241}
-  rightPageButton: {fileID: 1866107950813359268}
+  descriptionHandler: {fileID: 2634834426900377249}
+--- !u!114 &2634834426900377249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170698448778710378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407bc53fc9f47ac428f88d56b7806134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentText: {fileID: 4627367164409828599}
+  pagesTooltip: {fileID: 1987164051545305517}
+  pagesCountDisplay: {fileID: 8721437136933535478}
+  previousPageButton: {fileID: 4917885870037441241}
+  nextPageButton: {fileID: 1866107950813359268}
 --- !u!95 &381459975368100552
 Animator:
   serializedVersion: 5

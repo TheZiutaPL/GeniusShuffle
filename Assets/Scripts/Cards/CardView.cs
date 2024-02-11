@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System;
 
@@ -14,6 +15,7 @@ public class CardView : MonoBehaviour
     [SerializeField] private float animationTime;
     [SerializeField] private AnimationCurve animationCurve;
     [SerializeField] private Transform cardViewReferenceTransform;
+    [SerializeField] private CardViewUI cardViewUI;
 
     private static bool isOn;
     private Vector3 startPos;
@@ -21,7 +23,6 @@ public class CardView : MonoBehaviour
     private Vector3 startScale;
 
     private InputActionMap gameMap;
-    private InputActionMap cardViewMap;
 
     private void Awake()
     {
@@ -31,11 +32,12 @@ public class CardView : MonoBehaviour
             Destroy(gameObject);
 
         gameMap = playerInput.actions.FindActionMap("Game");
-        cardViewMap = playerInput.actions.FindActionMap("CardView");
     }
 
     public static void ShowCardView(CardObject cardObject, Action callbackAction = null)
     {
+        instance.cardViewUI.SetCardViewUI(cardObject.cardData);
+
         instance.cardObject.SetCardData(cardObject.cardData, cardObject.innerBackgroundColor, cardObject.outerBackgroundColor);
         instance.StartCoroutine(instance.CardViewOnAnimation(cardObject.GetRealCardTransform(), callbackAction));
     }
@@ -43,6 +45,8 @@ public class CardView : MonoBehaviour
     private IEnumerator CardViewOnAnimation(Transform cardTransform, Action callbackAction)
     {
         gameMap.Disable();
+
+        cardViewUI.ShowUI(true);
 
         isOn = true;
 
@@ -67,17 +71,15 @@ public class CardView : MonoBehaviour
         }
 
         callbackAction?.Invoke();
-
-        cardViewMap.Enable();
     }
 
-    public void HideCardViewInput(InputAction.CallbackContext ctx)
+    /*public void HideCardViewInput(InputAction.CallbackContext ctx)
     {
         if (!ctx.canceled)
             return;
 
         HideCardView();
-    }
+    }*/
 
     public static void HideCardView(Action callbackAction = null)
     {
@@ -89,7 +91,7 @@ public class CardView : MonoBehaviour
 
     private IEnumerator CardViewOffAnimation(Action callbackAction)
     {
-        cardViewMap.Disable();
+        cardViewUI.ShowUI(false);
 
         isOn = false;
 
