@@ -8,11 +8,11 @@ public class CardData : ScriptableObject
 {
     [SerializeField] private string cardName;
     [SerializeField] private bool translateName = false;
-    public string GetCardName() => translateName ? TranslationHandler.GetTextTranslation(cardName) : cardName;
+    public string GetCardName() => translateName ? TranslationHandler.mainInstance.GetTextTranslation(cardName) : cardName;
 
     [SerializeField] private string cardDescription;
     [SerializeField] private bool translateDescription = true;
-    public string GetCardDescription() => translateDescription ? TranslationHandler.GetTextTranslation(cardDescription) : cardDescription;
+    public string GetCardDescription() => translateDescription ? TranslationHandler.mainInstance.GetTextTranslation(cardDescription) : cardDescription;
 
     public Texture2D cardTexture;
 }

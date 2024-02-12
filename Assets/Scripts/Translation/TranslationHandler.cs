@@ -7,32 +7,50 @@ namespace FlawareStudios.Translation
 {
     public class TranslationHandler : MonoBehaviour
     {
-        private static TranslationHandler instance;
-        [SerializeField] private string currentLanguage;
+        [SerializeField] private bool isMainInstance;
+        public static TranslationHandler mainInstance { get; private set; }
+        private static List<TranslationHandler> instances = new List<TranslationHandler>();
+        [SerializeField] private string startLanguage;
+        private static string currentLanguage;
         [SerializeField] private TranslationModule translationModule;
 
-        private static Action subscribedTranslators;
+        private Action subscribedTranslators;
 
         private void Awake()
         {
-            if (instance == null)
-                instance = this;
-            else
-                Destroy(gameObject);
+            if (isMainInstance)
+            {
+                if (mainInstance == null)
+                {
+                    mainInstance = this;
+
+                    currentLanguage = startLanguage;
+                }
+                else
+                    Destroy(gameObject);
+            }
+
+            instances.Add(this);
         }
 
         public void SetLanguage(string newLanguage) 
         { 
             currentLanguage = newLanguage;
 
-            subscribedTranslators?.Invoke();
+            RetranslateSubscribed();
         }
 
-        public static void SubscribeTranslator(Action retranslationAction) => subscribedTranslators += retranslationAction;
-        public static void UnsubscribeTranslator(Action retranslationAction) => subscribedTranslators -= retranslationAction;
+        public void RetranslateSubscribed()
+        {
+            for (int i = 0; i < instances.Count; i++)
+                instances[i].subscribedTranslators?.Invoke();
+        }
 
-        public static string GetTextTranslation(string translationKey) => instance.translationModule.GetTextTranslation(translationKey, instance.translationModule.GetLanguageIndex(instance.currentLanguage));
-        public static Sprite GetSpriteTranslation(string translationKey) => instance.translationModule.GetSpriteTranslation(translationKey, instance.translationModule.GetLanguageIndex(instance.currentLanguage));
-        public static AudioClip GetAudioTranslation(string translationKey) => instance.translationModule.GetAudioTranslation(translationKey, instance.translationModule.GetLanguageIndex(instance.currentLanguage));
+        public void SubscribeTranslator(Action retranslationAction) => subscribedTranslators += retranslationAction;
+        public void UnsubscribeTranslator(Action retranslationAction) => subscribedTranslators -= retranslationAction;
+
+        public string GetTextTranslation(string translationKey) => translationModule.GetTextTranslation(translationKey, translationModule.GetLanguageIndex(currentLanguage));
+        public Sprite GetSpriteTranslation(string translationKey) => translationModule.GetSpriteTranslation(translationKey, translationModule.GetLanguageIndex(currentLanguage));
+        public AudioClip GetAudioTranslation(string translationKey) => translationModule.GetAudioTranslation(translationKey, translationModule.GetLanguageIndex(currentLanguage));
     }
 }

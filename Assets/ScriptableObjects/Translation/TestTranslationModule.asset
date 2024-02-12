@@ -16,7 +16,7 @@ MonoBehaviour:
   - English
   - Polish
   textTranslations:
-  - key: TEST_TEXT_TRANSLATION
+  - key: CARD_NIKOLATESLA_C_DESC
     translations:
     - English text translation
     - Polish text translation
