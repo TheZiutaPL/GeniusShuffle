@@ -44,13 +44,13 @@ public class Settings : MonoBehaviour
         if (masterVolumeSlider != null)
         {
             masterVolumeSlider.onValueChanged.AddListener(ChangeMasterVolume);
-            masterVolumeSlider.minValue = 0.001f;
+            masterVolumeSlider.SetMinValue(0.001f);
 
             musicVolumeSlider.onValueChanged.AddListener(ChangeMusicVolume);
-            musicVolumeSlider.minValue = 0.001f;
+            musicVolumeSlider.SetMinValue(0.001f);
 
             sfxVolumeSlider.onValueChanged.AddListener(ChangeSFXVolume);
-            sfxVolumeSlider.minValue = 0.001f;
+            sfxVolumeSlider.SetMinValue(0.001f);
 
             masterVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MASTER_KEY, 1f), false);
             musicVolumeSlider.SetValue(PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f), false);

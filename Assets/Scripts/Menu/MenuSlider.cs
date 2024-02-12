@@ -10,8 +10,8 @@ using UnityEngine.InputSystem;
 public class MenuSlider : MenuElement
 {
     [SerializeField] float step = 0.1f;
-    public float minValue = 0f;
-    public float maxValue = 1f;
+    [SerializeField] float minValue = 0f;
+    [SerializeField] float maxValue = 1f;
     [SerializeField] private float displayedValueMultiplier = 100;
 
     [SerializeField] TMP_Text displayText;
@@ -66,8 +66,8 @@ public class MenuSlider : MenuElement
         onValueChanged?.Invoke(value);
 
         if (displayText != null)
-            displayText.text = $"{Mathf.Round(value * 100f) / 100f * displayedValueMultiplier}"; 
-            // This has to be rounded again so min or max value don't affect the display
+            displayText.text = $"{Mathf.Round(value * 100f) / 100f * displayedValueMultiplier}";
+        // This has to be rounded again so min or max value don't affect the display
 
         if (sliderValueTransform != null)
         {
@@ -79,8 +79,17 @@ public class MenuSlider : MenuElement
     }
 
     // For use in UnityEvents set through the inspector
-    public void SetValue(float newValue)
+    public void SetValue(float newValue) => SetValue(newValue, true);
+
+    public void SetMaxValue(float newMaxValue)
     {
-        SetValue(newValue, true);
+        maxValue = newMaxValue;
+        SetValue(Mathf.Clamp(value, minValue, maxValue), false);
+    }
+
+    public void SetMinValue(float newMinValue)
+    {
+        minValue = newMinValue;
+        SetValue(Mathf.Clamp(value, minValue, maxValue), false);
     }
 }

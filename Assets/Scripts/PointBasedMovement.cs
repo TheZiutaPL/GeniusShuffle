@@ -8,7 +8,6 @@ public class PointBasedMovement : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] AnimationCurve speedCurve;
-    [SerializeField] bool positionBased = true; // Base the lerp's t around position, otherwise uses the rotation to calculate t
 
     Vector3 startPosition;
     Quaternion startRotation;
