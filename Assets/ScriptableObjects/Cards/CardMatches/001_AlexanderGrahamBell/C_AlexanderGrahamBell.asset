@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
   m_Name: C_AlexanderGrahamBell
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Alexander Graham Bell
   translateName: 0
   cardDescription: CARD_001_ALEXANDERGRAHAMBELL_DESC
   translateDescription: 1
