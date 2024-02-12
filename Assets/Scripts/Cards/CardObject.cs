@@ -84,5 +84,7 @@ public class CardObject : MonoBehaviour
 
         AudioManager.PlaySound(cardFlipClip);
     }
+
+    public void EnableRenderer(bool enable) => cardMeshRenderer.enabled = enable;
     #endregion
 }

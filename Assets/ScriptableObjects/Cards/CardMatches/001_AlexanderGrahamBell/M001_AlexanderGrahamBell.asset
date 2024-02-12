@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
+  m_Name: M001_AlexanderGrahamBell
+  m_EditorClassIdentifier: 
+  outerBackgroundColor: {r: 0, g: 0.2535498, b: 1, a: 1}
+  innerBackgroundColor: {r: 0.2028302, g: 0.5201973, b: 1, a: 1}
+  inventorCard: {fileID: 11400000, guid: f6a0c6080918b014d8bb49d4cb4b228b, type: 2}
+  inventionCards:
+  - {fileID: 11400000, guid: 8bcd5d680edbbb749b837451817af7d0, type: 2}

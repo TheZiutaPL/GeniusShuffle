@@ -10,36 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d1e6a1d44b01a44399658d415e6de81, type: 3}
-  m_Name: GameTranslationModule
+  m_Name: _DEVTranslationModule 1
   m_EditorClassIdentifier: 
   translatedLanguages:
   - English
   - Polski
   textTranslations:
-  - key: CARD_000_IGNACYLUKASIEWICZ_DESC
+  - key: CARD_NIKOLATESLA_C_DESC
     translations:
-    - Ignacy Lukasiewicz english desc
-    - Ignacy Lukasiewicz polski opis
-  - key: CARD_000_KEROSENELAMP_NAME
+    - English Tesla description
+    - Polski opis Tesli
+  - key: CARD_NIKOLATESLA_I_TESLACOIL_NAME
     translations:
-    - Kerosene Lamp
-    - Lampa Naftowa
-  - key: CARD_000_KEROSENELAMP_DESC
+    - Tesla Coil
+    - Transformator Tesli
+  - key: CARD_NIKOLATESLA_I_TESLACOIL_DESC
     translations:
-    - Kerosene Lamp english desc
-    - Lampa Naftowa polski opis
-  - key: CARD_001_ALEXANDERGRAHAMBELL_DESC
+    - English Tesla Coil description
+    - Polski opis Transformatora Tesli
+  - key: CARD_THOMASEDISON_C_DESC
     translations:
-    - Alexander Graham Bell english desc
-    - Alexander Graham Bell polski opis
-  - key: CARD_001_TELEPHONE_NAME
+    - English Edison description
+    - Polski opis Edisona
+  - key: CARD_THOMASEDISON_I_LIGHTBULB_NAME
     translations:
-    - Telephone
-    - Telefon
-  - key: CARD_001_TELEPHONE_DESC
+    - Light Bulb
+    - "\u017Bar\xF3wka"
+  - key: CARD_THOMASEDISON_I_LIGHTBULB_DESC
     translations:
-    - Telephone english desc
-    - Telefon polski opis
+    - English Light Bulb description
+    - "Polski opis \u017Bar\xF3wki"
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}

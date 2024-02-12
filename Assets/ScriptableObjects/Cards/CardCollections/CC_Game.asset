@@ -10,11 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: CC_Debug
+  m_Name: CC_Game
   m_EditorClassIdentifier: 
   collectionName: Debug Collection
   cardMatches:
-  - {fileID: 11400000, guid: 0cfdec72d76fd724da3c87d94eaffc48, type: 2}
-  - {fileID: 11400000, guid: 0cfdec72d76fd724da3c87d94eaffc48, type: 2}
-  - {fileID: 11400000, guid: 8dbe4dd076485d0428e2d0cce1e929c8, type: 2}
-  - {fileID: 11400000, guid: 8dbe4dd076485d0428e2d0cce1e929c8, type: 2}
+  - {fileID: 11400000, guid: 5776958fd261a7940a7a02587d7c6456, type: 2}

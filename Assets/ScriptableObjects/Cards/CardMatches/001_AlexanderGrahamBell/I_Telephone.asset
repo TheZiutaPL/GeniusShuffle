@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
+  m_Name: I_Telephone
+  m_EditorClassIdentifier: 
+  cardName: CARD_001_TELEPHONE_NAME
+  translateName: 1
+  cardDescription: CARD_001_TELEPHONE_DESC
+  translateDescription: 1
+  cardTexture: {fileID: 2800000, guid: aa3d6ae16f79fe74f889c0b043be1a88, type: 3}

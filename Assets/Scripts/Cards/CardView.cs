@@ -24,6 +24,8 @@ public class CardView : MonoBehaviour
 
     private InputActionMap gameMap;
 
+    private CardObject gameCardObject;
+
     private void Awake()
     {
         if (instance == null)
@@ -40,6 +42,9 @@ public class CardView : MonoBehaviour
 
         instance.cardObject.SetCardData(cardObject.cardData, cardObject.innerBackgroundColor, cardObject.outerBackgroundColor);
         instance.StartCoroutine(instance.CardViewOnAnimation(cardObject.GetRealCardTransform(), callbackAction));
+
+        instance.gameCardObject = cardObject;
+        instance.gameCardObject.EnableRenderer(false);
     }
 
     private IEnumerator CardViewOnAnimation(Transform cardTransform, Action callbackAction)
@@ -110,6 +115,9 @@ public class CardView : MonoBehaviour
         }
 
         cardObject.gameObject.SetActive(false);
+
+        if(instance.gameCardObject != null)
+            instance.gameCardObject.EnableRenderer(true);
 
         callbackAction?.Invoke();
 
