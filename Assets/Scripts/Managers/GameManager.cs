@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -14,10 +15,16 @@ public class GameManager : MonoBehaviour
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
-    [SerializeField] private CardCollection cardCollection;
-    public void SetStartCollection(CardCollection newCardCollection) 
+    [SerializeField] private List<CardCollection> cardCollections;
+    public void SetStartCollections(List<CardCollection> newCardCollections) 
     { 
-        cardCollection = newCardCollection;
+        cardCollections = newCardCollections;
+        ClearCards();
+    }
+    public void SetStartCollections(CardCollection newCardCollections)
+    {
+        cardCollections.Clear();
+        cardCollections.Add(newCardCollections);
         ClearCards();
     }
     [SerializeField] private float cardScale = .2f;
@@ -48,10 +55,10 @@ public class GameManager : MonoBehaviour
     [ContextMenu("Start Game")]
     public void StartGame()
     {
-        if (cardCollection == null)
+        if (cardCollections == null)
             return;
 
-        List<CardMatch> matches = GetGameMatches(cardCollection);
+        List<CardMatch> matches = GetGameMatches(cardCollections);
 
         CardSelectionManager.SetGame();
         cardGraveyard.ClearGraveyard();
@@ -222,9 +229,11 @@ public class GameManager : MonoBehaviour
         return cardObject;
     }
 
-    private List<CardMatch> GetGameMatches(CardCollection cardCollection)
+    private List<CardMatch> GetGameMatches(List<CardCollection> cardCollections)
     {
-        List<CardMatch> availableMatches = cardCollection.GetCardMatches();
+        List<CardMatch> availableMatches = new List<CardMatch>();
+        foreach (CardCollection cardCollection in cardCollections)
+            availableMatches.AddRange(cardCollection.GetCardMatches());
 
         List<CardMatch> chosenMatches = new List<CardMatch>();
 
