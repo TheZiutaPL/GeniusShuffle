@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 // This script provides a way to move objects around specific points of the scene
 
@@ -8,6 +9,10 @@ public class PointBasedMovement : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] AnimationCurve speedCurve;
+
+    [Space(10)]
+    [SerializeField] UnityEvent onMovementStarted;
+    [SerializeField] UnityEvent onDestinationReached;
 
     Vector3 startPosition;
     Quaternion startRotation;
@@ -26,7 +31,12 @@ public class PointBasedMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(startRotation, destination.rotation, t);
 
             if (distancePercentage == 1f) // When the destination is reached
+            {
+                if (onDestinationReached != null)
+                    onDestinationReached.Invoke();
+
                 moving = false;
+            }
         }
     }
     
@@ -40,6 +50,9 @@ public class PointBasedMovement : MonoBehaviour
 
         if (Vector3.Distance(startPosition, destination.position) == 0) // If it's already at the destination
             return;
+
+        if (onMovementStarted != null)
+            onMovementStarted.Invoke();
 
         moving = true;
     }
