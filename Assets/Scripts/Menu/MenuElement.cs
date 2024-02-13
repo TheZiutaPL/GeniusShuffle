@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MenuElement : InteractionHandler
 {
+    [SerializeField] bool playOnClickByDefault = true; // You don't want a slider to play a sound on click but on change value, so this is used for that
     [SerializeField] AudioClip[] onHover;
     [SerializeField] AudioClip[] onUnhover;
     [SerializeField] AudioClip[] onClick;
@@ -16,6 +17,14 @@ public class MenuElement : InteractionHandler
             AudioManager.PlaySound(onUnhover);
 
         base.HoverAction(hover);
+    }
+
+    public override void ClickAction(Vector3 hitPoint)
+    {
+        if (playOnClickByDefault)
+            PlayClickSound();
+
+        base.ClickAction(hitPoint);
     }
 
     protected void PlayClickSound()

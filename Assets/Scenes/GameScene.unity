@@ -11047,7 +11047,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7160223741749511668, guid: cf91e06442c41e447b0014d4cf3ba307,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1407247015}
+      addedObject: {fileID: 1407247019}
     - targetCorrespondingSourceObject: {fileID: 4260654011257813251, guid: cf91e06442c41e447b0014d4cf3ba307,
         type: 3}
       insertIndex: -1
@@ -11055,7 +11055,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4260654011257813251, guid: cf91e06442c41e447b0014d4cf3ba307,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1407247013}
+      addedObject: {fileID: 1407247017}
   m_SourcePrefab: {fileID: 100100000, guid: cf91e06442c41e447b0014d4cf3ba307, type: 3}
 --- !u!4 &1407247010 stripped
 Transform:
@@ -11075,55 +11075,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1407247009}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1407247013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407247011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
-  clickActions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1183042731}
-        m_TargetAssemblyTypeName: MenuList, Assembly-CSharp
-        m_MethodName: PreviousOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1183042731}
-        m_TargetAssemblyTypeName: MenuList, Assembly-CSharp
-        m_MethodName: PreviousOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  heldDownActions:
-    m_PersistentCalls:
-      m_Calls: []
-  hoverActions:
-    m_PersistentCalls:
-      m_Calls: []
-  settingInteractableActions:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!135 &1407247014
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11145,7 +11096,71 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.025
   m_Center: {x: -0.02, y: 0, z: 0}
---- !u!114 &1407247015
+--- !u!135 &1407247016
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407247012}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.025
+  m_Center: {x: -0.02, y: 0, z: 0}
+--- !u!114 &1407247017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407247011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractableFromStart: 1
+  clickActions:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1183042731}
+        m_TargetAssemblyTypeName: MenuList, Assembly-CSharp
+        m_MethodName: PreviousOption
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  heldDownActions:
+    m_PersistentCalls:
+      m_Calls: []
+  hoverActions:
+    m_PersistentCalls:
+      m_Calls: []
+  settingInteractableActions:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnClickByDefault: 1
+  onHover:
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
+  onUnhover: []
+  onClick:
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
+--- !u!114 &1407247019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11154,7 +11169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407247012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
+  m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractableFromStart: 1
@@ -11182,27 +11197,12 @@ MonoBehaviour:
   settingInteractableActions:
     m_PersistentCalls:
       m_Calls: []
---- !u!135 &1407247016
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407247012}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.025
-  m_Center: {x: -0.02, y: 0, z: 0}
+  playOnClickByDefault: 1
+  onHover:
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
+  onUnhover: []
+  onClick:
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
 --- !u!1 &1434777848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5907868054699704024, guid: cbab5b2cf9ebc874e8eb26a1dfcd3d5b,
@@ -11894,9 +11894,12 @@ MonoBehaviour:
   settingInteractableActions:
     m_PersistentCalls:
       m_Calls: []
-  onHover: []
+  playOnClickByDefault: 0
+  onHover:
+  - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
-  onClick: []
+  onClick:
+  - {fileID: 8300000, guid: 60b506b88046d064d8cb93c42c9f84fe, type: 3}
   isOn: 0
   display: {fileID: 0}
   onValueChanged:

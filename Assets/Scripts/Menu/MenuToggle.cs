@@ -25,12 +25,13 @@ public class MenuToggle : MenuElement
         base.ClickAction(hitPoint);
     }
 
-    public void SetStatus(bool isOn)
+    public void SetStatus(bool isOn, bool playSound = true)
     {
         this.isOn = isOn;
 
         onValueChanged?.Invoke(isOn);
-        PlayClickSound();
+        if (playSound)
+            PlayClickSound();
 
         if (display != null)
             display.SetActive(isOn);

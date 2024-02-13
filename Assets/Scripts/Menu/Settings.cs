@@ -27,7 +27,7 @@ public class Settings : MonoBehaviour
         // Window settings
         if (fullscreenToggle != null)
         {
-            fullscreenToggle.SetStatus(Screen.fullScreen);
+            fullscreenToggle.SetStatus(Screen.fullScreen, false);
             if (saveOnChange)
                 fullscreenToggle.onValueChanged.AddListener(_ => SaveChanges()); 
                 // This is done in such a weird way so it accepts a function with different parameters
@@ -95,7 +95,7 @@ public class Settings : MonoBehaviour
         }
 
         if (fullscreenToggle != null)
-            fullscreenToggle.SetStatus(Screen.fullScreen);
+            fullscreenToggle.SetStatus(Screen.fullScreen, false);
 
         // Audio settings
         if (masterVolumeSlider != null)
