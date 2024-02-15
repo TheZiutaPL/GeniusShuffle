@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private InteractionManager interactionManager;
-
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
@@ -86,7 +84,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.25f);
 
-        interactionManager.EnableInteractions(false);
+        InteractionManager.instance.EnableInteractions(false);
 
         List<(CardObject, Vector3)> traversingCards = new List<(CardObject, Vector3)>();
 
@@ -127,7 +125,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.25f);
 
-        interactionManager.EnableInteractions(true);
+        InteractionManager.instance.EnableInteractions(true);
     }
 
     [ContextMenu("Clear")]

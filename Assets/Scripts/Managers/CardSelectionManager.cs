@@ -7,7 +7,6 @@ public class CardSelectionManager : MonoBehaviour
     private static CardSelectionManager instance;
 
     [SerializeField] private GameManager gameManager;
-    [SerializeField] private InteractionManager interactionManager;
     [SerializeField] private CardGraveyard cardGraveyard;
     private static CardObject[] cardSelection = new CardObject[2];
 
@@ -95,7 +94,7 @@ public class CardSelectionManager : MonoBehaviour
     {
         bool success = instance.success;
 
-        instance.interactionManager.EnableInteractions(false);
+        InteractionManager.instance.EnableInteractions(false);
 
         if (success)
         {
@@ -110,7 +109,7 @@ public class CardSelectionManager : MonoBehaviour
             for (int i = 0; i < cardSelection.Length; i++)
                 cardSelection[i].SetFlip(false);
 
-        instance.interactionManager.EnableInteractions(true);
+        InteractionManager.instance.EnableInteractions(true);
 
         ClearSelection();
         instance.playerMatched = false;

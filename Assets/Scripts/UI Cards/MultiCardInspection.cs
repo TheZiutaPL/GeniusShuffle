@@ -6,7 +6,6 @@ using TMPro;
 
 public class MultiCardInspection : MonoBehaviour
 {
-    [SerializeField] private InteractionManager interactionManager;
     [SerializeField] private Animator animator;
     private const string SHOW_ANIMATION_KEY = "show";
 
@@ -43,7 +42,7 @@ public class MultiCardInspection : MonoBehaviour
         instance.UnselectDisplayedCard();
         instance.scrollRect.normalizedPosition = new Vector2(0, 0);
 
-        instance.interactionManager.EnableInteractions(false);
+        InteractionManager.instance.EnableInteractions(false);
 
         instance.animator.SetBool(SHOW_ANIMATION_KEY, true);
 
@@ -73,7 +72,7 @@ public class MultiCardInspection : MonoBehaviour
 
     public static void HideMultiCardInspection()
     {
-        instance.interactionManager.EnableInteractions(true);
+        InteractionManager.instance.EnableInteractions(true);
         instance.animator.SetBool(SHOW_ANIMATION_KEY, false);
     }    
 

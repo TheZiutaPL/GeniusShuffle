@@ -7,6 +7,7 @@ using UnityEngine.Events;
 
 public class PointBasedMovement : MonoBehaviour
 {
+    [SerializeField] bool disableInteractionsOnMoving = false;
     [SerializeField] float speed = 1f;
     [SerializeField] AnimationCurve speedCurve;
 
@@ -35,6 +36,9 @@ public class PointBasedMovement : MonoBehaviour
                 if (onDestinationReached != null)
                     onDestinationReached.Invoke();
 
+                if (disableInteractionsOnMoving)
+                    InteractionManager.instance.EnableInteractions(true);
+
                 moving = false;
             }
         }
@@ -53,6 +57,9 @@ public class PointBasedMovement : MonoBehaviour
 
         if (onMovementStarted != null)
             onMovementStarted.Invoke();
+
+        if (disableInteractionsOnMoving)
+            InteractionManager.instance.EnableInteractions(false);
 
         moving = true;
     }

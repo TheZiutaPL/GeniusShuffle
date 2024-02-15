@@ -18,9 +18,12 @@ public class InteractionManager : MonoBehaviour
 
     private Vector3 interactionHitPoint;
 
+    public static InteractionManager instance;
+
     private void Awake()
     {
         playerCamera = Camera.main;
+        instance = this;
 
         EnableInteractions(true);
     }
