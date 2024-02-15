@@ -71,10 +71,11 @@ public class MenuSlider : MenuElement
 
         if (sliderValueTransform != null)
         {
+            float sliderValue = maxValue > 0 ? value / maxValue : 1f;
             if (mode == SliderModes.ScaleBar)
-                sliderValueTransform.localScale = new Vector3(value / maxValue, sliderValueTransform.localScale.y, sliderValueTransform.localScale.z);
+                sliderValueTransform.localScale = new Vector3(sliderValue, sliderValueTransform.localScale.y, sliderValueTransform.localScale.z);
             else
-                sliderValueTransform.position = Vector3.Lerp(startPoint.position, endPoint.position, value / maxValue);
+                sliderValueTransform.position = Vector3.Lerp(startPoint.position, endPoint.position, sliderValue);
         }
     }
 

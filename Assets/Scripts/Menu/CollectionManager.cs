@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class CollectionManager : MonoBehaviour
@@ -16,13 +17,11 @@ public class CollectionManager : MonoBehaviour
 
     [Space(10)]
     [SerializeField] MenuSlider cardPairsAmountSlider;
-    GameManager gameManager;
+    [SerializeField] GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
         foreach (Transform t in levelSelectionHolder)
         {
             levelSelectionButtons.Add(t.gameObject);
@@ -67,4 +66,6 @@ public class CollectionManager : MonoBehaviour
         }
         cardPairsAmountSlider.SetMaxValue(pairs);
     }
+
+    public int GetCollectionsAmount() => selectedCollections.Count;
 }

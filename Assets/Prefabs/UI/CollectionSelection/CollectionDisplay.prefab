@@ -427,7 +427,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2474833873907501340}
+        m_TargetAssemblyTypeName: CollectionToggle, Assembly-CSharp
+        m_MethodName: SelectCollection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &5428744704341123572
 GameObject:
@@ -440,6 +452,7 @@ GameObject:
   - component: {fileID: 5399401970180407645}
   - component: {fileID: 7906701691901912462}
   - component: {fileID: 2603244188953843260}
+  - component: {fileID: 2474833873907501340}
   m_Layer: 5
   m_Name: CollectionDisplay
   m_TagString: Untagged
@@ -507,6 +520,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2474833873907501340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5428744704341123572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4bdcfc8db5055468e937e488637ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collection: {fileID: 0}
+  collectionManager: {fileID: 0}
+  pairsText: {fileID: 547593058478766304}
+  toggle: {fileID: 1805234118291326819}
 --- !u!1 &8791707408483444000
 GameObject:
   m_ObjectHideFlags: 0
