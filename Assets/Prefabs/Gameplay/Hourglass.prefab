@@ -95,8 +95,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2831507309435567382}
+  - component: {fileID: 4144352233985237828}
+  - component: {fileID: 3859670032124607822}
   m_Layer: 0
-  m_Name: hourglass
+  m_Name: Hourglass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,6 +120,43 @@ Transform:
   - {fileID: 9087376430634967844}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4144352233985237828
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170631211569932204}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffe851d2ea4f6dd40a98b160bbda535a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3859670032124607822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170631211569932204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42558910a513786429bf8f818adc5e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topSandRenderer: {fileID: 3683860697253430985}
+  bottomSandRenderer: {fileID: 1723305331923146736}
+  hourglassAnimator: {fileID: 4144352233985237828}
+  startTimerAnim: Flip
 --- !u!1 &6133911717687498104
 GameObject:
   m_ObjectHideFlags: 0

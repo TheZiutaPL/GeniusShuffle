@@ -125,6 +125,8 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.25f);
 
+        PlayerScoreManager.StartGame();
+
         InteractionManager.instance.EnableInteractions(true);
     }
 
@@ -158,6 +160,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator LevelFinished()
     {
+        //TODO
+        PlayerStats stats = PlayerScoreManager.EndGame();
+        Debug.Log($"Earned {stats.medalIndex} medal in {stats.playedTime} seconds");
+
         yield return new WaitForSeconds(1f);
         cardGraveyard.ClearGraveyard();
         StartGame();
