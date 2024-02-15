@@ -9357,6 +9357,33 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1300073381}
   m_SourcePrefab: {fileID: 100100000, guid: fb0da6156bcedf243944dbc301d6ca95, type: 3}
+--- !u!1 &1069179384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 268623317371724154, guid: cf91e06442c41e447b0014d4cf3ba307,
+    type: 3}
+  m_PrefabInstance: {fileID: 1407247009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1069179386
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069179384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1a36ed12cd824d4aaaae1f3662e469e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1082910948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7575503856540816284, guid: da1183ff02f8fb8468add8b77cae6f77,
@@ -10896,6 +10923,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1407247019}
+    - targetCorrespondingSourceObject: {fileID: 268623317371724154, guid: cf91e06442c41e447b0014d4cf3ba307,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1069179386}
     - targetCorrespondingSourceObject: {fileID: 4260654011257813251, guid: cf91e06442c41e447b0014d4cf3ba307,
         type: 3}
       insertIndex: -1
@@ -10904,6 +10935,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1407247017}
+    - targetCorrespondingSourceObject: {fileID: 4372165626018095578, guid: cf91e06442c41e447b0014d4cf3ba307,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1423567360}
   m_SourcePrefab: {fileID: 100100000, guid: cf91e06442c41e447b0014d4cf3ba307, type: 3}
 --- !u!4 &1407247010 stripped
 Transform:
@@ -10993,6 +11028,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1423567360}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pressed
+          m_BoolArgument: 0
+        m_CallState: 2
   heldDownActions:
     m_PersistentCalls:
       m_Calls: []
@@ -11034,6 +11081,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1069179386}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pressed
           m_BoolArgument: 0
         m_CallState: 2
   heldDownActions:
@@ -11106,6 +11165,33 @@ MonoBehaviour:
   - medalName: Bronze
     medalSprite: {fileID: 0}
     medalEarningTime: 15
+--- !u!1 &1423567358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4372165626018095578, guid: cf91e06442c41e447b0014d4cf3ba307,
+    type: 3}
+  m_PrefabInstance: {fileID: 1407247009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1423567360
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423567358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f1a36ed12cd824d4aaaae1f3662e469e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1434777848 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5907868054699704024, guid: cbab5b2cf9ebc874e8eb26a1dfcd3d5b,
