@@ -15,6 +15,10 @@ public class CardSelectionManager : MonoBehaviour
 
     private bool playerMatched;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip matchSuccessSound;
+    [SerializeField] private AudioClip matchFailSound;
+
     private void Awake()
     {
         if (instance == null)
@@ -79,11 +83,17 @@ public class CardSelectionManager : MonoBehaviour
     {
         instance.playerMatched = true;
 
-        yield return new WaitForSeconds(instance.matchWaitTime);        
+        yield return new WaitForSeconds(instance.matchWaitTime);
 
         if (success)
+        {
             for (int i = 0; i < cardSelection.Length; i++)
                 cardSelection[i].successfullMatchParticles.Play();
+
+            AudioManager.PlaySound(instance.matchSuccessSound);
+        } 
+        else
+            AudioManager.PlaySound(instance.matchFailSound);
 
         instance.success = success;
 

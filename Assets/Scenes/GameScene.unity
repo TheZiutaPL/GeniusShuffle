@@ -1318,13 +1318,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.53729963, y: 0, z: 0, w: 0.8433915}
-  m_LocalPosition: {x: 0, y: 1.19, z: 0}
+  m_LocalRotation: {x: 0.20353466, y: 0.15200661, z: -0.03200548, w: 0.9666661}
+  m_LocalPosition: {x: -3.3130002, y: 1.276, z: 4.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1999679324}
-  m_Father: {fileID: 908863051}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 65, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -8736,13 +8736,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825643209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06366378, y: 0.4911952, z: -0.036028035, w: 0.8679725}
+  m_LocalRotation: {x: 0.07132509, y: 0.49085793, z: -0.04036366, w: 0.86737657}
   m_LocalPosition: {x: 1.6954864, y: 1.102, z: 3.2554905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 854358828}
-  m_LocalEulerAnglesHint: {x: 9.111, y: 38.375, z: 0}
+  m_LocalEulerAnglesHint: {x: 9.402, y: 59.012, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -9065,38 +9065,6 @@ Transform:
   - {fileID: 627016258}
   - {fileID: 425309155}
   - {fileID: 2080727869}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &908863050
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 908863051}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &908863051
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908863050}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.64, y: 0.802, z: -0.807}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917718747
@@ -11792,6 +11760,8 @@ MonoBehaviour:
   cardGraveyard: {fileID: 1018447199}
   matchWaitTime: 0.45
   nextTurnButton: {fileID: 1224530251}
+  matchSuccessSound: {fileID: 8300000, guid: 8b823a6d9ee4e3d40886d89bec29e525, type: 3}
+  matchFailSound: {fileID: 8300000, guid: 30f563b21f6268b45ae25d3f236cde50, type: 3}
 --- !u!1 &1540291745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3160847090402775380, guid: 20110a8f5a50d8847b4765caa0505599,
@@ -16116,7 +16086,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1130597634}
   - {fileID: 1332956979}
-  - {fileID: 908863051}
+  - {fileID: 330585546}
   - {fileID: 1243512427}
   - {fileID: 832575519}
   - {fileID: 1449592250}
