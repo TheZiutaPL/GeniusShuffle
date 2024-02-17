@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1e6a1d44b01a44399658d415e6de81, type: 3}
+  m_Name: MenuTranslationModule
+  m_EditorClassIdentifier: 
+  translatedLanguages:
+  - English
+  - Polski
+  textTranslations: []
+  errorText: TRANSLATION_NOT_FOUND
+  spriteTranslations:
+  - key: MENU_MS_CAMPAIGN
+    translations:
+    - {fileID: 21300000, guid: d443ce4f9e9694b439a758599222ba6b, type: 3}
+    - {fileID: 21300000, guid: f3ea6ee763534774e93b7d928cd05060, type: 3}
+  - key: MENU_MS_FREE_PLAY
+    translations:
+    - {fileID: 21300000, guid: 0b5d4c9e8342fcf47a7081eb003f8175, type: 3}
+    - {fileID: 21300000, guid: 4abbb809e18360749a027719fd7e41a7, type: 3}
+  - key: MENU_FP_PAIRS
+    translations:
+    - {fileID: 21300000, guid: 2cbff9c3c56a71f4cbbce96ca97e2fff, type: 3}
+    - {fileID: 21300000, guid: c9d65c9a7dd1e344186a136ed29130bb, type: 3}
+  - key: MENU_FP_COLLECTIONS
+    translations:
+    - {fileID: 21300000, guid: 4432dcfe82606854899ca44c4081f633, type: 3}
+    - {fileID: 21300000, guid: e20f2c5bc5d60b34bb1b9fe4e9fe4c4d, type: 3}
+  - key: MENU_FP_EXPAND
+    translations:
+    - {fileID: 21300000, guid: 4e6d6b85c127d29498ff50879b4803b8, type: 3}
+    - {fileID: 21300000, guid: 68069c7cfb419434e9636021a3876d87, type: 3}
+  errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
+  audioTranslations: []
+  errorAudio: {fileID: 0}
