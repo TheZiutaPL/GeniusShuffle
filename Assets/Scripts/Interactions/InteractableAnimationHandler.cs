@@ -18,21 +18,46 @@ public class InteractableAnimationHandler : MonoBehaviour
     [SerializeField] private string animatorKeyOn;
     [SerializeField] private string animatorKeyOff;
 
-    public void HandleAnimation(bool toggle)
+    private bool passedBoolean;
+
+    public void HandleAnimation()
     {
+        passedBoolean = !passedBoolean;
+
         switch (animationHandlerType)
         {
             case AnimationHandlerType.DirectPlay:
-                animator.Play(toggle ? animatorKeyOn : animatorKeyOff);
+                animator.Play(passedBoolean ? animatorKeyOn : animatorKeyOff);
                 break;
 
             case AnimationHandlerType.Boolean:
-                animator.SetBool(toggle ? animatorKeyOn : animatorKeyOff, toggle);
+                animator.SetBool(passedBoolean ? animatorKeyOn : animatorKeyOff, passedBoolean);
                 break;
 
             case AnimationHandlerType.Trigger:
-                animator.SetTrigger(toggle ? animatorKeyOn : animatorKeyOff);
-                animator.ResetTrigger(toggle ? animatorKeyOff : animatorKeyOn);
+                animator.SetTrigger(passedBoolean ? animatorKeyOn : animatorKeyOff);
+                animator.ResetTrigger(passedBoolean ? animatorKeyOff : animatorKeyOn);
+                break;
+        }
+    }
+
+    public void HandleAnimation(bool toggle)
+    {
+        passedBoolean = toggle;
+
+        switch (animationHandlerType)
+        {
+            case AnimationHandlerType.DirectPlay:
+                animator.Play(passedBoolean ? animatorKeyOn : animatorKeyOff);
+                break;
+
+            case AnimationHandlerType.Boolean:
+                animator.SetBool(passedBoolean ? animatorKeyOn : animatorKeyOff, passedBoolean);
+                break;
+
+            case AnimationHandlerType.Trigger:
+                animator.SetTrigger(passedBoolean ? animatorKeyOn : animatorKeyOff);
+                animator.ResetTrigger(passedBoolean ? animatorKeyOff : animatorKeyOn);
                 break;
         }
     }
