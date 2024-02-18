@@ -12410,7 +12410,7 @@ PrefabInstance:
     - target: {fileID: 7385480076772691863, guid: fb0da6156bcedf243944dbc301d6ca95,
         type: 3}
       propertyPath: translationKey
-      value: MENU_MS_CAMPAIGN
+      value: MENU_MS_RESUME
       objectReference: {fileID: 0}
     - target: {fileID: 7385480076772691863, guid: fb0da6156bcedf243944dbc301d6ca95,
         type: 3}

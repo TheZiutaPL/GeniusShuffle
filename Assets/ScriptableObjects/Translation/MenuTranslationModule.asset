@@ -38,6 +38,10 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: 4e6d6b85c127d29498ff50879b4803b8, type: 3}
     - {fileID: 21300000, guid: 68069c7cfb419434e9636021a3876d87, type: 3}
+  - key: MENU_MS_RESUME
+    translations:
+    - {fileID: 21300000, guid: b939a485f08360346bdca5c93f6fb187, type: 3}
+    - {fileID: 21300000, guid: 3dbdf2b4b1397d047b9ae62eee6a7242, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}
