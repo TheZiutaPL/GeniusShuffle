@@ -10839,6 +10839,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917718749}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 3533196e27d6cb84abc4935d70a11f66, type: 3}
+    - target: {fileID: 3004637816345556256, guid: b20444352c53f5c46b7648b172fcb36c,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5270131074046563353, guid: b20444352c53f5c46b7648b172fcb36c,
         type: 3}
       propertyPath: m_Name
@@ -16927,6 +16967,11 @@ PrefabInstance:
       propertyPath: interactionManager
       value: 
       objectReference: {fileID: 2132441969}
+    - target: {fileID: 7808171784160615859, guid: 6471b93fb4550e044a1377a46cec15cc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8534726888211046474, guid: 6471b93fb4550e044a1377a46cec15cc,
         type: 3}
       propertyPath: m_AnchorMax.y

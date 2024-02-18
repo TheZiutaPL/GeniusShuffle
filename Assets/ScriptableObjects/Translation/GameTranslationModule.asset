@@ -21,18 +21,18 @@ MonoBehaviour:
     - "Ignacy \u0141ukasiewicz was a Polish pharmacist, engineer, and inventor who
       is credited with the invention of the kerosene lamp. Born on March 8, 1822,
       in the village of Zaduszniki, \u0141ukasiewicz made significant contributions
-      to the field of illumination and energy production during the 19th century.\r\n\r\nIn
+      to the field of illumination and energy production during the 19th century.\r\r\nIn
       the 1850s, \u0141ukasiewicz and his business partner, Jan Zeh, developed a
       method for distilling kerosene from crude oil. This process made kerosene more
       readily available and affordable as a lighting fuel compared to other options
-      at the time, such as whale oil or vegetable oils.\r\n\r\n\u0141ukasiewicz's
-      kerosene lamp revolutionized lighting technology, providing a safer and more
-      efficient alternative to traditional oil lamps. The widespread adoption of
-      his invention had a profound impact on society, improving illumination in homes,
-      streets, and workplaces across the world.\r\n\r\nBeyond his work on the kerosene
-      lamp, \u0141ukasiewicz also contributed to various other inventions and innovations
+      at the time, such as whale oil or vegetable oils.\r\r\n\u0141ukasiewicz's kerosene
+      lamp revolutionized lighting technology, providing a safer and more efficient
+      alternative to traditional oil lamps. The widespread adoption of his invention
+      had a profound impact on society, improving illumination in homes, streets,
+      and workplaces across the world.\r\r\nBeyond his work on the kerosene lamp,
+      \u0141ukasiewicz also contributed to various other inventions and innovations
       throughout his career, including advancements in the oil refining process and
-      the development of equipment for extracting petroleum.\r\n\r\nIgnacy \u0141ukasiewicz's
+      the development of equipment for extracting petroleum.\r\r\nIgnacy \u0141ukasiewicz's
       legacy as an inventor and entrepreneur continues to be celebrated, and his
       contributions to lighting technology have left a lasting mark on the modern
       world."
@@ -40,23 +40,23 @@ MonoBehaviour:
       i wynalazc\u0105, kt\xF3remu przypisuje si\u0119 wynalezienie lampy naftowej.
       Urodzony 8 marca 1822 roku w wiosce Zaduszniki, \u0141ukasiewicz wnosi\u0142
       znacz\u0105cy wk\u0142ad w dziedzin\u0119 o\u015Bwietlenia i produkcji energii
-      w XIX wieku.\r\n\r\nW latach 1850-tych \u0141ukasiewicz i jego partner biznesowy,
+      w XIX wieku.\r\r\nW latach 1850-tych \u0141ukasiewicz i jego partner biznesowy,
       Jan Zeh, opracowali metod\u0119 destylacji nafty z ropy naftowej. Ten proces
       uczyni\u0142 naft\u0119 bardziej dost\u0119pn\u0105 i przyst\u0119pn\u0105
       cenowo jako paliwo do o\u015Bwietlenia w por\xF3wnaniu z innymi opcjami w tamtym
-      czasie, takimi jak olej wielorybi czy oleje ro\u015Blinne.\r\n\r\nLampa naftowa
+      czasie, takimi jak olej wielorybi czy oleje ro\u015Blinne.\r\r\nLampa naftowa
       \u0141ukasiewicza zrewolucjonizowa\u0142a technologi\u0119 o\u015Bwietleniow\u0105,
       dostarczaj\u0105c bezpieczn\u0105 i bardziej wydajn\u0105 alternatyw\u0119
       dla tradycyjnych lamp naftowych. Powszechne przyj\u0119cie jego wynalazku mia\u0142o
       g\u0142\u0119boki wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c o\u015Bwietlenie
-      w domach, ulicach i miejscach pracy na ca\u0142ym \u015Bwiecie.\r\n\r\nPoza
-      prac\u0105 nad lamp\u0105 naftow\u0105, \u0141ukasiewicz przyczyni\u0142 si\u0119
-      r\xF3wnie\u017C do r\xF3\u017Cnych innych wynalazk\xF3w i innowacji w trakcie
-      swojej kariery, w tym do post\u0119p\xF3w w procesie rafinacji ropy naftowej
-      i rozwoju sprz\u0119tu do jej wydobycia.\r\n\r\nDziedzictwo Ignacego \u0141ukasiewicza
-      jako wynalazcy i przedsi\u0119biorcy nadal jest celebrowane, a jego wk\u0142ad
-      w technologi\u0119 o\u015Bwietleniow\u0105 pozostawi\u0142 trwa\u0142y \u015Blad
-      w nowoczesnym \u015Bwiecie."
+      w domach, ulicach i miejscach pracy na ca\u0142ym \u015Bwiecie.\r\r\nPoza prac\u0105
+      nad lamp\u0105 naftow\u0105, \u0141ukasiewicz przyczyni\u0142 si\u0119 r\xF3wnie\u017C
+      do r\xF3\u017Cnych innych wynalazk\xF3w i innowacji w trakcie swojej kariery,
+      w tym do post\u0119p\xF3w w procesie rafinacji ropy naftowej i rozwoju sprz\u0119tu
+      do jej wydobycia.\r\r\nDziedzictwo Ignacego \u0141ukasiewicza jako wynalazcy
+      i przedsi\u0119biorcy nadal jest celebrowane, a jego wk\u0142ad w technologi\u0119
+      o\u015Bwietleniow\u0105 pozostawi\u0142 trwa\u0142y \u015Blad w nowoczesnym
+      \u015Bwiecie."
   - key: CARD_000_KEROSENELAMP_NAME
     translations:
     - Kerosene Lamp
@@ -67,19 +67,19 @@ MonoBehaviour:
       technology in the 19th century. Prior to its invention, lighting sources were
       limited and often expensive or hazardous. \u0141ukasiewicz's innovative lamp
       provided a safer, more affordable, and more efficient alternative to traditional
-      oil lamps.\r\n\r\nThe kerosene lamp consists of a reservoir for kerosene, a
-      wick, and a glass chimney. The wick draws kerosene from the reservoir and allows
+      oil lamps.\r\r\nThe kerosene lamp consists of a reservoir for kerosene, a wick,
+      and a glass chimney. The wick draws kerosene from the reservoir and allows
       it to burn, producing a steady flame. The glass chimney helps to protect the
       flame from drafts and improves the lamp's efficiency by directing heat and
-      light downward.\r\n\r\n\u0141ukasiewicz's invention of the kerosene lamp was
+      light downward.\r\r\n\u0141ukasiewicz's invention of the kerosene lamp was
       made possible by his development of a method for distilling kerosene from crude
       oil. This process made kerosene more readily available and cost-effective as
       a lighting fuel, leading to its widespread adoption in homes, businesses, and
-      public spaces around the world.\r\n\r\nThe kerosene lamp had a profound impact
+      public spaces around the world.\r\r\nThe kerosene lamp had a profound impact
       on society, improving illumination in both rural and urban areas and enhancing
       productivity and safety after dark. It also played a crucial role in the expansion
       of industry and commerce by providing reliable lighting for factories, workshops,
-      and other workplaces.\r\n\r\nToday, while electric lighting has largely replaced
+      and other workplaces.\r\r\nToday, while electric lighting has largely replaced
       kerosene lamps in many parts of the world, these historic inventions continue
       to hold cultural and historical significance. Ignacy \u0141ukasiewicz's kerosene
       lamp remains a testament to the power of innovation and the profound impact
@@ -89,21 +89,21 @@ MonoBehaviour:
       \u017Ar\xF3d\u0142a \u015Bwiat\u0142a by\u0142y ograniczone i cz\u0119sto drogie
       lub niebezpieczne. Innowacyjna lampa \u0141ukasiewicza zapewni\u0142a bezpieczniejsz\u0105,
       bardziej dost\u0119pn\u0105 i wydajniejsz\u0105 alternatyw\u0119 dla tradycyjnych
-      lamp naftowych.\r\n\r\nLampa naftowa sk\u0142ada si\u0119 z zbiornika na naft\u0119,
+      lamp naftowych.\r\r\nLampa naftowa sk\u0142ada si\u0119 z zbiornika na naft\u0119,
       knotu i szyby. Knot pobiera naft\u0119 z zbiornika i umo\u017Cliwia jej spalanie,
       wytwarzaj\u0105c sta\u0142y p\u0142omie\u0144. Szyba pomaga chroni\u0107 p\u0142omie\u0144
       przed przeci\u0105gami i poprawia wydajno\u015B\u0107 lampy, kieruj\u0105c
-      ciep\u0142o i \u015Bwiat\u0142o w d\xF3\u0142.\r\n\r\nWynalezienie przez \u0141ukasiewicza
+      ciep\u0142o i \u015Bwiat\u0142o w d\xF3\u0142.\r\r\nWynalezienie przez \u0141ukasiewicza
       lampy naftowej sta\u0142o si\u0119 mo\u017Cliwe dzi\u0119ki jego opracowaniu
       metody destylacji nafty z ropy naftowej. Ten proces uczyni\u0142 naft\u0119
       bardziej dost\u0119pn\u0105 i op\u0142acaln\u0105 jako paliwo do o\u015Bwietlenia,
       co doprowadzi\u0142o do jej powszechnego przyj\u0119cia w domach, firmach i
-      przestrzeniach publicznych na ca\u0142ym \u015Bwiecie.\r\n\r\nLampa naftowa
-      mia\u0142a g\u0142\u0119boki wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c
-      o\u015Bwietlenie zar\xF3wno na obszarach wiejskich, jak i miejskich oraz zwi\u0119kszaj\u0105c
+      przestrzeniach publicznych na ca\u0142ym \u015Bwiecie.\r\r\nLampa naftowa mia\u0142a
+      g\u0142\u0119boki wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c o\u015Bwietlenie
+      zar\xF3wno na obszarach wiejskich, jak i miejskich oraz zwi\u0119kszaj\u0105c
       produktywno\u015B\u0107 i bezpiecze\u0144stwo po zmroku. Odgrywa\u0142a tak\u017Ce
       kluczow\u0105 rol\u0119 w rozwoju przemys\u0142u i handlu, zapewniaj\u0105c
-      niezawodne o\u015Bwietlenie dla fabryk, warsztat\xF3w i innych miejsc pracy.\r\n\r\nDzi\u015B,
+      niezawodne o\u015Bwietlenie dla fabryk, warsztat\xF3w i innych miejsc pracy.\r\r\nDzi\u015B,
       cho\u0107 o\u015Bwietlenie elektryczne w du\u017Cej mierze zast\u0105pi\u0142o
       lampy naftowe w wielu cz\u0119\u015Bciach \u015Bwiata, te historyczne wynalazki
       nadal maj\u0105 znaczenie kulturowe i historyczne. Lampa naftowa Ignacego \u0141ukasiewicza
@@ -111,60 +111,44 @@ MonoBehaviour:
       jaki pojedynczy wynalazek mo\u017Ce mie\u0107 na bieg historii."
   - key: CARD_001_ALEXANDERGRAHAMBELL_DESC
     translations:
-    - 'Alexander Graham Bell was a Scottish-born inventor, scientist, and engineer,
+    - "Alexander Graham Bell was a Scottish-born inventor, scientist, and engineer,
       best known for inventing the telephone. Born on March 3, 1847, in Edinburgh,
-      Scotland, Bell''s groundbreaking work in communication technology has had a
-      profound and lasting impact on society.
-
-      
-
-      In 1876, Bell patented
-      his most famous invention, the telephone, which revolutionized long-distance
-      communication. The invention of the telephone allowed people to speak with
-      one another across great distances, fundamentally changing how information
-      was transmitted and connecting people in ways that were previously unimaginable.
-
-      
-
-      Bell''s
-      invention of the telephone was the culmination of years of research and experimentation
+      Scotland, Bell's groundbreaking work in communication technology has had a
+      profound and lasting impact on society.\r\r\nIn 1876, Bell patented his most
+      famous invention, the telephone, which revolutionized long-distance communication.
+      The invention of the telephone allowed people to speak with one another across
+      great distances, fundamentally changing how information was transmitted and
+      connecting people in ways that were previously unimaginable.\r\r\nBell's invention
+      of the telephone was the culmination of years of research and experimentation
       in the field of sound and speech transmission. He was inspired by his work
       with the deaf and his fascination with sound waves, leading him to develop
-      the concept of transmitting speech electrically.
-
-      
-
-      Beyond the
-      telephone, Bell made significant contributions to numerous other fields, including
-      aviation, medicine, and genetics. He was also involved in the founding of the
-      National Geographic Society and played a key role in advancing the study of
-      aeronautics.
-
-      
-
-      Alexander Graham Bell''s legacy as an inventor
-      and innovator is unparalleled, and his invention of the telephone remains one
-      of the most important technological advancements in history. His pioneering
-      spirit and dedication to scientific discovery continue to inspire generations
-      of inventors and engineers around the world.'
+      the concept of transmitting speech electrically.\r\r\nBeyond the telephone,
+      Bell made significant contributions to numerous other fields, including aviation,
+      medicine, and genetics. He was also involved in the founding of the National
+      Geographic Society and played a key role in advancing the study of aeronautics.\r\r\nAlexander
+      Graham Bell's legacy as an inventor and innovator is unparalleled, and his
+      invention of the telephone remains one of the most important technological
+      advancements in history. His pioneering spirit and dedication to scientific
+      discovery continue to inspire generations of inventors and engineers around
+      the world."
     - "Alexander Graham Bell by\u0142 szkockim wynalazc\u0105, naukowcem i in\u017Cynierem,
       najlepiej znanym z wynalezienia telefonu. Urodzony 3 marca 1847 roku w szkockim
       Edynburgu. Pze\u0142omowe prace Bella w dziedzinie technologii komunikacyjnej
-      mia\u0142y g\u0142\u0119boki i trwa\u0142y wp\u0142yw na spo\u0142ecze\u0144stwo.\r\n\r\nW
+      mia\u0142y g\u0142\u0119boki i trwa\u0142y wp\u0142yw na spo\u0142ecze\u0144stwo.\r\r\nW
       1876 roku Bell opatentowa\u0142 sw\xF3j najbardziej znany wynalazek, telefon,
       kt\xF3ry zrewolucjonizowa\u0142 komunikacj\u0119 na odleg\u0142o\u015B\u0107.
       Wynalezienie telefonu pozwoli\u0142o ludziom rozmawia\u0107 ze sob\u0105 na
       du\u017Ce odleg\u0142o\u015Bci, zmieniaj\u0105c fundamentalnie spos\xF3b przekazywania
       informacji i \u0142\u0105cz\u0105c ludzi w spos\xF3b wcze\u015Bniej nie do
-      pomy\u015Blenia.\r\n\r\nWynalezienie telefonu przez Bella by\u0142o wynikiem
+      pomy\u015Blenia.\r\r\nWynalezienie telefonu przez Bella by\u0142o wynikiem
       lat bada\u0144 i eksperyment\xF3w w dziedzinie transmisji d\u017Awi\u0119ku
       i mowy. Zainspirowany swoj\u0105 prac\u0105 z osobami g\u0142uchymi oraz jego
       fascynacj\u0105 falami d\u017Awi\u0119kowymi, opracowa\u0142 koncepcj\u0119
-      przesy\u0142ania mowy drog\u0105 elektryczn\u0105.\r\n\r\nPoza telefonem, Bell
+      przesy\u0142ania mowy drog\u0105 elektryczn\u0105.\r\r\nPoza telefonem, Bell
       wnosi\u0142 znacz\u0105cy wk\u0142ad w liczne inne dziedziny, w tym w lotnictwo,
       medycyn\u0119 i genetyk\u0119. By\u0142 tak\u017Ce zaanga\u017Cowany w za\u0142o\u017Cenie
       National Geographic Society i odegra\u0142 kluczow\u0105 rol\u0119 w promowaniu
-      bada\u0144 w dziedzinie lotnictwa.\r\n\r\nDziedzictwo Alexandra Grahama Bella
+      bada\u0144 w dziedzinie lotnictwa.\r\r\nDziedzictwo Alexandra Grahama Bella
       jako wynalazcy i innowatora jest niezr\xF3wnane, a jego wynalezienie telefonu
       pozostaje jednym z najwa\u017Cniejszych post\u0119p\xF3w technologicznych w
       historii. Jego pionierski duch i oddanie odkrywaniu naukowemu nadal inspiruj\u0105
@@ -175,71 +159,55 @@ MonoBehaviour:
     - Telefon
   - key: CARD_001_TELEPHONE_DESC
     translations:
-    - 'The Telephone, invented by Alexander Graham Bell in 1876, stands as one of
-      the most transformative inventions in human history. Bell''s groundbreaking
+    - "The Telephone, invented by Alexander Graham Bell in 1876, stands as one of
+      the most transformative inventions in human history. Bell's groundbreaking
       creation revolutionized communication by enabling individuals to speak with
       each other across great distances, fundamentally altering the way information
-      was transmitted and connecting people in ways previously unimaginable.
-
-      
-
-      At
+      was transmitted and connecting people in ways previously unimaginable.\r\r\nAt
       its core, the telephone consists of a transmitter, receiver, and electrical
       circuitry. When a person speaks into the transmitter, sound waves are converted
       into electrical signals, which are then transmitted along wires to the receiver
       at the other end. The receiver converts these electrical signals back into
-      sound waves, allowing the recipient to hear the speaker''s voice.
-
-      
-
-      Bell''s
+      sound waves, allowing the recipient to hear the speaker's voice.\r\r\nBell's
       invention of the telephone was the culmination of years of experimentation
       and innovation in the field of sound and speech transmission. Inspired by his
       work with the deaf and his fascination with sound waves, Bell developed the
       concept of transmitting speech electrically, ultimately leading to the creation
-      of the telephone.
-
-      
-
-      The impact of the telephone on society was
-      immediate and far-reaching. It transformed long-distance communication, making
-      it possible for people to communicate with loved ones, conduct business, and
-      share information across vast distances in real-time. The telephone also played
-      a crucial role in the growth of industries such as journalism, banking, and
-      commerce, facilitating faster and more efficient communication between individuals
-      and organizations.
-
-      
-
-      Today, the legacy of Alexander Graham Bell''s
-      invention lives on in the form of modern telecommunications technology. While
-      the telephone has evolved significantly since its inception, its fundamental
-      principles remain the same, continuing to connect people around the world and
-      shaping the way we communicate in the digital age.'
+      of the telephone.\r\r\nThe impact of the telephone on society was immediate
+      and far-reaching. It transformed long-distance communication, making it possible
+      for people to communicate with loved ones, conduct business, and share information
+      across vast distances in real-time. The telephone also played a crucial role
+      in the growth of industries such as journalism, banking, and commerce, facilitating
+      faster and more efficient communication between individuals and organizations.\r\r\nToday,
+      the legacy of Alexander Graham Bell's invention lives on in the form of modern
+      telecommunications technology. While the telephone has evolved significantly
+      since its inception, its fundamental principles remain the same, continuing
+      to connect people around the world and shaping the way we communicate in the
+      digital age."
     - "Telefon, wynaleziony przez Alexandra Grahama Bella w 1876 roku, jest jednym
       z najbardziej prze\u0142omowych wynalazk\xF3w w historii ludzko\u015Bci. Rewolucyjne
       dzie\u0142o Bella zrewolucjonizowa\u0142o komunikacj\u0119, umo\u017Cliwiaj\u0105c
       jednostkom rozmow\u0119 ze sob\u0105 na du\u017Ce odleg\u0142o\u015Bci, zmieniaj\u0105c
       fundamentalnie spos\xF3b przekazywania informacji i \u0142\u0105cz\u0105c ludzi
-      w spos\xF3b wcze\u015Bniej nie do pomy\u015Blenia.\r\n\r\nW swej istocie, telefon
+      w spos\xF3b wcze\u015Bniej nie do pomy\u015Blenia.\r\r\nW swej istocie, telefon
       sk\u0142ada si\u0119 z nadajnika, odbiornika i uk\u0142ad\xF3w elektrycznych.
       Gdy osoba m\xF3wi do nadajnika, fale d\u017Awi\u0119kowe s\u0105 przekszta\u0142cane
       w sygna\u0142y elektryczne, kt\xF3re s\u0105 nast\u0119pnie przesy\u0142ane
       wzd\u0142u\u017C przewod\xF3w do odbiornika na drugim ko\u0144cu. Odbiornik
       przekszta\u0142ca te sygna\u0142y elektryczne z powrotem w fale d\u017Awi\u0119kowe,
-      umo\u017Cliwiaj\u0105c odbiorcy us\u0142yszenie g\u0142osu m\xF3wi\u0105cego.\r\n\r\nWynalezienie
+      umo\u017Cliwiaj\u0105c odbiorcy us\u0142yszenie g\u0142osu m\xF3wi\u0105cego.\r\r\nWynalezienie
       telefonu przez Bella by\u0142o kulminacj\u0105 lat eksperyment\xF3w i innowacji
       w dziedzinie transmisji d\u017Awi\u0119ku i mowy. Zainspirowany swoj\u0105
       prac\u0105 z osobami g\u0142uchymi oraz fascynacj\u0105 falami d\u017Awi\u0119kowymi,
       Bell opracowa\u0142 koncepcj\u0119 przesy\u0142ania mowy drog\u0105 elektryczn\u0105,
-      co w ko\u0144cu doprowadzi\u0142o do stworzenia telefonu.\r\n\r\nOddzia\u0142ywanie
+      co w ko\u0144cu doprowadzi\u0142o do stworzenia telefonu.\r\r\nOddzia\u0142ywanie
       telefonu na spo\u0142ecze\u0144stwo by\u0142o natychmiastowe i dalekosi\u0119\u017Cne.
       Zmieni\u0142 on komunikacj\u0119 na odleg\u0142o\u015B\u0107, umo\u017Cliwiaj\u0105c
       ludziom kontakt z bliskimi, prowadzenie biznesu i udost\u0119pnianie informacji
       na wielkie odleg\u0142o\u015Bci w czasie rzeczywistym. Telefon odegra\u0142
       tak\u017Ce kluczow\u0105 rol\u0119 w rozwoju bran\u017C takich jak dziennikarstwo,
       bankowo\u015B\u0107 i handel, u\u0142atwiaj\u0105c szybsz\u0105 i bardziej
-      efektywn\u0105 komunikacj\u0119 mi\u0119dzy jednostkami i organizacjami.\r\n\r\nDzisiaj,
+      efektywn\u0105 komunikacj\u0119 mi\u0119dzy jednostkami i organizacjami.\r\r\nDzisiaj,
       dziedzictwo wynalazku Alexandra Grahama Bella \u017Cyje dalej w postaci nowoczesnych
       technologii telekomunikacyjnych. Cho\u0107 telefon ewoluowa\u0142 znacznie
       od swojego powstania, jego fundamentalne zasady pozostaj\u0105 takie same,
@@ -247,61 +215,44 @@ MonoBehaviour:
       spos\xF3b, w jaki komunikujemy si\u0119 w erze cyfrowej."
   - key: CARD_002_JACOBPERKINS_DESC
     translations:
-    - 'Jacob Perkins was an American inventor and mechanical engineer, credited with
+    - "Jacob Perkins was an American inventor and mechanical engineer, credited with
       numerous inventions across various fields. Born on July 9, 1766, in Newburyport,
-      Massachusetts, Perkins'' innovative spirit and ingenuity led to advancements
-      in steam power, refrigeration, and printing, among other areas.
-
-      
-
-      One
-      of Perkins'' notable inventions is the bathometer, an early device used for
-      measuring ocean depth. Developed in the early 19th century, the bathometer
-      allowed mariners to determine the depth of water beneath their vessels with
-      greater accuracy, improving navigation and safety at sea.
-
-      
-
-      Perkins''
-      bathometer utilized a combination of mechanical components and principles of
-      fluid dynamics to gauge water depth. The device consisted of a weighted line
-      or cable attached to a calibrated gauge, which would indicate the depth as
-      the line was lowered into the water.
-
-      
-
-      In addition to the bathometer,
-      Perkins is also known for his contributions to the development of high-pressure
-      steam engines, refrigeration technology, and printing machinery. His inventions
-      played a significant role in advancing industrialization and maritime exploration
-      during the 19th century.
-
-      
-
-      Jacob Perkins'' legacy as an inventor
-      continues to be celebrated, with his innovative creations leaving a lasting
-      impact on various industries. His pioneering work in engineering and technology
-      helped shape the modern world and laid the foundation for further advancements
-      in science and innovation.'
+      Massachusetts, Perkins' innovative spirit and ingenuity led to advancements
+      in steam power, refrigeration, and printing, among other areas.\r\r\nOne of
+      Perkins' notable inventions is the bathometer, an early device used for measuring
+      ocean depth. Developed in the early 19th century, the bathometer allowed mariners
+      to determine the depth of water beneath their vessels with greater accuracy,
+      improving navigation and safety at sea.\r\r\nPerkins' bathometer utilized a
+      combination of mechanical components and principles of fluid dynamics to gauge
+      water depth. The device consisted of a weighted line or cable attached to a
+      calibrated gauge, which would indicate the depth as the line was lowered into
+      the water.\r\r\nIn addition to the bathometer, Perkins is also known for his
+      contributions to the development of high-pressure steam engines, refrigeration
+      technology, and printing machinery. His inventions played a significant role
+      in advancing industrialization and maritime exploration during the 19th century.\r\r\nJacob
+      Perkins' legacy as an inventor continues to be celebrated, with his innovative
+      creations leaving a lasting impact on various industries. His pioneering work
+      in engineering and technology helped shape the modern world and laid the foundation
+      for further advancements in science and innovation."
     - "Jacob Perkins by\u0142 ameryka\u0144skim wynalazc\u0105 i in\u017Cynierem
       mechanicznym, kt\xF3remu przypisuje si\u0119 liczne wynalazki w r\xF3\u017Cnych
       dziedzinach. Urodzony 9 lipca 1766 roku w Newburyport w Massachusetts. Innowacyjny
       duch Perkinsa i jego pomys\u0142owo\u015B\u0107 doprowadzi\u0142y do post\u0119p\xF3w
-      w energetyce parowej, ch\u0142odnictwie, druku i w wielu innych dziedzinach.\r\n\r\nJednym
+      w energetyce parowej, ch\u0142odnictwie, druku i w wielu innych dziedzinach.\r\r\nJednym
       z godnych uwagi wynalazk\xF3w Perkinsa jest batometr, wczesne urz\u0105dzenie
       s\u0142u\u017C\u0105ce do pomiaru g\u0142\u0119boko\u015Bci oceanu. Opracowany
       na pocz\u0105tku XIX wieku, batometr umo\u017Cliwia\u0142 marynarzom dok\u0142adniejsze
       okre\u015Blenie g\u0142\u0119boko\u015Bci wody pod ich statkami, poprawiaj\u0105c
-      nawigacj\u0119 i bezpiecze\u0144stwo na morzu.\r\n\r\nBatometr Perkinsa wykorzystywa\u0142
+      nawigacj\u0119 i bezpiecze\u0144stwo na morzu.\r\r\nBatometr Perkinsa wykorzystywa\u0142
       kombinacj\u0119 komponent\xF3w mechanicznych i zasad dynamiki p\u0142yn\xF3w
       do pomiaru g\u0142\u0119boko\u015Bci wody. Urz\u0105dzenie sk\u0142ada\u0142o
       si\u0119 zwa\u017Conej liny lub kabla przytwierdzonego do skalibrowanej miarki,
       kt\xF3ra wskazywa\u0142a g\u0142\u0119boko\u015B\u0107 podczas opuszczania
-      liny do wody.\r\n\r\nOpr\xF3cz batometru, Perkins jest r\xF3wnie\u017C znany
+      liny do wody.\r\r\nOpr\xF3cz batometru, Perkins jest r\xF3wnie\u017C znany
       z wk\u0142adu w rozw\xF3j wysokoci\u015Bnieniowych silnik\xF3w parowych, technologii
       ch\u0142odzenia oraz maszyn drukarskich. Jego wynalazki odegra\u0142y znacz\u0105c\u0105
       rol\u0119 w przyspieszeniu procesu industrializacji i eksploracji morskiej
-      w XIX wieku.\r\n\r\nDziedzictwo Jacoba Perkinsa jako wynalazcy nadal jest celebrowane,
+      w XIX wieku.\r\r\nDziedzictwo Jacoba Perkinsa jako wynalazcy nadal jest celebrowane,
       a jego innowacyjne kreacje pozostawi\u0142y trwa\u0142y \u015Blad w r\xF3\u017Cnych
       bran\u017Cach. Jego pionierska praca w dziedzinie in\u017Cynierii i technologii
       pomog\u0142a kszta\u0142towa\u0107 nowoczesny \u015Bwiat i po\u0142o\u017Cy\u0142a
@@ -312,65 +263,48 @@ MonoBehaviour:
     - Batometr
   - key: CARD_002_BATHOMETER_DESC
     translations:
-    - 'The Bathometer, invented by Jacob Perkins in the early 19th century, emerged
+    - "The Bathometer, invented by Jacob Perkins in the early 19th century, emerged
       as a pioneering device for measuring ocean depth, profoundly impacting maritime
-      navigation and exploration. Perkins'' innovative creation provided mariners
+      navigation and exploration. Perkins' innovative creation provided mariners
       with a reliable method for determining water depth beneath their vessels, enhancing
-      safety and efficiency at sea.
-
-      
-
-      At its essence, the bathometer
-      comprised a weighted line or cable attached to a calibrated gauge. Mariners
-      would lower the line into the water, allowing the weight to descend until it
-      made contact with the ocean floor. The depth could then be read from the gauge,
-      providing valuable information for navigational purposes.
-
-      
-
-      Perkins''
-      bathometer represented a significant advancement in hydrographic measurement
-      technology. By enabling sailors to accurately gauge water depth, the device
-      facilitated safer passage through coastal waters, channels, and harbors, reducing
-      the risk of shipwrecks and maritime accidents.
-
-      
-
-      Moreover, the
-      bathometer played a crucial role in advancing scientific understanding of oceanography
-      and seabed topography. Its widespread adoption by maritime explorers and researchers
-      contributed to the mapping and charting of previously uncharted regions of
-      the world''s oceans, expanding our knowledge of marine environments.
-
-      
-
-      Jacob
-      Perkins'' invention of the bathometer exemplifies the spirit of innovation
-      and ingenuity that characterized the 19th-century era of exploration and discovery.
-      His contributions to maritime technology have left an enduring legacy, enhancing
-      maritime safety and navigation while furthering our understanding of the world''s
-      oceans.'
+      safety and efficiency at sea.\r\r\nAt its essence, the bathometer comprised
+      a weighted line or cable attached to a calibrated gauge. Mariners would lower
+      the line into the water, allowing the weight to descend until it made contact
+      with the ocean floor. The depth could then be read from the gauge, providing
+      valuable information for navigational purposes.\r\r\nPerkins' bathometer represented
+      a significant advancement in hydrographic measurement technology. By enabling
+      sailors to accurately gauge water depth, the device facilitated safer passage
+      through coastal waters, channels, and harbors, reducing the risk of shipwrecks
+      and maritime accidents.\r\r\nMoreover, the bathometer played a crucial role
+      in advancing scientific understanding of oceanography and seabed topography.
+      Its widespread adoption by maritime explorers and researchers contributed to
+      the mapping and charting of previously uncharted regions of the world's oceans,
+      expanding our knowledge of marine environments.\r\r\nJacob Perkins' invention
+      of the bathometer exemplifies the spirit of innovation and ingenuity that characterized
+      the 19th-century era of exploration and discovery. His contributions to maritime
+      technology have left an enduring legacy, enhancing maritime safety and navigation
+      while furthering our understanding of the world's oceans."
     - "Batometr, wynaleziony przez Jacoba Perkinsa na pocz\u0105tku XIX wieku, pojawi\u0142
       si\u0119 jako pionierskie urz\u0105dzenie do pomiaru g\u0142\u0119boko\u015Bci
       oceanu, maj\u0105c g\u0142\u0119boki wp\u0142yw na \u017Ceglug\u0119 morsk\u0105
       i eksploracj\u0119. Innowacyjne dzie\u0142o Perkinsa zapewni\u0142o marynarzom
       niezawodn\u0105 metod\u0119 okre\u015Blania g\u0142\u0119boko\u015Bci wody
       pod ich statkami, poprawiaj\u0105c bezpiecze\u0144stwo i efektywno\u015B\u0107
-      na morzu.\r\n\r\nBatometr sk\u0142ada\u0142 si\u0119 zwa\u017Conej liny lub
-      kabla przytwierdzonego do skalibrowanej miarki. Marynarze opuszczali lin\u0119
-      do wody, pozwalaj\u0105c ci\u0119\u017Carowi opa\u015B\u0107, a\u017C dotkn\u0105\u0142
+      na morzu.\r\r\nBatometr sk\u0142ada\u0142 si\u0119 zwa\u017Conej liny lub kabla
+      przytwierdzonego do skalibrowanej miarki. Marynarze opuszczali lin\u0119 do
+      wody, pozwalaj\u0105c ci\u0119\u017Carowi opa\u015B\u0107, a\u017C dotkn\u0105\u0142
       dna oceanu. G\u0142\u0119boko\u015B\u0107 mo\u017Cna by\u0142o odczyta\u0107
-      z miarki, dostarczaj\u0105c cennych informacji do cel\xF3w nawigacyjnych.\r\n\r\nBatometr
+      z miarki, dostarczaj\u0105c cennych informacji do cel\xF3w nawigacyjnych.\r\r\nBatometr
       Perkinsa stanowi\u0142 znacz\u0105cy post\u0119p w technologii pomiaru hydrograficznego.
       Pozwalaj\u0105c marynarzom dok\u0142adnie okre\u015Bla\u0107 g\u0142\u0119boko\u015B\u0107
       wody, urz\u0105dzenie u\u0142atwia\u0142o bezpieczne przep\u0142ywanie przez
       wody przybrze\u017Cne, kana\u0142y i porty, zmniejszaj\u0105c ryzyko katastrof
-      morskich i wypadk\xF3w.\r\n\r\nCo wi\u0119cej, batometr odegra\u0142 kluczow\u0105
+      morskich i wypadk\xF3w.\r\r\nCo wi\u0119cej, batometr odegra\u0142 kluczow\u0105
       rol\u0119 w rozwijaniu naukowego zrozumienia oceanografii i topografii dna
       morskiego. Jego powszechne przyj\u0119cie przez morskich odkrywc\xF3w i badaczy
       przyczyni\u0142o si\u0119 do mapowania i kartowania wcze\u015Bniej niezbadanych
       obszar\xF3w ocean\xF3w \u015Bwiata, poszerzaj\u0105c nasz\u0105 wiedz\u0119
-      o \u015Brodowiskach morskich.\r\n\r\nWynalazek Jacoba Perkinsa w postaci batometru
+      o \u015Brodowiskach morskich.\r\r\nWynalazek Jacoba Perkinsa w postaci batometru
       doskonale ilustruje ducha innowacji i pomys\u0142owo\u015Bci, kt\xF3ry charakteryzowa\u0142
       XIX-wieczn\u0105 er\u0119 eksploracji i odkry\u0107. Jego wk\u0142ad w technologi\u0119
       morsk\u0105 pozostawi\u0142 trwa\u0142e dziedzictwo, poprawiaj\u0105c bezpiecze\u0144stwo
@@ -378,64 +312,48 @@ MonoBehaviour:
       \u015Bwiata."
   - key: CARD_003_SAMUELMORSE_DESC
     translations:
-    - 'Samuel Morse was an American inventor, painter, and philanthropist, best known
+    - "Samuel Morse was an American inventor, painter, and philanthropist, best known
       for his invention of Morse Code and the single-wire telegraph system. Born
-      on April 27, 1791, in Charlestown, Massachusetts, Morse''s contributions to
-      communication technology have had a profound and lasting impact on global communication.
-
-      
-
-      In
+      on April 27, 1791, in Charlestown, Massachusetts, Morse's contributions to
+      communication technology have had a profound and lasting impact on global communication.\r\r\nIn
       the 1830s, Morse developed the concept of a telegraph system capable of transmitting
       messages over long distances using electrical signals. His invention utilized
       a series of electrical pulses to encode messages, which could then be decoded
       at the receiving end. Morse Code, a system of dots and dashes representing
-      letters and numbers, was developed as the encoding method for these messages.
-
-      
-
-      Morse
+      letters and numbers, was developed as the encoding method for these messages.\r\r\nMorse
       Code revolutionized long-distance communication, allowing for rapid transmission
       of information across vast distances. It became the standard method of communication
       for telegraph operators around the world and played a crucial role in connecting
-      distant regions and facilitating international commerce and diplomacy.
-
-      
-
-      Beyond
+      distant regions and facilitating international commerce and diplomacy.\r\r\nBeyond
       his work on the telegraph and Morse Code, Samuel Morse was also a talented
       painter and educator. He co-founded the National Academy of Design in New York
-      City and is known for his contributions to the American art scene.
-
-      
-
-      Samuel
-      Morse''s legacy as an inventor and innovator is indelibly linked to the development
+      City and is known for his contributions to the American art scene.\r\r\nSamuel
+      Morse's legacy as an inventor and innovator is indelibly linked to the development
       of modern communication systems. His ingenuity and perseverance paved the way
       for advancements in telecommunication technology, shaping the way people communicate
-      and interact in the digital age.'
+      and interact in the digital age."
     - "Samuel Morse by\u0142 ameryka\u0144skim wynalazc\u0105, malarzem i filantropem,
       najbardziej znanym z wynalezienia kodu Morse'a i jednoprzewodowego systemu
       telegraficznego. Urodzony 27 kwietnia 1791 roku w Charlestown w Massachusetts.
       Wk\u0142ad Morse'a w technologi\u0119 komunikacyjn\u0105 mia\u0142 g\u0142\u0119boki
-      i trwa\u0142y wp\u0142yw na globaln\u0105 komunikacj\u0119.\r\n\r\nW latach
-      trzydziestych XIX wieku Morse opracowa\u0142 koncepcj\u0119 systemu telegraficznego
-      zdolnego do przesy\u0142ania wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci
-      za pomoc\u0105 sygna\u0142\xF3w elektrycznych. Jego wynalazek wykorzystywa\u0142
-      seri\u0119 impuls\xF3w elektrycznych do kodowania wiadomo\u015Bci, kt\xF3re
-      mo\u017Cna by\u0142o odkodowa\u0107 po drugiej stronie odbiorcy. Kod Morse'a,
-      system kropek i kresek reprezentuj\u0105cych litery i cyfry, zosta\u0142 opracowany
-      jako metoda kodowania tych wiadomo\u015Bci.\r\n\r\nKod Morse'a zrewolucjonizowa\u0142
+      i trwa\u0142y wp\u0142yw na globaln\u0105 komunikacj\u0119.\r\r\nW latach trzydziestych
+      XIX wieku Morse opracowa\u0142 koncepcj\u0119 systemu telegraficznego zdolnego
+      do przesy\u0142ania wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci za pomoc\u0105
+      sygna\u0142\xF3w elektrycznych. Jego wynalazek wykorzystywa\u0142 seri\u0119
+      impuls\xF3w elektrycznych do kodowania wiadomo\u015Bci, kt\xF3re mo\u017Cna
+      by\u0142o odkodowa\u0107 po drugiej stronie odbiorcy. Kod Morse'a, system kropek
+      i kresek reprezentuj\u0105cych litery i cyfry, zosta\u0142 opracowany jako
+      metoda kodowania tych wiadomo\u015Bci.\r\r\nKod Morse'a zrewolucjonizowa\u0142
       komunikacj\u0119 na odleg\u0142o\u015B\u0107, umo\u017Cliwiaj\u0105c szybk\u0105
       transmisj\u0119 informacji na ogromne odleg\u0142o\u015Bci. Sta\u0142 si\u0119
       standardow\u0105 metod\u0105 komunikacji dla operator\xF3w telegraficznych
       na ca\u0142ym \u015Bwiecie i odegra\u0142 kluczow\u0105 rol\u0119 w \u0142\u0105czeniu
       odleg\u0142ych region\xF3w oraz u\u0142atwianiu mi\u0119dzynarodowego handlu
-      i dyplomacji.\r\n\r\nPoza swoj\u0105 prac\u0105 nad telegrafem i kodem Morse'a,
+      i dyplomacji.\r\r\nPoza swoj\u0105 prac\u0105 nad telegrafem i kodem Morse'a,
       Samuel Morse by\u0142 r\xF3wnie\u017C utalentowanym malarzem i edukatorem.
       Wsp\xF3\u0142za\u0142o\u017Cy\u0142 Narodow\u0105 Akademi\u0119 Sztuk Pi\u0119knych
       w Nowym Jorku i znany jest z wk\u0142adu w ameryka\u0144sk\u0105 scen\u0119
-      artystyczn\u0105.\r\n\r\nDziedzictwo Samuela Morse'a jako wynalazcy i innowatora
+      artystyczn\u0105.\r\r\nDziedzictwo Samuela Morse'a jako wynalazcy i innowatora
       nieod\u0142\u0105cznie wi\u0105\u017Ce si\u0119 z rozwojem nowoczesnych system\xF3w
       komunikacyjnych. Jego pomys\u0142owo\u015B\u0107 i wytrwa\u0142o\u015B\u0107
       utorowa\u0142y drog\u0119 do post\u0119p\xF3w w technologii telekomunikacyjnej,
@@ -447,71 +365,55 @@ MonoBehaviour:
     - Kod Morse'a
   - key: CARD_003_MORSECODE_DESC
     translations:
-    - 'Morse Code, the ingenious system of dots and dashes representing letters and
+    - "Morse Code, the ingenious system of dots and dashes representing letters and
       numbers, stands as one of the most significant inventions in the history of
       communication, credited to Samuel Morse in the early 1830s. Morse Code revolutionized
       long-distance communication, enabling rapid transmission of messages over telegraph
-      wires and laying the foundation for modern telecommunications.
-
-      
-
-      At
-      its core, Morse Code utilizes a series of short and long signals, known as
-      dots and dashes, to represent each letter of the alphabet, as well as numerals
-      and punctuation marks. The code''s simplicity and versatility made it well-suited
+      wires and laying the foundation for modern telecommunications.\r\r\nAt its
+      core, Morse Code utilizes a series of short and long signals, known as dots
+      and dashes, to represent each letter of the alphabet, as well as numerals and
+      punctuation marks. The code's simplicity and versatility made it well-suited
       for transmission over telegraph lines, where electrical pulses could easily
-      be translated into audible or visual signals at the receiving end.
-
-      
-
-      Samuel
-      Morse''s development of Morse Code was inseparable from his invention of the
+      be translated into audible or visual signals at the receiving end.\r\r\nSamuel
+      Morse's development of Morse Code was inseparable from his invention of the
       single-wire telegraph system, which he patented in 1837. By combining his expertise
       in electrical engineering with his passion for communication, Morse created
       a groundbreaking method for transmitting messages across great distances with
-      unprecedented speed and efficiency.
-
-      
-
-      The impact of Morse Code
-      on global communication was profound and far-reaching. It facilitated the rapid
-      expansion of telegraph networks across continents, connecting people and nations
-      in ways previously unimaginable. Morse Code became the standard method of communication
+      unprecedented speed and efficiency.\r\r\nThe impact of Morse Code on global
+      communication was profound and far-reaching. It facilitated the rapid expansion
+      of telegraph networks across continents, connecting people and nations in ways
+      previously unimaginable. Morse Code became the standard method of communication
       for telegraph operators around the world, playing a crucial role in commerce,
-      diplomacy, and news dissemination.
-
-      
-
-      Despite the advent of more
-      advanced communication technologies in the modern era, Morse Code remains a
-      vital tool in certain applications, including aviation, maritime, and emergency
-      communications. Its enduring legacy stands as a testament to Samuel Morse''s
-      visionary genius and his contributions to the evolution of human communication.'
+      diplomacy, and news dissemination.\r\r\nDespite the advent of more advanced
+      communication technologies in the modern era, Morse Code remains a vital tool
+      in certain applications, including aviation, maritime, and emergency communications.
+      Its enduring legacy stands as a testament to Samuel Morse's visionary genius
+      and his contributions to the evolution of human communication."
     - "Kod Morse'a, genialny system kropek i kresek reprezentuj\u0105cych litery
       i cyfry, stanowi jeden z najwa\u017Cniejszych wynalazk\xF3w w historii komunikacji,
       przypisywany Samuelowi Morse'owi na pocz\u0105tku lat trzydziestych XIX wieku.
       Kod Morse'a zrewolucjonizowa\u0142 komunikacj\u0119 na odleg\u0142o\u015B\u0107,
       umo\u017Cliwiaj\u0105c szybk\u0105 transmisj\u0119 wiadomo\u015Bci przez przewody
-      telegraficzne i stawiaj\u0105c fundamenty pod wsp\xF3\u0142czesne telekomunikacje.\r\n\r\nW
+      telegraficzne i stawiaj\u0105c fundamenty pod wsp\xF3\u0142czesne telekomunikacje.\r\r\nW
       swojej istocie kod Morse'a wykorzystuje seri\u0119 kr\xF3tkich i d\u0142ugich
       sygna\u0142\xF3w, znanych jako kropki i kreski, aby reprezentowa\u0107 ka\u017Cd\u0105
       liter\u0119 alfabetu, jak r\xF3wnie\u017C cyfry i znaki interpunkcyjne. Prostota
       i wszechstronno\u015B\u0107 kodu sprawi\u0142y, \u017Ce by\u0142 on doskonale
       przystosowany do transmisji przez linie telegraficzne, gdzie impulsy elektryczne
       mog\u0142y by\u0107 \u0142atwo przet\u0142umaczone na sygna\u0142y d\u017Awi\u0119kowe
-      lub wizualne po drugiej stronie odbiorcy.\r\n\r\nRozw\xF3j kodu Morse'a przez
+      lub wizualne po drugiej stronie odbiorcy.\r\r\nRozw\xF3j kodu Morse'a przez
       Samuela Morse'a by\u0142 nierozerwalnie zwi\u0105zany z jego wynalazkiem jednoprzewodowego
       systemu telegraficznego, kt\xF3ry opatentowa\u0142 w 1837 roku. \u0141\u0105cz\u0105c
       swoj\u0105 wiedz\u0119 z dziedziny in\u017Cynierii elektrycznej z pasj\u0105
       do komunikacji, Morse stworzy\u0142 prze\u0142omow\u0105 metod\u0119 przekazywania
       wiadomo\u015Bci na wielkie odleg\u0142o\u015Bci z niespotykan\u0105 dot\u0105d
-      szybko\u015Bci\u0105 i efektywno\u015Bci\u0105.\r\n\r\nWp\u0142yw kodu Morse'a
+      szybko\u015Bci\u0105 i efektywno\u015Bci\u0105.\r\r\nWp\u0142yw kodu Morse'a
       na globaln\u0105 komunikacj\u0119 by\u0142 g\u0142\u0119boki i dalekosi\u0119\u017Cny.
       U\u0142atwi\u0142 on szybki rozw\xF3j sieci telegraficznych na kontynentach,
       \u0142\u0105cz\u0105c ludzi i narody w spos\xF3b wcze\u015Bniej nie do pomy\u015Blenia.
       Kod Morse'a sta\u0142 si\u0119 standardow\u0105 metod\u0105 komunikacji dla
       operator\xF3w telegraficznych na ca\u0142ym \u015Bwiecie, odgrywaj\u0105c kluczow\u0105
-      rol\u0119 w handlu, dyplomacji i rozpowszechnianiu wiadomo\u015Bci.\r\n\r\nMimo
+      rol\u0119 w handlu, dyplomacji i rozpowszechnianiu wiadomo\u015Bci.\r\r\nMimo
       pojawienia si\u0119 bardziej zaawansowanych technologii komunikacyjnych w nowoczesnej
       erze, kod Morse'a pozostaje niezb\u0119dnym narz\u0119dziem w pewnych zastosowaniach,
       w tym w lotnictwie, \u017Cegludze morskiej i komunikacji awaryjnej. Jego trwa\u0142e
