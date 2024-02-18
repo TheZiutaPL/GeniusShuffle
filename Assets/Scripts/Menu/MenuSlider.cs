@@ -58,7 +58,10 @@ public class MenuSlider : MenuElement
             newValue = Mathf.Round(newValue / step) * step;
         newValue = Mathf.Clamp(newValue, minValue, maxValue);
 
-        if (value != newValue && playSound)
+        if (value == newValue)
+            return;
+
+        if (playSound)
             PlayClickSound();
 
         value = newValue;

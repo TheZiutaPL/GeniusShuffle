@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -2936,7 +2936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -3303,6 +3303,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 917718749}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 123ba7e708e8e4640b82adca6b58a087,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8606,7 +8619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -9084,7 +9097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -9495,7 +9508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -10513,7 +10526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -10744,7 +10757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -11008,7 +11021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -11517,7 +11530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -11572,7 +11585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -11723,7 +11736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -11772,7 +11785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -12335,7 +12348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -12533,7 +12546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4eb31cd4edd21438540509f42d63b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls: []
@@ -12584,7 +12597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78f73c5becfde445a3a246e832f11d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -13404,7 +13417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -13623,7 +13636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -13961,7 +13974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -14045,7 +14058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -14381,7 +14394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -15074,7 +15087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -15365,7 +15378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -16622,7 +16635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3b851adb726eb40b3ee14c01c4ba4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls: []
@@ -17125,6 +17138,114 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4f3cdbbaff21240a8abafaccbb5fc1, type: 3}
+--- !u!1001 &8594516993759064890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7485
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.887429
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.46094453
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 54.896
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281100926801787527, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599599699898180492, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: m_Name
+      value: CoffeeMug
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 917718749}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ca5aed4356c9fc4787c47fdac357045, type: 3}
+    - target: {fileID: 7481383753156501787, guid: 9691ba2c7777b1042b6ece8653f45cd7,
+        type: 3}
+      propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9691ba2c7777b1042b6ece8653f45cd7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -17149,3 +17270,4 @@ SceneRoots:
   - {fileID: 2030845847328371189}
   - {fileID: 165474878}
   - {fileID: 1262321230}
+  - {fileID: 8594516993759064890}

@@ -5,8 +5,7 @@ using UnityEngine.Events;
 
 public class InteractionHandler : MonoBehaviour
 {
-    [SerializeField] private bool isInteractableFromStart = true;
-    public bool isInteractable { get; private set; } = true;
+    [field: SerializeField] public bool isInteractable { get; private set; } = true;
 
     [Space(10)]
 
@@ -14,11 +13,6 @@ public class InteractionHandler : MonoBehaviour
     [SerializeField] private UnityEvent heldDownActions; // Continuously check if pointer is pressed
     [SerializeField] private UnityEvent<bool> hoverActions;
     [SerializeField] private UnityEvent<bool> settingInteractableActions;
-
-    private void Awake()
-    {
-        isInteractable = isInteractableFromStart;
-    }
 
     public void SetInteractable(bool enable)
     {

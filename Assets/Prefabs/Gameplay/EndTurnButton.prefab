@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 0
+  <isInteractable>k__BackingField: 0
   clickActions:
     m_PersistentCalls:
       m_Calls:
