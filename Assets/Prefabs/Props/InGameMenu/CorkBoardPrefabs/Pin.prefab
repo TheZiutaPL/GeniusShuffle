@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8170888607380492174}
+  - component: {fileID: 4385518003844385516}
   m_Layer: 0
   m_Name: Pin
   m_TagString: Untagged
@@ -32,6 +33,29 @@ Transform:
   - {fileID: 6341086043589047882}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4385518003844385516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388225689053168734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b299ecc013c4344ba723c15e63cf31c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomizeOnAwake: 1
+  randomizedMaterialUnits:
+  - name: PinBody
+    instantiateNew: 0
+    meshRenderers:
+    - {fileID: 8945956668286789255}
+    randomMaterials:
+    - {fileID: 2100000, guid: 34fce0c8f7eea7846aa27256d506b296, type: 2}
+    - {fileID: 2100000, guid: 511081a8cef4b664885a7b4ef4020bbd, type: 2}
+    - {fileID: 2100000, guid: d79a9967c2d0416468cdb4f608402d1f, type: 2}
+    - {fileID: 2100000, guid: b3778c3a458c6e74588d8672fd7e2089, type: 2}
 --- !u!1001 &6884501165089919393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90,6 +114,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6652725513331149018, guid: 537cd591a4220a5468620f23a6df23b1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 537cd591a4220a5468620f23a6df23b1,
         type: 3}
       propertyPath: m_Name
@@ -103,6 +132,12 @@ PrefabInstance:
 --- !u!4 &6341086043589047882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 537cd591a4220a5468620f23a6df23b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 6884501165089919393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8945956668286789255 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6652725513331149018, guid: 537cd591a4220a5468620f23a6df23b1,
     type: 3}
   m_PrefabInstance: {fileID: 6884501165089919393}
   m_PrefabAsset: {fileID: 0}
