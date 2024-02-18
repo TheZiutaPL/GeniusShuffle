@@ -47,6 +47,13 @@ public class Hourglass : MonoBehaviour
         UpdateVisuals();
     }
 
+    public void ResumeTimer()
+    {
+        sandParticles.Play();
+
+        isTimerOn = true;
+    }
+
     public void StartVisualUpdate() => updateVisuals = true;
     public void StopVisualUpdate() => updateVisuals = false;
 

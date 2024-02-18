@@ -51,6 +51,18 @@ public class PlayerScoreManager : MonoBehaviour
         instance.UpdateMedal(0);
     }
 
+    public static void PauseGame()
+    {
+        instance.updatePlayTime = false;
+        instance.hourglass.StopTimer();
+    }
+
+    public static void ResumeGame()
+    {
+        instance.updatePlayTime = true;
+        instance.hourglass.ResumeTimer();
+    }
+
     public static PlayerStats EndGame()
     {
         instance.updatePlayTime = false;
@@ -81,5 +93,4 @@ public class PlayerScoreManager : MonoBehaviour
 
         hourglass.StartTimer(playerMedals[currentMedal].medalEarningTime, () => UpdateMedal());
     }
-
 }
