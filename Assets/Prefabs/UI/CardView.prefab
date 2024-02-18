@@ -758,17 +758,29 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Maria Sk\u0142adowska-Curie is a famous Polish scientist working on a
-    chemical reseach. She udsga buga Maria Sk\u0142adowska-Curie is a famous Polish
-    scientist working on a chemical reseach. She udsga buga Maria Sk\u0142adowska-Curie
-    is a famous Polish scientist working on a chemical reseach. She udsga buga Maria
-    Sk\u0142adowska-Curie is a famous Polish scientist working on a chemical reseach.
-    She udsga buga Maria Sk\u0142adowska-Curie is a famous Polish scientist working
-    on a chemical reseach. She udsga buga Maria Sk\u0142adowska-Curie is a famous
-    Polish scientist working on a chemical reseach. She udsga buga Maria Sk\u0142adowska-Curie
-    is a famous Polish scientist working on a chemical reseach. She udsga buga Maria
-    Sk\u0142adowska-Curie is a famous Polish scientist working on a chemical reseach.
-    She udsga buga "
+  m_text: "Morse Code, the ingenious system of dots and dashes representing letters
+    and numbers, stands as one of the most significant inventions in the history
+    of communication, credited to Samuel Morse in the early 1830s. Morse Code revolutionized
+    long-distance communication, enabling rapid transmission of messages over telegraph
+    wires and laying the foundation for modern telecommunications.\r\r\nAt its core,
+    Morse Code utilizes a series of short and long signals, known as dots and dashes,
+    to represent each letter of the alphabet, as well as numerals and punctuation
+    marks. The code's simplicity and versatility made it well-suited for transmission
+    over telegraph lines, where electrical pulses could easily be translated into
+    audible or visual signals at the receiving end.\r\r\nSamuel Morse's development
+    of Morse Code was inseparable from his invention of the single-wire telegraph
+    system, which he patented in 1837. By combining his expertise in electrical engineering
+    with his passion for communication, Morse created a groundbreaking method for
+    transmitting messages across great distances with unprecedented speed and efficiency.\r\n\r\nThe
+    impact of Morse Code on global communication was profound and far-reaching. It
+    facilitated the rapid expansion of telegraph networks across continents, connecting
+    people and nations in ways previously unimaginable. Morse Code became the standard
+    method of communication for telegraph operators around the world, playing a crucial
+    role in commerce, diplomacy, and news dissemination.\r\n\r\nDespite the advent
+    of more advanced communication technologies in the modern era, Morse Code remains
+    a vital tool in certain applications, including aviation, maritime, and emergency
+    communications. Its enduring legacy stands as a testament to Samuel Morse's visionary
+    genius and his contributions to the evolution of human communication."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -809,7 +821,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 100
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
