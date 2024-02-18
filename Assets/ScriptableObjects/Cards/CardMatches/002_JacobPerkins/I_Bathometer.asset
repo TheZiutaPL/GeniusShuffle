@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
-  m_Name: I_Temp
+  m_Name: I_Bathometer
   m_EditorClassIdentifier: 
-  cardName: CARD_002_TEMP_Name
+  cardName: CARD_002_BATHOMETER_NAME
   translateName: 1
-  cardDescription: CARD_002_TEMP_DESC
+  cardDescription: CARD_002_BATHOMETER_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: aa3d6ae16f79fe74f889c0b043be1a88, type: 3}
+  cardTexture: {fileID: 2800000, guid: 7d013efe2faaf9341b0ce452e41fee8d, type: 3}
