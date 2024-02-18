@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectionManager : MonoBehaviour
@@ -17,6 +19,8 @@ public class CollectionManager : MonoBehaviour
 
     [Space(10)]
     [SerializeField] MenuSlider cardPairsAmountSlider;
+    [SerializeField] TMP_Text collectionsAmountText;
+    [SerializeField] TMP_Text pairsAmountText;
     [SerializeField] GameManager gameManager;
 
     // Start is called before the first frame update
@@ -65,6 +69,11 @@ public class CollectionManager : MonoBehaviour
             pairs += collection.GetCardMatches().Count;
         }
         cardPairsAmountSlider.SetMaxValue(pairs);
+
+        if (collectionsAmountText != null)
+            collectionsAmountText.text = selectedCollections.Count.ToString();
+        if (pairsAmountText != null)
+            pairsAmountText.text = pairs.ToString();
     }
 
     public int GetCollectionsAmount() => selectedCollections.Count;
