@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
   m_Name: M003_SamuelMorse
   m_EditorClassIdentifier: 
-  outerBackgroundColor: {r: 0.49803922, g: 0.98039216, b: 0.4117647, a: 1}
-  innerBackgroundColor: {r: 0.20679033, g: 0.6132076, b: 0.13594696, a: 1}
+  outerBackgroundColor: {r: 0.20784314, g: 0.6117647, b: 0.13725491, a: 1}
+  innerBackgroundColor: {r: 0.49803922, g: 0.98039216, b: 0.4117647, a: 1}
   inventorCard: {fileID: 11400000, guid: 479530140531d864786648e3e5944642, type: 2}
   inventionCards:
   - {fileID: 11400000, guid: ee1d68a55d734094489359ac4ba00cdc, type: 2}

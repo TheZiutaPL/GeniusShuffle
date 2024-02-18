@@ -11,6 +11,7 @@ public struct PlayerStats
 public class PlayerScoreManager : MonoBehaviour
 {
     private static PlayerScoreManager instance;
+    [SerializeField] private GameManager gameManager;
 
     [System.Serializable]
     private struct PlayerMedal
@@ -27,6 +28,8 @@ public class PlayerScoreManager : MonoBehaviour
 
     private float playTime;
     private bool updatePlayTime;
+
+    [SerializeField] private GameObject resumeGameButton;
 
     private void Awake()
     {
@@ -50,6 +53,8 @@ public class PlayerScoreManager : MonoBehaviour
 
         instance.UpdateMedal(0);
     }
+
+    public void SetResumeButton() => resumeGameButton.SetActive(gameManager.IsGameStarted());
 
     public static void PauseGame()
     {

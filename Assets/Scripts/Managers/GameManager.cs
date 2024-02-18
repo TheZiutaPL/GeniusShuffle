@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CardGraveyard cardGraveyard;
 
     private List<CardObject> cards = new List<CardObject>();
+    public bool IsGameStarted() => cards.Count > 0;
 
     [Header("Start Animation")]
     [SerializeField] private Transform startCardsPosition;
