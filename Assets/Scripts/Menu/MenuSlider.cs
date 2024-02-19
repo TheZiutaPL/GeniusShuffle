@@ -15,6 +15,9 @@ public class MenuSlider : MenuElement
     [SerializeField] private float displayedValueMultiplier = 100;
 
     [SerializeField] TMP_Text displayText;
+    [SerializeField] GameObject lowerButton;
+    [SerializeField] GameObject raiseButton;
+
 
     [Space(10)]
     public UnityEvent<float> onValueChanged;
@@ -31,6 +34,11 @@ public class MenuSlider : MenuElement
     [SerializeField] Transform sliderValueTransform; // The part that's scaled/moved based on the value
     [SerializeField] Transform startPoint;
     [SerializeField] Transform endPoint; // The position where the slider's value should be the highest - used to calculate slider's direction
+
+    private void Start()
+    {
+        RefreshVisuals();
+    }
 
     public override void HeldDownAction(Vector3 hitPoint)
     {
@@ -68,9 +76,30 @@ public class MenuSlider : MenuElement
 
         onValueChanged?.Invoke(value);
 
+        RefreshVisuals();
+    }
+
+    void RefreshVisuals()
+    {
         if (displayText != null)
             displayText.text = $"{Mathf.Round(value * 100f) / 100f * displayedValueMultiplier}";
         // This has to be rounded again so min or max value don't affect the display
+
+        if (lowerButton != null)
+        {
+            if (value <= minValue)
+                lowerButton.SetActive(false);
+            else
+                lowerButton.SetActive(true);
+        }
+
+        if (raiseButton != null)
+        {
+            if (value >= maxValue)
+                raiseButton.SetActive(false);
+            else
+                raiseButton.SetActive(true);
+        }
 
         if (sliderValueTransform != null)
         {
