@@ -42,6 +42,10 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: b939a485f08360346bdca5c93f6fb187, type: 3}
     - {fileID: 21300000, guid: 3dbdf2b4b1397d047b9ae62eee6a7242, type: 3}
+  - key: MENU_SET_FULLSCREEN
+    translations:
+    - {fileID: 21300000, guid: 5bf94166c65c1e247b28024325af13d5, type: 3}
+    - {fileID: 21300000, guid: 566959fcfe8efe2489945957273396c7, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}
