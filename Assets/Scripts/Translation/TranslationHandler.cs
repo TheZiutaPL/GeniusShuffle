@@ -16,6 +16,8 @@ namespace FlawareStudios.Translation
 
         private Action subscribedTranslators;
 
+        private const string CURRENT_LANG_KEY = "CURRENT_LANGUAGE";
+
         private void Awake()
         {
             if (isMainInstance)
@@ -33,9 +35,16 @@ namespace FlawareStudios.Translation
             instances.Add(this);
         }
 
+        private void Start()
+        {
+            SetLanguage(PlayerPrefs.GetString(CURRENT_LANG_KEY, "Polski"));
+        }
+
         public void SetLanguage(string newLanguage) 
         { 
             currentLanguage = newLanguage;
+
+            PlayerPrefs.SetString(CURRENT_LANG_KEY, currentLanguage);
 
             RetranslateSubscribed();
         }
