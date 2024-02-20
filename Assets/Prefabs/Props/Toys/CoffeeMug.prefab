@@ -87,6 +87,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3828334048094799986, guid: f0f27d979436b2b4e9dda0702969fad1,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 8121291105912664268}
+    - targetCorrespondingSourceObject: {fileID: 3828334048094799986, guid: f0f27d979436b2b4e9dda0702969fad1,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 9137040485601778649}
     - targetCorrespondingSourceObject: {fileID: 3828334048094799986, guid: f0f27d979436b2b4e9dda0702969fad1,
         type: 3}
@@ -111,13 +115,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractableFromStart: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9172352169770942976}
         m_TargetAssemblyTypeName: InteractableAnimationHandler, Assembly-CSharp
         m_MethodName: HandleAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8121291105912664268}
+        m_TargetAssemblyTypeName: AudioIndependentInstance, Assembly-CSharp
+        m_MethodName: PlayAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -152,6 +168,20 @@ MonoBehaviour:
   animationHandlerType: 0
   animatorKeyOn: MugHit
   animatorKeyOff: MugHit
+--- !u!114 &8121291105912664268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599599699898180492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8902054e5a01bf346bd99eb03ebf1720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 9ca5aed4356c9fc4787c47fdac357045, type: 3}
 --- !u!65 &9137040485601778649
 BoxCollider:
   m_ObjectHideFlags: 0
