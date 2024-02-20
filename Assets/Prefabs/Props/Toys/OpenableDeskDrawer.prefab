@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 3855813038547294299}
   - component: {fileID: 2516690886993247674}
   - component: {fileID: 4250368671922192215}
-  - component: {fileID: 5686394037891942715}
   - component: {fileID: 7841193248148881339}
   - component: {fileID: 2558252458093927022}
   m_Layer: 0
@@ -215,8 +214,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5686394037891942715}
-        m_TargetAssemblyTypeName: AudioIndependentInstance, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 59ddc95e784b9724eb6d23bb03a40d50, type: 2}
+        m_TargetAssemblyTypeName: AudioGroup, Assembly-CSharp
         m_MethodName: PlayAudio
         m_Mode: 1
         m_Arguments:
@@ -252,20 +251,6 @@ MonoBehaviour:
   animationHandlerType: 1
   animatorKeyOn: opened
   animatorKeyOff: opened
---- !u!114 &5686394037891942715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4701785477190472371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8902054e5a01bf346bd99eb03ebf1720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClips:
-  - {fileID: 8300000, guid: 123ba7e708e8e4640b82adca6b58a087, type: 3}
 --- !u!95 &7841193248148881339
 Animator:
   serializedVersion: 5

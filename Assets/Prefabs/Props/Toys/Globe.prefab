@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2268827867585012990}
   - component: {fileID: 3004637816345556256}
   - component: {fileID: 1992963852827144484}
-  - component: {fileID: 2440410729213850400}
   - component: {fileID: 487978786198505383}
   m_Layer: 0
   m_Name: Globe
@@ -64,8 +63,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2440410729213850400}
-        m_TargetAssemblyTypeName: AudioIndependentInstance, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 01daded5077a2974a9cfc83452cf7eda, type: 2}
+        m_TargetAssemblyTypeName: AudioGroup, Assembly-CSharp
         m_MethodName: PlayAudio
         m_Mode: 1
         m_Arguments:
@@ -125,20 +124,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   timePerRotationDegree: 0.00175
---- !u!114 &2440410729213850400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5270131074046563353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8902054e5a01bf346bd99eb03ebf1720, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClips:
-  - {fileID: 8300000, guid: 3533196e27d6cb84abc4935d70a11f66, type: 3}
 --- !u!135 &487978786198505383
 SphereCollider:
   m_ObjectHideFlags: 0
