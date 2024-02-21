@@ -153,6 +153,6 @@ public class Settings : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        Transition.SetTransition(true, Application.Quit);
     }
 }
