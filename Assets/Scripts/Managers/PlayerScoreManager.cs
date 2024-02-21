@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public struct PlayerStats
+[Serializable]
+public class PlayerStats
 {
     public float playedTime;
-    public int medalIndex;
+    public int GetMedalIndex() => PlayerScoreManager.GetMedalByTime(playedTime);
 }
 
 public class PlayerScoreManager : MonoBehaviour
@@ -74,7 +76,6 @@ public class PlayerScoreManager : MonoBehaviour
 
         PlayerStats playerStats = new PlayerStats()
         {
-            medalIndex = instance.currentMedal,
             playedTime = instance.playTime,
         };
 
@@ -97,5 +98,19 @@ public class PlayerScoreManager : MonoBehaviour
         }
 
         hourglass.StartTimer(playerMedals[currentMedal].medalEarningTime, () => UpdateMedal());
+    }
+
+    public static int GetMedalByTime(float time)
+    {
+        int medal;
+        for (medal = 0; medal < instance.playerMedals.Length; medal++)
+        {
+            if (time < instance.playerMedals[medal].medalEarningTime)
+                break;
+
+            time -= instance.playerMedals[medal].medalEarningTime;
+        }
+
+        return medal;
     }
 }

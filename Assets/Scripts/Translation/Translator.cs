@@ -7,12 +7,14 @@ namespace FlawareStudios.Translation
     public abstract class Translator : MonoBehaviour
     {
         [SerializeField] protected TranslationHandler usedTranslationHandler;
+        private bool alreadyStarted;
+        
         [SerializeField] protected string translationKey;
         [SerializeField] protected bool subscribeToHandler;
 
         private void OnEnable()
         {
-            if (!subscribeToHandler)
+            if (!subscribeToHandler || !alreadyStarted)
                 return;
 
             usedTranslationHandler.SubscribeTranslator(GetTranslation);
@@ -20,7 +22,7 @@ namespace FlawareStudios.Translation
 
         private void OnDisable()
         {
-            if (!subscribeToHandler)
+            if (!subscribeToHandler || !alreadyStarted)
                 return;
 
             usedTranslationHandler.UnsubscribeTranslator(GetTranslation);
@@ -29,6 +31,9 @@ namespace FlawareStudios.Translation
         private void Start()
         {
             if (usedTranslationHandler == null) usedTranslationHandler = TranslationHandler.mainInstance;
+            alreadyStarted = true;
+
+            OnEnable();
 
             GetTranslation();
         }

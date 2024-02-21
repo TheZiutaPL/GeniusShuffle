@@ -8,5 +8,6 @@ public class CardCollection : ScriptableObject
     public string collectionName;
 
     [SerializeField] private CardMatch[] cardMatches = new CardMatch[0];
+    public int GetPairCount() => cardMatches.Length;
     public List<CardMatch> GetCardMatches() => new List<CardMatch>(cardMatches);
 }

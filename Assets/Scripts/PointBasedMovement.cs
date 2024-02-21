@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 // This script provides a way to move objects around specific points of the scene
 
@@ -14,6 +15,7 @@ public class PointBasedMovement : MonoBehaviour
     [Space(10)]
     [SerializeField] UnityEvent onMovementStarted;
     [SerializeField] UnityEvent onDestinationReached;
+    private Action callbackAction;
 
     Vector3 startPosition;
     Quaternion startRotation;
@@ -36,6 +38,9 @@ public class PointBasedMovement : MonoBehaviour
                 if (onDestinationReached != null)
                     onDestinationReached.Invoke();
 
+                callbackAction?.Invoke();
+                callbackAction = null;
+
                 if (disableInteractionsOnMoving)
                     InteractionManager.instance.EnableInteractions(true);
 
@@ -45,8 +50,10 @@ public class PointBasedMovement : MonoBehaviour
     }
     
     // Please use MoveTo() unless you specifically want to skip checking if it's already moving
-    public void ForceMoveTo(Transform destination)
+    public void ForceMoveTo(Transform destination, Action callbackAction = null)
     {
+        this.callbackAction = callbackAction;
+
         startPosition = transform.position;
         startRotation = transform.rotation;
 
@@ -69,6 +76,14 @@ public class PointBasedMovement : MonoBehaviour
         if (moving)
             return;
 
-        ForceMoveTo(destination);
+        ForceMoveTo(destination, null);
+    }
+
+    public void MoveTo(Transform destination, Action callbackAction = null)
+    {
+        if (moving)
+            return;
+
+        ForceMoveTo(destination, callbackAction);
     }
 }

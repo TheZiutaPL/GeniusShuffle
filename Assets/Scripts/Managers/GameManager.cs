@@ -5,11 +5,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Setup")]
+    [SerializeField] private PointBasedMovement cameraMovement;
+    [SerializeField] private Transform gamePositionTransform;
+
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
     public void SetCardPairsCount(int newCardPairs) => cardPairsCount = newCardPairs;
     public void SetCardPairsCount(float newCardPairs) => cardPairsCount = Mathf.RoundToInt(newCardPairs);
+
+    [HideInInspector] public int levelIndex = -1;
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
@@ -42,7 +48,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform startCardsPosition;
     [SerializeField] private float cardLayoutDelay = 0.15f;
     [SerializeField] private float cardTraversalTime = .25f;
-    [SerializeField] private AudioClip[] startAnimationCardSound = new AudioClip[0];
+    [SerializeField] private AudioGroup cardDrawAudioGroup;
     private Coroutine startAnimation;
 
     private void Start()
@@ -51,9 +57,15 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
-    [ContextMenu("Start Game")]
-    public void StartGame()
+    public void InitializeGameStart(int level = -1)
     {
+        cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level));
+    }
+
+    [ContextMenu("Start Game")]
+    public void StartGame(int level = -1)
+    {
+        levelIndex = level;
         if (cardCollections == null)
             return;
 
@@ -111,7 +123,7 @@ public class GameManager : MonoBehaviour
                 if (timer >= i * cardLayoutDelay)
                 {
                     if (traversingCards[i].Item1.transform.position == startCardsPosition.position)
-                        AudioManager.PlaySound(startAnimationCardSound);
+                        cardDrawAudioGroup.PlayAudio();
 
                     float blend = Mathf.Clamp01((timer - i * cardLayoutDelay) / cardTraversalTime);
                     traversingCards[i].Item1.transform.position = Vector3.Lerp(startCardsPosition.position, traversingCards[i].Item2, blend);
@@ -163,7 +175,11 @@ public class GameManager : MonoBehaviour
     {
         //TODO
         PlayerStats stats = PlayerScoreManager.EndGame();
-        Debug.Log($"Earned {stats.medalIndex} medal in {stats.playedTime} seconds");
+
+        if(levelIndex >= 0)
+            CollectionManager.SetLevelStat(levelIndex, stats);
+
+        Debug.Log($"Earned {stats.GetMedalIndex()} medal in {stats.playedTime} seconds");
 
         yield return new WaitForSeconds(1f);
         cardGraveyard.ClearGraveyard();

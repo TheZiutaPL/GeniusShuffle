@@ -12,7 +12,7 @@ public class CollectionToggle : MonoBehaviour
 
     private void Start()
     {
-        pairsText.text = collection.GetCardMatches().Count + " pairs";
+        pairsText.text = collection.GetPairCount() + " pairs";
         SelectCollection(true);
     }
 
