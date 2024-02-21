@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
+  m_Name: M004_AlfredNobel
+  m_EditorClassIdentifier: 
+  outerBackgroundColor: {r: 0, g: 0.6422159, b: 0.8396226, a: 1}
+  innerBackgroundColor: {r: 0.13679248, g: 0.975401, b: 1, a: 1}
+  inventorCard: {fileID: 11400000, guid: 1cb8d65752ca55b4eb0a7427260c9fa7, type: 2}
+  inventionCards:
+  - {fileID: 11400000, guid: 05b306ae64045f04eb5b6442e7d21b47, type: 2}

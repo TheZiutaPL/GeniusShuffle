@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 0
   cardDescription: CARD_003_SAMUELMORSE_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: b9cee069131b33943895b44971067a85, type: 3}
+  cardTexture: {fileID: 2800000, guid: fc2d7c33afb9d1140960fd72db25a31f, type: 3}
