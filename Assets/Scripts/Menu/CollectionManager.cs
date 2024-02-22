@@ -58,11 +58,14 @@ public class CollectionManager : MonoBehaviour
     {
         int finishedLevels = GetFinishedLevels();
         for (int i = 0; i < levels.Count; i++)
-            levels[i].levelObject.SetActive(i < finishedLevels + 1);
+            levels[i].levelObject.SetActive(i > finishedLevels);
     }
 
     public void SelectLevel(int level)
     {
+        if (level > GetFinishedLevels())
+            return;
+
         CampaignLevel campaignLevel = levels[level];
         gameManager.SetStartCollections(campaignLevel.cardCollections);
         gameManager.SetCardPairsCount(campaignLevel.GetPairCount());
