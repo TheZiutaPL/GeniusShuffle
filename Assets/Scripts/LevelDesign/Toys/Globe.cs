@@ -21,8 +21,6 @@ public class Globe : MonoBehaviour
 
     public void RandomizePosition()
     {
-        Debug.Log("Glove got clicked");
-
         if (globeAnimationCoroutine != null)
             StopCoroutine(globeAnimationCoroutine);
 
@@ -32,17 +30,12 @@ public class Globe : MonoBehaviour
     IEnumerator GlobeAnimation()
     {
         float startZRot = globeSphereTransform.localEulerAngles.z;
-
         float rotationDistance = Random.Range(minRotationDegree, maxRotationDegree);
-        Debug.Log($"Rotation Distance = {rotationDistance}");
 
         float endZRot = startZRot + rotationDistance;
-
         float rotationTime = rotationDistance * timePerRotationDegree;
-        Debug.Log($"Rotation Time = {rotationTime}");
 
         float timer = 0;
-
         while(timer < rotationTime)
         {
             timer += Time.deltaTime;

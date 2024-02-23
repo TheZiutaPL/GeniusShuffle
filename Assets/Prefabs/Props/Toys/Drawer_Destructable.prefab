@@ -125,6 +125,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4215831418690615199}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   heldDownActions:
     m_PersistentCalls:
       m_Calls: []
@@ -151,7 +163,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.069128394, y: 0.04353134, z: 0.068078175}
   m_Center: {x: -0.000000014901161, y: 0.0003261716, z: 0.0010583366}
@@ -243,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructedOnStart: 0
   destructableHealth: 4
+  repairsToProgress: 1
   onHitEvent:
     m_PersistentCalls:
       m_Calls:
@@ -285,6 +298,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4215831418690615199}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: ad183b7c6bf11fd4cb5bda08d9b32394, type: 2}
         m_TargetAssemblyTypeName: AudioGroup, Assembly-CSharp
         m_MethodName: PlayAudio
@@ -297,6 +322,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  onRepairingProgressEvent:
+    m_PersistentCalls:
+      m_Calls: []
   onRepairEvent:
     m_PersistentCalls:
       m_Calls:
