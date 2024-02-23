@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 7841193248148881339}
   - component: {fileID: 2558252458093927022}
   m_Layer: 0
-  m_Name: OpenableDeskDrawer
+  m_Name: Drawer_Openable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

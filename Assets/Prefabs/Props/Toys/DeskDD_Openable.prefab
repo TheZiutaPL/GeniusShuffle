@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3222683850085032990}
   - component: {fileID: 4630830161669391480}
   m_Layer: 0
-  m_Name: OpenableDeskDD
+  m_Name: DeskDD_Openable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
