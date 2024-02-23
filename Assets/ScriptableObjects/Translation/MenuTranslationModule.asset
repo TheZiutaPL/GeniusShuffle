@@ -15,7 +15,23 @@ MonoBehaviour:
   translatedLanguages:
   - English
   - Polski
-  textTranslations: []
+  textTranslations:
+  - key: MENU_MM_PLAY
+    translations:
+    - Play
+    - Graj
+  - key: MENU_MM_SETTINGS
+    translations:
+    - Settings
+    - Ustawienia
+  - key: MENU_MM_CREDITS
+    translations:
+    - Credits
+    - "Tw\xF3rcy"
+  - key: MENU_MM_EXIT
+    translations:
+    - Exit
+    - "Wyj\u015Bcie"
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations:
   - key: MENU_MS_CAMPAIGN

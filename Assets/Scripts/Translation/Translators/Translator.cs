@@ -10,7 +10,7 @@ namespace FlawareStudios.Translation
         private bool alreadyStarted;
         
         [SerializeField] protected string translationKey;
-        [SerializeField] protected bool subscribeToHandler;
+        [SerializeField] protected bool subscribeToHandler = true;
 
         private void OnEnable()
         {
