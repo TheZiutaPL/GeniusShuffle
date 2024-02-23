@@ -68,6 +68,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoffeeMug
       objectReference: {fileID: 0}
+    - target: {fileID: 9135689963488711672, guid: f0f27d979436b2b4e9dda0702969fad1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135689963488711672, guid: f0f27d979436b2b4e9dda0702969fad1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135689963488711672, guid: f0f27d979436b2b4e9dda0702969fad1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
