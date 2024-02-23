@@ -216,6 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightObject: {fileID: 6911319644822725241}
   activeOnStart: 0
+  switchTransform: {fileID: 8431225041842368933}
+  tiltXDegees: 15
 --- !u!65 &722858293118661355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -349,6 +351,12 @@ PrefabInstance:
       addedObject: {fileID: 3191621919338011505}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3970c69c76d2c94ab7453feb5354231, type: 3}
+--- !u!4 &8431225041842368933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8134041142495127126, guid: a3970c69c76d2c94ab7453feb5354231,
+    type: 3}
+  m_PrefabInstance: {fileID: 8799943700928931855}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8799943700928931856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a3970c69c76d2c94ab7453feb5354231,
