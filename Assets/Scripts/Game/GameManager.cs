@@ -203,14 +203,11 @@ public class GameManager : MonoBehaviour
 
         if (levelIndex >= 0)
         {
-            yield return new WaitForSeconds(.25f);
             cameraMovement.MoveTo(levelSelectionTransform);
             CollectionManager.ActivateLevels();
         }
         else
-        {
             restartObject.SetBool(RESTART_OBJECT_SHOW_KEY, true);
-        }
     }
 
     #region Functions
