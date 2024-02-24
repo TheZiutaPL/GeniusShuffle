@@ -74,17 +74,17 @@ public class CollectionManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void ActivateLevels()
+    public static void ActivateLevels()
     {
         int finishedLevels = GetFinishedLevels();
-        for (int i = 0; i < levels.Count; i++)
+        for (int i = 0; i < instance.levels.Count; i++)
         {
-            levels[i].levelObject.SetActive(levelMode != LevelMode.Standard || i > finishedLevels);
-            levels[i].challengeObject.SetActive(levelMode != LevelMode.Challenge || i >= finishedLevels);
+            instance.levels[i].levelObject.SetActive(instance.levelMode != LevelMode.Standard || i > finishedLevels);
+            instance.levels[i].challengeObject.SetActive(instance.levelMode != LevelMode.Challenge || i >= finishedLevels);
         }
 
-        levelsParent.SetActive(levelMode == LevelMode.Standard);
-        challengeParent.SetActive(levelMode == LevelMode.Challenge);
+        instance.levelsParent.SetActive(instance.levelMode == LevelMode.Standard);
+        instance.challengeParent.SetActive(instance.levelMode == LevelMode.Challenge);
     }
 
     public void SelectLevel(int level)
@@ -180,12 +180,12 @@ public class CollectionManager : MonoBehaviour
 
     public int GetCollectionsAmount() => selectedCollections.Count;
 
-    public int GetFinishedLevels()
+    public static int GetFinishedLevels()
     {
         int i;
-        for (i = 0; i < levels.Count; i++)
+        for (i = 0; i < instance.levels.Count; i++)
         {
-            if (levels[i].LevelStats == null)
+            if (instance.levels[i].LevelStats == null)
                 break;
         }
 

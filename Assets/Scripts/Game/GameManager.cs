@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour
     [Header("Setup")]
     [SerializeField] private PointBasedMovement cameraMovement;
     [SerializeField] private Transform gamePositionTransform;
+    [SerializeField] private Transform levelSelectionTransform;
+    [SerializeField] private Animator restartObject;
+
+    private const string RESTART_OBJECT_SHOW_KEY = "show";
 
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
@@ -60,14 +64,20 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
+    public void InitializeGameStart() => InitializeGameStart(-1, -1);
+
     public void InitializeGameStart(int level = -1, int mode = -1)
     {
         cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level, mode));
     }
 
+    public void StartGame() => StartGame(levelIndex, levelMode);
+
     [ContextMenu("Start Game")]
     public void StartGame(int level = -1, int mode = -1)
     {
+        restartObject.SetBool(RESTART_OBJECT_SHOW_KEY, false);
+
         levelIndex = level;
         levelMode = mode;
         if (cardCollections == null)
@@ -190,7 +200,17 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         cardGraveyard.ClearGraveyard();
-        StartGame();
+
+        if (levelIndex >= 0)
+        {
+            yield return new WaitForSeconds(.25f);
+            cameraMovement.MoveTo(levelSelectionTransform);
+            CollectionManager.ActivateLevels();
+        }
+        else
+        {
+            restartObject.SetBool(RESTART_OBJECT_SHOW_KEY, true);
+        }
     }
 
     #region Functions
