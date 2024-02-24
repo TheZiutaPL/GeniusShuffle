@@ -20,18 +20,10 @@ MonoBehaviour:
     translations:
     - Play
     - Graj
-  - key: MENU_MM_SETTINGS
-    translations:
-    - Settings
-    - Ustawienia
   - key: MENU_MM_CREDITS
     translations:
     - Credits
     - "Tw\xF3rcy"
-  - key: MENU_MM_EXIT
-    translations:
-    - Exit
-    - "Wyj\u015Bcie"
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations:
   - key: MENU_MS_CAMPAIGN
@@ -62,6 +54,22 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: 5bf94166c65c1e247b28024325af13d5, type: 3}
     - {fileID: 21300000, guid: 566959fcfe8efe2489945957273396c7, type: 3}
+  - key: MENU_MM_SETTINGS
+    translations:
+    - {fileID: 21300000, guid: bb01b32c075dbe642a425d921c54f760, type: 3}
+    - {fileID: 21300000, guid: 982eaa4a397353548946a5506c51eb38, type: 3}
+  - key: MENU_MM_QUIT
+    translations:
+    - {fileID: 21300000, guid: 7909a0ab235ba6342bfd837b7de8c424, type: 3}
+    - {fileID: 21300000, guid: af733c1301484264894c125f72562a09, type: 3}
+  - key: MENU_LS_SWITCH_TO_CHALLENGE
+    translations:
+    - {fileID: 21300000, guid: 1f3bae340ffb81147acdf0cda9edb1a2, type: 3}
+    - {fileID: 21300000, guid: 40c19d19974f50145a38d2537cc205b5, type: 3}
+  - key: MENU_LS_SWITCH_TO_NORMAL
+    translations:
+    - {fileID: 21300000, guid: a2bb5a4a50577f44dae55663377cc401, type: 3}
+    - {fileID: 21300000, guid: 4ab241ee313d62b4e8344468ffff7643, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}
