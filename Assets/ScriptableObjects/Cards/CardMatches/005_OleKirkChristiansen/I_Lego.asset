@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
   m_Name: I_Lego
   m_EditorClassIdentifier: 
-  cardName: CARD_005_LEGO_NAME
+  cardName: CARD_005_LEGOBRICKS_NAME
   translateName: 1
-  cardDescription: CARD_005_LEGO_DESC
+  cardDescription: CARD_005_LEGOBRICKS_DESC
   translateDescription: 1
   cardTexture: {fileID: 2800000, guid: 053f9851ef0860146ac1a495502aba00, type: 3}

@@ -8,11 +8,17 @@ public class CampaignLevel
 {
     [SerializeField] private string name;
     public GameObject levelObject;
+    public GameObject challengeObject;
+
+    [Header("Level Settings")]
     public List<CardCollection> cardCollections;
     public int cardPairsInGame;
 
     private PlayerStats levelStats = null;
     public PlayerStats LevelStats { get => levelStats; set => levelStats = value; }
+
+    private PlayerStats challengeStats = null;
+    public PlayerStats ChallengeStats { get => challengeStats; set => challengeStats = value; }
 
     public int GetPairCount()
     {
@@ -36,6 +42,8 @@ public class CollectionManager : MonoBehaviour
 
     [Header("Campaign")]
     [SerializeField] List<CampaignLevel> levels;
+    [SerializeField] private GameObject levelsParent;
+    [SerializeField] private GameObject challengeParent;
 
     [Header("Free Play")]
     [SerializeField] List<CardCollection> selectedCollections = new List<CardCollection>();
@@ -45,6 +53,18 @@ public class CollectionManager : MonoBehaviour
     [SerializeField] TMP_Text collectionsAmountText;
     [SerializeField] TMP_Text pairsAmountText;
     [SerializeField] GameManager gameManager;
+
+    private enum LevelMode 
+    {
+        Standard,
+        Challenge,
+    }
+    private LevelMode levelMode;
+    public void SetLevelMode(int modeIndex)
+    {
+        levelMode = (LevelMode)modeIndex;
+        ActivateLevels();
+    }
 
     private void Awake()
     {
@@ -58,12 +78,23 @@ public class CollectionManager : MonoBehaviour
     {
         int finishedLevels = GetFinishedLevels();
         for (int i = 0; i < levels.Count; i++)
-            levels[i].levelObject.SetActive(i > finishedLevels);
+        {
+            levels[i].levelObject.SetActive(levelMode != LevelMode.Standard || i > finishedLevels);
+            levels[i].challengeObject.SetActive(levelMode != LevelMode.Challenge || i >= finishedLevels);
+        }
+
+        levelsParent.SetActive(levelMode == LevelMode.Standard);
+        challengeParent.SetActive(levelMode == LevelMode.Challenge);
     }
 
     public void SelectLevel(int level)
     {
-        if (level > GetFinishedLevels())
+        if (levelMode switch
+        {
+            LevelMode.Standard => level > GetFinishedLevels(),
+            LevelMode.Challenge => level >= GetFinishedLevels(),
+            _ => throw new System.NotImplementedException(),
+        })
             return;
 
         CampaignLevel campaignLevel = levels[level];
@@ -77,23 +108,48 @@ public class CollectionManager : MonoBehaviour
         else
             Debug.Log($"You have no best time yet");
 
-        gameManager.InitializeGameStart(level);
+        gameManager.InitializeGameStart(level, (int)levelMode);
     }
 
-    public static void SetLevelStat(int levelIndex, PlayerStats playerStats) 
+    public static void SetLevelStat(int levelIndex, int levelMode, PlayerStats playerStats) 
     {
         CampaignLevel campaignLevel = instance.levels[levelIndex];
-        if (campaignLevel.LevelStats == null)
-            campaignLevel.LevelStats = playerStats;
+
+        PlayerStats currentStats = levelMode switch
+        {
+            0 => campaignLevel.LevelStats,
+            1 => campaignLevel.ChallengeStats,
+            _ => throw new System.NotImplementedException(),
+        };
+
+        if (currentStats == null)
+            currentStats = playerStats;
         else
-            campaignLevel.LevelStats = playerStats.playedTime >= campaignLevel.LevelStats.playedTime ? campaignLevel.LevelStats : playerStats;
+            currentStats = playerStats.playedTime >= campaignLevel.LevelStats.playedTime ? campaignLevel.LevelStats : playerStats;
+
+        switch (levelMode)
+        {
+            case 0:
+                campaignLevel.LevelStats = currentStats;
+                break;
+
+            case 1:
+                campaignLevel.ChallengeStats = currentStats;
+                break;
+        }
 
         SaveManager.Save(SaveManager.LevelsToData());
     }
-    public static void SetLevelStats(PlayerStats[] playerStats)
+    public static void SetLevelStats(PlayerStats[] levelStats, PlayerStats[] challangeStats)
     {
-        for (int i = 0; i < playerStats.Length; i++)
-            instance.levels[i].LevelStats = playerStats[i];
+        for (int i = 0; i < instance.levels.Count; i++) 
+        { 
+            if(i < levelStats.Length)
+                instance.levels[i].LevelStats = levelStats[i];
+
+            if(i < challangeStats.Length)
+                instance.levels[i].ChallengeStats = challangeStats[i];
+        }
     }
     public static List<CampaignLevel> GetLevels() => instance.levels;
 

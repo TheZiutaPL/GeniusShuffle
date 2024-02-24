@@ -8,10 +8,12 @@ using System.IO;
 public class SaveData
 {
     public PlayerStats[] levelStats;
+    public PlayerStats[] challengeStats;
 
     public SaveData(int levels)
     {
         levelStats = new PlayerStats[levels];
+        challengeStats = new PlayerStats[levels];
     }
 }
 
@@ -29,7 +31,7 @@ public class SaveManager : MonoBehaviour
     private void Start()
     {
         if (saveFound)
-            CollectionManager.SetLevelStats(loadedSave.levelStats);
+            CollectionManager.SetLevelStats(loadedSave.levelStats, loadedSave.challengeStats);
     }
 
     public static SaveData LevelsToData()
@@ -42,6 +44,7 @@ public class SaveManager : MonoBehaviour
         for (int i = 0; i < levelCount; i++)
         {
             saveData.levelStats[i] = campaignLevels[i].LevelStats;
+            saveData.challengeStats[i] = campaignLevels[i].ChallengeStats;
         }
 
         return saveData;

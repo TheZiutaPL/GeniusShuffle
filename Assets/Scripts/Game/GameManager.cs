@@ -16,10 +16,13 @@ public class GameManager : MonoBehaviour
     public void SetCardPairsCount(float newCardPairs) => cardPairsCount = Mathf.RoundToInt(newCardPairs);
 
     [HideInInspector] public int levelIndex = -1;
+    [HideInInspector] public int levelMode = -1;
 
     [Header("Card Setup")]
     [SerializeField] private CardObject cardObjectPrefab;
     [SerializeField] private List<CardCollection> cardCollections;
+    [SerializeField] private Color defaultInnerColor;
+    [SerializeField] private Color defaultOuterColor;
     public void SetStartCollections(List<CardCollection> newCardCollections) 
     { 
         cardCollections = newCardCollections;
@@ -57,15 +60,16 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
-    public void InitializeGameStart(int level = -1)
+    public void InitializeGameStart(int level = -1, int mode = -1)
     {
-        cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level));
+        cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level, mode));
     }
 
     [ContextMenu("Start Game")]
-    public void StartGame(int level = -1)
+    public void StartGame(int level = -1, int mode = -1)
     {
         levelIndex = level;
+        levelMode = mode;
         if (cardCollections == null)
             return;
 
@@ -78,8 +82,11 @@ public class GameManager : MonoBehaviour
 
         foreach (CardMatch match in matches)
         {
-            CardObject inventorCard = CreateCardObject(match.inventorCard, match.innerBackgroundColor, match.outerBackgroundColor);
-            CardObject inventionCard = CreateCardObject(match.GetRandomInventionCard(), match.innerBackgroundColor, match.outerBackgroundColor);
+            Color innerColor = levelMode == 0 ? match.innerBackgroundColor : defaultInnerColor;
+            Color outerColor = levelMode == 0 ? match.outerBackgroundColor : defaultOuterColor;
+
+            CardObject inventorCard = CreateCardObject(match.inventorCard, innerColor, outerColor);
+            CardObject inventionCard = CreateCardObject(match.GetRandomInventionCard(), innerColor, outerColor);
 
             inventorCard.SetMatchingCard(inventionCard);
             inventionCard.SetMatchingCard(inventorCard);
@@ -177,7 +184,7 @@ public class GameManager : MonoBehaviour
         PlayerStats stats = PlayerScoreManager.EndGame();
 
         if(levelIndex >= 0)
-            CollectionManager.SetLevelStat(levelIndex, stats);
+            CollectionManager.SetLevelStat(levelIndex, levelMode, stats);
 
         Debug.Log($"Earned {stats.GetMedalIndex()} medal in {stats.playedTime} seconds");
 
