@@ -28,10 +28,11 @@ public class CardObject : MonoBehaviour
     public const string BACKGROUND_OUTER_COLOR_KEY = "_BgOuterColor";
 
     [Header("Sounds")]
-    [SerializeField] private AudioClip cardHoverClip;
-    [SerializeField] private AudioClip cardUnHoverClip;
-    [Space(5)]
-    [SerializeField] private AudioClip cardFlipClip;
+    [SerializeField] private AudioGroup audioGroup;
+    //[SerializeField] private AudioClip cardHoverClip;
+    //[SerializeField] private AudioClip cardUnHoverClip;
+    //[Space(5)]
+    //[SerializeField] private AudioClip cardFlipClip;
 
     public Transform GetRealCardTransform() => realCardTransform;
 
@@ -70,19 +71,23 @@ public class CardObject : MonoBehaviour
     {
         cardAnimator.SetBool(CARD_HOVER_KEY, hover);
 
-        AudioManager.PlaySound(hover ? cardHoverClip : cardUnHoverClip);
-
         if (hover)
+        {
             selectionParticles.Play();
+            audioGroup.PlayAudio(0);
+        }
         else
+        {
             selectionParticles.Stop();
+            audioGroup.PlayAudio(1);
+        }
     }
 
     public void SetFlip(bool flip)
     {
         cardAnimator.SetBool(CARD_FLIP_KEY, flip);
 
-        AudioManager.PlaySound(cardFlipClip);
+        audioGroup.PlayAudio(2);
     }
 
     public void EnableRenderer(bool enable) => cardMeshRenderer.enabled = enable;

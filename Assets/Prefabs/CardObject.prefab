@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3c2eafe83c6ce468be36fdefa6b172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls:
@@ -82,6 +82,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  settingInteractableActions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1097717813780963346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,10 +103,7 @@ MonoBehaviour:
   successfullMatchParticles: {fileID: 6907796910765131134}
   cardMeshRenderer: {fileID: 8864714827126133486}
   faceMaterialIndex: 2
-  textureVariableName: _CardFace
-  cardHoverClip: {fileID: 8300000, guid: 0b0301dafa66de84887ea72e264027bb, type: 3}
-  cardUnHoverClip: {fileID: 8300000, guid: 59150dc6aa434b946af1a83683744471, type: 3}
-  cardFlipClip: {fileID: 8300000, guid: 4cf2201036979f24e995fab54215539f, type: 3}
+  audioGroup: {fileID: 11400000, guid: 3b1f022dfdb1e304b97d658735842ac3, type: 2}
 --- !u!65 &2687596526552593552
 BoxCollider:
   m_ObjectHideFlags: 0
