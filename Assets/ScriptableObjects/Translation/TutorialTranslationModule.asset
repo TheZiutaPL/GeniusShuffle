@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1e6a1d44b01a44399658d415e6de81, type: 3}
+  m_Name: TutorialTranslationModule
+  m_EditorClassIdentifier: 
+  translatedLanguages:
+  - English
+  - Polski
+  textTranslations:
+  - key: TUT_1
+    translations:
+    - The rules of the game are very simple. You just connect pairs of inventors
+      and their inventions. It's kind of like Memory!
+    - "Zasady gry s\u0105 bardzo proste. Nale\u017Cy po\u0142\u0105czy\u0107 pary
+      wynalazc\xF3w z ich wynalazkami. Troch\u0119 jak w Memory!"
+  - key: TUT_2
+    translations:
+    - If you don't know who made what you can also tell pairs by their background
+      color.
+    - "Je\u015Bli nie wiesz kto co stworzy\u0142 mo\u017Cesz r\xF3wnie\u017C rozr\xF3\u017Cnia\u0107
+      pary po kolorze t\u0142a."
+  - key: TUT_3
+    translations:
+    - You can read about these people and their creations by clicking the cards.
+    - "Mo\u017Cesz przeczyta\u0107 o tych ludziach i ich dzie\u0142ach, klikaj\u0105c
+      karty."
+  - key: TUT_4
+    translations:
+    - After selecting two cards ring the bell to continue.
+    - "Po wybraniu dw\xF3ch kart naci\u015Bnij dzwonek, aby kontynuowa\u0107."
+  - key: TUT_5
+    translations:
+    - You can also see all the pairs you collected by visiting the card graveyard.
+    - "Mo\u017Cesz tak\u017Ce zobaczy\u0107 wszystkie zebrane pary, odwiedzaj\u0105c
+      cmentarz kart."
+  errorText: 
+  spriteTranslations: []
+  errorSprite: {fileID: 0}
+  audioTranslations: []
+  errorAudio: {fileID: 0}

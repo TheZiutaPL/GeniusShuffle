@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform gamePositionTransform;
     [SerializeField] private Transform levelSelectionTransform;
     [SerializeField] private Animator restartObject;
+    [SerializeField] private TutorialManager tutorialManager;
+    [SerializeField] private AudioGroup incorrectChoiceSounds;
 
     private const string RESTART_OBJECT_SHOW_KEY = "show";
 
@@ -64,10 +66,17 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
-    public void InitializeGameStart() => InitializeGameStart(-1, -1);
+    public void InitializeGameStart() => InitializeGameStart(-1, 0);
 
     public void InitializeGameStart(int level = -1, int mode = -1)
     {
+        if (cardCollections == null || cardCollections.Count <= 0)
+        {
+            Debug.LogWarning("Game cannot start, because cardCollections is empty");
+            incorrectChoiceSounds.PlayAudio();
+            return;
+        }
+
         cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level, mode));
     }
 
@@ -80,8 +89,7 @@ public class GameManager : MonoBehaviour
 
         levelIndex = level;
         levelMode = mode;
-        if (cardCollections == null)
-            return;
+        
 
         List<CardMatch> matches = GetGameMatches(cardCollections);
 
@@ -158,6 +166,9 @@ public class GameManager : MonoBehaviour
         PlayerScoreManager.StartGame();
 
         InteractionManager.instance.EnableInteractions(true);
+
+        tutorialManager.ShowTutorial();
+
     }
 
     [ContextMenu("Clear")]
