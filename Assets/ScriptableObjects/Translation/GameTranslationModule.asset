@@ -18,498 +18,453 @@ MonoBehaviour:
   textTranslations:
   - key: CARD_000_IGNACYLUKASIEWICZ_DESC
     translations:
-    - "Ignacy \u0141ukasiewicz was a Polish pharmacist, engineer, and inventor who
-      is credited with the invention of the kerosene lamp. Born on March 8, 1822,
-      in the village of Zaduszniki, \u0141ukasiewicz made significant contributions
-      to the field of illumination and energy production during the 19th century.\r\r\nIn
-      the 1850s, \u0141ukasiewicz and his business partner, Jan Zeh, developed a
-      method for distilling kerosene from crude oil. This process made kerosene more
-      readily available and affordable as a lighting fuel compared to other options
-      at the time, such as whale oil or vegetable oils.\r\r\n\u0141ukasiewicz's kerosene
-      lamp revolutionized lighting technology, providing a safer and more efficient
-      alternative to traditional oil lamps. The widespread adoption of his invention
-      had a profound impact on society, improving illumination in homes, streets,
-      and workplaces across the world.\r\r\nBeyond his work on the kerosene lamp,
-      \u0141ukasiewicz also contributed to various other inventions and innovations
-      throughout his career, including advancements in the oil refining process and
-      the development of equipment for extracting petroleum.\r\r\nIgnacy \u0141ukasiewicz's
-      legacy as an inventor and entrepreneur continues to be celebrated, and his
-      contributions to lighting technology have left a lasting mark on the modern
-      world."
-    - "Ignacy \u0141ukasiewicz by\u0142 polskim farmaceut\u0105, in\u017Cynierem
-      i wynalazc\u0105, kt\xF3remu przypisuje si\u0119 wynalezienie lampy naftowej.
-      Urodzony 8 marca 1822 roku w wiosce Zaduszniki, \u0141ukasiewicz wnosi\u0142
-      znacz\u0105cy wk\u0142ad w dziedzin\u0119 o\u015Bwietlenia i produkcji energii
-      w XIX wieku.\r\r\nW latach 1850-tych \u0141ukasiewicz i jego partner biznesowy,
-      Jan Zeh, opracowali metod\u0119 destylacji nafty z ropy naftowej. Ten proces
-      uczyni\u0142 naft\u0119 bardziej dost\u0119pn\u0105 i przyst\u0119pn\u0105
-      cenowo jako paliwo do o\u015Bwietlenia w por\xF3wnaniu z innymi opcjami w tamtym
-      czasie, takimi jak olej wielorybi czy oleje ro\u015Blinne.\r\r\nLampa naftowa
-      \u0141ukasiewicza zrewolucjonizowa\u0142a technologi\u0119 o\u015Bwietleniow\u0105,
-      dostarczaj\u0105c bezpieczn\u0105 i bardziej wydajn\u0105 alternatyw\u0119
-      dla tradycyjnych lamp naftowych. Powszechne przyj\u0119cie jego wynalazku mia\u0142o
-      g\u0142\u0119boki wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c o\u015Bwietlenie
-      w domach, ulicach i miejscach pracy na ca\u0142ym \u015Bwiecie.\r\r\nPoza prac\u0105
-      nad lamp\u0105 naftow\u0105, \u0141ukasiewicz przyczyni\u0142 si\u0119 r\xF3wnie\u017C
-      do r\xF3\u017Cnych innych wynalazk\xF3w i innowacji w trakcie swojej kariery,
-      w tym do post\u0119p\xF3w w procesie rafinacji ropy naftowej i rozwoju sprz\u0119tu
-      do jej wydobycia.\r\r\nDziedzictwo Ignacego \u0141ukasiewicza jako wynalazcy
-      i przedsi\u0119biorcy nadal jest celebrowane, a jego wk\u0142ad w technologi\u0119
-      o\u015Bwietleniow\u0105 pozostawi\u0142 trwa\u0142y \u015Blad w nowoczesnym
-      \u015Bwiecie."
+    - "Ignacy \u0141ukasiewicz, a Polish pharmacist and inventor, is credited with
+      the invention of the kerosene lamp. Born in 1822, Ignacy \u0141ukasiewicz revolutionized
+      lighting technology in the 19th century with his groundbreaking invention of
+      the kerosene lamp. By distilling kerosene from crude oil, he created a safer
+      and more efficient alternative to traditional oil lamps. \u0141ukasiewicz's
+      invention had a profound impact on society, improving illumination in homes,
+      streets, and workplaces worldwide. His legacy as an inventor and innovator
+      endures, with the kerosene lamp remaining a symbol of his ingenuity and contribution
+      to modern lighting."
+    - "Ignacemu \u0141ukasiewiczowi, polskiemu farmaceucie i wynalazcy, przypisuje
+      si\u0119 wynalezienie lampy naftowej. Urodzony w 1822 roku, Ignacy \u0141ukasiewicz
+      zrewolucjonizowa\u0142 technologi\u0119 o\u015Bwietleniow\u0105 w XIX wieku
+      dzi\u0119ki prze\u0142omowemu wynalazkowi lampy naftowej. Wynalazek \u0141ukasiewicza
+      mia\u0142 ogromny wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c o\u015Bwietlenie
+      dom\xF3w, ulic i miejsc pracy na ca\u0142ym \u015Bwiecie. Jego dziedzictwo
+      jako wynalazcy i innowatora trwa, a lampa naftowa pozostaje symbolem jego pomys\u0142owo\u015Bci
+      i wk\u0142adu w nowoczesne o\u015Bwietlenie."
   - key: CARD_000_KEROSENELAMP_NAME
     translations:
     - Kerosene Lamp
     - Lampa Naftowa
   - key: CARD_000_KEROSENELAMP_DESC
     translations:
-    - "The Kerosene Lamp, invented by Ignacy \u0141ukasiewicz, revolutionized lighting
-      technology in the 19th century. Prior to its invention, lighting sources were
-      limited and often expensive or hazardous. \u0141ukasiewicz's innovative lamp
-      provided a safer, more affordable, and more efficient alternative to traditional
-      oil lamps.\r\r\nThe kerosene lamp consists of a reservoir for kerosene, a wick,
-      and a glass chimney. The wick draws kerosene from the reservoir and allows
-      it to burn, producing a steady flame. The glass chimney helps to protect the
-      flame from drafts and improves the lamp's efficiency by directing heat and
-      light downward.\r\r\n\u0141ukasiewicz's invention of the kerosene lamp was
-      made possible by his development of a method for distilling kerosene from crude
-      oil. This process made kerosene more readily available and cost-effective as
-      a lighting fuel, leading to its widespread adoption in homes, businesses, and
-      public spaces around the world.\r\r\nThe kerosene lamp had a profound impact
-      on society, improving illumination in both rural and urban areas and enhancing
-      productivity and safety after dark. It also played a crucial role in the expansion
-      of industry and commerce by providing reliable lighting for factories, workshops,
-      and other workplaces.\r\r\nToday, while electric lighting has largely replaced
-      kerosene lamps in many parts of the world, these historic inventions continue
-      to hold cultural and historical significance. Ignacy \u0141ukasiewicz's kerosene
-      lamp remains a testament to the power of innovation and the profound impact
-      that a single invention can have on the course of history."
-    - "Lampa naftowa, wynaleziona przez Ignacego \u0141ukasiewicza, zrewolucjonizowa\u0142a
-      technologi\u0119 o\u015Bwietleniow\u0105 w XIX wieku. Przed jej wynalezieniem
-      \u017Ar\xF3d\u0142a \u015Bwiat\u0142a by\u0142y ograniczone i cz\u0119sto drogie
-      lub niebezpieczne. Innowacyjna lampa \u0141ukasiewicza zapewni\u0142a bezpieczniejsz\u0105,
-      bardziej dost\u0119pn\u0105 i wydajniejsz\u0105 alternatyw\u0119 dla tradycyjnych
-      lamp naftowych.\r\r\nLampa naftowa sk\u0142ada si\u0119 z zbiornika na naft\u0119,
-      knotu i szyby. Knot pobiera naft\u0119 z zbiornika i umo\u017Cliwia jej spalanie,
-      wytwarzaj\u0105c sta\u0142y p\u0142omie\u0144. Szyba pomaga chroni\u0107 p\u0142omie\u0144
-      przed przeci\u0105gami i poprawia wydajno\u015B\u0107 lampy, kieruj\u0105c
-      ciep\u0142o i \u015Bwiat\u0142o w d\xF3\u0142.\r\r\nWynalezienie przez \u0141ukasiewicza
-      lampy naftowej sta\u0142o si\u0119 mo\u017Cliwe dzi\u0119ki jego opracowaniu
-      metody destylacji nafty z ropy naftowej. Ten proces uczyni\u0142 naft\u0119
-      bardziej dost\u0119pn\u0105 i op\u0142acaln\u0105 jako paliwo do o\u015Bwietlenia,
-      co doprowadzi\u0142o do jej powszechnego przyj\u0119cia w domach, firmach i
-      przestrzeniach publicznych na ca\u0142ym \u015Bwiecie.\r\r\nLampa naftowa mia\u0142a
-      g\u0142\u0119boki wp\u0142yw na spo\u0142ecze\u0144stwo, poprawiaj\u0105c o\u015Bwietlenie
-      zar\xF3wno na obszarach wiejskich, jak i miejskich oraz zwi\u0119kszaj\u0105c
-      produktywno\u015B\u0107 i bezpiecze\u0144stwo po zmroku. Odgrywa\u0142a tak\u017Ce
-      kluczow\u0105 rol\u0119 w rozwoju przemys\u0142u i handlu, zapewniaj\u0105c
-      niezawodne o\u015Bwietlenie dla fabryk, warsztat\xF3w i innych miejsc pracy.\r\r\nDzi\u015B,
-      cho\u0107 o\u015Bwietlenie elektryczne w du\u017Cej mierze zast\u0105pi\u0142o
-      lampy naftowe w wielu cz\u0119\u015Bciach \u015Bwiata, te historyczne wynalazki
-      nadal maj\u0105 znaczenie kulturowe i historyczne. Lampa naftowa Ignacego \u0141ukasiewicza
-      pozostaje \u015Bwiadectwem si\u0142y innowacji i g\u0142\u0119bokiego wp\u0142ywu,
-      jaki pojedynczy wynalazek mo\u017Ce mie\u0107 na bieg historii."
+    - "The Kerosene Lamp, an invention credited to Ignacy \u0141ukasiewicz, emerged
+      as a transformative innovation in the 19th century, revolutionizing lighting
+      technology. With its introduction, the kerosene lamp provided a safer and more
+      efficient alternative to traditional oil lamps, significantly improving illumination
+      in homes, streets, and workplaces worldwide. Today, it stands as a symbol of
+      ingenuity and progress, showcasing the remarkable impact of \u0141ukasiewicz's
+      invention on modern lighting."
+    - "Lampa naftowa, wynalazek przypisywany Ignacemu \u0141ukasiewiczowi, pojawi\u0142a
+      si\u0119 jako innowacja w XIX wieku, rewolucjonizuj\u0105c technologi\u0119
+      o\u015Bwietleniow\u0105. Wraz z jej wprowadzeniem, lampa naftowa sta\u0142a
+      si\u0119 bezpieczniejsz\u0105 i bardziej wydajn\u0105 alternatyw\u0105 dla
+      tradycyjnych lamp oliwnych, znacz\u0105co poprawiaj\u0105c o\u015Bwietlenie
+      w domach, na ulicach i w miejscach pracy na ca\u0142ym \u015Bwiecie. Dzi\u015B
+      jest symbolem pomys\u0142owo\u015Bci i post\u0119pu, pokazuj\u0105c niezwyk\u0142y
+      wp\u0142yw wynalazku \u0141ukasiewicza na nowoczesne o\u015Bwietlenie."
   - key: CARD_001_ALEXANDERGRAHAMBELL_DESC
     translations:
-    - "Alexander Graham Bell was a Scottish-born inventor, scientist, and engineer,
-      best known for inventing the telephone. Born on March 3, 1847, in Edinburgh,
-      Scotland, Bell's groundbreaking work in communication technology has had a
-      profound and lasting impact on society.\r\r\nIn 1876, Bell patented his most
-      famous invention, the telephone, which revolutionized long-distance communication.
-      The invention of the telephone allowed people to speak with one another across
-      great distances, fundamentally changing how information was transmitted and
-      connecting people in ways that were previously unimaginable.\r\r\nBell's invention
-      of the telephone was the culmination of years of research and experimentation
-      in the field of sound and speech transmission. He was inspired by his work
-      with the deaf and his fascination with sound waves, leading him to develop
-      the concept of transmitting speech electrically.\r\r\nBeyond the telephone,
-      Bell made significant contributions to numerous other fields, including aviation,
-      medicine, and genetics. He was also involved in the founding of the National
-      Geographic Society and played a key role in advancing the study of aeronautics.\r\r\nAlexander
-      Graham Bell's legacy as an inventor and innovator is unparalleled, and his
-      invention of the telephone remains one of the most important technological
-      advancements in history. His pioneering spirit and dedication to scientific
-      discovery continue to inspire generations of inventors and engineers around
-      the world."
-    - "Alexander Graham Bell by\u0142 szkockim wynalazc\u0105, naukowcem i in\u017Cynierem,
-      najlepiej znanym z wynalezienia telefonu. Urodzony 3 marca 1847 roku w szkockim
-      Edynburgu. Pze\u0142omowe prace Bella w dziedzinie technologii komunikacyjnej
-      mia\u0142y g\u0142\u0119boki i trwa\u0142y wp\u0142yw na spo\u0142ecze\u0144stwo.\r\r\nW
-      1876 roku Bell opatentowa\u0142 sw\xF3j najbardziej znany wynalazek, telefon,
-      kt\xF3ry zrewolucjonizowa\u0142 komunikacj\u0119 na odleg\u0142o\u015B\u0107.
-      Wynalezienie telefonu pozwoli\u0142o ludziom rozmawia\u0107 ze sob\u0105 na
-      du\u017Ce odleg\u0142o\u015Bci, zmieniaj\u0105c fundamentalnie spos\xF3b przekazywania
-      informacji i \u0142\u0105cz\u0105c ludzi w spos\xF3b wcze\u015Bniej nie do
-      pomy\u015Blenia.\r\r\nWynalezienie telefonu przez Bella by\u0142o wynikiem
-      lat bada\u0144 i eksperyment\xF3w w dziedzinie transmisji d\u017Awi\u0119ku
-      i mowy. Zainspirowany swoj\u0105 prac\u0105 z osobami g\u0142uchymi oraz jego
-      fascynacj\u0105 falami d\u017Awi\u0119kowymi, opracowa\u0142 koncepcj\u0119
-      przesy\u0142ania mowy drog\u0105 elektryczn\u0105.\r\r\nPoza telefonem, Bell
-      wnosi\u0142 znacz\u0105cy wk\u0142ad w liczne inne dziedziny, w tym w lotnictwo,
-      medycyn\u0119 i genetyk\u0119. By\u0142 tak\u017Ce zaanga\u017Cowany w za\u0142o\u017Cenie
-      National Geographic Society i odegra\u0142 kluczow\u0105 rol\u0119 w promowaniu
-      bada\u0144 w dziedzinie lotnictwa.\r\r\nDziedzictwo Alexandra Grahama Bella
-      jako wynalazcy i innowatora jest niezr\xF3wnane, a jego wynalezienie telefonu
-      pozostaje jednym z najwa\u017Cniejszych post\u0119p\xF3w technologicznych w
-      historii. Jego pionierski duch i oddanie odkrywaniu naukowemu nadal inspiruj\u0105
-      kolejne pokolenia wynalazc\xF3w i in\u017Cynier\xF3w na ca\u0142ym \u015Bwiecie."
+    - Alexander Graham Bell, a Scottish-born inventor, is best known as the inventor
+      of the telephone. Born in 1847. Bell's groundbreaking invention revolutionized
+      long-distance communication. In 1876, he patented the telephone, enabling people
+      to speak with each other across great distances. Bell's invention transformed
+      society, facilitating rapid transmission of information and connecting people
+      in ways previously unimaginable. Today, his legacy as an inventor and innovator
+      endures, with the telephone remaining a fundamental tool in global communication.
+    - "Alexander Graham Bell, urodzony w Szkocji wynalazca, jest najbardziej znany
+      jako wynalazca telefonu. Urodzony w 1847 roku. Prze\u0142omowy wynalazek Bella
+      zrewolucjonizowa\u0142 komunikacj\u0119 na du\u017Ce odleg\u0142o\u015Bci.
+      W 1876 roku opatentowa\u0142 telefon, umo\u017Cliwiaj\u0105c ludziom rozmow\u0119
+      na du\u017Ce odleg\u0142o\u015Bci. Wynalazek Bella przekszta\u0142ci\u0142
+      spo\u0142ecze\u0144stwo, u\u0142atwiaj\u0105c szybk\u0105 transmisj\u0119 informacji
+      i \u0142\u0105cz\u0105c ludzi w niewyobra\u017Calny wcze\u015Bniej spos\xF3b.
+      Dzi\u015B jego dziedzictwo jako wynalazcy i innowatora trwa, a telefon pozostaje
+      podstawowym narz\u0119dziem globalnej komunikacji."
   - key: CARD_001_TELEPHONE_NAME
     translations:
     - Telephone
     - Telefon
   - key: CARD_001_TELEPHONE_DESC
     translations:
-    - "The Telephone, invented by Alexander Graham Bell in 1876, stands as one of
-      the most transformative inventions in human history. Bell's groundbreaking
-      creation revolutionized communication by enabling individuals to speak with
-      each other across great distances, fundamentally altering the way information
-      was transmitted and connecting people in ways previously unimaginable.\r\r\nAt
-      its core, the telephone consists of a transmitter, receiver, and electrical
-      circuitry. When a person speaks into the transmitter, sound waves are converted
-      into electrical signals, which are then transmitted along wires to the receiver
-      at the other end. The receiver converts these electrical signals back into
-      sound waves, allowing the recipient to hear the speaker's voice.\r\r\nBell's
-      invention of the telephone was the culmination of years of experimentation
-      and innovation in the field of sound and speech transmission. Inspired by his
-      work with the deaf and his fascination with sound waves, Bell developed the
-      concept of transmitting speech electrically, ultimately leading to the creation
-      of the telephone.\r\r\nThe impact of the telephone on society was immediate
-      and far-reaching. It transformed long-distance communication, making it possible
-      for people to communicate with loved ones, conduct business, and share information
-      across vast distances in real-time. The telephone also played a crucial role
-      in the growth of industries such as journalism, banking, and commerce, facilitating
-      faster and more efficient communication between individuals and organizations.\r\r\nToday,
-      the legacy of Alexander Graham Bell's invention lives on in the form of modern
-      telecommunications technology. While the telephone has evolved significantly
-      since its inception, its fundamental principles remain the same, continuing
-      to connect people around the world and shaping the way we communicate in the
-      digital age."
-    - "Telefon, wynaleziony przez Alexandra Grahama Bella w 1876 roku, jest jednym
-      z najbardziej prze\u0142omowych wynalazk\xF3w w historii ludzko\u015Bci. Rewolucyjne
-      dzie\u0142o Bella zrewolucjonizowa\u0142o komunikacj\u0119, umo\u017Cliwiaj\u0105c
-      jednostkom rozmow\u0119 ze sob\u0105 na du\u017Ce odleg\u0142o\u015Bci, zmieniaj\u0105c
-      fundamentalnie spos\xF3b przekazywania informacji i \u0142\u0105cz\u0105c ludzi
-      w spos\xF3b wcze\u015Bniej nie do pomy\u015Blenia.\r\r\nW swej istocie, telefon
-      sk\u0142ada si\u0119 z nadajnika, odbiornika i uk\u0142ad\xF3w elektrycznych.
-      Gdy osoba m\xF3wi do nadajnika, fale d\u017Awi\u0119kowe s\u0105 przekszta\u0142cane
-      w sygna\u0142y elektryczne, kt\xF3re s\u0105 nast\u0119pnie przesy\u0142ane
-      wzd\u0142u\u017C przewod\xF3w do odbiornika na drugim ko\u0144cu. Odbiornik
-      przekszta\u0142ca te sygna\u0142y elektryczne z powrotem w fale d\u017Awi\u0119kowe,
-      umo\u017Cliwiaj\u0105c odbiorcy us\u0142yszenie g\u0142osu m\xF3wi\u0105cego.\r\r\nWynalezienie
-      telefonu przez Bella by\u0142o kulminacj\u0105 lat eksperyment\xF3w i innowacji
-      w dziedzinie transmisji d\u017Awi\u0119ku i mowy. Zainspirowany swoj\u0105
-      prac\u0105 z osobami g\u0142uchymi oraz fascynacj\u0105 falami d\u017Awi\u0119kowymi,
-      Bell opracowa\u0142 koncepcj\u0119 przesy\u0142ania mowy drog\u0105 elektryczn\u0105,
-      co w ko\u0144cu doprowadzi\u0142o do stworzenia telefonu.\r\r\nOddzia\u0142ywanie
-      telefonu na spo\u0142ecze\u0144stwo by\u0142o natychmiastowe i dalekosi\u0119\u017Cne.
-      Zmieni\u0142 on komunikacj\u0119 na odleg\u0142o\u015B\u0107, umo\u017Cliwiaj\u0105c
-      ludziom kontakt z bliskimi, prowadzenie biznesu i udost\u0119pnianie informacji
-      na wielkie odleg\u0142o\u015Bci w czasie rzeczywistym. Telefon odegra\u0142
-      tak\u017Ce kluczow\u0105 rol\u0119 w rozwoju bran\u017C takich jak dziennikarstwo,
-      bankowo\u015B\u0107 i handel, u\u0142atwiaj\u0105c szybsz\u0105 i bardziej
-      efektywn\u0105 komunikacj\u0119 mi\u0119dzy jednostkami i organizacjami.\r\r\nDzisiaj,
-      dziedzictwo wynalazku Alexandra Grahama Bella \u017Cyje dalej w postaci nowoczesnych
-      technologii telekomunikacyjnych. Cho\u0107 telefon ewoluowa\u0142 znacznie
-      od swojego powstania, jego fundamentalne zasady pozostaj\u0105 takie same,
-      nadal \u0142\u0105cz\u0105c ludzi na ca\u0142ym \u015Bwiecie i kszta\u0142tuj\u0105c
-      spos\xF3b, w jaki komunikujemy si\u0119 w erze cyfrowej."
+    - The Telephone, invented by Alexander Graham Bell in 1876, revolutionized long-distance
+      communication. Bell's groundbreaking invention enabled people to speak with
+      each other across great distances, fundamentally changing how information was
+      transmitted and connecting people in ways previously unimaginable. Today, the
+      telephone remains a fundamental tool in global communication, with Bell's legacy
+      as an inventor and innovator enduring through his transformative invention.
+    - "Telefon, wynaleziony przez Alexandra Grahama Bella w 1876 roku, zrewolucjonizowa\u0142
+      komunikacj\u0119 na du\u017Ce odleg\u0142o\u015Bci. Prze\u0142omowy wynalazek
+      Bella umo\u017Cliwi\u0142 ludziom rozmawianie ze sob\u0105 na du\u017Ce odleg\u0142o\u015Bci,
+      fundamentalnie zmieniaj\u0105c spos\xF3b przekazywania informacji i \u0142\u0105cz\u0105c
+      ludzi w niewyobra\u017Calny wcze\u015Bniej spos\xF3b.Dzi\u015B telefon pozostaje
+      podstawowym narz\u0119dziem globalnej komunikacji, a dziedzictwo Bella jako
+      wynalazcy i innowatora trwa dzi\u0119ki jego transformacyjnemu wynalazkowi."
   - key: CARD_002_JACOBPERKINS_DESC
     translations:
-    - "Jacob Perkins was an American inventor and mechanical engineer, credited with
-      numerous inventions across various fields. Born on July 9, 1766, in Newburyport,
-      Massachusetts, Perkins' innovative spirit and ingenuity led to advancements
-      in steam power, refrigeration, and printing, among other areas.\r\r\nOne of
-      Perkins' notable inventions is the bathometer, an early device used for measuring
-      ocean depth. Developed in the early 19th century, the bathometer allowed mariners
-      to determine the depth of water beneath their vessels with greater accuracy,
-      improving navigation and safety at sea.\r\r\nPerkins' bathometer utilized a
-      combination of mechanical components and principles of fluid dynamics to gauge
-      water depth. The device consisted of a weighted line or cable attached to a
-      calibrated gauge, which would indicate the depth as the line was lowered into
-      the water.\r\r\nIn addition to the bathometer, Perkins is also known for his
-      contributions to the development of high-pressure steam engines, refrigeration
-      technology, and printing machinery. His inventions played a significant role
-      in advancing industrialization and maritime exploration during the 19th century.\r\r\nJacob
-      Perkins' legacy as an inventor continues to be celebrated, with his innovative
-      creations leaving a lasting impact on various industries. His pioneering work
-      in engineering and technology helped shape the modern world and laid the foundation
-      for further advancements in science and innovation."
-    - "Jacob Perkins by\u0142 ameryka\u0144skim wynalazc\u0105 i in\u017Cynierem
-      mechanicznym, kt\xF3remu przypisuje si\u0119 liczne wynalazki w r\xF3\u017Cnych
-      dziedzinach. Urodzony 9 lipca 1766 roku w Newburyport w Massachusetts. Innowacyjny
-      duch Perkinsa i jego pomys\u0142owo\u015B\u0107 doprowadzi\u0142y do post\u0119p\xF3w
-      w energetyce parowej, ch\u0142odnictwie, druku i w wielu innych dziedzinach.\r\r\nJednym
-      z godnych uwagi wynalazk\xF3w Perkinsa jest batometr, wczesne urz\u0105dzenie
-      s\u0142u\u017C\u0105ce do pomiaru g\u0142\u0119boko\u015Bci oceanu. Opracowany
-      na pocz\u0105tku XIX wieku, batometr umo\u017Cliwia\u0142 marynarzom dok\u0142adniejsze
-      okre\u015Blenie g\u0142\u0119boko\u015Bci wody pod ich statkami, poprawiaj\u0105c
-      nawigacj\u0119 i bezpiecze\u0144stwo na morzu.\r\r\nBatometr Perkinsa wykorzystywa\u0142
-      kombinacj\u0119 komponent\xF3w mechanicznych i zasad dynamiki p\u0142yn\xF3w
-      do pomiaru g\u0142\u0119boko\u015Bci wody. Urz\u0105dzenie sk\u0142ada\u0142o
-      si\u0119 zwa\u017Conej liny lub kabla przytwierdzonego do skalibrowanej miarki,
-      kt\xF3ra wskazywa\u0142a g\u0142\u0119boko\u015B\u0107 podczas opuszczania
-      liny do wody.\r\r\nOpr\xF3cz batometru, Perkins jest r\xF3wnie\u017C znany
-      z wk\u0142adu w rozw\xF3j wysokoci\u015Bnieniowych silnik\xF3w parowych, technologii
-      ch\u0142odzenia oraz maszyn drukarskich. Jego wynalazki odegra\u0142y znacz\u0105c\u0105
-      rol\u0119 w przyspieszeniu procesu industrializacji i eksploracji morskiej
-      w XIX wieku.\r\r\nDziedzictwo Jacoba Perkinsa jako wynalazcy nadal jest celebrowane,
-      a jego innowacyjne kreacje pozostawi\u0142y trwa\u0142y \u015Blad w r\xF3\u017Cnych
-      bran\u017Cach. Jego pionierska praca w dziedzinie in\u017Cynierii i technologii
-      pomog\u0142a kszta\u0142towa\u0107 nowoczesny \u015Bwiat i po\u0142o\u017Cy\u0142a
-      fundamenty dla dalszych post\u0119p\xF3w w nauce."
+    - Jacob Perkins, born in 1766, was an American inventor known for his revolutionary
+      contributions. Among his notable inventions is the bathometer, a groundbreaking
+      device patented in 1805. The bathometer transformed underwater exploration
+      by accurately measuring ocean depths, advancing marine navigation and scientific
+      research. Perkins' ingenuity and commitment to innovation continue to inspire
+      inventors worldwide, underscoring his enduring legacy in the annals of technological
+      history.
+    - "Jacob Perkins, urodzony w 1766 roku, by\u0142 ameryka\u0144skim wynalazc\u0105
+      znanym ze swoich rewolucyjnych osi\u0105gni\u0119\u0107. W\u015Br\xF3d jego
+      godnych uwagi wynalazk\xF3w znajduje si\u0119 batometr, prze\u0142omowe urz\u0105dzenie
+      opatentowane w 1805 roku. Batometr odmieni\u0142 podwodn\u0105 eksploracj\u0119
+      poprzez dok\u0142adny pomiar g\u0142\u0119boko\u015Bci oceanu, rozwijaj\u0105c
+      nawigacj\u0119 morsk\u0105 i badania naukowe. Pomys\u0142owo\u015B\u0107 i
+      zaanga\u017Cowanie Perkinsa w innowacje nadal inspiruj\u0105 wynalazc\xF3w
+      na ca\u0142ym \u015Bwiecie, podkre\u015Blaj\u0105c jego trwa\u0142e dziedzictwo
+      w kronikach historii technologii."
   - key: CARD_002_BATHOMETER_NAME
     translations:
     - Bathometer
     - Batometr
   - key: CARD_002_BATHOMETER_DESC
     translations:
-    - "The Bathometer, invented by Jacob Perkins in the early 19th century, emerged
-      as a pioneering device for measuring ocean depth, profoundly impacting maritime
-      navigation and exploration. Perkins' innovative creation provided mariners
-      with a reliable method for determining water depth beneath their vessels, enhancing
-      safety and efficiency at sea.\r\r\nAt its essence, the bathometer comprised
-      a weighted line or cable attached to a calibrated gauge. Mariners would lower
-      the line into the water, allowing the weight to descend until it made contact
-      with the ocean floor. The depth could then be read from the gauge, providing
-      valuable information for navigational purposes.\r\r\nPerkins' bathometer represented
-      a significant advancement in hydrographic measurement technology. By enabling
-      sailors to accurately gauge water depth, the device facilitated safer passage
-      through coastal waters, channels, and harbors, reducing the risk of shipwrecks
-      and maritime accidents.\r\r\nMoreover, the bathometer played a crucial role
-      in advancing scientific understanding of oceanography and seabed topography.
-      Its widespread adoption by maritime explorers and researchers contributed to
-      the mapping and charting of previously uncharted regions of the world's oceans,
-      expanding our knowledge of marine environments.\r\r\nJacob Perkins' invention
-      of the bathometer exemplifies the spirit of innovation and ingenuity that characterized
-      the 19th-century era of exploration and discovery. His contributions to maritime
-      technology have left an enduring legacy, enhancing maritime safety and navigation
-      while furthering our understanding of the world's oceans."
-    - "Batometr, wynaleziony przez Jacoba Perkinsa na pocz\u0105tku XIX wieku, pojawi\u0142
-      si\u0119 jako pionierskie urz\u0105dzenie do pomiaru g\u0142\u0119boko\u015Bci
-      oceanu, maj\u0105c g\u0142\u0119boki wp\u0142yw na \u017Ceglug\u0119 morsk\u0105
-      i eksploracj\u0119. Innowacyjne dzie\u0142o Perkinsa zapewni\u0142o marynarzom
-      niezawodn\u0105 metod\u0119 okre\u015Blania g\u0142\u0119boko\u015Bci wody
-      pod ich statkami, poprawiaj\u0105c bezpiecze\u0144stwo i efektywno\u015B\u0107
-      na morzu.\r\r\nBatometr sk\u0142ada\u0142 si\u0119 zwa\u017Conej liny lub kabla
-      przytwierdzonego do skalibrowanej miarki. Marynarze opuszczali lin\u0119 do
-      wody, pozwalaj\u0105c ci\u0119\u017Carowi opa\u015B\u0107, a\u017C dotkn\u0105\u0142
-      dna oceanu. G\u0142\u0119boko\u015B\u0107 mo\u017Cna by\u0142o odczyta\u0107
-      z miarki, dostarczaj\u0105c cennych informacji do cel\xF3w nawigacyjnych.\r\r\nBatometr
-      Perkinsa stanowi\u0142 znacz\u0105cy post\u0119p w technologii pomiaru hydrograficznego.
-      Pozwalaj\u0105c marynarzom dok\u0142adnie okre\u015Bla\u0107 g\u0142\u0119boko\u015B\u0107
-      wody, urz\u0105dzenie u\u0142atwia\u0142o bezpieczne przep\u0142ywanie przez
-      wody przybrze\u017Cne, kana\u0142y i porty, zmniejszaj\u0105c ryzyko katastrof
-      morskich i wypadk\xF3w.\r\r\nCo wi\u0119cej, batometr odegra\u0142 kluczow\u0105
-      rol\u0119 w rozwijaniu naukowego zrozumienia oceanografii i topografii dna
-      morskiego. Jego powszechne przyj\u0119cie przez morskich odkrywc\xF3w i badaczy
-      przyczyni\u0142o si\u0119 do mapowania i kartowania wcze\u015Bniej niezbadanych
-      obszar\xF3w ocean\xF3w \u015Bwiata, poszerzaj\u0105c nasz\u0105 wiedz\u0119
-      o \u015Brodowiskach morskich.\r\r\nWynalazek Jacoba Perkinsa w postaci batometru
-      doskonale ilustruje ducha innowacji i pomys\u0142owo\u015Bci, kt\xF3ry charakteryzowa\u0142
-      XIX-wieczn\u0105 er\u0119 eksploracji i odkry\u0107. Jego wk\u0142ad w technologi\u0119
-      morsk\u0105 pozostawi\u0142 trwa\u0142e dziedzictwo, poprawiaj\u0105c bezpiecze\u0144stwo
-      i nawigacj\u0119 morsk\u0105 oraz poszerzaj\u0105c nasze zrozumienie ocean\xF3w
-      \u015Bwiata."
+    - The Bathometer, invented by Jacob Perkins in 1805, stands as a testament to
+      his innovative prowess. This pioneering device revolutionized underwater exploration
+      by accurately measuring ocean depths. Perkins' Bathometer not only facilitated
+      marine navigation but also significantly advanced scientific research in oceanography.
+      His invention remains a cornerstone in the history of marine technology, showcasing
+      Perkins' enduring legacy as a visionary inventor whose contributions continue
+      to shape our understanding of the seas.
+    - "Batometr, wynaleziony przez Jacoba Perkinsa w 1805 roku, jest \u015Bwiadectwem
+      jego innowacyjno\u015Bci. To pionierskie urz\u0105dzenie zrewolucjonizowa\u0142o
+      podwodn\u0105 eksploracj\u0119 poprzez dok\u0142adny pomiar g\u0142\u0119boko\u015Bci
+      oceanu. Batometr Perkinsa nie tylko u\u0142atwi\u0142 nawigacj\u0119 morsk\u0105,
+      ale tak\u017Ce znacznie przyspieszy\u0142 badania naukowe w dziedzinie oceanografii.
+      Jego wynalazek pozostaje kamieniem w\u0119gielnym w historii technologii morskiej,
+      ukazuj\u0105c trwa\u0142e dziedzictwo Perkinsa jako wizjonerskiego wynalazcy,
+      kt\xF3rego wk\u0142ad nadal kszta\u0142tuje nasze rozumienie m\xF3rz."
   - key: CARD_003_SAMUELMORSE_DESC
     translations:
-    - "Samuel Morse was an American inventor, painter, and philanthropist, best known
-      for his invention of Morse Code and the single-wire telegraph system. Born
-      on April 27, 1791, in Charlestown, Massachusetts, Morse's contributions to
-      communication technology have had a profound and lasting impact on global communication.\r\r\nIn
-      the 1830s, Morse developed the concept of a telegraph system capable of transmitting
-      messages over long distances using electrical signals. His invention utilized
-      a series of electrical pulses to encode messages, which could then be decoded
-      at the receiving end. Morse Code, a system of dots and dashes representing
-      letters and numbers, was developed as the encoding method for these messages.\r\r\nMorse
-      Code revolutionized long-distance communication, allowing for rapid transmission
-      of information across vast distances. It became the standard method of communication
-      for telegraph operators around the world and played a crucial role in connecting
-      distant regions and facilitating international commerce and diplomacy.\r\r\nBeyond
-      his work on the telegraph and Morse Code, Samuel Morse was also a talented
-      painter and educator. He co-founded the National Academy of Design in New York
-      City and is known for his contributions to the American art scene.\r\r\nSamuel
-      Morse's legacy as an inventor and innovator is indelibly linked to the development
-      of modern communication systems. His ingenuity and perseverance paved the way
-      for advancements in telecommunication technology, shaping the way people communicate
-      and interact in the digital age."
-    - "Samuel Morse by\u0142 ameryka\u0144skim wynalazc\u0105, malarzem i filantropem,
-      najbardziej znanym z wynalezienia kodu Morse'a i jednoprzewodowego systemu
-      telegraficznego. Urodzony 27 kwietnia 1791 roku w Charlestown w Massachusetts.
-      Wk\u0142ad Morse'a w technologi\u0119 komunikacyjn\u0105 mia\u0142 g\u0142\u0119boki
-      i trwa\u0142y wp\u0142yw na globaln\u0105 komunikacj\u0119.\r\r\nW latach trzydziestych
-      XIX wieku Morse opracowa\u0142 koncepcj\u0119 systemu telegraficznego zdolnego
-      do przesy\u0142ania wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci za pomoc\u0105
-      sygna\u0142\xF3w elektrycznych. Jego wynalazek wykorzystywa\u0142 seri\u0119
-      impuls\xF3w elektrycznych do kodowania wiadomo\u015Bci, kt\xF3re mo\u017Cna
-      by\u0142o odkodowa\u0107 po drugiej stronie odbiorcy. Kod Morse'a, system kropek
-      i kresek reprezentuj\u0105cych litery i cyfry, zosta\u0142 opracowany jako
-      metoda kodowania tych wiadomo\u015Bci.\r\r\nKod Morse'a zrewolucjonizowa\u0142
-      komunikacj\u0119 na odleg\u0142o\u015B\u0107, umo\u017Cliwiaj\u0105c szybk\u0105
-      transmisj\u0119 informacji na ogromne odleg\u0142o\u015Bci. Sta\u0142 si\u0119
-      standardow\u0105 metod\u0105 komunikacji dla operator\xF3w telegraficznych
-      na ca\u0142ym \u015Bwiecie i odegra\u0142 kluczow\u0105 rol\u0119 w \u0142\u0105czeniu
-      odleg\u0142ych region\xF3w oraz u\u0142atwianiu mi\u0119dzynarodowego handlu
-      i dyplomacji.\r\r\nPoza swoj\u0105 prac\u0105 nad telegrafem i kodem Morse'a,
-      Samuel Morse by\u0142 r\xF3wnie\u017C utalentowanym malarzem i edukatorem.
-      Wsp\xF3\u0142za\u0142o\u017Cy\u0142 Narodow\u0105 Akademi\u0119 Sztuk Pi\u0119knych
-      w Nowym Jorku i znany jest z wk\u0142adu w ameryka\u0144sk\u0105 scen\u0119
-      artystyczn\u0105.\r\r\nDziedzictwo Samuela Morse'a jako wynalazcy i innowatora
-      nieod\u0142\u0105cznie wi\u0105\u017Ce si\u0119 z rozwojem nowoczesnych system\xF3w
-      komunikacyjnych. Jego pomys\u0142owo\u015B\u0107 i wytrwa\u0142o\u015B\u0107
-      utorowa\u0142y drog\u0119 do post\u0119p\xF3w w technologii telekomunikacyjnej,
-      kszta\u0142tuj\u0105c spos\xF3b, w jaki ludzie komunikuj\u0105 si\u0119 i wsp\xF3\u0142dzia\u0142aj\u0105
-      w erze cyfrowej."
+    - Born in 1791, Samuel Morse, an American polymath, forever changed the landscape
+      of communication with his invention of Morse Code in the 1830s. This ingenious
+      system, using combinations of dots and dashes to represent letters and numbers,
+      revolutionized long-distance communication. Morse's tireless dedication to
+      innovation and his unwavering belief in the potential of his invention led
+      to the establishment of telegraph networks worldwide. His legacy as a visionary
+      inventor and pioneer of modern telecommunications endures, with Morse Code
+      remaining a symbol of his ingenuity and lasting impact on global communication.
+    - "Urodzony w 1791 roku Samuel Morse, ameryka\u0144ski polimata, na zawsze zmieni\u0142
+      oblicze komunikacji dzi\u0119ki wynalezieniu kodu Morse'a w latach trzydziestych
+      XIX wieku. Ten genialny system, wykorzystuj\u0105cy kombinacje kropek i kresek
+      do reprezentowania liter i cyfr, zrewolucjonizowa\u0142 komunikacj\u0119 na
+      du\u017Ce odleg\u0142o\u015Bci. Niestrudzone zaanga\u017Cowanie Morse'a w innowacje
+      i niezachwiana wiara w potencja\u0142 jego wynalazku doprowadzi\u0142y do powstania
+      sieci telegraficznych na ca\u0142ym \u015Bwiecie. Jego dziedzictwo jako wizjonerskiego
+      wynalazcy i pioniera nowoczesnej telekomunikacji trwa, a kod Morse'a pozostaje
+      symbolem jego pomys\u0142owo\u015Bci i trwa\u0142ego wp\u0142ywu na globaln\u0105
+      komunikacj\u0119."
   - key: CARD_003_MORSECODE_NAME
     translations:
     - Morse Code
     - Kod Morse'a
   - key: CARD_003_MORSECODE_DESC
     translations:
-    - "Morse Code, the ingenious system of dots and dashes representing letters and
-      numbers, stands as one of the most significant inventions in the history of
-      communication, credited to Samuel Morse in the early 1830s. Morse Code revolutionized
-      long-distance communication, enabling rapid transmission of messages over telegraph
-      wires and laying the foundation for modern telecommunications.\r\r\nAt its
-      core, Morse Code utilizes a series of short and long signals, known as dots
-      and dashes, to represent each letter of the alphabet, as well as numerals and
-      punctuation marks. The code's simplicity and versatility made it well-suited
-      for transmission over telegraph lines, where electrical pulses could easily
-      be translated into audible or visual signals at the receiving end.\r\r\nSamuel
-      Morse's development of Morse Code was inseparable from his invention of the
-      single-wire telegraph system, which he patented in 1837. By combining his expertise
-      in electrical engineering with his passion for communication, Morse created
-      a groundbreaking method for transmitting messages across great distances with
-      unprecedented speed and efficiency.\r\r\nThe impact of Morse Code on global
-      communication was profound and far-reaching. It facilitated the rapid expansion
-      of telegraph networks across continents, connecting people and nations in ways
-      previously unimaginable. Morse Code became the standard method of communication
-      for telegraph operators around the world, playing a crucial role in commerce,
-      diplomacy, and news dissemination.\r\r\nDespite the advent of more advanced
-      communication technologies in the modern era, Morse Code remains a vital tool
-      in certain applications, including aviation, maritime, and emergency communications.
-      Its enduring legacy stands as a testament to Samuel Morse's visionary genius
-      and his contributions to the evolution of human communication."
-    - "Kod Morse'a, genialny system kropek i kresek reprezentuj\u0105cych litery
-      i cyfry, stanowi jeden z najwa\u017Cniejszych wynalazk\xF3w w historii komunikacji,
-      przypisywany Samuelowi Morse'owi na pocz\u0105tku lat trzydziestych XIX wieku.
-      Kod Morse'a zrewolucjonizowa\u0142 komunikacj\u0119 na odleg\u0142o\u015B\u0107,
-      umo\u017Cliwiaj\u0105c szybk\u0105 transmisj\u0119 wiadomo\u015Bci przez przewody
-      telegraficzne i stawiaj\u0105c fundamenty pod wsp\xF3\u0142czesne telekomunikacje.\r\r\nW
-      swojej istocie kod Morse'a wykorzystuje seri\u0119 kr\xF3tkich i d\u0142ugich
-      sygna\u0142\xF3w, znanych jako kropki i kreski, aby reprezentowa\u0107 ka\u017Cd\u0105
-      liter\u0119 alfabetu, jak r\xF3wnie\u017C cyfry i znaki interpunkcyjne. Prostota
-      i wszechstronno\u015B\u0107 kodu sprawi\u0142y, \u017Ce by\u0142 on doskonale
-      przystosowany do transmisji przez linie telegraficzne, gdzie impulsy elektryczne
-      mog\u0142y by\u0107 \u0142atwo przet\u0142umaczone na sygna\u0142y d\u017Awi\u0119kowe
-      lub wizualne po drugiej stronie odbiorcy.\r\r\nRozw\xF3j kodu Morse'a przez
-      Samuela Morse'a by\u0142 nierozerwalnie zwi\u0105zany z jego wynalazkiem jednoprzewodowego
-      systemu telegraficznego, kt\xF3ry opatentowa\u0142 w 1837 roku. \u0141\u0105cz\u0105c
-      swoj\u0105 wiedz\u0119 z dziedziny in\u017Cynierii elektrycznej z pasj\u0105
-      do komunikacji, Morse stworzy\u0142 prze\u0142omow\u0105 metod\u0119 przekazywania
-      wiadomo\u015Bci na wielkie odleg\u0142o\u015Bci z niespotykan\u0105 dot\u0105d
-      szybko\u015Bci\u0105 i efektywno\u015Bci\u0105.\r\r\nWp\u0142yw kodu Morse'a
-      na globaln\u0105 komunikacj\u0119 by\u0142 g\u0142\u0119boki i dalekosi\u0119\u017Cny.
-      U\u0142atwi\u0142 on szybki rozw\xF3j sieci telegraficznych na kontynentach,
-      \u0142\u0105cz\u0105c ludzi i narody w spos\xF3b wcze\u015Bniej nie do pomy\u015Blenia.
-      Kod Morse'a sta\u0142 si\u0119 standardow\u0105 metod\u0105 komunikacji dla
-      operator\xF3w telegraficznych na ca\u0142ym \u015Bwiecie, odgrywaj\u0105c kluczow\u0105
-      rol\u0119 w handlu, dyplomacji i rozpowszechnianiu wiadomo\u015Bci.\r\r\nMimo
-      pojawienia si\u0119 bardziej zaawansowanych technologii komunikacyjnych w nowoczesnej
-      erze, kod Morse'a pozostaje niezb\u0119dnym narz\u0119dziem w pewnych zastosowaniach,
-      w tym w lotnictwie, \u017Cegludze morskiej i komunikacji awaryjnej. Jego trwa\u0142e
-      dziedzictwo stanowi \u015Bwiadectwo wizjonerskiego geniuszu Samuela Morse'a
-      i jego wk\u0142adu w ewolucj\u0119 komunikacji ludzkiej."
+    - Morse Code, a revolutionary communication system developed by Samuel Morse
+      in the 1830s, transformed long-distance communication. Using a series of dots
+      and dashes to represent letters and numbers, Morse Code enabled rapid transmission
+      of messages across vast distances. Morse's innovative system played a pivotal
+      role in the establishment of telegraph networks worldwide, revolutionizing
+      global communication. Today, Morse Code remains an iconic symbol of Samuel
+      Morse's ingenuity and enduring legacy in the field of telecommunications.
+    - "Kod Morse'a, rewolucyjny system komunikacji opracowany przez Samuela Morse'a
+      w latach trzydziestych XIX wieku, przekszta\u0142ci\u0142 komunikacj\u0119
+      na du\u017Ce odleg\u0142o\u015Bci. Wykorzystuj\u0105c seri\u0119 kropek i kresek
+      do reprezentowania liter i cyfr, kod Morse'a umo\u017Cliwi\u0142 szybk\u0105
+      transmisj\u0119 wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci. Innowacyjny
+      system Morse'a odegra\u0142 kluczow\u0105 rol\u0119 w tworzeniu sieci telegraficznych
+      na ca\u0142ym \u015Bwiecie, rewolucjonizuj\u0105c globaln\u0105 komunikacj\u0119.
+      Dzi\u015B kod Morse'a pozostaje ikonicznym symbolem pomys\u0142owo\u015Bci
+      Samuela Morse'a i trwa\u0142ego dziedzictwa w dziedzinie telekomunikacji."
   - key: CARD_004_ALFREDNOBEL_DESC
     translations:
-    - "Alfred Nobel, a Swedish chemist, engineer, and inventor, is best known for
-      his invention of dynamite, a groundbreaking explosive that revolutionized various
-      industries and construction projects. Born on October 21, 1833, in Stockholm,
-      Sweden, Nobel's invention of dynamite had a profound impact on the fields of
-      mining, construction, and warfare.\r\r\nWhile dynamite found widespread use
-      in peaceful applications, its destructive potential also made it a weapon of
-      war. Nobel was deeply troubled by the use of his invention in military conflicts
-      and dedicated much of his later life to promoting peace and disarmament.\r\r\nAlfred
-      Nobel's legacy extends beyond his invention of dynamite. In his will, he established
-      the Nobel Prizes, which are awarded annually for achievements in physics, chemistry,
-      medicine, literature, and peace. Nobel's vision for the prizes was to recognize
-      individuals who had made significant contributions to humanity, fostering progress
-      and promoting international cooperation.\r\r\nThrough his inventions and philanthropy,
-      Alfred Nobel left an indelible mark on the world, shaping the course of science,
-      industry, and global diplomacy. His commitment to innovation and social responsibility
-      continues to inspire future generations of scientists, engineers, and humanitarians."
-    - "Alfred Nobel, szwedzki chemik, in\u017Cynier i wynalazca, jest najlepiej znany
-      z wynalezienia dynamitu, prze\u0142omowego materia\u0142u wybuchowego, kt\xF3ry
-      zrewolucjonizowa\u0142 r\xF3\u017Cne bran\u017Ce i projekty budowlane. Urodzony
-      21 pa\u017Adziernika 1833 roku w Sztokholmie w Szwecji. Wynalezienie dynamitu
-      mia\u0142o g\u0142\u0119boki wp\u0142yw na dziedziny g\xF3rnictwa, budownictwa
-      i wojny.\r\r\nPodczas gdy dynamit znalaz\u0142 szerokie zastosowanie w pokojowych
-      celach, jego potencja\u0142 destrukcyjny sprawi\u0142, \u017Ce sta\u0142 si\u0119
-      broni\u0105. Nobel by\u0142 g\u0142\u0119boko zaniepokojony wykorzystaniem
-      swojego wynalazku w konfliktach zbrojnych i po\u015Bwi\u0119ci\u0142 wiele
-      lat swojego p\xF3\u017Aniejszego \u017Cycia na promowanie pokoju i rozbrojenia.\r\r\nDziedzictwo
-      Alfreda Nobla wykracza poza jego wynalazek dynamitu. W swoim testamencie ustanowi\u0142
-      Nagrody Nobla, kt\xF3re s\u0105 przyznawane corocznie za osi\u0105gni\u0119cia
-      w dziedzinie fizyki, chemii, medycyny, literatury i pokoju. Wizj\u0105 Nobla
-      dla nagr\xF3d by\u0142o uhonorowanie os\xF3b, kt\xF3re dokona\u0142y znacz\u0105cych
-      wk\u0142ad\xF3w w ludzko\u015B\u0107, wspieraj\u0105c post\u0119p i promuj\u0105c
-      mi\u0119dzynarodow\u0105 wsp\xF3\u0142prac\u0119.\r\r\nPoprzez swoje wynalazki
-      i dzia\u0142alno\u015B\u0107 charytatywn\u0105 Alfred Nobel pozostawi\u0142
-      trwa\u0142y \u015Blad na \u015Bwiecie, kszta\u0142tuj\u0105c bieg nauki, przemys\u0142u
-      i dyplomacji \u015Bwiatowej. Jego zaanga\u017Cowanie w innowacje i odpowiedzialno\u015B\u0107
-      spo\u0142eczn\u0105 nadal inspiruje przysz\u0142e pokolenia naukowc\xF3w, in\u017Cynier\xF3w
-      i humanitaryst\xF3w.\r"
+    - Alfred Nobel, a Swedish inventor, engineer, and philanthropist born in 1833,
+      is best known for his invention of dynamite in 1867. This explosive innovation
+      revolutionized industries such as construction, mining, and warfare, but Nobel's
+      legacy extends far beyond explosives. In 1895, he established the Nobel Prizes
+      through his will, recognizing outstanding achievements in physics, chemistry,
+      medicine, literature, and peace. Nobel's commitment to progress and peace led
+      to the creation of one of the world's most prestigious honors, emphasizing
+      the importance of innovation and humanitarian efforts. Today, Alfred Nobel's
+      name is synonymous with both scientific breakthroughs and the promotion of
+      peace, reflecting his profound impact on the world.
+    - "Alfred Nobel, szwedzki wynalazca, in\u017Cynier i filantrop urodzony w 1833
+      roku, jest najbardziej znany z wynalezienia dynamitu w 1867 roku. Ta wybuchowa
+      innowacja zrewolucjonizowa\u0142a bran\u017Ce takie jak budownictwo, g\xF3rnictwo
+      i dzia\u0142ania wojenne, ale dziedzictwo Nobla wykracza daleko poza materia\u0142y
+      wybuchowe. W 1895 r. ustanowi\u0142 w swoim testamencie Nagrody Nobla, uznaj\u0105c
+      wybitne osi\u0105gni\u0119cia w dziedzinie fizyki, chemii, medycyny, literatury
+      i pokoju. Zaanga\u017Cowanie Nobla w post\u0119p i pok\xF3j doprowadzi\u0142o
+      do stworzenia jednego z najbardziej presti\u017Cowych wyr\xF3\u017Cnie\u0144
+      na \u015Bwiecie, podkre\u015Blaj\u0105c znaczenie innowacji i wysi\u0142k\xF3w
+      humanitarnych. Dzi\u015B nazwisko Alfreda Nobla jest synonimem zar\xF3wno prze\u0142om\xF3w
+      naukowych, jak i promowania pokoju, odzwierciedlaj\u0105c jego g\u0142\u0119boki
+      wp\u0142yw na \u015Bwiat."
   - key: CARD_004_DYNAMITE_NAME
     translations:
     - Dynamite
     - Dynamit
   - key: CARD_004_DYNAMITE_DESC
     translations:
-    - "Dynamite, the brainchild of Alfred Nobel, emerged in 1867 as a monumental
-      breakthrough in explosives technology. This innovative concoction, born out
-      of Nobel's persistent quest for a safer alternative to nitroglycerin, quickly
-      transformed various industries and construction practices worldwide.\r\r\nComposed
-      of nitroglycerin absorbed into a porous material like diatomaceous earth, dynamite
-      revolutionized mining, construction, and demolition endeavors. Nobel's ingenious
-      formulation provided a stable and easily transportable explosive, overcoming
-      the volatility inherent in raw nitroglycerin.\r\r\nThe widespread adoption
-      of dynamite accelerated the pace of infrastructure development, facilitating
-      the construction of railways, bridges, and tunnels with unprecedented efficiency.
-      In the mining sector, dynamite's controlled detonations enabled the extraction
-      of resources from previously inaccessible depths, fueling industrial growth
-      and economic expansion.\r\r\nHowever, Nobel's invention also bore witness to
-      the devastating power of explosives in warfare, a reality that troubled the
-      inventor deeply. In response, Nobel dedicated significant efforts to promoting
-      peace and advocating for disarmament, epitomized by the establishment of the
-      Nobel Prizes in his later years.\r\r\nAlfred Nobel's legacy as the inventor
-      of dynamite is a testament to the dual nature of innovation\u2014transformative
-      in its potential for progress, yet fraught with ethical considerations. Dynamite
-      remains a symbol of human ingenuity, forever intertwined with Nobel's enduring
-      commitment to peace and humanitarianism."
-    - "Dynamit, pomys\u0142 Alfreda Nobla, pojawi\u0142 si\u0119 w 1867 roku jako
-      monumentalny prze\u0142om w technologii materia\u0142\xF3w wybuchowych. Ta
-      innowacyjna mieszanina, narodzona z nieustaj\u0105cej w\u0119dr\xF3wki Nobla
-      w poszukiwaniu bezpieczniejszej alternatywy dla nitrogliceryny, szybko przekszta\u0142ci\u0142a
-      r\xF3\u017Cne bran\u017Ce i praktyki budowlane na ca\u0142ym \u015Bwiecie.\r\r\nSk\u0142adaj\u0105cy
-      si\u0119 z nitrogliceryny wch\u0142oni\u0119tej w porowaty materia\u0142, tak
-      jak ziemia okrzemkowa, dynamit zrewolucjonizowa\u0142 g\xF3rnictwo, budownictwo
-      i prace rozbi\xF3rkowe. Genialna formu\u0142a Nobla dostarczy\u0142a stabilny
-      i \u0142atwy do transportu materia\u0142 wybuchowy, przezwyci\u0119\u017Caj\u0105c
-      niestabilno\u015B\u0107 inherentn\u0105 w surowej nitroglicerynie.\r\r\nPowszechne
-      przyj\u0119cie dynamitu przyspieszy\u0142o tempo rozwoju infrastruktury, u\u0142atwiaj\u0105c
-      budow\u0119 kolei, most\xF3w i tuneli z niespotykan\u0105 dot\u0105d efektywno\u015Bci\u0105.
-      W sektorze g\xF3rnictwa kontrolowane detonacje dynamitu umo\u017Cliwi\u0142y
-      wydobycie zasob\xF3w z wcze\u015Bniej niedost\u0119pnych g\u0142\u0119boko\u015Bci,
-      nap\u0119dzaj\u0105c wzrost przemys\u0142owy i ekspansj\u0119 gospodarcz\u0105.\r\r\nJednak\u017Ce,
-      wynalazek Nobla tak\u017Ce by\u0142 \u015Bwiadkiem niszczycielskiej si\u0142y
-      materia\u0142\xF3w wybuchowych w wojnie, rzeczywisto\u015B\u0107 ta g\u0142\u0119boko
-      zaniepokoi\u0142a wynalazc\u0119. W odpowiedzi, Nobel po\u015Bwi\u0119ci\u0142
-      znaczne wysi\u0142ki na rzecz promowania pokoju i propagowania rozbrojenia,
-      uosabianego przez ustanowienie Nagr\xF3d Nobla w jego p\xF3\u017Aniejszych
-      latach.\r\r\nDziedzictwo Alfreda Nobla jako wynalazcy dynamitu stanowi \u015Bwiadectwo
-      dualistycznej natury innowacji - transformuj\u0105cej w swoim potencjale do
-      post\u0119pu, lecz obci\u0105\u017Conej moralnymi rozwa\u017Caniami. Dynamit
-      pozostaje symbolem ludzkiej pomys\u0142owo\u015Bci, na zawsze splecionym z
-      trwa\u0142ym zobowi\u0105zaniem Nobla do pokoju i humanitaryzmu."
+    - Dynamite, the groundbreaking invention of Alfred Nobel in 1867, revolutionized
+      various industries and transformed the course of history. This powerful explosive,
+      composed of nitroglycerin absorbed in an inert substance, provided safer and
+      more manageable means for construction, mining, and demolition. Nobel's invention
+      accelerated the pace of infrastructure development worldwide, facilitating
+      the construction of roads, railways, and tunnels. However, dynamite's impact
+      wasn't confined to industry; its military applications also reshaped warfare
+      strategies. Despite its dual nature, Nobel remained dedicated to advancing
+      human progress and peace, exemplified by his establishment of the Nobel Prizes.
+      Dynamite thus stands as a testament to Nobel's innovative spirit and enduring
+      legacy in both science and society.
+    - "Dynamit, prze\u0142omowy wynalazek Alfreda Nobla z 1867 roku, zrewolucjonizowa\u0142
+      r\xF3\u017Cne ga\u0142\u0119zie przemys\u0142u i zmieni\u0142 bieg historii.
+      Ten pot\u0119\u017Cny materia\u0142 wybuchowy, sk\u0142adaj\u0105cy si\u0119
+      z nitrogliceryny zaabsorbowanej w oboj\u0119tnej substancji, zapewni\u0142
+      bezpieczniejsze i \u0142atwiejsze w u\u017Cyciu \u015Brodki do budowy, wydobycia
+      i wyburzania. Wynalazek Nobla przyspieszy\u0142 tempo rozwoju infrastruktury
+      na ca\u0142ym \u015Bwiecie, u\u0142atwiaj\u0105c budow\u0119 dr\xF3g, linii
+      kolejowych i tuneli. Jednak wp\u0142yw dynamitu nie ogranicza\u0142 si\u0119
+      do przemys\u0142u; jego zastosowania wojskowe r\xF3wnie\u017C zmieni\u0142y
+      strategie wojenne. Pomimo jego dwoistej natury, Nobel pozosta\u0142 oddany
+      post\u0119powi ludzko\u015Bci i pokojowi, czego przyk\u0142adem jest ustanowienie
+      przez niego Nagr\xF3d Nobla. Dynamit jest zatem \u015Bwiadectwem innowacyjnego
+      ducha Nobla i jego trwa\u0142ego dziedzictwa zar\xF3wno w nauce, jak i spo\u0142ecze\u0144stwie."
+  - key: CARD_005_OLEKIRKCHRISTIANSEN_DESC
+    translations:
+    - Ole Kirk Christiansen, a Danish carpenter and inventor, born in 1891, left
+      an indelible mark on the world with his creation of LEGO bricks in 1949. Initially
+      a humble carpentry workshop, Christiansen's company evolved into the iconic
+      LEGO Group, one of the world's most beloved toy manufacturers. The LEGO brick,
+      with its interlocking design, sparked creativity and imagination in children
+      worldwide, becoming a symbol of play and learning. Christiansen's dedication
+      to quality, innovation, and creativity laid the foundation for LEGO's success,
+      shaping generations of builders and dreamers. His legacy as the founder of
+      LEGO endures, inspiring creativity and innovation across the globe.
+    - "Ole Kirk Christiansen, du\u0144ski stolarz i wynalazca urodzony w 1891 roku,
+      odcisn\u0105\u0142 niezatarte pi\u0119tno na \u015Bwiecie, tworz\u0105c w 1949
+      roku klocki LEGO. Pocz\u0105tkowo skromny warsztat stolarski, firma Christiansena
+      przekszta\u0142ci\u0142a si\u0119 w kultow\u0105 LEGO Group, jednego z najbardziej
+      lubianych producent\xF3w zabawek na \u015Bwiecie. Klocek LEGO o zaz\u0119biaj\u0105cej
+      si\u0119 konstrukcji pobudzi\u0142 kreatywno\u015B\u0107 i wyobra\u017Ani\u0119
+      dzieci na ca\u0142ym \u015Bwiecie, staj\u0105c si\u0119 symbolem zabawy i nauki.
+      Po\u015Bwi\u0119cenie Christiansena dla jako\u015Bci, innowacji i kreatywno\u015Bci
+      po\u0142o\u017Cy\u0142o podwaliny pod sukces LEGO, kszta\u0142tuj\u0105c pokolenia
+      konstruktor\xF3w i marzycieli. Jego dziedzictwo jako za\u0142o\u017Cyciela
+      LEGO trwa, inspiruj\u0105c kreatywno\u015B\u0107 i innowacje na ca\u0142ym
+      \u015Bwiecie."
+  - key: CARD_005_LEGOBRICKS_NAME
+    translations:
+    - LEGO Bricks
+    - Klocki LEGO
+  - key: CARD_005_LEGOBRICKS_DESC
+    translations:
+    - LEGO bricks, the brainchild of Ole Kirk Christiansen, revolutionized the world
+      of toys upon their creation in 1949. These iconic interlocking bricks, renowned
+      for their versatility and durability, ignited the imaginations of children
+      and adults alike. With limitless possibilities for construction and creativity,
+      LEGO bricks transcended mere play, fostering problem-solving skills, spatial
+      awareness, and teamwork. Ole Kirk Christiansen's commitment to quality and
+      innovation laid the foundation for the LEGO Group's enduring success, cementing
+      LEGO bricks as a timeless symbol of imagination and ingenuity. Today, LEGO
+      bricks continue to inspire builders of all ages, embodying the spirit of endless
+      possibility and creativity.
+    - "Klocki LEGO, pomys\u0142 Olego Kirka Christiansena, zrewolucjonizowa\u0142y
+      \u015Bwiat zabawek w momencie ich powstania w 1949 roku. Te kultowe, zaz\u0119biaj\u0105ce
+      si\u0119 klocki, znane ze swojej wszechstronno\u015Bci i trwa\u0142o\u015Bci,
+      rozpali\u0142y wyobra\u017Ani\u0119 zar\xF3wno dzieci, jak i doros\u0142ych.
+      Dzi\u0119ki nieograniczonym mo\u017Cliwo\u015Bciom konstrukcyjnym i kreatywno\u015Bci,
+      klocki LEGO wykracza\u0142y poza zwyk\u0142\u0105 zabaw\u0119, rozwijaj\u0105c
+      umiej\u0119tno\u015Bci rozwi\u0105zywania problem\xF3w, \u015Bwiadomo\u015B\u0107
+      przestrzenn\u0105 i prac\u0119 zespo\u0142ow\u0105. Zaanga\u017Cowanie Olego
+      Kirka Christiansena w jako\u015B\u0107 i innowacje po\u0142o\u017Cy\u0142o
+      podwaliny pod trwa\u0142y sukces LEGO Group, cementuj\u0105c klocki LEGO jako
+      ponadczasowy symbol wyobra\u017Ani i pomys\u0142owo\u015Bci. Dzi\u015B klocki
+      LEGO nadal inspiruj\u0105 konstruktor\xF3w w ka\u017Cdym wieku, uosabiaj\u0105c
+      ducha niesko\u0144czonych mo\u017Cliwo\u015Bci i kreatywno\u015Bci."
+  - key: CARD_006_RENELAENNEC_DESC
+    translations:
+    - "Ren\xE9 Laennec, a French physician born in 1781, made a profound impact on
+      the field of medicine with his invention of the stethoscope in 1816. Prior
+      to his innovation, physicians had limited means of examining the internal sounds
+      of the body. Laennec's creation revolutionized auscultation, allowing for more
+      accurate diagnoses of heart and lung conditions. His invention paved the way
+      for modern diagnostic techniques, transforming the practice of medicine worldwide.
+      Laennec's ingenuity and dedication to advancing healthcare continue to inspire
+      generations of medical professionals, underscoring his enduring legacy as a
+      pioneer in the field of auscultation."
+    - "Ren\xE9 Laennec, francuski lekarz urodzony w 1781 roku, wywar\u0142 ogromny
+      wp\u0142yw na medycyn\u0119 dzi\u0119ki wynalezieniu stetoskopu w 1816 roku.
+      Przed jego innowacj\u0105 lekarze mieli ograniczone mo\u017Cliwo\u015Bci badania
+      wewn\u0119trznych d\u017Awi\u0119k\xF3w cia\u0142a. Wynalazek Laenneca zrewolucjonizowa\u0142
+      os\u0142uchiwanie, umo\u017Cliwiaj\u0105c dok\u0142adniejsze diagnozowanie
+      chor\xF3b serca i p\u0142uc. Jego wynalazek utorowa\u0142 drog\u0119 nowoczesnym
+      technikom diagnostycznym, zmieniaj\u0105c praktyk\u0119 medyczn\u0105 na ca\u0142ym
+      \u015Bwiecie. Pomys\u0142owo\u015B\u0107 i zaanga\u017Cowanie Laenneca w rozw\xF3j
+      opieki zdrowotnej nadal inspiruj\u0105 pokolenia profesjonalist\xF3w medycznych,
+      podkre\u015Blaj\u0105c jego trwa\u0142e dziedzictwo jako pioniera w dziedzinie
+      os\u0142uchiwania."
+  - key: CARD_006_STETHOSCOPE_NAME
+    translations:
+    - Stethoscope
+    - Stetoskop
+  - key: CARD_006_STETHOSCOPE_DESC
+    translations:
+    - "The stethoscope, invented by Ren\xE9 Laennec in 1816, revolutionized diagnostic
+      medicine. This simple yet ingenious device allowed physicians to listen to
+      internal body sounds with unprecedented clarity and precision, transforming
+      the diagnosis of heart and lung conditions worldwide. Laennec's stethoscope
+      quickly became an essential tool for medical professionals, ushering in a new
+      era of diagnostic accuracy and patient care."
+    - "Stetoskop, wynaleziony przez Ren\xE9 Laenneca w 1816 roku, zrewolucjonizowa\u0142
+      medycyn\u0119 diagnostyczn\u0105. To proste, ale genialne urz\u0105dzenie pozwoli\u0142o
+      lekarzom s\u0142ucha\u0107 wewn\u0119trznych d\u017Awi\u0119k\xF3w cia\u0142a
+      z niespotykan\u0105 dot\u0105d wyrazisto\u015Bci\u0105 i precyzj\u0105, zmieniaj\u0105c
+      diagnostyk\u0119 chor\xF3b serca i p\u0142uc na ca\u0142ym \u015Bwiecie. Stetoskop
+      Laenneca szybko sta\u0142 si\u0119 niezb\u0119dnym narz\u0119dziem dla profesjonalist\xF3w
+      medycznych, zapocz\u0105tkowuj\u0105c now\u0105 er\u0119 dok\u0142adno\u015Bci
+      diagnostycznej i opieki nad pacjentem."
+  - key: CARD_007_PERCYSPENCER_DESC
+    translations:
+    - Percy Spencer, an American engineer born in 1894, made a significant impact
+      on modern technology with his invention of the microwave oven. While working
+      for Raytheon Corporation in 1945, Spencer discovered that microwave radiation
+      emitted by a magnetron melted a candy bar in his pocket. This serendipitous
+      observation led to the development of the first microwave oven, which quickly
+      became a household staple due to its convenience and efficiency in cooking
+      food. Spencer's innovative breakthrough revolutionized the culinary landscape,
+      introducing a new era of quick and accessible meal preparation. His contributions
+      to microwave technology continue to shape modern kitchens and have left an
+      enduring legacy in the realm of culinary innovation.
+    - "Percy Spencer, ameryka\u0144ski in\u017Cynier urodzony w 1894 roku, wywar\u0142
+      znacz\u0105cy wp\u0142yw na wsp\xF3\u0142czesn\u0105 technologi\u0119 dzi\u0119ki
+      wynalezieniu kuchenki mikrofalowej. Pracuj\u0105c dla Raytheon Corporation
+      w 1945 roku, Spencer odkry\u0142, \u017Ce promieniowanie mikrofalowe emitowane
+      przez magnetron stopi\u0142o batonik w jego kieszeni. Ta przypadkowa obserwacja
+      doprowadzi\u0142a do opracowania pierwszej kuchenki mikrofalowej, kt\xF3ra
+      szybko sta\u0142a si\u0119 podstaw\u0105 gospodarstwa domowego ze wzgl\u0119du
+      na wygod\u0119 i wydajno\u015B\u0107 gotowania \u017Cywno\u015Bci. Innowacyjny
+      prze\u0142om Spencera zrewolucjonizowa\u0142 krajobraz kulinarny, wprowadzaj\u0105c
+      now\u0105 er\u0119 szybkiego i dost\u0119pnego przygotowywania posi\u0142k\xF3w.
+      Jego wk\u0142ad w technologi\u0119 mikrofalow\u0105 nadal kszta\u0142tuje nowoczesne
+      kuchnie i pozostawi\u0142 trwa\u0142e dziedzictwo w dziedzinie innowacji kulinarnych."
+  - key: CARD_007_MICROWAVEOVEN_NAME
+    translations:
+    - Microwave Oven
+    - Kuchenka Mikrofalowa
+  - key: CARD_007_MICROWAVEOVEN_DESC
+    translations:
+    - The microwave oven, a transformative kitchen appliance, owes its invention
+      to Percy Spencer's accidental discovery during World War II. Harnessing microwave
+      radiation for rapid food heating, the microwave oven revolutionized meal preparation
+      upon its introduction in the late 1940s. Its unprecedented convenience and
+      speed transformed cooking practices worldwide, making it an indispensable tool
+      in modern kitchens. Percy Spencer's innovative breakthrough paved the way for
+      the widespread adoption of microwave technology, fundamentally changing the
+      way people cook and eat.
+    - "Kuchenka mikrofalowa, transformacyjne urz\u0105dzenie kuchenne, zawdzi\u0119cza
+      sw\xF3j wynalazek przypadkowemu odkryciu Percy'ego Spencera podczas II wojny
+      \u015Bwiatowej. Wykorzystuj\u0105c promieniowanie mikrofalowe do szybkiego
+      podgrzewania \u017Cywno\u015Bci, kuchenka mikrofalowa zrewolucjonizowa\u0142a
+      przygotowywanie posi\u0142k\xF3w po jej wprowadzeniu pod koniec lat czterdziestych
+      XX wieku. Jej bezprecedensowa wygoda i szybko\u015B\u0107 zmieni\u0142y praktyki
+      gotowania na ca\u0142ym \u015Bwiecie, czyni\u0105c j\u0105 niezb\u0119dnym
+      narz\u0119dziem w nowoczesnych kuchniach. Innowacyjne odkrycie Percy'ego Spencera
+      utorowa\u0142o drog\u0119 do powszechnego zastosowania technologii mikrofalowej,
+      zasadniczo zmieniaj\u0105c spos\xF3b gotowania i jedzenia."
+  - key: CARD_008_ROBERTOPPENHEIMER_DESC
+    translations:
+    - Robert Oppenheimer, an American physicist born in 1904, led the Manhattan Project
+      during World War II, overseeing the development of the atomic bomb. His pivotal
+      role in creating the world's first nuclear weapons marked a turning point in
+      history, shaping the course of warfare and international relations. Despite
+      his scientific achievements, Oppenheimer faced scrutiny for his political affiliations
+      during the McCarthy era, highlighting the complex intersection of science and
+      society. Oppenheimer's legacy remains a subject of debate, reflecting the ethical
+      dilemmas inherent in scientific innovation.
+    - "Robert Oppenheimer, ameryka\u0144ski fizyk urodzony w 1904 roku, kierowa\u0142
+      Projektem Manhattan podczas II wojny \u015Bwiatowej, nadzoruj\u0105c prace
+      nad bomb\u0105 atomow\u0105. Jego kluczowa rola w stworzeniu pierwszej na \u015Bwiecie
+      broni j\u0105drowej stanowi\u0142a punkt zwrotny w historii, kszta\u0142tuj\u0105c
+      przebieg dzia\u0142a\u0144 wojennych i stosunk\xF3w mi\u0119dzynarodowych.
+      Pomimo swoich osi\u0105gni\u0119\u0107 naukowych, Oppenheimer zosta\u0142 poddany
+      kontroli ze wzgl\u0119du na swoje powi\u0105zania polityczne w erze McCarthy'ego,
+      co uwypukli\u0142o z\u0142o\u017Cone skrzy\u017Cowanie nauki i spo\u0142ecze\u0144stwa.
+      Spu\u015Bcizna Oppenheimera pozostaje przedmiotem debaty, odzwierciedlaj\u0105c
+      dylematy etyczne nieod\u0142\u0105cznie zwi\u0105zane z innowacjami naukowymi."
+  - key: CARD_008_ATOMICBOMB_NAME
+    translations:
+    - Atomic Bomb
+    - Bomba Atomowa
+  - key: CARD_008_ATOMICBOMB_DESC
+    translations:
+    - The atomic bomb, developed during World War II as part of the Manhattan Project
+      led by physicist Robert Oppenheimer, stands as one of the most consequential
+      inventions of the 20th century. The bomb's devastating power was demonstrated
+      with the bombings of Hiroshima and Nagasaki in August 1945, leading to unprecedented
+      destruction and loss of life. The atomic bomb fundamentally changed the nature
+      of warfare, ushering in the nuclear age and raising profound ethical questions
+      about the use of such destructive technology. Its development and deployment
+      continue to shape global politics and security dynamics to this day, serving
+      as a stark reminder of the catastrophic consequences of armed conflict.
+    - "Bomba atomowa, opracowana podczas II wojny \u015Bwiatowej w ramach Projektu
+      Manhattan kierowanego przez fizyka Roberta Oppenheimera, jest jednym z najbardziej
+      znacz\u0105cych wynalazk\xF3w XX wieku. Niszczycielska moc bomby zosta\u0142a
+      zademonstrowana podczas bombardowa\u0144 Hiroszimy i Nagasaki w sierpniu 1945
+      r., co doprowadzi\u0142o do niespotykanych dot\u0105d zniszcze\u0144 i ofiar
+      \u015Bmiertelnych. Bomba atomowa zasadniczo zmieni\u0142a charakter dzia\u0142a\u0144
+      wojennych, zapocz\u0105tkowuj\u0105c er\u0119 nuklearn\u0105 i stawiaj\u0105c
+      istotne pytania etyczne dotycz\u0105ce wykorzystania tak niszczycielskiej technologii.
+      Jej rozw\xF3j i zastosowanie po dzi\u015B dzie\u0144 kszta\u0142tuj\u0105 globaln\u0105
+      polityk\u0119 i dynamik\u0119 bezpiecze\u0144stwa, przypominaj\u0105c o katastrofalnych
+      konsekwencjach konflikt\xF3w zbrojnych."
+  - key: CARD_009_JOHANNESGUTENBERG_DESC
+    translations:
+    - Johannes Gutenberg, a German inventor born around 1400, revolutionized the
+      world with his invention of the movable type printing press in the 15th century.
+      Gutenberg's innovation enabled the mass production of books and other printed
+      materials, marking the beginning of the Gutenberg Revolution and the spread
+      of knowledge throughout Europe. His printing press played a pivotal role in
+      the Renaissance, the Reformation, and the Scientific Revolution, democratizing
+      access to information and contributing to cultural and intellectual advancements.
+      Gutenberg's invention laid the foundation for the modern printing industry
+      and remains one of the most influential technological innovations in history.
+    - "Johannes Gutenberg, niemiecki wynalazca urodzony oko\u0142o 1400 roku, zrewolucjonizowa\u0142
+      \u015Bwiat dzi\u0119ki wynalezieniu ruchomej czcionki drukarskiej w XV wieku.
+      Innowacja Gutenberga umo\u017Cliwi\u0142a masow\u0105 produkcj\u0119 ksi\u0105\u017Cek
+      i innych materia\u0142\xF3w drukowanych, wyznaczaj\u0105c pocz\u0105tek rewolucji
+      Gutenberga i rozprzestrzeniania si\u0119 wiedzy w ca\u0142ej Europie. Jego
+      prasa drukarska odegra\u0142a kluczow\u0105 rol\u0119 w renesansie, reformacji
+      i rewolucji naukowej, demokratyzuj\u0105c dost\u0119p do informacji i przyczyniaj\u0105c
+      si\u0119 do post\u0119pu kulturowego i intelektualnego. Wynalazek Gutenberga
+      po\u0142o\u017Cy\u0142 podwaliny pod nowoczesny przemys\u0142 drukarski i pozostaje
+      jedn\u0105 z najbardziej wp\u0142ywowych innowacji technologicznych w historii."
+  - key: CARD_009_MOVABLETYPE_NAME
+    translations:
+    - Movable Type
+    - Ruchoma Czcionka
+  - key: CARD_009_MOVABLETYPE_DESC
+    translations:
+    - Movable type, attributed to Johannes Gutenberg's invention in the 15th century,
+      revolutionized the process of printing and dissemination of knowledge. This
+      innovative system allowed individual letters and characters to be rearranged
+      and reused, facilitating the mass production of books, pamphlets, and other
+      printed materials. Gutenberg's movable type printing press marked a significant
+      shift from labor-intensive hand-copying methods, democratizing access to information
+      and fueling cultural, intellectual, and scientific advancements during the
+      Renaissance and beyond. Movable type remains a cornerstone of the printing
+      industry, serving as the precursor to modern printing technologies and playing
+      a crucial role in the dissemination of ideas and knowledge worldwide.
+    - "Ruchoma czcionka, przypisywana wynalazkowi Johannesa Gutenberga w XV wieku,
+      zrewolucjonizowa\u0142a proces drukowania i rozpowszechniania wiedzy. Ten innowacyjny
+      system pozwoli\u0142 na zmian\u0119 uk\u0142adu poszczeg\xF3lnych liter i znak\xF3w
+      oraz ich ponowne wykorzystanie, u\u0142atwiaj\u0105c masow\u0105 produkcj\u0119
+      ksi\u0105\u017Cek, broszur i innych materia\u0142\xF3w drukowanych. Ruchoma
+      prasa drukarska Gutenberga oznacza\u0142a znacz\u0105ce odej\u015Bcie od pracoch\u0142onnych
+      metod r\u0119cznego kopiowania, demokratyzuj\u0105c dost\u0119p do informacji
+      i nap\u0119dzaj\u0105c post\u0119p kulturowy, intelektualny i naukowy w okresie
+      renesansu i p\xF3\u017Aniej. Ruchoma czcionka pozostaje kamieniem w\u0119gielnym
+      przemys\u0142u drukarskiego, s\u0142u\u017C\u0105c jako prekursor nowoczesnych
+      technologii druku i odgrywaj\u0105c kluczow\u0105 rol\u0119 w rozpowszechnianiu
+      idei i wiedzy na ca\u0142ym \u015Bwiecie."
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
