@@ -15,7 +15,7 @@ public class PlayerScoreManager : MonoBehaviour
     private static PlayerScoreManager instance;
     [SerializeField] private GameManager gameManager;
 
-    [System.Serializable]
+    [Serializable]
     private struct PlayerMedal
     {
         public string medalName;
@@ -25,7 +25,10 @@ public class PlayerScoreManager : MonoBehaviour
     }
 
     [SerializeField] private Hourglass hourglass;
+    [SerializeField] private Sprite emptyMedalSprite;
+    public static Sprite GetEmptyMedalSprite() => instance.emptyMedalSprite;
     [SerializeField] private PlayerMedal[] playerMedals = new PlayerMedal[0];
+    public static Sprite GetMedalSprite(int index) => instance.playerMedals[index].medalSprite;
     private int currentMedal;
 
     private float playTime;

@@ -203,7 +203,7 @@ PrefabInstance:
     - target: {fileID: 1647668945916200439, guid: ed2f64afde84eb0479aedda5c29e08e1,
         type: 3}
       propertyPath: translationKey
-      value: MENU_GAME_QUICKREPLAY
+      value: MENU_GAME_QUICKRESTART
       objectReference: {fileID: 0}
     - target: {fileID: 5528096900484754828, guid: ed2f64afde84eb0479aedda5c29e08e1,
         type: 3}

@@ -24,6 +24,10 @@ MonoBehaviour:
     translations:
     - Credits
     - "Tw\xF3rcy"
+  - key: MENU_GAME_QUICKRESTART
+    translations:
+    - Quick Restart
+    - Szybki Restart
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations:
   - key: MENU_MS_CAMPAIGN

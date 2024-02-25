@@ -7,8 +7,14 @@ using UnityEngine;
 public class CampaignLevel
 {
     [SerializeField] private string name;
-    public GameObject levelObject;
-    public GameObject challengeObject;
+
+    [SerializeField] internal GameObject levelObject;
+    [SerializeField] internal TextMeshPro levelTimeText;
+    [SerializeField] internal SpriteRenderer levelMedal;
+
+    [SerializeField] internal GameObject challengeObject;
+    [SerializeField] internal TextMeshPro challengeTimeText;
+    [SerializeField] internal SpriteRenderer challengeMedal;
 
     [Header("Level Settings")]
     public List<CardCollection> cardCollections;
@@ -79,8 +85,14 @@ public class CollectionManager : MonoBehaviour
         int finishedLevels = GetFinishedLevels();
         for (int i = 0; i < instance.levels.Count; i++)
         {
-            instance.levels[i].levelObject.SetActive(instance.levelMode != LevelMode.Standard || i > finishedLevels);
-            instance.levels[i].challengeObject.SetActive(instance.levelMode != LevelMode.Challenge || i >= finishedLevels);
+            CampaignLevel campaignLevel = instance.levels[i];
+            campaignLevel.levelObject.SetActive(instance.levelMode != LevelMode.Standard || i > finishedLevels);
+            campaignLevel.levelTimeText.SetText(campaignLevel.LevelStats != null ? campaignLevel.LevelStats.playedTime.ToString("#.#s") : "");            
+            campaignLevel.levelMedal.sprite = campaignLevel.LevelStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.LevelStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
+
+            campaignLevel.challengeObject.SetActive(instance.levelMode != LevelMode.Challenge || i >= finishedLevels);
+            campaignLevel.challengeTimeText.SetText(campaignLevel.ChallengeStats != null ? campaignLevel.ChallengeStats.playedTime.ToString("#.#s") : "");
+            campaignLevel.challengeMedal.sprite = campaignLevel.ChallengeStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.ChallengeStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
         }
 
         instance.levelsParent.SetActive(instance.levelMode == LevelMode.Standard);
