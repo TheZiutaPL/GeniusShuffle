@@ -287,6 +287,23 @@ namespace FlawareStudios.Translation
 
                 GUIUtility.keyboardControl = 0;
             }
+
+            if (GUILayout.Button("Sort"))
+            {
+                List<TranslationCell<string>> textTranslations = new List<TranslationCell<string>>(translationModule.textTranslations);
+                textTranslations.Sort((a, b) => a.key.CompareTo(b.key));
+                translationModule.textTranslations = textTranslations.ToArray();
+
+                List<TranslationCell<Sprite>> spriteTranslations = new List<TranslationCell<Sprite>>(translationModule.spriteTranslations);
+                spriteTranslations.Sort((a, b) => a.key.CompareTo(b.key));
+                translationModule.spriteTranslations = spriteTranslations.ToArray();
+
+                List<TranslationCell<AudioClip>> audioTranslations = new List<TranslationCell<AudioClip>>(translationModule.audioTranslations);
+                audioTranslations.Sort((a, b) => a.key.CompareTo(b.key));
+                translationModule.audioTranslations = audioTranslations.ToArray();
+
+                GUIUtility.keyboardControl = 0;
+            }
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
