@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
-  m_Name: C_JohannesGutenberg
+  m_Name: I_Esperanto
   m_EditorClassIdentifier: 
-  cardName: CARD_009_JOHANNESGUTENBERG_NAME
+  cardName: CARD_013_ESPERANTO_NAME
   translateName: 1
-  cardDescription: CARD_009_JOHANNESGUTENBERG_DESC
+  cardDescription: CARD_013_ESPERANTO_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 3bafd31257df7014d8c853ca8351a5c8, type: 3}
+  cardTexture: {fileID: 2800000, guid: dceceeca26f79144d963fc0f7569e449, type: 3}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
+  m_Name: M014_TimBerners-Lee
+  m_EditorClassIdentifier: 
+  outerBackgroundColor: {r: 0, g: 0.8392157, b: 0.47675863, a: 1}
+  innerBackgroundColor: {r: 0.9254902, g: 0.9142221, b: 0.36078432, a: 1}
+  inventorCard: {fileID: 11400000, guid: ff01292fffc63634d8b4643a43bb39cb, type: 2}
+  inventionCards:
+  - {fileID: 11400000, guid: 02f6dfe5fbecf5444b8b9889946256a6, type: 2}
