@@ -16,32 +16,32 @@ MonoBehaviour:
   - English
   - Polski
   textTranslations:
-  - key: MENU_MM_PLAY
+  - key: MENU_CLOSE
     translations:
-    - Play
-    - Graj
-  - key: MENU_MM_CREDITS
-    translations:
-    - Credits
-    - "Tw\xF3rcy"
+    - Close
+    - Zamknij
   - key: MENU_GAME_QUICKRESTART
     translations:
     - Quick Restart
     - Szybki Restart
+  - key: MENU_MM_CREDITS
+    translations:
+    - Credits
+    - "Tw\xF3rcy"
+  - key: MENU_MM_PLAY
+    translations:
+    - Play
+    - Graj
+  - key: MENU_FP_COLLECTIONS_HEADER
+    translations:
+    - Select Card Collections
+    - Wybierz Kolekcje Kart
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations:
-  - key: MENU_MS_CAMPAIGN
+  - key: MENU_BACK
     translations:
-    - {fileID: 21300000, guid: d443ce4f9e9694b439a758599222ba6b, type: 3}
-    - {fileID: 21300000, guid: f3ea6ee763534774e93b7d928cd05060, type: 3}
-  - key: MENU_MS_FREE_PLAY
-    translations:
-    - {fileID: 21300000, guid: 0b5d4c9e8342fcf47a7081eb003f8175, type: 3}
-    - {fileID: 21300000, guid: 4abbb809e18360749a027719fd7e41a7, type: 3}
-  - key: MENU_FP_PAIRS
-    translations:
-    - {fileID: 21300000, guid: 2cbff9c3c56a71f4cbbce96ca97e2fff, type: 3}
-    - {fileID: 21300000, guid: c9d65c9a7dd1e344186a136ed29130bb, type: 3}
+    - {fileID: 21300000, guid: 47c62970ffbe72b4ca5116f0b462a561, type: 3}
+    - {fileID: 21300000, guid: 869d5784ac5ceee4f8eff854fd4320a6, type: 3}
   - key: MENU_FP_COLLECTIONS
     translations:
     - {fileID: 21300000, guid: 4432dcfe82606854899ca44c4081f633, type: 3}
@@ -50,22 +50,10 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: 4e6d6b85c127d29498ff50879b4803b8, type: 3}
     - {fileID: 21300000, guid: 68069c7cfb419434e9636021a3876d87, type: 3}
-  - key: MENU_MS_RESUME
+  - key: MENU_FP_PAIRS
     translations:
-    - {fileID: 21300000, guid: b939a485f08360346bdca5c93f6fb187, type: 3}
-    - {fileID: 21300000, guid: 3dbdf2b4b1397d047b9ae62eee6a7242, type: 3}
-  - key: MENU_SET_FULLSCREEN
-    translations:
-    - {fileID: 21300000, guid: 5bf94166c65c1e247b28024325af13d5, type: 3}
-    - {fileID: 21300000, guid: 566959fcfe8efe2489945957273396c7, type: 3}
-  - key: MENU_MM_SETTINGS
-    translations:
-    - {fileID: 21300000, guid: bb01b32c075dbe642a425d921c54f760, type: 3}
-    - {fileID: 21300000, guid: 982eaa4a397353548946a5506c51eb38, type: 3}
-  - key: MENU_MM_QUIT
-    translations:
-    - {fileID: 21300000, guid: 7909a0ab235ba6342bfd837b7de8c424, type: 3}
-    - {fileID: 21300000, guid: af733c1301484264894c125f72562a09, type: 3}
+    - {fileID: 21300000, guid: 2cbff9c3c56a71f4cbbce96ca97e2fff, type: 3}
+    - {fileID: 21300000, guid: c9d65c9a7dd1e344186a136ed29130bb, type: 3}
   - key: MENU_LS_SWITCH_TO_CHALLENGE
     translations:
     - {fileID: 21300000, guid: 1f3bae340ffb81147acdf0cda9edb1a2, type: 3}
@@ -74,10 +62,30 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: a2bb5a4a50577f44dae55663377cc401, type: 3}
     - {fileID: 21300000, guid: 4ab241ee313d62b4e8344468ffff7643, type: 3}
-  - key: MENU_BACK
+  - key: MENU_MM_QUIT
     translations:
-    - {fileID: 21300000, guid: 47c62970ffbe72b4ca5116f0b462a561, type: 3}
-    - {fileID: 21300000, guid: 869d5784ac5ceee4f8eff854fd4320a6, type: 3}
+    - {fileID: 21300000, guid: 7909a0ab235ba6342bfd837b7de8c424, type: 3}
+    - {fileID: 21300000, guid: af733c1301484264894c125f72562a09, type: 3}
+  - key: MENU_MM_SETTINGS
+    translations:
+    - {fileID: 21300000, guid: bb01b32c075dbe642a425d921c54f760, type: 3}
+    - {fileID: 21300000, guid: 982eaa4a397353548946a5506c51eb38, type: 3}
+  - key: MENU_MS_CAMPAIGN
+    translations:
+    - {fileID: 21300000, guid: d443ce4f9e9694b439a758599222ba6b, type: 3}
+    - {fileID: 21300000, guid: f3ea6ee763534774e93b7d928cd05060, type: 3}
+  - key: MENU_MS_FREE_PLAY
+    translations:
+    - {fileID: 21300000, guid: 0b5d4c9e8342fcf47a7081eb003f8175, type: 3}
+    - {fileID: 21300000, guid: 4abbb809e18360749a027719fd7e41a7, type: 3}
+  - key: MENU_MS_RESUME
+    translations:
+    - {fileID: 21300000, guid: b939a485f08360346bdca5c93f6fb187, type: 3}
+    - {fileID: 21300000, guid: 3dbdf2b4b1397d047b9ae62eee6a7242, type: 3}
+  - key: MENU_SET_FULLSCREEN
+    translations:
+    - {fileID: 21300000, guid: 5bf94166c65c1e247b28024325af13d5, type: 3}
+    - {fileID: 21300000, guid: 566959fcfe8efe2489945957273396c7, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}

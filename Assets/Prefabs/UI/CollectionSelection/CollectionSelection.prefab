@@ -234,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4196741927984922929}
   - component: {fileID: 409573943888242780}
+  - component: {fileID: 2367465534837839436}
   - component: {fileID: 3336019660396986053}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -269,6 +270,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4538925825820415802}
   m_CullTransparentMesh: 1
+--- !u!114 &2367465534837839436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4538925825820415802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84c1e0388e80c2468dfcf32ed5ccd1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedTranslationHandler: {fileID: 0}
+  translationKey: MENU_CLOSE
+  subscribeToHandler: 1
 --- !u!114 &3336019660396986053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,9 +305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cofnij
-
-'
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbbd3d0f6f558474c935ff8cc721ce7a, type: 2}
   m_sharedMaterial: {fileID: -3438578239199996264, guid: bbbd3d0f6f558474c935ff8cc721ce7a,
@@ -448,6 +462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4024262461236376192}
   - component: {fileID: 4458187264955125207}
+  - component: {fileID: 7768575124460101585}
   - component: {fileID: 1305946153262918954}
   m_Layer: 5
   m_Name: Text (TMP)
@@ -483,6 +498,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6403618321461540641}
   m_CullTransparentMesh: 1
+--- !u!114 &7768575124460101585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403618321461540641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84c1e0388e80c2468dfcf32ed5ccd1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedTranslationHandler: {fileID: 0}
+  translationKey: MENU_FP_COLLECTIONS_HEADER
+  subscribeToHandler: 1
 --- !u!114 &1305946153262918954
 MonoBehaviour:
   m_ObjectHideFlags: 0

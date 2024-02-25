@@ -19831,6 +19831,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2367465534837839436, guid: 363045d6bcc171345b0bb2d420c76b9c,
+        type: 3}
+      propertyPath: usedTranslationHandler
+      value: 
+      objectReference: {fileID: 1569546192}
     - target: {fileID: 3069543121115327653, guid: 363045d6bcc171345b0bb2d420c76b9c,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -19881,6 +19886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectionSelection
       objectReference: {fileID: 0}
+    - target: {fileID: 7768575124460101585, guid: 363045d6bcc171345b0bb2d420c76b9c,
+        type: 3}
+      propertyPath: usedTranslationHandler
+      value: 
+      objectReference: {fileID: 1569546192}
     - target: {fileID: 9077209832020109608, guid: 363045d6bcc171345b0bb2d420c76b9c,
         type: 3}
       propertyPath: m_Alpha
@@ -23134,6 +23144,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1449592250}
     m_Modifications:
+    - target: {fileID: 95797125462752014, guid: 93f66b79d777cc44b8055855263eab43,
+        type: 3}
+      propertyPath: usedTranslationHandler
+      value: 
+      objectReference: {fileID: 1569546192}
     - target: {fileID: 282852576989752846, guid: 93f66b79d777cc44b8055855263eab43,
         type: 3}
       propertyPath: m_AnchorMax.y
