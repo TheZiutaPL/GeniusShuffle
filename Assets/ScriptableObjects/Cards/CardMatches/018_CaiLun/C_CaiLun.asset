@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 0
   cardDescription: CARD_018_CAILUN_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 4c6b323bf391e1c459e1a3aa13a3443c, type: 3}
+  cardTexture: {fileID: 2800000, guid: 8b12d537c118d124f8d80cfd003017da, type: 3}

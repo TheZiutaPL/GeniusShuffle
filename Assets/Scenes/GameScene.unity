@@ -5261,6 +5261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741066503}
   - component: {fileID: 741066502}
+  - component: {fileID: 741066504}
   m_Layer: 0
   m_Name: SpellcasterPoster
   m_TagString: Untagged
@@ -5335,6 +5336,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 127956517}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &741066504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741066501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db752b9676c30e946ac69b9dda12b68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usedTranslationHandler: {fileID: 1569546192}
+  translationKey: MENU_SET_SPELLPOSTER
+  subscribeToHandler: 1
 --- !u!1 &741849200
 GameObject:
   m_ObjectHideFlags: 0

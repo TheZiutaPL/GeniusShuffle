@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 0
   cardDescription: CARD_017_ALEXANDERFLEMING_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 4c6b323bf391e1c459e1a3aa13a3443c, type: 3}
+  cardTexture: {fileID: 2800000, guid: f72c83f0c66436244bd72bf73472fd21, type: 3}

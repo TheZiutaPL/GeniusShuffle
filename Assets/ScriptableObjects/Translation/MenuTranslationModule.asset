@@ -86,6 +86,10 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: 5bf94166c65c1e247b28024325af13d5, type: 3}
     - {fileID: 21300000, guid: 566959fcfe8efe2489945957273396c7, type: 3}
+  - key: MENU_SET_SPELLPOSTER
+    translations:
+    - {fileID: 21300000, guid: e723bfd5059330741b21db85ec6b07f7, type: 3}
+    - {fileID: 21300000, guid: 00130e4ad2ba13a45b0270593e6b0521, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}

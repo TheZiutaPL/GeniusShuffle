@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 1
   cardDescription: CARD_017_PENICILLIN_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 81986eaa0d34ef2469d766a6f8ea2951, type: 3}
+  cardTexture: {fileID: 2800000, guid: 18eca5221ef470848924e39c94497578, type: 3}
