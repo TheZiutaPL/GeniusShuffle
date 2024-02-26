@@ -952,6 +952,37 @@ MonoBehaviour:
     translations:
     - Vladimir Chelomey
     - "W\u0142adimir Cze\u0142omiej"
+  - key: CARD_022_HANSGEIGER_DESC
+    translations:
+    - "Hans Geiger, a German physicist born in 1882, co-invented the Geiger counter,
+      a pivotal device for detecting ionizing radiation. This invention, made in
+      collaboration with Walther M\xFCller, revolutionized radiation detection and
+      has widespread applications in scientific research and industry. Geiger's contributions
+      have had a lasting impact on our understanding and monitoring of radiation."
+    - "Hans Geiger, niemiecki fizyk urodzony w 1882 roku, by\u0142 wsp\xF3\u0142wynalazc\u0105
+      licznika Geigera, kluczowego urz\u0105dzenia do wykrywania promieniowania jonizuj\u0105cego.
+      Ten wynalazek, dokonany we wsp\xF3\u0142pracy z Waltherem M\xFCllerem, zrewolucjonizowa\u0142
+      wykrywanie promieniowania i ma szerokie zastosowanie w badaniach naukowych
+      i przemy\u015Ble. Wk\u0142ad Geigera mia\u0142 trwa\u0142y wp\u0142yw na nasze
+      zrozumienie i monitorowanie promieniowania."
+  - key: CARD_022_GEIGERCOUNTER_NAME
+    translations:
+    - Geiger Counter
+    - Licznik Geigera
+  - key: CARD_022_GEIGERCOUNTER_DESC
+    translations:
+    - "The Geiger Counter, named after its co-inventor Hans Geiger, is a pivotal
+      device for detecting ionizing radiation. Developed in collaboration with Walther
+      M\xFCller, this invention revolutionized radiation detection and has widespread
+      applications in scientific research and industry. The Geiger Counter, born
+      from Geiger's pioneering work, remains an essential tool in radiation monitoring
+      and safety."
+    - "Licznik Geigera, nazwany na cze\u015B\u0107 wsp\xF3\u0142wynalazcy Hansa Geigera,
+      jest kluczowym urz\u0105dzeniem do wykrywania promieniowania jonizuj\u0105cego.
+      Wynalazek ten, opracowany we wsp\xF3\u0142pracy z Waltherem M\xFCllerem, zrewolucjonizowa\u0142
+      wykrywanie promieniowania i ma szerokie zastosowanie w badaniach naukowych
+      i przemy\u015Ble. Licznik Geigera, zrodzony z pionierskiej pracy Geigera, pozostaje
+      niezb\u0119dnym narz\u0119dziem w monitorowaniu promieniowania i bezpiecze\u0144stwie."
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
