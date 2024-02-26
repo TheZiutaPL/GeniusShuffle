@@ -6,7 +6,6 @@ using UnityEngine;
 public class CollectionToggle : MonoBehaviour
 {
     [SerializeField] CardCollection collection;
-    [SerializeField] CollectionManager collectionManager;
 
     [SerializeField] TMP_Text pairsText;
 
@@ -19,10 +18,10 @@ public class CollectionToggle : MonoBehaviour
     public void SelectCollection(bool select)
     {
         if (select)
-            collectionManager.SelectCollection(collection);
+            CollectionManager.SelectCollection(collection);
         else
-            collectionManager.UnselectCollection(collection);
+            CollectionManager.UnselectCollection(collection);
 
-        collectionManager.ApplyCollections();
+        CollectionManager.ApplyCollections();
     }
 }

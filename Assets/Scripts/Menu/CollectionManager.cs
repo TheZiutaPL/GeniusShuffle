@@ -163,17 +163,16 @@ public class CollectionManager : MonoBehaviour
     }
     public static List<CampaignLevel> GetLevels() => instance.levels;
 
-    [ContextMenu("Apply Collections")]
-    public void ApplyCollections()
+    public static void ApplyCollections()
     {
-        gameManager.SetStartCollections(selectedCollections);
-        UpdateFreePlayCardPairs();
+        instance.gameManager.SetStartCollections(instance.selectedCollections);
+        instance.UpdateFreePlayCardPairs();
     }
 
-    public void SelectCollection(CardCollection collection) => selectedCollections.Add(collection);
-    public void UnselectCollection(CardCollection collection) => selectedCollections.Remove(collection);
+    public static void SelectCollection(CardCollection collection) => instance.selectedCollections.Add(collection);
+    public static void UnselectCollection(CardCollection collection) => instance.selectedCollections.Remove(collection);
 
-    void UpdateFreePlayCardPairs()
+    private void UpdateFreePlayCardPairs()
     {
         int pairs = 0;
         foreach (CardCollection collection in selectedCollections)
@@ -186,6 +185,8 @@ public class CollectionManager : MonoBehaviour
             collectionsAmountText.text = selectedCollections.Count.ToString();
         if (pairsAmountText != null)
             pairsAmountText.text = pairs.ToString();
+
+        gameManager.SetCardPairsCount(cardPairsAmountSlider.value);
     }
 
     public int GetCollectionsAmount() => selectedCollections.Count;
