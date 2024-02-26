@@ -12,10 +12,6 @@ public class CampaignLevel
     [SerializeField] internal TextMeshPro levelTimeText;
     [SerializeField] internal SpriteRenderer levelMedal;
 
-    [SerializeField] internal GameObject challengeObject;
-    [SerializeField] internal TextMeshPro challengeTimeText;
-    [SerializeField] internal SpriteRenderer challengeMedal;
-
     [Header("Level Settings")]
     public List<CardCollection> cardCollections;
     public int cardPairsInGame;
@@ -48,8 +44,6 @@ public class CollectionManager : MonoBehaviour
 
     [Header("Campaign")]
     [SerializeField] List<CampaignLevel> levels;
-    [SerializeField] private GameObject levelsParent;
-    [SerializeField] private GameObject challengeParent;
 
     [Header("Free Play")]
     [SerializeField] List<CardCollection> selectedCollections = new List<CardCollection>();
@@ -86,17 +80,21 @@ public class CollectionManager : MonoBehaviour
         for (int i = 0; i < instance.levels.Count; i++)
         {
             CampaignLevel campaignLevel = instance.levels[i];
-            campaignLevel.levelObject.SetActive(instance.levelMode != LevelMode.Standard || i > finishedLevels);
-            campaignLevel.levelTimeText.SetText(campaignLevel.LevelStats != null ? campaignLevel.LevelStats.playedTime.ToString("#.#s") : "");            
-            campaignLevel.levelMedal.sprite = campaignLevel.LevelStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.LevelStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
+            switch (instance.levelMode)
+            {
+                case LevelMode.Standard:
+                    campaignLevel.levelObject.SetActive(i > finishedLevels);
+                    campaignLevel.levelTimeText.SetText(campaignLevel.LevelStats != null ? campaignLevel.LevelStats.playedTime.ToString("#.#s") : "");
+                    campaignLevel.levelMedal.sprite = campaignLevel.LevelStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.LevelStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
+                    break;
 
-            campaignLevel.challengeObject.SetActive(instance.levelMode != LevelMode.Challenge || i >= finishedLevels);
-            campaignLevel.challengeTimeText.SetText(campaignLevel.ChallengeStats != null ? campaignLevel.ChallengeStats.playedTime.ToString("#.#s") : "");
-            campaignLevel.challengeMedal.sprite = campaignLevel.ChallengeStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.ChallengeStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
-        }
-
-        instance.levelsParent.SetActive(instance.levelMode == LevelMode.Standard);
-        instance.challengeParent.SetActive(instance.levelMode == LevelMode.Challenge);
+                case LevelMode.Challenge:
+                    campaignLevel.levelObject.SetActive(i >= finishedLevels);
+                    campaignLevel.levelTimeText.SetText(campaignLevel.ChallengeStats != null ? campaignLevel.ChallengeStats.playedTime.ToString("#.#s") : "");
+                    campaignLevel.levelMedal.sprite = campaignLevel.ChallengeStats != null ? PlayerScoreManager.GetMedalSprite(campaignLevel.ChallengeStats.GetMedalIndex()) : PlayerScoreManager.GetEmptyMedalSprite();
+                    break;
+            }
+        } 
     }
 
     public void SelectLevel(int level)
