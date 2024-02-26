@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: SCC_Science
+  m_Name: LCC_2
   m_EditorClassIdentifier: 
-  collectionName: Science
+  collectionName: Level 2
   cardMatches:
   - {fileID: 11400000, guid: 3230257de0e762647b6ab786bc25b3e9, type: 2}
-  - {fileID: 11400000, guid: baf16471c5b9fa34eae035cd296ce979, type: 2}
+  - {fileID: 11400000, guid: bece9800053661c43b29f926e9c8c201, type: 2}
   - {fileID: 11400000, guid: 86201e28d24f8ce4a82bc928c091483b, type: 2}
+  - {fileID: 11400000, guid: 9e6e52d877b05474a8b5c7a1b8d7524a, type: 2}
+  - {fileID: 11400000, guid: 06f9b73d3ebeacf4e889c00a3760d40a, type: 2}
   - {fileID: 11400000, guid: 60e19c9a646fc504b844c5dc3429e9c6, type: 2}
-  - {fileID: 11400000, guid: c09431cfa92a1c643b024194968cd923, type: 2}
-  - {fileID: 11400000, guid: 0d634f894b82f2e4bb3ed2ac444d0f3b, type: 2}
-  - {fileID: 11400000, guid: 8adf0b784923f244cabd792635019e83, type: 2}

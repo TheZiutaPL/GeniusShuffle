@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: SCC_DailyUse
+  m_Name: LCC_1
   m_EditorClassIdentifier: 
-  collectionName: Daily Use
+  collectionName: Level 1
   cardMatches:
   - {fileID: 11400000, guid: 5776958fd261a7940a7a02587d7c6456, type: 2}
+  - {fileID: 11400000, guid: f2d5938abac8dc5469cc144476cff1a2, type: 2}
+  - {fileID: 11400000, guid: baf16471c5b9fa34eae035cd296ce979, type: 2}
   - {fileID: 11400000, guid: 1cc1aa77595e80f4da1b109b40da1639, type: 2}
-  - {fileID: 11400000, guid: 9e6e52d877b05474a8b5c7a1b8d7524a, type: 2}
-  - {fileID: 11400000, guid: 47dcc7f931d6f984bbdf54ed76bbe786, type: 2}
-  - {fileID: 11400000, guid: 9423be8e22c8f3245afcd59a516c8b11, type: 2}
+  - {fileID: 11400000, guid: cb529240791c5bf498007f8be3f9de6d, type: 2}
+  - {fileID: 11400000, guid: c80a7b015e08eb042b89f92392a5e600, type: 2}

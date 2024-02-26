@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
   m_Name: M020_NikolaTesla
   m_EditorClassIdentifier: 
-  outerBackgroundColor: {r: 0, g: 0.75799733, b: 0.8392157, a: 1}
-  innerBackgroundColor: {r: 0.4791522, g: 0.9254902, b: 0.36078432, a: 1}
+  outerBackgroundColor: {r: 0.73615646, g: 0.9056604, b: 0.6279815, a: 1}
+  innerBackgroundColor: {r: 0, g: 0.5754717, b: 0.0703719, a: 1}
   inventorCard: {fileID: 11400000, guid: 70744e112dd6ae248883dd0fa4b3260f, type: 2}
   inventionCards:
   - {fileID: 11400000, guid: 6d790d79ee29ce4498d5874e5306213e, type: 2}
