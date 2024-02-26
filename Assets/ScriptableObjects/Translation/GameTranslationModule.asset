@@ -832,6 +832,85 @@ MonoBehaviour:
     translations:
     - Paper
     - Papier
+  - key: CARD_019_CAR_DESC
+    translations:
+    - The car, a marvel of engineering and innovation, transformed human mobility
+      with its introduction by Carl Benz in 1885. The Benz Patent-Motorwagen, the
+      world's first gasoline-powered automobile, revolutionized transportation by
+      providing individuals with unprecedented freedom and flexibility in travel.
+      From humble beginnings, the car has evolved into an essential aspect of modern
+      life, facilitating economic growth, social connectivity, and personal independence.
+      Carl Benz's visionary creation continues to shape our world, leaving an enduring
+      legacy of progress and innovation in the automotive industry.
+    - "Samoch\xF3d, cud in\u017Cynierii i innowacji, kt\xF3ry zmieni\u0142 ludzk\u0105
+      mobilno\u015B\u0107 wraz z jego wprowadzeniem przez Carla Benza w 1885 roku.
+      Benz Patent-Motorwagen, pierwszy na \u015Bwiecie samoch\xF3d nap\u0119dzany
+      benzyn\u0105, zrewolucjonizowa\u0142 transport, zapewniaj\u0105c ludziom bezprecedensow\u0105
+      swobod\u0119 i elastyczno\u015B\u0107 w podr\xF3\u017Cowaniu. Od skromnych
+      pocz\u0105tk\xF3w samoch\xF3d sta\u0142 si\u0119 istotnym aspektem wsp\xF3\u0142czesnego
+      \u017Cycia, u\u0142atwiaj\u0105c rozw\xF3j gospodarczy, \u0142\u0105czno\u015B\u0107
+      spo\u0142eczn\u0105 i niezale\u017Cno\u015B\u0107 osobist\u0105. Wizjonerskie
+      dzie\u0142o Carla Benza nadal kszta\u0142tuje nasz \u015Bwiat, pozostawiaj\u0105c
+      trwa\u0142e dziedzictwo post\u0119pu i innowacji w bran\u017Cy motoryzacyjnej."
+  - key: CARD_019_CAR_NAME
+    translations:
+    - Car
+    - "Samoch\xF3d"
+  - key: CARD_019_CARLBENZ_DESC
+    translations:
+    - Carl Benz, born in 1844, is credited with inventing the modern automobile.
+      In 1885, he patented the Benz Patent-Motorwagen, the world's first gasoline-powered
+      automobile. This groundbreaking invention revolutionized transportation, shaping
+      modern mobility and laying the foundation for the automotive industry's growth.
+      Benz's innovative spirit and engineering prowess have left an enduring legacy
+      in automotive history.
+    - "Carlowi Benzowi, urodzonemu w 1844 roku, przypisuje si\u0119 wynalezienie
+      nowoczesnego samochodu. W 1885 roku opatentowa\u0142 Benz Patent-Motorwagen,
+      pierwszy na \u015Bwiecie samoch\xF3d nap\u0119dzany benzyn\u0105. Ten prze\u0142omowy
+      wynalazek zrewolucjonizowa\u0142 transport, kszta\u0142tuj\u0105c nowoczesn\u0105
+      mobilno\u015B\u0107 i k\u0142ad\u0105c podwaliny pod rozw\xF3j przemys\u0142u
+      motoryzacyjnego. Innowacyjny duch i umiej\u0119tno\u015Bci in\u017Cynieryjne
+      Benza pozostawi\u0142y trwa\u0142e dziedzictwo w historii motoryzacji."
+  - key: CARD_020_NIKOLATESLA_DESC
+    translations:
+    - Nikola Tesla, born in 1856, was a pioneering inventor whose work transformed
+      electrical engineering. Known for creating the Tesla coil, his innovations
+      didn't stop there. Tesla was also fascinated by alternating current (AC), advocating
+      its potential over direct current (DC) for long-distance power transmission.
+      His contributions to AC technology and the invention of the Tesla coil have
+      cemented his legacy as a cornerstone of modern electrical systems and wireless
+      communication.
+    - "Nikola Tesla, urodzony w 1856 roku, by\u0142 pionierskim wynalazc\u0105, kt\xF3rego
+      praca zmieni\u0142a in\u017Cynieri\u0119 elektryczn\u0105. Znany ze stworzenia
+      transformatora Tesli, jednak jego innowacje na tym si\u0119 nie ko\u0144czy\u0142y.
+      Tesla by\u0142 r\xF3wnie\u017C zafascynowany pr\u0105dem zmiennym (AC), opowiadaj\u0105c
+      si\u0119 za jego potencja\u0142em w por\xF3wnaniu z pr\u0105dem sta\u0142ym
+      (DC) do przesy\u0142ania energii na du\u017Ce odleg\u0142o\u015Bci. Jego wk\u0142ad
+      w technologi\u0119 pr\u0105du zmiennego i wynalezienie transformatora Tesli
+      ugruntowa\u0142y jego dziedzictwo jako kamie\u0144 w\u0119gielny nowoczesnych
+      system\xF3w elektrycznych i komunikacji bezprzewodowej."
+  - key: CARD_020_TESLACOIL_DESC
+    translations:
+    - The Tesla Coil, invented by Nikola Tesla in the late 19th century, stands as
+      a remarkable innovation in electrical engineering. This high-voltage, high-frequency
+      transformer is capable of generating spectacular electrical arcs and is fundamental
+      to the development of wireless communication and power transmission technologies.
+      Tesla's invention not only demonstrated the potential of alternating current
+      (AC) but also paved the way for future advancements in electrical and electronic
+      engineering, highlighting his genius and foresight in the field.
+    - "Transformator Tesli, wynaleziony przez Nikol\u0119 Tesl\u0119 pod koniec XIX
+      wieku, stanowi znacz\u0105c\u0105 innowacj\u0119 w dziedzinie elektrotechniki.
+      Ten wysokonapi\u0119ciowy transformator o wysokiej cz\u0119stotliwo\u015Bci
+      jest w stanie generowa\u0107 spektakularne \u0142uki elektryczne i ma fundamentalne
+      znaczenie dla rozwoju technologii komunikacji bezprzewodowej i przesy\u0142u
+      energii. Wynalazek Tesli nie tylko zademonstrowa\u0142 potencja\u0142 pr\u0105du
+      zmiennego (AC), ale tak\u017Ce utorowa\u0142 drog\u0119 dla przysz\u0142ych
+      post\u0119p\xF3w w in\u017Cynierii elektrycznej i elektronicznej, podkre\u015Blaj\u0105c
+      jego geniusz i dalekowzroczno\u015B\u0107 w tej dziedzinie."
+  - key: CARD_020_TESLACOIL_NAME
+    translations:
+    - Tesla Coil
+    - Transformator Tesli
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
