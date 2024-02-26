@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 1
   cardDescription: CARD_006_STETHOSCOPE_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 053f9851ef0860146ac1a495502aba00, type: 3}
+  cardTexture: {fileID: 2800000, guid: 127ca83bc856e444bb5bdef57421bf31, type: 3}
