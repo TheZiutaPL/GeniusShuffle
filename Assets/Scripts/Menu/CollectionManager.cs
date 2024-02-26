@@ -180,7 +180,7 @@ public class CollectionManager : MonoBehaviour
         {
             pairs += collection.GetPairCount();
         }
-        cardPairsAmountSlider.SetMaxValue(pairs);
+        cardPairsAmountSlider.SetMaxValue(Mathf.Min(pairs, GameManager.MAX_CARDS_IN_GAME));
 
         if (collectionsAmountText != null)
             collectionsAmountText.text = selectedCollections.Count.ToString();

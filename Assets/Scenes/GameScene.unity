@@ -14012,17 +14012,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059997615}
     m_Modifications:
-    - target: {fileID: 1033585243266859121, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: -876546973899608171, guid: fb17ff38d5dea3548a70bf034c76ae2a,
-        type: 3}
-    - target: {fileID: 1538247816662376868, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1710087399625966126, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
         type: 3}
       propertyPath: clickActions.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14128,6 +14117,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 3539744450548363719, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539744450548363719, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539744450548363719, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539744450548363719, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539744450548363719, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 3803844512414421143, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
         type: 3}
       propertyPath: m_Name
@@ -14213,11 +14227,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2041184411}
-    - target: {fileID: 8824146214943572870, guid: 9675de49ecd1ab34c9cc5ba05ed0d5a5,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16692,22 +16701,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.66332996
+      value: 0.66446304
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.66332996
+      value: -0.66446304
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2449355
+      value: 0.24184473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.2449355
+      value: 0.24184473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
@@ -16722,7 +16731,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 40.533
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5da47011db2dd494e8de28c27652e911,
         type: 3}
@@ -22128,10 +22137,10 @@ MonoBehaviour:
   cardCollections: []
   defaultInnerColor: {r: 0.9716981, g: 0.8109997, b: 0.45376468, a: 1}
   defaultOuterColor: {r: 0.745283, g: 0.5031592, b: 0.05273228, a: 1}
-  cardScale: 0.2
+  cardScale: 0.175
   cardY: 0.8
-  colToRowRatio: 3
-  maxOffset: {x: 0.25, y: 0.25}
+  colToRowRatio: 4
+  maxOffset: {x: 0.2, y: 0.2}
   topRightCorner: {fileID: 1785843651}
   bottomLeftCorner: {fileID: 1572299247}
   cardGraveyard: {fileID: 1018447199}

@@ -18,8 +18,9 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
-    public void SetCardPairsCount(int newCardPairs) => cardPairsCount = newCardPairs;
+    public void SetCardPairsCount(int newCardPairs) => cardPairsCount = Mathf.Min(newCardPairs, MAX_CARDS_IN_GAME);
     public void SetCardPairsCount(float newCardPairs) => cardPairsCount = Mathf.RoundToInt(newCardPairs);
+    public const int MAX_CARDS_IN_GAME = 16;
 
     [HideInInspector] public int levelIndex = -1;
     [HideInInspector] public int levelMode = -1;
@@ -44,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Table Setup")]
     [SerializeField] private float cardY;
-    [SerializeField] private int colToRowRatio = 3;
+    [SerializeField] private float colToRowRatio = 3;
     [SerializeField] private Vector2 maxOffset;
     [SerializeField] private Transform topRightCorner;
     [SerializeField] private Transform bottomLeftCorner;
