@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
-  m_Name: M017_AlexanderFleming
+  m_Name: M021_VladimirChelomey
   m_EditorClassIdentifier: 
-  outerBackgroundColor: {r: 0, g: 0.745283, b: 0.4690726, a: 1}
-  innerBackgroundColor: {r: 0, g: 1, b: 0.6241145, a: 1}
-  inventorCard: {fileID: 11400000, guid: b1bcd3d13d783a54eaa3a7fe37e60e79, type: 2}
+  outerBackgroundColor: {r: 0.049807698, g: 0.518, b: 0.22911537, a: 1}
+  innerBackgroundColor: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  inventorCard: {fileID: 11400000, guid: 928dc0dcc0cdfc345b56a65e74105290, type: 2}
   inventionCards:
-  - {fileID: 11400000, guid: 9f97586e7e1f88e40a87c66d6ae3212a, type: 2}
+  - {fileID: 11400000, guid: 522854e8598950740bfd63f8867124b2, type: 2}

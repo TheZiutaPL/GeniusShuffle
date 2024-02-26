@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
+  m_Name: SCC002_Science
+  m_EditorClassIdentifier: 
+  collectionName: Science
+  cardMatches:
+  - {fileID: 11400000, guid: baf16471c5b9fa34eae035cd296ce979, type: 2}
+  - {fileID: 11400000, guid: 60e19c9a646fc504b844c5dc3429e9c6, type: 2}
+  - {fileID: 11400000, guid: 0d634f894b82f2e4bb3ed2ac444d0f3b, type: 2}
+  - {fileID: 11400000, guid: 8adf0b784923f244cabd792635019e83, type: 2}
+  - {fileID: 11400000, guid: 571b7a7e5a74cf74abf5ad5645063924, type: 2}
