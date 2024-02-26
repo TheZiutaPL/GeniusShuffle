@@ -911,6 +911,47 @@ MonoBehaviour:
     translations:
     - Tesla Coil
     - Transformator Tesli
+  - key: CARD_021_SPACESTATION_DESC
+    translations:
+    - Salyut 1, launched by the Soviet Union in 1971, marked a significant milestone
+      in human spaceflight as the world's first space station. Designed by Vladimir
+      Chelomey and his team, Salyut 1 paved the way for long-duration missions in
+      space and laid the foundation for future space station programs. Its successful
+      deployment demonstrated the Soviet Union's technological prowess and ambition
+      in space exploration during the Cold War era. Salyut 1 represented a crucial
+      step forward in humanity's quest to explore and inhabit space.
+    - "Salut 1, wystrzelony przez Zwi\u0105zek Radziecki w 1971 roku, stanowi\u0142
+      kamie\u0144 milowy w ludzkich lotach kosmicznych jako pierwsza na \u015Bwiecie
+      stacja kosmiczna. Zaprojektowany przez W\u0142adimira Cze\u0142omieja i jego
+      zesp\xF3\u0142, Salut 1 utorowa\u0142 drog\u0119 dla d\u0142ugotrwa\u0142ych
+      misji kosmicznych i po\u0142o\u017Cy\u0142 podwaliny pod przysz\u0142e programy
+      stacji kosmicznych. Jego udane wdro\u017Cenie pokaza\u0142o technologiczn\u0105
+      sprawno\u015B\u0107 i ambicje Zwi\u0105zku Radzieckiego w eksploracji kosmosu
+      w erze zimnej wojny. Salut 1 stanowi\u0142 kluczowy krok naprz\xF3d w d\u0105\u017Ceniu
+      ludzko\u015Bci do eksploracji i zamieszkiwania przestrzeni kosmicznej."
+  - key: CARD_021_SPACESTATION_NAME
+    translations:
+    - Salyut 1
+    - Salut 1
+  - key: CARD_021_VLADIMIRCHELOMEY_DESC
+    translations:
+    - Vladimir Chelomey, a Soviet engineer born in 1914, was instrumental in the
+      development of the Salyut 1 space station in 1971. This pioneering achievement
+      marked the beginning of long-duration human spaceflight and laid the groundwork
+      for future space station missions. Chelomey's contributions to the Soviet space
+      program helped advance space exploration and solidify the country's position
+      as a leader in space technology during the Cold War era.
+    - "W\u0142adimir Cze\u0142omiej, radziecki in\u017Cynier urodzony w 1914 roku,
+      odegra\u0142 kluczow\u0105 rol\u0119 w rozwoju stacji kosmicznej Salut 1 w
+      1971 roku. To pionierskie osi\u0105gni\u0119cie zapocz\u0105tkowa\u0142o d\u0142ugotrwa\u0142e
+      ludzkie loty kosmiczne i po\u0142o\u017Cy\u0142o podwaliny pod przysz\u0142e
+      misje kosmiczne. Wk\u0142ad Cze\u0142omieja w radziecki program kosmiczny pom\xF3g\u0142
+      przyspieszy\u0107 eksploracj\u0119 kosmosu i umocni\u0107 pozycj\u0119 kraju
+      jako lidera technologii kosmicznej w erze zimnej wojny."
+  - key: CARD_021_VLADIMIRCHELOMEY_NAME
+    translations:
+    - Vladimir Chelomey
+    - "W\u0142adimir Cze\u0142omiej"
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}

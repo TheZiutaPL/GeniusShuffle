@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
   m_Name: M010_AdolpheSax
   m_EditorClassIdentifier: 
-  outerBackgroundColor: {r: 0, g: 0.8392157, b: 0.5206352, a: 1}
-  innerBackgroundColor: {r: 0.36078432, g: 0.9254902, b: 0.8493548, a: 1}
+  outerBackgroundColor: {r: 0.8997427, g: 1, b: 0.21226418, a: 1}
+  innerBackgroundColor: {r: 0.8490566, g: 0.7675341, b: 0.48460305, a: 1}
   inventorCard: {fileID: 11400000, guid: 3c74f6b95706e8a49b915ff8b4546a51, type: 2}
   inventionCards:
   - {fileID: 11400000, guid: 8fc96b1c0ceb6e347a24055abc22ba63, type: 2}
