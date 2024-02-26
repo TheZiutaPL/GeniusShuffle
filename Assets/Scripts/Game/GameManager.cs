@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     [SerializeField] private bool startGameByDefault = true;
     [SerializeField, Min(1)] private int cardPairsCount = 1;
+    public void SetCardPairsCount(float newCardPairs) => SetCardPairsCount(Mathf.RoundToInt(newCardPairs));
     public void SetCardPairsCount(int newCardPairs) => cardPairsCount = Mathf.Min(newCardPairs, MAX_CARDS_IN_GAME);
-    public void SetCardPairsCount(float newCardPairs) => cardPairsCount = Mathf.RoundToInt(newCardPairs);
     public const int MAX_CARDS_IN_GAME = 16;
 
     [HideInInspector] public int levelIndex = -1;
@@ -67,7 +67,12 @@ public class GameManager : MonoBehaviour
             StartGame();
     }
 
-    public void InitializeGameStart() => InitializeGameStart(-1, 0);
+    public void InitializeFreePlayStart()
+    {
+        CollectionManager.ApplyCollections();
+
+        InitializeGameStart(-1, 0);
+    }
 
     public void InitializeGameStart(int level = -1, int mode = -1)
     {
