@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
 
     public void InitializeGameStart(int level = -1, int mode = -1)
     {
-        if (cardCollections == null || cardCollections.Count <= 0)
+        if (cardCollections == null || cardCollections.Count <= 0 || cardPairsCount <= 0)
         {
             Debug.LogWarning("Game cannot start, because cardCollections is empty");
             incorrectChoiceSounds.PlayAudio();

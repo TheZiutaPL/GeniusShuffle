@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: CC_Warfare
+  m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
+  m_Name: C_CaiLun
   m_EditorClassIdentifier: 
-  collectionName: Warfare
-  cardMatches:
-  - {fileID: 11400000, guid: cb529240791c5bf498007f8be3f9de6d, type: 2}
-  - {fileID: 11400000, guid: 0db080c72d9d29b41809549bb37306b4, type: 2}
+  cardName: Cai Lun
+  translateName: 0
+  cardDescription: CARD_018_CAILUN_DESC
+  translateDescription: 1
+  cardTexture: {fileID: 2800000, guid: 4c6b323bf391e1c459e1a3aa13a3443c, type: 3}

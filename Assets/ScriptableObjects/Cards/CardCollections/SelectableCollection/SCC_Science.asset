@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: CC_Science
+  m_Name: SCC_Science
   m_EditorClassIdentifier: 
   collectionName: Science
   cardMatches:
@@ -19,3 +19,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 86201e28d24f8ce4a82bc928c091483b, type: 2}
   - {fileID: 11400000, guid: 60e19c9a646fc504b844c5dc3429e9c6, type: 2}
   - {fileID: 11400000, guid: c09431cfa92a1c643b024194968cd923, type: 2}
+  - {fileID: 11400000, guid: 0d634f894b82f2e4bb3ed2ac444d0f3b, type: 2}

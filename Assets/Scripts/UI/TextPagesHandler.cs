@@ -37,7 +37,10 @@ public class TextPagesHandler : MonoBehaviour
         pagesTooltip.SetActive(multiplePages);
 
         if (!multiplePages)
+        {
+            contentText.pageToDisplay = currentPage;
             return;
+        }
 
         pagesCountDisplay.SetText($"({currentPage}/{pageCount})");
 

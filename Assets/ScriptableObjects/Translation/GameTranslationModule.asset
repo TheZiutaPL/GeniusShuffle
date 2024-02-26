@@ -35,10 +35,6 @@ MonoBehaviour:
       dom\xF3w, ulic i miejsc pracy na ca\u0142ym \u015Bwiecie. Jego dziedzictwo
       jako wynalazcy i innowatora trwa, a lampa naftowa pozostaje symbolem jego pomys\u0142owo\u015Bci
       i wk\u0142adu w nowoczesne o\u015Bwietlenie."
-  - key: CARD_000_KEROSENELAMP_NAME
-    translations:
-    - Kerosene Lamp
-    - Lampa Naftowa
   - key: CARD_000_KEROSENELAMP_DESC
     translations:
     - "The Kerosene Lamp, an invention credited to Ignacy \u0141ukasiewicz, emerged
@@ -56,6 +52,10 @@ MonoBehaviour:
       w domach, na ulicach i w miejscach pracy na ca\u0142ym \u015Bwiecie. Dzi\u015B
       jest symbolem pomys\u0142owo\u015Bci i post\u0119pu, pokazuj\u0105c niezwyk\u0142y
       wp\u0142yw wynalazku \u0141ukasiewicza na nowoczesne o\u015Bwietlenie."
+  - key: CARD_000_KEROSENELAMP_NAME
+    translations:
+    - Kerosene Lamp
+    - Lampa Naftowa
   - key: CARD_001_ALEXANDERGRAHAMBELL_DESC
     translations:
     - Alexander Graham Bell, a Scottish-born inventor, is best known as the inventor
@@ -74,10 +74,6 @@ MonoBehaviour:
       i \u0142\u0105cz\u0105c ludzi w niewyobra\u017Calny wcze\u015Bniej spos\xF3b.
       Dzi\u015B jego dziedzictwo jako wynalazcy i innowatora trwa, a telefon pozostaje
       podstawowym narz\u0119dziem globalnej komunikacji."
-  - key: CARD_001_TELEPHONE_NAME
-    translations:
-    - Telephone
-    - Telefon
   - key: CARD_001_TELEPHONE_DESC
     translations:
     - The Telephone, invented by Alexander Graham Bell in 1876, revolutionized long-distance
@@ -93,6 +89,31 @@ MonoBehaviour:
       ludzi w niewyobra\u017Calny wcze\u015Bniej spos\xF3b.Dzi\u015B telefon pozostaje
       podstawowym narz\u0119dziem globalnej komunikacji, a dziedzictwo Bella jako
       wynalazcy i innowatora trwa dzi\u0119ki jego transformacyjnemu wynalazkowi."
+  - key: CARD_001_TELEPHONE_NAME
+    translations:
+    - Telephone
+    - Telefon
+  - key: CARD_002_BATHOMETER_DESC
+    translations:
+    - The Bathometer, invented by Jacob Perkins in 1805, stands as a testament to
+      his innovative prowess. This pioneering device revolutionized underwater exploration
+      by accurately measuring ocean depths. Perkins' Bathometer not only facilitated
+      marine navigation but also significantly advanced scientific research in oceanography.
+      His invention remains a cornerstone in the history of marine technology, showcasing
+      Perkins' enduring legacy as a visionary inventor whose contributions continue
+      to shape our understanding of the seas.
+    - "Batometr, wynaleziony przez Jacoba Perkinsa w 1805 roku, jest \u015Bwiadectwem
+      jego innowacyjno\u015Bci. To pionierskie urz\u0105dzenie zrewolucjonizowa\u0142o
+      podwodn\u0105 eksploracj\u0119 poprzez dok\u0142adny pomiar g\u0142\u0119boko\u015Bci
+      oceanu. Batometr Perkinsa nie tylko u\u0142atwi\u0142 nawigacj\u0119 morsk\u0105,
+      ale tak\u017Ce znacznie przyspieszy\u0142 badania naukowe w dziedzinie oceanografii.
+      Jego wynalazek pozostaje kamieniem w\u0119gielnym w historii technologii morskiej,
+      ukazuj\u0105c trwa\u0142e dziedzictwo Perkinsa jako wizjonerskiego wynalazcy,
+      kt\xF3rego wk\u0142ad nadal kszta\u0142tuje nasze rozumienie m\xF3rz."
+  - key: CARD_002_BATHOMETER_NAME
+    translations:
+    - Bathometer
+    - Batometr
   - key: CARD_002_JACOBPERKINS_DESC
     translations:
     - Jacob Perkins, born in 1766, was an American inventor known for his revolutionary
@@ -111,27 +132,28 @@ MonoBehaviour:
       zaanga\u017Cowanie Perkinsa w innowacje nadal inspiruj\u0105 wynalazc\xF3w
       na ca\u0142ym \u015Bwiecie, podkre\u015Blaj\u0105c jego trwa\u0142e dziedzictwo
       w kronikach historii technologii."
-  - key: CARD_002_BATHOMETER_NAME
+  - key: CARD_003_MORSECODE_DESC
     translations:
-    - Bathometer
-    - Batometr
-  - key: CARD_002_BATHOMETER_DESC
+    - Morse Code, a revolutionary communication system developed by Samuel Morse
+      in the 1830s, transformed long-distance communication. Using a series of dots
+      and dashes to represent letters and numbers, Morse Code enabled rapid transmission
+      of messages across vast distances. Morse's innovative system played a pivotal
+      role in the establishment of telegraph networks worldwide, revolutionizing
+      global communication. Today, Morse Code remains an iconic symbol of Samuel
+      Morse's ingenuity and enduring legacy in the field of telecommunications.
+    - "Kod Morse'a, rewolucyjny system komunikacji opracowany przez Samuela Morse'a
+      w latach trzydziestych XIX wieku, przekszta\u0142ci\u0142 komunikacj\u0119
+      na du\u017Ce odleg\u0142o\u015Bci. Wykorzystuj\u0105c seri\u0119 kropek i kresek
+      do reprezentowania liter i cyfr, kod Morse'a umo\u017Cliwi\u0142 szybk\u0105
+      transmisj\u0119 wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci. Innowacyjny
+      system Morse'a odegra\u0142 kluczow\u0105 rol\u0119 w tworzeniu sieci telegraficznych
+      na ca\u0142ym \u015Bwiecie, rewolucjonizuj\u0105c globaln\u0105 komunikacj\u0119.
+      Dzi\u015B kod Morse'a pozostaje ikonicznym symbolem pomys\u0142owo\u015Bci
+      Samuela Morse'a i trwa\u0142ego dziedzictwa w dziedzinie telekomunikacji."
+  - key: CARD_003_MORSECODE_NAME
     translations:
-    - The Bathometer, invented by Jacob Perkins in 1805, stands as a testament to
-      his innovative prowess. This pioneering device revolutionized underwater exploration
-      by accurately measuring ocean depths. Perkins' Bathometer not only facilitated
-      marine navigation but also significantly advanced scientific research in oceanography.
-      His invention remains a cornerstone in the history of marine technology, showcasing
-      Perkins' enduring legacy as a visionary inventor whose contributions continue
-      to shape our understanding of the seas.
-    - "Batometr, wynaleziony przez Jacoba Perkinsa w 1805 roku, jest \u015Bwiadectwem
-      jego innowacyjno\u015Bci. To pionierskie urz\u0105dzenie zrewolucjonizowa\u0142o
-      podwodn\u0105 eksploracj\u0119 poprzez dok\u0142adny pomiar g\u0142\u0119boko\u015Bci
-      oceanu. Batometr Perkinsa nie tylko u\u0142atwi\u0142 nawigacj\u0119 morsk\u0105,
-      ale tak\u017Ce znacznie przyspieszy\u0142 badania naukowe w dziedzinie oceanografii.
-      Jego wynalazek pozostaje kamieniem w\u0119gielnym w historii technologii morskiej,
-      ukazuj\u0105c trwa\u0142e dziedzictwo Perkinsa jako wizjonerskiego wynalazcy,
-      kt\xF3rego wk\u0142ad nadal kszta\u0142tuje nasze rozumienie m\xF3rz."
+    - Morse Code
+    - Kod Morse'a
   - key: CARD_003_SAMUELMORSE_DESC
     translations:
     - Born in 1791, Samuel Morse, an American polymath, forever changed the landscape
@@ -152,28 +174,6 @@ MonoBehaviour:
       wynalazcy i pioniera nowoczesnej telekomunikacji trwa, a kod Morse'a pozostaje
       symbolem jego pomys\u0142owo\u015Bci i trwa\u0142ego wp\u0142ywu na globaln\u0105
       komunikacj\u0119."
-  - key: CARD_003_MORSECODE_NAME
-    translations:
-    - Morse Code
-    - Kod Morse'a
-  - key: CARD_003_MORSECODE_DESC
-    translations:
-    - Morse Code, a revolutionary communication system developed by Samuel Morse
-      in the 1830s, transformed long-distance communication. Using a series of dots
-      and dashes to represent letters and numbers, Morse Code enabled rapid transmission
-      of messages across vast distances. Morse's innovative system played a pivotal
-      role in the establishment of telegraph networks worldwide, revolutionizing
-      global communication. Today, Morse Code remains an iconic symbol of Samuel
-      Morse's ingenuity and enduring legacy in the field of telecommunications.
-    - "Kod Morse'a, rewolucyjny system komunikacji opracowany przez Samuela Morse'a
-      w latach trzydziestych XIX wieku, przekszta\u0142ci\u0142 komunikacj\u0119
-      na du\u017Ce odleg\u0142o\u015Bci. Wykorzystuj\u0105c seri\u0119 kropek i kresek
-      do reprezentowania liter i cyfr, kod Morse'a umo\u017Cliwi\u0142 szybk\u0105
-      transmisj\u0119 wiadomo\u015Bci na du\u017Ce odleg\u0142o\u015Bci. Innowacyjny
-      system Morse'a odegra\u0142 kluczow\u0105 rol\u0119 w tworzeniu sieci telegraficznych
-      na ca\u0142ym \u015Bwiecie, rewolucjonizuj\u0105c globaln\u0105 komunikacj\u0119.
-      Dzi\u015B kod Morse'a pozostaje ikonicznym symbolem pomys\u0142owo\u015Bci
-      Samuela Morse'a i trwa\u0142ego dziedzictwa w dziedzinie telekomunikacji."
   - key: CARD_004_ALFREDNOBEL_DESC
     translations:
     - Alfred Nobel, a Swedish inventor, engineer, and philanthropist born in 1833,
@@ -198,10 +198,6 @@ MonoBehaviour:
       humanitarnych. Dzi\u015B nazwisko Alfreda Nobla jest synonimem zar\xF3wno prze\u0142om\xF3w
       naukowych, jak i promowania pokoju, odzwierciedlaj\u0105c jego g\u0142\u0119boki
       wp\u0142yw na \u015Bwiat."
-  - key: CARD_004_DYNAMITE_NAME
-    translations:
-    - Dynamite
-    - Dynamit
   - key: CARD_004_DYNAMITE_DESC
     translations:
     - Dynamite, the groundbreaking invention of Alfred Nobel in 1867, revolutionized
@@ -228,33 +224,10 @@ MonoBehaviour:
       post\u0119powi ludzko\u015Bci i pokojowi, czego przyk\u0142adem jest ustanowienie
       przez niego Nagr\xF3d Nobla. Dynamit jest zatem \u015Bwiadectwem innowacyjnego
       ducha Nobla i jego trwa\u0142ego dziedzictwa zar\xF3wno w nauce, jak i spo\u0142ecze\u0144stwie."
-  - key: CARD_005_OLEKIRKCHRISTIANSEN_DESC
+  - key: CARD_004_DYNAMITE_NAME
     translations:
-    - Ole Kirk Christiansen, a Danish carpenter and inventor, born in 1891, left
-      an indelible mark on the world with his creation of LEGO bricks in 1949. Initially
-      a humble carpentry workshop, Christiansen's company evolved into the iconic
-      LEGO Group, one of the world's most beloved toy manufacturers. The LEGO brick,
-      with its interlocking design, sparked creativity and imagination in children
-      worldwide, becoming a symbol of play and learning. Christiansen's dedication
-      to quality, innovation, and creativity laid the foundation for LEGO's success,
-      shaping generations of builders and dreamers. His legacy as the founder of
-      LEGO endures, inspiring creativity and innovation across the globe.
-    - "Ole Kirk Christiansen, du\u0144ski stolarz i wynalazca urodzony w 1891 roku,
-      odcisn\u0105\u0142 niezatarte pi\u0119tno na \u015Bwiecie, tworz\u0105c w 1949
-      roku klocki LEGO. Pocz\u0105tkowo skromny warsztat stolarski, firma Christiansena
-      przekszta\u0142ci\u0142a si\u0119 w kultow\u0105 LEGO Group, jednego z najbardziej
-      lubianych producent\xF3w zabawek na \u015Bwiecie. Klocek LEGO o zaz\u0119biaj\u0105cej
-      si\u0119 konstrukcji pobudzi\u0142 kreatywno\u015B\u0107 i wyobra\u017Ani\u0119
-      dzieci na ca\u0142ym \u015Bwiecie, staj\u0105c si\u0119 symbolem zabawy i nauki.
-      Po\u015Bwi\u0119cenie Christiansena dla jako\u015Bci, innowacji i kreatywno\u015Bci
-      po\u0142o\u017Cy\u0142o podwaliny pod sukces LEGO, kszta\u0142tuj\u0105c pokolenia
-      konstruktor\xF3w i marzycieli. Jego dziedzictwo jako za\u0142o\u017Cyciela
-      LEGO trwa, inspiruj\u0105c kreatywno\u015B\u0107 i innowacje na ca\u0142ym
-      \u015Bwiecie."
-  - key: CARD_005_LEGOBRICKS_NAME
-    translations:
-    - LEGO Bricks
-    - Klocki LEGO
+    - Dynamite
+    - Dynamit
   - key: CARD_005_LEGOBRICKS_DESC
     translations:
     - LEGO bricks, the brainchild of Ole Kirk Christiansen, revolutionized the world
@@ -280,6 +253,33 @@ MonoBehaviour:
       ponadczasowy symbol wyobra\u017Ani i pomys\u0142owo\u015Bci. Dzi\u015B klocki
       LEGO nadal inspiruj\u0105 konstruktor\xF3w w ka\u017Cdym wieku, uosabiaj\u0105c
       ducha niesko\u0144czonych mo\u017Cliwo\u015Bci i kreatywno\u015Bci."
+  - key: CARD_005_LEGOBRICKS_NAME
+    translations:
+    - LEGO Bricks
+    - Klocki LEGO
+  - key: CARD_005_OLEKIRKCHRISTIANSEN_DESC
+    translations:
+    - Ole Kirk Christiansen, a Danish carpenter and inventor, born in 1891, left
+      an indelible mark on the world with his creation of LEGO bricks in 1949. Initially
+      a humble carpentry workshop, Christiansen's company evolved into the iconic
+      LEGO Group, one of the world's most beloved toy manufacturers. The LEGO brick,
+      with its interlocking design, sparked creativity and imagination in children
+      worldwide, becoming a symbol of play and learning. Christiansen's dedication
+      to quality, innovation, and creativity laid the foundation for LEGO's success,
+      shaping generations of builders and dreamers. His legacy as the founder of
+      LEGO endures, inspiring creativity and innovation across the globe.
+    - "Ole Kirk Christiansen, du\u0144ski stolarz i wynalazca urodzony w 1891 roku,
+      odcisn\u0105\u0142 niezatarte pi\u0119tno na \u015Bwiecie, tworz\u0105c w 1949
+      roku klocki LEGO. Pocz\u0105tkowo skromny warsztat stolarski, firma Christiansena
+      przekszta\u0142ci\u0142a si\u0119 w kultow\u0105 LEGO Group, jednego z najbardziej
+      lubianych producent\xF3w zabawek na \u015Bwiecie. Klocek LEGO o zaz\u0119biaj\u0105cej
+      si\u0119 konstrukcji pobudzi\u0142 kreatywno\u015B\u0107 i wyobra\u017Ani\u0119
+      dzieci na ca\u0142ym \u015Bwiecie, staj\u0105c si\u0119 symbolem zabawy i nauki.
+      Po\u015Bwi\u0119cenie Christiansena dla jako\u015Bci, innowacji i kreatywno\u015Bci
+      po\u0142o\u017Cy\u0142o podwaliny pod sukces LEGO, kszta\u0142tuj\u0105c pokolenia
+      konstruktor\xF3w i marzycieli. Jego dziedzictwo jako za\u0142o\u017Cyciela
+      LEGO trwa, inspiruj\u0105c kreatywno\u015B\u0107 i innowacje na ca\u0142ym
+      \u015Bwiecie."
   - key: CARD_006_RENELAENNEC_DESC
     translations:
     - "Ren\xE9 Laennec, a French physician born in 1781, made a profound impact on
@@ -302,10 +302,6 @@ MonoBehaviour:
       opieki zdrowotnej nadal inspiruj\u0105 pokolenia profesjonalist\xF3w medycznych,
       podkre\u015Blaj\u0105c jego trwa\u0142e dziedzictwo jako pioniera w dziedzinie
       os\u0142uchiwania."
-  - key: CARD_006_STETHOSCOPE_NAME
-    translations:
-    - Stethoscope
-    - Stetoskop
   - key: CARD_006_STETHOSCOPE_DESC
     translations:
     - "The stethoscope, invented by Ren\xE9 Laennec in 1816, revolutionized diagnostic
@@ -322,6 +318,34 @@ MonoBehaviour:
       Laenneca szybko sta\u0142 si\u0119 niezb\u0119dnym narz\u0119dziem dla profesjonalist\xF3w
       medycznych, zapocz\u0105tkowuj\u0105c now\u0105 er\u0119 dok\u0142adno\u015Bci
       diagnostycznej i opieki nad pacjentem."
+  - key: CARD_006_STETHOSCOPE_NAME
+    translations:
+    - Stethoscope
+    - Stetoskop
+  - key: CARD_007_MICROWAVEOVEN_DESC
+    translations:
+    - The microwave oven, a transformative kitchen appliance, owes its invention
+      to Percy Spencer's accidental discovery during World War II. Harnessing microwave
+      radiation for rapid food heating, the microwave oven revolutionized meal preparation
+      upon its introduction in the late 1940s. Its unprecedented convenience and
+      speed transformed cooking practices worldwide, making it an indispensable tool
+      in modern kitchens. Percy Spencer's innovative breakthrough paved the way for
+      the widespread adoption of microwave technology, fundamentally changing the
+      way people cook and eat.
+    - "Kuchenka mikrofalowa, transformacyjne urz\u0105dzenie kuchenne, zawdzi\u0119cza
+      sw\xF3j wynalazek przypadkowemu odkryciu Percy'ego Spencera podczas II wojny
+      \u015Bwiatowej. Wykorzystuj\u0105c promieniowanie mikrofalowe do szybkiego
+      podgrzewania \u017Cywno\u015Bci, kuchenka mikrofalowa zrewolucjonizowa\u0142a
+      przygotowywanie posi\u0142k\xF3w po jej wprowadzeniu pod koniec lat czterdziestych
+      XX wieku. Jej bezprecedensowa wygoda i szybko\u015B\u0107 zmieni\u0142y praktyki
+      gotowania na ca\u0142ym \u015Bwiecie, czyni\u0105c j\u0105 niezb\u0119dnym
+      narz\u0119dziem w nowoczesnych kuchniach. Innowacyjne odkrycie Percy'ego Spencera
+      utorowa\u0142o drog\u0119 do powszechnego zastosowania technologii mikrofalowej,
+      zasadniczo zmieniaj\u0105c spos\xF3b gotowania i jedzenia."
+  - key: CARD_007_MICROWAVEOVEN_NAME
+    translations:
+    - Microwave Oven
+    - Kuchenka Mikrofalowa
   - key: CARD_007_PERCYSPENCER_DESC
     translations:
     - Percy Spencer, an American engineer born in 1894, made a significant impact
@@ -346,54 +370,6 @@ MonoBehaviour:
       now\u0105 er\u0119 szybkiego i dost\u0119pnego przygotowywania posi\u0142k\xF3w.
       Jego wk\u0142ad w technologi\u0119 mikrofalow\u0105 nadal kszta\u0142tuje nowoczesne
       kuchnie i pozostawi\u0142 trwa\u0142e dziedzictwo w dziedzinie innowacji kulinarnych."
-  - key: CARD_007_MICROWAVEOVEN_NAME
-    translations:
-    - Microwave Oven
-    - Kuchenka Mikrofalowa
-  - key: CARD_007_MICROWAVEOVEN_DESC
-    translations:
-    - The microwave oven, a transformative kitchen appliance, owes its invention
-      to Percy Spencer's accidental discovery during World War II. Harnessing microwave
-      radiation for rapid food heating, the microwave oven revolutionized meal preparation
-      upon its introduction in the late 1940s. Its unprecedented convenience and
-      speed transformed cooking practices worldwide, making it an indispensable tool
-      in modern kitchens. Percy Spencer's innovative breakthrough paved the way for
-      the widespread adoption of microwave technology, fundamentally changing the
-      way people cook and eat.
-    - "Kuchenka mikrofalowa, transformacyjne urz\u0105dzenie kuchenne, zawdzi\u0119cza
-      sw\xF3j wynalazek przypadkowemu odkryciu Percy'ego Spencera podczas II wojny
-      \u015Bwiatowej. Wykorzystuj\u0105c promieniowanie mikrofalowe do szybkiego
-      podgrzewania \u017Cywno\u015Bci, kuchenka mikrofalowa zrewolucjonizowa\u0142a
-      przygotowywanie posi\u0142k\xF3w po jej wprowadzeniu pod koniec lat czterdziestych
-      XX wieku. Jej bezprecedensowa wygoda i szybko\u015B\u0107 zmieni\u0142y praktyki
-      gotowania na ca\u0142ym \u015Bwiecie, czyni\u0105c j\u0105 niezb\u0119dnym
-      narz\u0119dziem w nowoczesnych kuchniach. Innowacyjne odkrycie Percy'ego Spencera
-      utorowa\u0142o drog\u0119 do powszechnego zastosowania technologii mikrofalowej,
-      zasadniczo zmieniaj\u0105c spos\xF3b gotowania i jedzenia."
-  - key: CARD_008_ROBERTOPPENHEIMER_DESC
-    translations:
-    - Robert Oppenheimer, an American physicist born in 1904, led the Manhattan Project
-      during World War II, overseeing the development of the atomic bomb. His pivotal
-      role in creating the world's first nuclear weapons marked a turning point in
-      history, shaping the course of warfare and international relations. Despite
-      his scientific achievements, Oppenheimer faced scrutiny for his political affiliations
-      during the McCarthy era, highlighting the complex intersection of science and
-      society. Oppenheimer's legacy remains a subject of debate, reflecting the ethical
-      dilemmas inherent in scientific innovation.
-    - "Robert Oppenheimer, ameryka\u0144ski fizyk urodzony w 1904 roku, kierowa\u0142
-      Projektem Manhattan podczas II wojny \u015Bwiatowej, nadzoruj\u0105c prace
-      nad bomb\u0105 atomow\u0105. Jego kluczowa rola w stworzeniu pierwszej na \u015Bwiecie
-      broni j\u0105drowej stanowi\u0142a punkt zwrotny w historii, kszta\u0142tuj\u0105c
-      przebieg dzia\u0142a\u0144 wojennych i stosunk\xF3w mi\u0119dzynarodowych.
-      Pomimo swoich osi\u0105gni\u0119\u0107 naukowych, Oppenheimer zosta\u0142 poddany
-      kontroli ze wzgl\u0119du na swoje powi\u0105zania polityczne w erze McCarthy'ego,
-      co uwypukli\u0142o z\u0142o\u017Cone skrzy\u017Cowanie nauki i spo\u0142ecze\u0144stwa.
-      Spu\u015Bcizna Oppenheimera pozostaje przedmiotem debaty, odzwierciedlaj\u0105c
-      dylematy etyczne nieod\u0142\u0105cznie zwi\u0105zane z innowacjami naukowymi."
-  - key: CARD_008_ATOMICBOMB_NAME
-    translations:
-    - Atomic Bomb
-    - Bomba Atomowa
   - key: CARD_008_ATOMICBOMB_DESC
     translations:
     - The atomic bomb, developed during World War II as part of the Manhattan Project
@@ -416,6 +392,30 @@ MonoBehaviour:
       Jej rozw\xF3j i zastosowanie po dzi\u015B dzie\u0144 kszta\u0142tuj\u0105 globaln\u0105
       polityk\u0119 i dynamik\u0119 bezpiecze\u0144stwa, przypominaj\u0105c o katastrofalnych
       konsekwencjach konflikt\xF3w zbrojnych."
+  - key: CARD_008_ATOMICBOMB_NAME
+    translations:
+    - Atomic Bomb
+    - Bomba Atomowa
+  - key: CARD_008_ROBERTOPPENHEIMER_DESC
+    translations:
+    - Robert Oppenheimer, an American physicist born in 1904, led the Manhattan Project
+      during World War II, overseeing the development of the atomic bomb. His pivotal
+      role in creating the world's first nuclear weapons marked a turning point in
+      history, shaping the course of warfare and international relations. Despite
+      his scientific achievements, Oppenheimer faced scrutiny for his political affiliations
+      during the McCarthy era, highlighting the complex intersection of science and
+      society. Oppenheimer's legacy remains a subject of debate, reflecting the ethical
+      dilemmas inherent in scientific innovation.
+    - "Robert Oppenheimer, ameryka\u0144ski fizyk urodzony w 1904 roku, kierowa\u0142
+      Projektem Manhattan podczas II wojny \u015Bwiatowej, nadzoruj\u0105c prace
+      nad bomb\u0105 atomow\u0105. Jego kluczowa rola w stworzeniu pierwszej na \u015Bwiecie
+      broni j\u0105drowej stanowi\u0142a punkt zwrotny w historii, kszta\u0142tuj\u0105c
+      przebieg dzia\u0142a\u0144 wojennych i stosunk\xF3w mi\u0119dzynarodowych.
+      Pomimo swoich osi\u0105gni\u0119\u0107 naukowych, Oppenheimer zosta\u0142 poddany
+      kontroli ze wzgl\u0119du na swoje powi\u0105zania polityczne w erze McCarthy'ego,
+      co uwypukli\u0142o z\u0142o\u017Cone skrzy\u017Cowanie nauki i spo\u0142ecze\u0144stwa.
+      Spu\u015Bcizna Oppenheimera pozostaje przedmiotem debaty, odzwierciedlaj\u0105c
+      dylematy etyczne nieod\u0142\u0105cznie zwi\u0105zane z innowacjami naukowymi."
   - key: CARD_009_JOHANNESGUTENBERG_DESC
     translations:
     - Johannes Gutenberg, a German inventor born around 1400, revolutionized the
@@ -427,7 +427,7 @@ MonoBehaviour:
       access to information and contributing to cultural and intellectual advancements.
       Gutenberg's invention laid the foundation for the modern printing industry
       and remains one of the most influential technological innovations in history.
-    - "Johannes Gutenberg, niemiecki wynalazca urodzony oko\u0142o 1400 roku, zrewolucjonizowa\u0142
+    - "Jan Gutenberg, niemiecki wynalazca urodzony oko\u0142o 1400 roku, zrewolucjonizowa\u0142
       \u015Bwiat dzi\u0119ki wynalezieniu ruchomej czcionki drukarskiej w XV wieku.
       Innowacja Gutenberga umo\u017Cliwi\u0142a masow\u0105 produkcj\u0119 ksi\u0105\u017Cek
       i innych materia\u0142\xF3w drukowanych, wyznaczaj\u0105c pocz\u0105tek rewolucji
@@ -437,10 +437,10 @@ MonoBehaviour:
       si\u0119 do post\u0119pu kulturowego i intelektualnego. Wynalazek Gutenberga
       po\u0142o\u017Cy\u0142 podwaliny pod nowoczesny przemys\u0142 drukarski i pozostaje
       jedn\u0105 z najbardziej wp\u0142ywowych innowacji technologicznych w historii."
-  - key: CARD_009_MOVABLETYPE_NAME
+  - key: CARD_009_JOHANNESGUTENBERG_NAME
     translations:
-    - Movable Type
-    - Ruchoma Czcionka
+    - Johannes Gutenberg
+    - Jan Gutenberg
   - key: CARD_009_MOVABLETYPE_DESC
     translations:
     - Movable type, attributed to Johannes Gutenberg's invention in the 15th century,
@@ -465,6 +465,373 @@ MonoBehaviour:
       przemys\u0142u drukarskiego, s\u0142u\u017C\u0105c jako prekursor nowoczesnych
       technologii druku i odgrywaj\u0105c kluczow\u0105 rol\u0119 w rozpowszechnianiu
       idei i wiedzy na ca\u0142ym \u015Bwiecie."
+  - key: CARD_009_MOVABLETYPE_NAME
+    translations:
+    - Movable Type
+    - Ruchoma Czcionka
+  - key: CARD_010_ADOLPHESAX_DESC
+    translations:
+    - Adolphe Sax, a Belgian inventor born in 1814, revolutionized the world of music
+      with his invention of the saxophone in the 1840s. Sax, an accomplished instrument
+      maker, designed the saxophone to combine the agility of woodwinds with the
+      power of brass instruments, creating a unique voice that bridged a gap in orchestral
+      and military band music. His invention quickly gained popularity for its rich,
+      expressive tones, contributing significantly to the development of jazz and
+      other music genres in the 20th century. Despite facing numerous challenges,
+      including fierce competition and patent battles, Sax's legacy endures through
+      the enduring popularity of the saxophone, an instrument cherished by musicians
+      and music lovers around the world.
+    - "Adolphe Sax, belgijski wynalazca urodzony w 1814 roku, zrewolucjonizowa\u0142
+      \u015Bwiat muzyki dzi\u0119ki wynalezieniu saksofonu w latach czterdziestych
+      XIX wieku. Sax, znakomity tw\xF3rca instrument\xF3w, zaprojektowa\u0142 saksofon,
+      aby po\u0142\u0105czy\u0107 zwinno\u015B\u0107 instrument\xF3w d\u0119tych
+      drewnianych z moc\u0105 instrument\xF3w d\u0119tych blaszanych, tworz\u0105c
+      unikalny g\u0142os, kt\xF3ry wype\u0142ni\u0142 luk\u0119 w muzyce orkiestrowej
+      i wojskowej. Jego wynalazek szybko zyska\u0142 popularno\u015B\u0107 dzi\u0119ki
+      bogatym, ekspresyjnym d\u017Awi\u0119kom, znacz\u0105co przyczyniaj\u0105c
+      si\u0119 do rozwoju jazzu i innych gatunk\xF3w muzycznych w XX wieku. Pomimo
+      wielu wyzwa\u0144, w tym ostrej konkurencji i bitew patentowych, dziedzictwo
+      Saxa przetrwa\u0142o dzi\u0119ki niezmiennej popularno\u015Bci saksofonu, instrumentu
+      cenionego przez muzyk\xF3w i mi\u0142o\u015Bnik\xF3w muzyki na ca\u0142ym \u015Bwiecie."
+  - key: CARD_010_SAXOPHONE_DESC
+    translations:
+    - The saxophone, created by Adolphe Sax in the 1840s, is a unique musical instrument
+      that masterfully combines the power of brass with the finesse of woodwinds.
+      Its invention introduced a distinct, versatile voice to the musical world,
+      capable of delivering both powerful blasts and delicate melodies. Central to
+      the evolution of jazz, the saxophone has also found its place in classical,
+      rock, and contemporary music, showcasing its remarkable adaptability. The instrument's
+      rich timbre and expressive range have cemented its status as a beloved tool
+      for musicians seeking to convey a wide spectrum of emotions and styles. The
+      saxophone's enduring popularity underscores its significant impact on music,
+      a testament to Adolphe Sax's innovative genius.
+    - "Saksofon, stworzony przez Adolphe'a Saxa w latach czterdziestych XIX wieku,
+      to wyj\u0105tkowy instrument muzyczny, kt\xF3ry w mistrzowski spos\xF3b \u0142\u0105czy
+      moc instrument\xF3w d\u0119tych blaszanych z finezj\u0105 instrument\xF3w d\u0119tych
+      drewnianych. Jego wynalezienie wprowadzi\u0142o do \u015Bwiata muzyki odr\u0119bny,
+      wszechstronny g\u0142os, zdolny do dostarczania zar\xF3wno pot\u0119\u017Cnych
+      wybuch\xF3w, jak i delikatnych melodii. Kluczowy dla ewolucji jazzu, saksofon
+      znalaz\u0142 r\xF3wnie\u017C swoje miejsce w muzyce klasycznej, rockowej i
+      wsp\xF3\u0142czesnej, pokazuj\u0105c jego niezwyk\u0142\u0105 zdolno\u015B\u0107
+      adaptacji. Bogata barwa i ekspresyjny zakres instrumentu ugruntowa\u0142y jego
+      status jako ukochanego narz\u0119dzia dla muzyk\xF3w pragn\u0105cych przekaza\u0107
+      szerokie spektrum emocji i styl\xF3w. Nieprzemijaj\u0105ca popularno\u015B\u0107
+      saksofonu podkre\u015Bla jego znacz\u0105cy wp\u0142yw na muzyk\u0119 i jest
+      \u015Bwiadectwem innowacyjnego geniuszu Adolphe'a Saxa."
+  - key: CARD_010_SAXOPHONE_NAME
+    translations:
+    - Saxophone
+    - Saksofon
+  - key: CARD_011_ENRICOFERMI_DESC
+    translations:
+    - Enrico Fermi, an Italian physicist, made groundbreaking contributions to nuclear
+      physics, leading to the creation of the world's first nuclear reactor. His
+      work laid the foundation for the development of atomic energy and nuclear weapons,
+      marking a pivotal moment in scientific history. Fermi's expertise also extended
+      to quantum theory, particle physics, and statistical mechanics, earning him
+      a Nobel Prize in 1938. His legacy includes not only his scientific achievements
+      but also his role in advancing nuclear research, making him a central figure
+      in the 20th-century physics community.
+    - "Enrico Fermi, w\u0142oski fizyk, wni\xF3s\u0142 prze\u0142omowy wk\u0142ad
+      w fizyk\u0119 j\u0105drow\u0105, prowadz\u0105c do stworzenia pierwszego na
+      \u015Bwiecie reaktora j\u0105drowego. Jego praca po\u0142o\u017Cy\u0142a podwaliny
+      pod rozw\xF3j energii atomowej i broni j\u0105drowej, wyznaczaj\u0105c kluczowy
+      moment w historii nauki. Wiedza Fermiego obejmowa\u0142a r\xF3wnie\u017C teori\u0119
+      kwantow\u0105, fizyk\u0119 cz\u0105stek elementarnych i mechanik\u0119 statystyczn\u0105,
+      dzi\u0119ki czemu w 1938 roku otrzyma\u0142 Nagrod\u0119 Nobla. Jego spu\u015Bcizna
+      obejmuje nie tylko osi\u0105gni\u0119cia naukowe, ale tak\u017Ce rol\u0119
+      w rozwoju bada\u0144 j\u0105drowych, czyni\u0105c go centraln\u0105 postaci\u0105
+      w spo\u0142eczno\u015Bci fizyk\xF3w XX wieku."
+  - key: CARD_011_NUCLEARREACTOR_DESC
+    translations:
+    - The nuclear reactor, a pivotal invention in the field of atomic energy, harnesses
+      nuclear fission to generate heat, which is then used to produce electricity.
+      Developed in the 20th century, with significant contributions from physicist
+      Enrico Fermi, the first controlled nuclear reaction was achieved in 1942. This
+      innovation marked the dawn of the nuclear age, offering a powerful source of
+      energy that could meet the growing demands of modern society. Beyond electricity
+      generation, nuclear reactors play crucial roles in medical isotope production,
+      naval propulsion, and scientific research. Despite debates over safety and
+      waste disposal, nuclear reactors remain integral to global energy strategies,
+      embodying a complex legacy of scientific progress and environmental consideration.
+    - "Reaktor j\u0105drowy, kluczowy wynalazek w dziedzinie energii atomowej, wykorzystuje
+      rozszczepienie j\u0105dra atomowego do generowania ciep\u0142a, kt\xF3re jest
+      nast\u0119pnie wykorzystywane do produkcji energii elektrycznej. Opracowany
+      w XX wieku, ze znacz\u0105cym wk\u0142adem fizyka Enrico Fermiego, pierwsza
+      kontrolowana reakcja j\u0105drowa zosta\u0142a osi\u0105gni\u0119ta w 1942
+      roku. Ta innowacja zapocz\u0105tkowa\u0142a er\u0119 j\u0105drow\u0105, oferuj\u0105c
+      pot\u0119\u017Cne \u017Ar\xF3d\u0142o energii, kt\xF3re mog\u0142o sprosta\u0107
+      rosn\u0105cym wymaganiom wsp\xF3\u0142czesnego spo\u0142ecze\u0144stwa. Poza
+      wytwarzaniem energii elektrycznej, reaktory j\u0105drowe odgrywaj\u0105 kluczow\u0105
+      rol\u0119 w produkcji izotop\xF3w medycznych, nap\u0119dach morskich i badaniach
+      naukowych. Pomimo debat na temat bezpiecze\u0144stwa i utylizacji odpad\xF3w,
+      reaktory j\u0105drowe pozostaj\u0105 integraln\u0105 cz\u0119\u015Bci\u0105
+      globalnych strategii energetycznych, uciele\u015Bniaj\u0105c z\u0142o\u017Cone
+      dziedzictwo post\u0119pu naukowego i troski o \u015Brodowisko."
+  - key: CARD_011_NUCLEARREACTOR_NAME
+    translations:
+    - Nuclear Reactor
+    - "Reaktor J\u0105drowy"
+  - key: CARD_012_NAUTILUSSUBMARINE_DESC
+    translations:
+    - The Nautilus submarine, conceptualized by Robert Fulton in the 19th century,
+      represented a pioneering leap in underwater exploration and naval technology.
+      Though not immediately embraced for military use, Fulton's Nautilus laid the
+      groundwork for future submarine development, showcasing early innovations in
+      design and operation. Despite its challenges, the Nautilus remains a testament
+      to Fulton's vision and ingenuity, shaping the future of maritime warfare and
+      exploration.
+    - "Okr\u0119t podwodny Nautilus, zaprojektowany przez Roberta Fultona w XIX wieku,
+      stanowi\u0142 pionierski krok w podwodnej eksploracji i technologii morskiej.
+      Cho\u0107 nie od razu przyj\u0119ty do u\u017Cytku wojskowego, Nautilus Fultona
+      po\u0142o\u017Cy\u0142 podwaliny pod przysz\u0142y rozw\xF3j okr\u0119t\xF3w
+      podwodnych, prezentuj\u0105c wczesne innowacje w zakresie projektowania i dzia\u0142ania.
+      Pomimo swoich wyzwa\u0144, Nautilus pozostaje \u015Bwiadectwem wizji i pomys\u0142owo\u015Bci
+      Fultona, kszta\u0142tuj\u0105c przysz\u0142o\u015B\u0107 wojny morskiej i eksploracji."
+  - key: CARD_012_NAUTILUSSUBMARINE_NAME
+    translations:
+    - Nautilus Submarine
+    - "\u0141\xF3d\u017A Podwodna Nuatilus"
+  - key: CARD_012_ROBERTFULTON_DESC
+    translations:
+    - Robert Fulton, renowned for his pioneering work in steam navigation, also made
+      significant contributions to underwater naval technology with his development
+      of the Nautilus submarine in the early 19th century. Fulton's Nautilus, an
+      innovative leap forward, was designed for underwater exploration and military
+      advantage, showcasing early concepts of submarine design and operation. Though
+      not immediately successful in convincing governments of its military utility,
+      Fulton's work on the Nautilus laid the groundwork for the development of submarine
+      technology. His vision and ingenuity in creating a vessel capable of underwater
+      navigation underscore his role as a key figure in the evolution of naval engineering,
+      foreshadowing the strategic importance of submarines in future naval warfare.
+    - "Robert Fulton, znany ze swojej pionierskiej pracy w dziedzinie nawigacji parowej,
+      wni\xF3s\u0142 r\xF3wnie\u017C znacz\u0105cy wk\u0142ad w podwodn\u0105 technologi\u0119
+      morsk\u0105, opracowuj\u0105c okr\u0119t podwodny Nautilus na pocz\u0105tku
+      XIX wieku. Nautilus Fultona, innowacyjny skok naprz\xF3d, zosta\u0142 zaprojektowany
+      do podwodnej eksploracji i przewagi militarnej, prezentuj\u0105c wczesne koncepcje
+      projektowania i dzia\u0142ania \u0142odzi podwodnych. Cho\u0107 nie od razu
+      uda\u0142o mu si\u0119 przekona\u0107 rz\u0105dy do swojej wojskowej u\u017Cyteczno\u015Bci,
+      praca Fultona nad Nautilusem po\u0142o\u017Cy\u0142a podwaliny pod rozw\xF3j
+      technologii okr\u0119t\xF3w podwodnych. Jego wizja i pomys\u0142owo\u015B\u0107
+      w tworzeniu statku zdolnego do nawigacji podwodnej podkre\u015Blaj\u0105 jego
+      rol\u0119 jako kluczowej postaci w ewolucji in\u017Cynierii morskiej, zapowiadaj\u0105c
+      strategiczne znaczenie okr\u0119t\xF3w podwodnych w przysz\u0142ych dzia\u0142aniach
+      wojennych."
+  - key: CARD_013_ESPERANTO_DESC
+    translations:
+    - Esperanto, created by L.L. Zamenhof in the late 19th century, is an international
+      auxiliary language designed to facilitate communication between people of different
+      linguistic backgrounds. With its simple grammar and vocabulary, Esperanto aims
+      to promote understanding and cooperation across borders. Despite not achieving
+      universal adoption, Esperanto boasts a dedicated community of speakers worldwide
+      who continue to champion its principles of linguistic harmony and cultural
+      exchange.
+    - "Esperanto, stworzone przez L.L. Zamenhofa pod koniec XIX wieku, jest mi\u0119dzynarodowym
+      j\u0119zykiem pomocniczym zaprojektowanym w celu u\u0142atwienia komunikacji
+      mi\u0119dzy lud\u017Ami z r\xF3\u017Cnych \u015Brodowisk j\u0119zykowych. Dzi\u0119ki
+      prostej gramatyce i s\u0142ownictwu, esperanto ma na celu promowanie zrozumienia
+      i wsp\xF3\u0142pracy ponad granicami. Pomimo tego, \u017Ce esperanto nie przyj\u0119\u0142o
+      si\u0119 powszechnie, mo\u017Ce poszczyci\u0107 si\u0119 oddan\u0105 spo\u0142eczno\u015Bci\u0105
+      u\u017Cytkownik\xF3w na ca\u0142ym \u015Bwiecie, kt\xF3rzy nadal broni\u0105
+      jego zasad harmonii j\u0119zykowej i wymiany kulturowej."
+  - key: CARD_013_LLZAMENHOF_DESC
+    translations:
+    - L.L. Zamenhof, born in 1859, is celebrated for creating Esperanto, an international
+      auxiliary language aimed at fostering global understanding. Esperanto, designed
+      for ease of learning and cultural neutrality, has garnered millions of speakers
+      worldwide, embodying Zamenhof's vision of linguistic harmony. Despite not achieving
+      universal adoption, Zamenhof's legacy persists as an inspiration for promoting
+      communication and cooperation across borders.
+    - "Ludwik Zamenhof, urodzony w 1859 roku, jest znany ze stworzenia Esperanto,
+      mi\u0119dzynarodowego j\u0119zyka pomocniczego maj\u0105cego na celu wspieranie
+      globalnego zrozumienia. Esperanto, zaprojektowane z my\u015Bl\u0105 o \u0142atwo\u015Bci
+      nauki i neutralno\u015Bci kulturowej, zdoby\u0142o miliony u\u017Cytkownik\xF3w
+      na ca\u0142ym \u015Bwiecie, uciele\u015Bniaj\u0105c wizj\u0119 harmonii j\u0119zykowej
+      Zamenhofa. Pomimo braku powszechnego przyj\u0119cia, dziedzictwo Zamenhofa
+      pozostaje inspiracj\u0105 do promowania komunikacji i wsp\xF3\u0142pracy ponad
+      granicami."
+  - key: CARD_013_LLZAMENHOF_NAME
+    translations:
+    - L. L. Zamenhof
+    - Ludwik Zamenhof
+  - key: CARD_014_TIMBERNERSLEE_DESC
+    translations:
+    - Tim Berners-Lee, born in 1955, is famed for inventing the World Wide Web, revolutionizing
+      global communication. His proposal for a system to organize and access information
+      over the internet, while at CERN in 1989, laid the foundation for the modern
+      internet era. Berners-Lee's creation democratized access to information, promoting
+      principles of net neutrality and accessibility. His ongoing efforts aim to
+      preserve the web as an open and inclusive platform for all.
+    - "Tim Berners-Lee, urodzony w 1955 roku, jest znany z wynalezienia sieci World
+      Wide Web, kt\xF3ra zrewolucjonizowa\u0142a globaln\u0105 komunikacj\u0119.
+      Jego propozycja systemu organizacji i dost\u0119pu do informacji za po\u015Brednictwem
+      Internetu, podczas pracy w CERN w 1989 roku, po\u0142o\u017Cy\u0142a podwaliny
+      pod wsp\xF3\u0142czesn\u0105 er\u0119 Internetu. Berners-Lee zdemokratyzowa\u0142
+      dost\u0119p do informacji, promuj\u0105c zasady neutralno\u015Bci i dost\u0119pno\u015Bci
+      sieci. Jego ci\u0105g\u0142e wysi\u0142ki maj\u0105 na celu zachowanie sieci
+      jako otwartej i integracyjnej platformy dla wszystkich."
+  - key: CARD_014_WORLDWIDEWEB_DESC
+    translations:
+    - The World Wide Web, pioneered by Tim Berners-Lee in 1989, revolutionized global
+      communication by providing a system to organize and access information over
+      the internet. Berners-Lee's invention democratized access to information, promoting
+      principles of net neutrality and accessibility. His ongoing efforts aim to
+      preserve the web as an open and inclusive platform for all.
+    - "Sie\u0107 World Wide Web, kt\xF3rej pionierem by\u0142 Tim Berners-Lee w 1989
+      roku, zrewolucjonizowa\u0142a globaln\u0105 komunikacj\u0119, zapewniaj\u0105c
+      system organizacji i dost\u0119pu do informacji za po\u015Brednictwem Internetu.
+      Wynalazek Bernersa-Lee zdemokratyzowa\u0142 dost\u0119p do informacji, promuj\u0105c
+      zasady neutralno\u015Bci sieci i dost\u0119pno\u015Bci. Jego ci\u0105g\u0142e
+      wysi\u0142ki maj\u0105 na celu zachowanie sieci jako otwartej i integracyjnej
+      platformy dla wszystkich."
+  - key: CARD_014_WORLDWIDEWEB_NAME
+    translations:
+    - World Wide Web
+    - "Sie\u0107 WWW"
+  - key: CARD_015_HANSLIPPERHEY_DESC
+    translations:
+    - Hans Lipperhey, a Dutch-German spectacle maker born in the late 16th century,
+      is credited with inventing the first telescope. Lipperhey's design, patented
+      in 1608, consisted of a convex objective lens and a concave eyepiece lens,
+      allowing users to magnify distant objects. Although the exact circumstances
+      of his invention are debated, Lipperhey's telescope laid the foundation for
+      astronomical observation and scientific exploration. His innovation revolutionized
+      the way we perceive the universe, enabling astronomers to make groundbreaking
+      discoveries about celestial bodies and their movements. Lipperhey's telescope
+      remains a symbol of human curiosity and ingenuity, exemplifying the power of
+      scientific inquiry to expand our understanding of the cosmos.
+    - "Hans Lipperhey, holendersko-niemiecki producent okular\xF3w urodzony pod koniec
+      XVI wieku, jest uznawany za wynalazc\u0119 pierwszego teleskopu. Projekt Lipperheya,
+      opatentowany w 1608 roku, sk\u0142ada\u0142 si\u0119 z wypuk\u0142ej soczewki
+      obiektywu i wkl\u0119s\u0142ej soczewki okularu, umo\u017Cliwiaj\u0105c u\u017Cytkownikom
+      powi\u0119kszanie odleg\u0142ych obiekt\xF3w. Chocia\u017C dok\u0142adne okoliczno\u015Bci
+      jego wynalezienia s\u0105 przedmiotem dyskusji, teleskop Lipperheya po\u0142o\u017Cy\u0142
+      podwaliny pod obserwacje astronomiczne i badania naukowe. Jego innowacja zrewolucjonizowa\u0142a
+      spos\xF3b, w jaki postrzegamy wszech\u015Bwiat, umo\u017Cliwiaj\u0105c astronomom
+      dokonywanie prze\u0142omowych odkry\u0107 dotycz\u0105cych cia\u0142 niebieskich
+      i ich ruch\xF3w. Teleskop Lipperheya pozostaje symbolem ludzkiej ciekawo\u015Bci
+      i pomys\u0142owo\u015Bci, stanowi\u0105c przyk\u0142ad pot\u0119gi bada\u0144
+      naukowych w poszerzaniu naszego rozumienia kosmosu."
+  - key: CARD_015_TELESCOPE_DESC
+    translations:
+    - The telescope, invented by Hans Lippershey in the late 16th century, revolutionized
+      humanity's understanding of the cosmos. Lippershey's design, patented in 1608,
+      featured a convex objective lens and a concave eyepiece lens, enabling users
+      to magnify distant objects. This innovation paved the way for astronomical
+      observation and scientific exploration, allowing astronomers to make groundbreaking
+      discoveries about celestial bodies and their movements. The telescope remains
+      an indispensable tool in astronomy, providing valuable insights into the mysteries
+      of the universe and inspiring generations of scientists and stargazers alike.
+    - "Teleskop, wynaleziony przez Hansa Lippersheya pod koniec XVI wieku, zrewolucjonizowa\u0142
+      ludzkie rozumienie kosmosu. Projekt Lippersheya, opatentowany w 1608 roku,
+      zawiera\u0142 wypuk\u0142\u0105 soczewk\u0119 obiektywu i wkl\u0119s\u0142\u0105
+      soczewk\u0119 okularu, umo\u017Cliwiaj\u0105c u\u017Cytkownikom powi\u0119kszanie
+      odleg\u0142ych obiekt\xF3w. Ta innowacja utorowa\u0142a drog\u0119 do obserwacji
+      astronomicznych i bada\u0144 naukowych, umo\u017Cliwiaj\u0105c astronomom dokonywanie
+      prze\u0142omowych odkry\u0107 dotycz\u0105cych cia\u0142 niebieskich i ich
+      ruch\xF3w. Teleskop pozostaje niezast\u0105pionym narz\u0119dziem w astronomii,
+      zapewniaj\u0105c cenny wgl\u0105d w tajemnice wszech\u015Bwiata i inspiruj\u0105c
+      pokolenia naukowc\xF3w i obserwator\xF3w gwiazd."
+  - key: CARD_015_TELESCOPE_NAME
+    translations:
+    - Telescope
+    - Teleskop
+  - key: CARD_017_ALEXANDERFLEMING_DESC
+    translations:
+    - Alexander Fleming, a Scottish bacteriologist born in 1881, made a groundbreaking
+      discovery in 1928 that revolutionized medicine. While working at St. Mary's
+      Hospital in London, Fleming serendipitously observed that a mold called Penicillium
+      notatum produced a substance that killed bacteria. This accidental discovery
+      led to the development of penicillin, the first antibiotic drug, which played
+      a crucial role in treating bacterial infections and saving countless lives.
+      Fleming's pioneering work earned him the Nobel Prize in Physiology or Medicine
+      in 1945, highlighting the immense impact of his contribution to public health.
+      His discovery of penicillin remains one of the most significant breakthroughs
+      in medical history, underscoring the importance of serendipity and observation
+      in scientific research.
+    - "Alexander Fleming, szkocki bakteriolog urodzony w 1881 roku, dokona\u0142
+      w 1928 roku prze\u0142omowego odkrycia, kt\xF3re zrewolucjonizowa\u0142o medycyn\u0119.
+      Podczas pracy w St. Mary's Hospital w Londynie, Fleming przypadkowo zaobserwowa\u0142,
+      \u017Ce ple\u015B\u0144 o nazwie Penicillium notatum wytwarza substancj\u0119,
+      kt\xF3ra zabija bakterie. To przypadkowe odkrycie doprowadzi\u0142o do opracowania
+      penicyliny, pierwszego antybiotyku, kt\xF3ry odegra\u0142 kluczow\u0105 rol\u0119
+      w leczeniu infekcji bakteryjnych i ratowaniu niezliczonych istnie\u0144 ludzkich.
+      Pionierska praca Fleminga przynios\u0142a mu Nagrod\u0119 Nobla w dziedzinie
+      fizjologii lub medycyny w 1945 roku, podkre\u015Blaj\u0105c ogromny wp\u0142yw
+      jego wk\u0142adu w zdrowie publiczne. Jego odkrycie penicyliny pozostaje jednym
+      z najwa\u017Cniejszych prze\u0142om\xF3w w historii medycyny, podkre\u015Blaj\u0105c
+      znaczenie przypadku i obserwacji w badaniach naukowych."
+  - key: CARD_017_PENICILLIN_DESC
+    translations:
+    - Penicillin, discovered by Alexander Fleming in 1928, heralded a new era in
+      medicine as the first antibiotic. Fleming's observation of Penicillium mold's
+      bacteria-killing properties revolutionized healthcare, saving countless lives.
+      This serendipitous discovery led to the development of penicillin-based antibiotics,
+      earning Fleming the Nobel Prize in 1945. Penicillin remains a cornerstone of
+      modern medicine, underscoring the transformative power of scientific serendipity.
+    - "Penicylina, odkryta przez Alexandra Fleminga w 1928 roku, zapocz\u0105tkowa\u0142a
+      now\u0105 er\u0119 w medycynie jako pierwszy antybiotyk. Dokonana przez Fleminga
+      obserwacja w\u0142a\u015Bciwo\u015Bci bakteriob\xF3jczych ple\u015Bni Penicillium
+      zrewolucjonizowa\u0142a opiek\u0119 zdrowotn\u0105, ratuj\u0105c \u017Cycie
+      niezliczonej liczbie os\xF3b. To przypadkowe odkrycie doprowadzi\u0142o do
+      opracowania antybiotyk\xF3w na bazie penicyliny, za co Fleming otrzyma\u0142
+      Nagrod\u0119 Nobla w 1945 roku. Penicylina pozostaje kamieniem w\u0119gielnym
+      wsp\xF3\u0142czesnej medycyny, podkre\u015Blaj\u0105c transformacyjn\u0105
+      moc naukowego przypadku."
+  - key: CARD_017_PENICILLIN_NAME
+    translations:
+    - Penicillin
+    - Penicylina
+  - key: CARD_018_CAILUN_DESC
+    translations:
+    - Cai Lun, a Chinese inventor born around 50-121 CE, is credited with the invention
+      of papermaking during the Eastern Han Dynasty. His development of paper revolutionized
+      communication, education, and record-keeping, laying the foundation for the
+      spread of knowledge and the advancement of civilization. Cai Lun's innovative
+      process involved blending mulberry bark, hemp, and rags into a pulp, which
+      was then pressed and dried to create sheets of paper. His invention marked
+      a significant advancement over earlier writing materials like bamboo strips
+      and silk, making writing more accessible and affordable. Cai Lun's contribution
+      to papermaking remains one of the most influential inventions in human history,
+      shaping the course of literature, art, and culture worldwide.
+    - "Cai Lun, chi\u0144ski wynalazca urodzony oko\u0142o 50-121 roku n.e., jest
+      uznawany za wynalazc\u0119 papiernictwa w czasach wschodniej dynastii Han.
+      Opracowany przez niego papier zrewolucjonizowa\u0142 komunikacj\u0119, edukacj\u0119
+      i prowadzenie dokumentacji, k\u0142ad\u0105c podwaliny pod rozprzestrzenianie
+      si\u0119 wiedzy i rozw\xF3j cywilizacji. Innowacyjny proces Cai Lun polega\u0142
+      na mieszaniu kory morwy, konopi i szmat w miazg\u0119, kt\xF3ra by\u0142a nast\u0119pnie
+      prasowana i suszona w celu utworzenia arkuszy papieru. Jego wynalazek stanowi\u0142
+      znacz\u0105cy post\u0119p w stosunku do wcze\u015Bniejszych materia\u0142\xF3w
+      pi\u015Bmienniczych, takich jak paski bambusowe i jedwab, czyni\u0105c pisanie
+      bardziej dost\u0119pnym i przyst\u0119pnym cenowo. Wk\u0142ad Cai Lun w produkcj\u0119
+      papieru pozostaje jednym z najbardziej wp\u0142ywowych wynalazk\xF3w w historii
+      ludzko\u015Bci, kszta\u0142tuj\u0105c bieg literatury, sztuki i kultury na
+      ca\u0142ym \u015Bwiecie."
+  - key: CARD_018_PAPER_DESC
+    translations:
+    - Paper, invented by Cai Lun during the Eastern Han Dynasty in China, revolutionized
+      communication and record-keeping. Cai Lun's innovative process involved transforming
+      materials like mulberry bark, hemp, and rags into a pulp, which was then pressed
+      and dried to create sheets of paper. This breakthrough replaced earlier writing
+      materials like bamboo strips and silk, making writing more accessible and affordable.
+      Paper's invention had profound impacts on education, literature, and the spread
+      of knowledge, shaping the course of human history. Cai Lun's contribution remains
+      one of the most significant advancements in civilization.
+    - "Papier, wynaleziony przez Cai Lun podczas wschodniej dynastii Han w Chinach,
+      zrewolucjonizowa\u0142 komunikacj\u0119 i prowadzenie dokumentacji. Innowacyjny
+      proces Cai Lun polega\u0142 na przekszta\u0142caniu materia\u0142\xF3w takich
+      jak kora morwy, konopie i szmaty w miazg\u0119, kt\xF3ra nast\u0119pnie by\u0142a
+      prasowana i suszona w celu utworzenia arkuszy papieru. Ten prze\u0142om zast\u0105pi\u0142
+      wcze\u015Bniejsze materia\u0142y pi\u015Bmiennicze, takie jak bambusowe paski
+      i jedwab, czyni\u0105c pisanie bardziej dost\u0119pnym i przyst\u0119pnym cenowo.
+      Wynalezienie papieru mia\u0142o ogromny wp\u0142yw na edukacj\u0119, literatur\u0119
+      i rozprzestrzenianie si\u0119 wiedzy, kszta\u0142tuj\u0105c bieg historii ludzko\u015Bci.
+      Wk\u0142ad Cai Lun pozostaje jednym z najwa\u017Cniejszych osi\u0105gni\u0119\u0107
+      cywilizacyjnych."
+  - key: CARD_018_PAPER_NAME
+    translations:
+    - Paper
+    - Papier
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}

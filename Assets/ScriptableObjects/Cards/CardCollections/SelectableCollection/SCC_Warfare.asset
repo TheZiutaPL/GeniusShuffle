@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
-  m_Name: CC_DailyUse
+  m_Name: SCC_Warfare
   m_EditorClassIdentifier: 
-  collectionName: Daily Use
+  collectionName: Warfare
   cardMatches:
-  - {fileID: 11400000, guid: 5776958fd261a7940a7a02587d7c6456, type: 2}
-  - {fileID: 11400000, guid: 1cc1aa77595e80f4da1b109b40da1639, type: 2}
-  - {fileID: 11400000, guid: 9e6e52d877b05474a8b5c7a1b8d7524a, type: 2}
+  - {fileID: 11400000, guid: cb529240791c5bf498007f8be3f9de6d, type: 2}
+  - {fileID: 11400000, guid: 0db080c72d9d29b41809549bb37306b4, type: 2}
