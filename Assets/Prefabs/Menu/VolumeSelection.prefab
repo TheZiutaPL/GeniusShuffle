@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3b851adb726eb40b3ee14c01c4ba4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls: []
@@ -187,6 +187,10 @@ MonoBehaviour:
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  settingInteractableActions:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnClickByDefault: 0
   onHover:
   - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
@@ -197,6 +201,8 @@ MonoBehaviour:
   maxValue: 1
   displayedValueMultiplier: 10
   displayText: {fileID: 4128405158211369345}
+  lowerButton: {fileID: 0}
+  raiseButton: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -274,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3b851adb726eb40b3ee14c01c4ba4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls: []
@@ -284,6 +290,10 @@ MonoBehaviour:
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  settingInteractableActions:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnClickByDefault: 0
   onHover:
   - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
@@ -294,6 +304,8 @@ MonoBehaviour:
   maxValue: 1
   displayedValueMultiplier: 10
   displayText: {fileID: 5975200249990115468}
+  lowerButton: {fileID: 0}
+  raiseButton: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -435,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3b851adb726eb40b3ee14c01c4ba4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 1
+  <isInteractable>k__BackingField: 1
   clickActions:
     m_PersistentCalls:
       m_Calls: []
@@ -445,6 +457,10 @@ MonoBehaviour:
   hoverActions:
     m_PersistentCalls:
       m_Calls: []
+  settingInteractableActions:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnClickByDefault: 0
   onHover:
   - {fileID: 8300000, guid: 8dc3244c05b0cef4d880e0cafdcb13af, type: 3}
   onUnhover: []
@@ -455,6 +471,8 @@ MonoBehaviour:
   maxValue: 1
   displayedValueMultiplier: 10
   displayText: {fileID: 6657887093581133863}
+  lowerButton: {fileID: 0}
+  raiseButton: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
