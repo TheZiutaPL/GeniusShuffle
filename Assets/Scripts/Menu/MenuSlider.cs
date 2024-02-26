@@ -67,7 +67,11 @@ public class MenuSlider : MenuElement
         newValue = Mathf.Clamp(newValue, minValue, maxValue);
 
         if (value == newValue)
+        {
+            // So setting max or min values changes active buttons
+            RefreshVisuals();
             return;
+        }
 
         if (playSound)
             PlayClickSound();
@@ -76,6 +80,7 @@ public class MenuSlider : MenuElement
 
         onValueChanged?.Invoke(value);
 
+        // It also has to be called after changing the value (if it is changed)
         RefreshVisuals();
     }
 
