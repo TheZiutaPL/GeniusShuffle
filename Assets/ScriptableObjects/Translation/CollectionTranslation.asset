@@ -16,19 +16,23 @@ MonoBehaviour:
   - English
   - Polski
   textTranslations:
-  - key: SCC_COMMUNICATION_NAME
+  - key: SCC000_COMMUNICATION_NAME
     translations:
     - Communication
     - Komunikacja
-  - key: SCC_DAILYUSE_NAME
+  - key: SCC001_DAILYUSE_NAME
     translations:
     - Daily Use
     - "Codzienny U\u017Cytek"
-  - key: SCC_SCIENCE_NAME
+  - key: SCC002_SCIENCE_NAME
     translations:
     - Science
     - Nauka
-  - key: SCC_WARFARE_NAME
+  - key: SCC003_APPARATUS_NAME
+    translations:
+    - Apparatus
+    - "Przyrz\u0105dy"
+  - key: SCC004_WARFARE_NAME
     translations:
     - Warfare
     - Wojna
