@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd34ba1e83aab949aaf2a9abc9f5a39, type: 3}
+  m_Name: M022_HansGeiger
+  m_EditorClassIdentifier: 
+  outerBackgroundColor: {r: 0.8773585, g: 0.86960775, b: 0.15312389, a: 1}
+  innerBackgroundColor: {r: 0, g: 0.6509434, b: 0.13498507, a: 1}
+  inventorCard: {fileID: 11400000, guid: f767e86cb2d1f6a4bbbfec848b46939e, type: 2}
+  inventionCards:
+  - {fileID: 11400000, guid: be83cbc3275b2964496b25792e7646b6, type: 2}

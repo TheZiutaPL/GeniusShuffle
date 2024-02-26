@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
+  m_Name: C_HansGeiger
+  m_EditorClassIdentifier: 
+  cardName: Hans Geiger
+  translateName: 0
+  cardDescription: CARD_022_HANSGEIGER_DESC
+  translateDescription: 1
+  cardTexture: {fileID: 2800000, guid: 43af1d85c5216d2468cd47d092b499fd, type: 3}
