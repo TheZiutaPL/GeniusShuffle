@@ -20464,7 +20464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMainInstance: 1
-  startLanguage: English
+  startLanguage: Polski
   translationModule: {fileID: 11400000, guid: c7d49ac78a2318a4bbee070bb24110ec, type: 2}
 --- !u!1001 &1950343791
 PrefabInstance:

@@ -26,18 +26,13 @@ namespace FlawareStudios.Translation
                 {
                     mainInstance = this;
 
-                    currentLanguage = startLanguage;
+                    currentLanguage = PlayerPrefs.GetString(CURRENT_LANG_KEY, startLanguage);
                 }
                 else
                     Destroy(gameObject);
             }
 
             instances.Add(this);
-        }
-
-        private void Start()
-        {
-            SetLanguage(PlayerPrefs.GetString(CURRENT_LANG_KEY, "Polski"));
         }
 
         public void SetLanguage(string newLanguage) 
