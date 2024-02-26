@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20169af4b70b9b846848207014e91ff5, type: 3}
-  m_Name: C_CarlBenz
+  m_Name: I_TeslaCoil
   m_EditorClassIdentifier: 
-  cardName: Carl Benz
-  translateName: 0
-  cardDescription: CARD_019_CARLBENZ_DESC
+  cardName: CARD_020_TESLACOIL_NAME
+  translateName: 1
+  cardDescription: CARD_020_TESLACOIL_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 72a371349e92d004e944b0781cce40ff, type: 3}
+  cardTexture: {fileID: 2800000, guid: d58459a272685954394eae8c32f56fde, type: 3}
