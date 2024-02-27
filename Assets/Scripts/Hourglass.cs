@@ -13,7 +13,6 @@ public class Hourglass : MonoBehaviour
     [SerializeField] private Animator hourglassAnimator;
     [SerializeField] private string startTimerAnim;
     [SerializeField] private ParticleSystem sandParticles;
-    private bool playingParticles;
 
     private float timeToPass;
     private float timePassed;
@@ -25,7 +24,7 @@ public class Hourglass : MonoBehaviour
 
     public void StartTimer(float timeToPass, Action callbackAction)
     {
-        if (hourglassAnimator != null)
+        if (hourglassAnimator != null && gameObject.activeInHierarchy)
             hourglassAnimator.Play(startTimerAnim);
 
         this.timeToPass = timeToPass;
@@ -82,5 +81,13 @@ public class Hourglass : MonoBehaviour
         bottomSandRenderer.SetBlendShapeWeight(0, progress * 100);
 
         if (!sandParticles.isPlaying) sandParticles.Play();
+    }
+
+    public void SetVisuals(float progress)
+    {
+        progress = 1 - progress;
+
+        topSandRenderer.material.SetFloat(TOP_SAND_FILL_KEY, progress);
+        bottomSandRenderer.SetBlendShapeWeight(0, progress * 100);
     }
 }

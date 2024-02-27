@@ -49,6 +49,12 @@ public class PlayerScoreManager : MonoBehaviour
         if (updatePlayTime) playTime += Time.deltaTime;
     }
 
+    public static void EnableHourglass(bool enable)
+    {
+        instance.hourglass.gameObject.SetActive(enable);
+
+        instance.hourglass.SetVisuals(1);
+    }
     public static void StartGame()
     {
         instance.currentMedal = 0;

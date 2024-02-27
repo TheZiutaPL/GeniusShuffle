@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        PlayerScoreManager.EnableHourglass(level >= 0);
         cameraMovement.MoveTo(gamePositionTransform, () => StartGame(level, mode));
     }
 
@@ -95,7 +96,6 @@ public class GameManager : MonoBehaviour
 
         levelIndex = level;
         levelMode = mode;
-        
 
         List<CardMatch> matches = GetGameMatches(cardCollections);
 
