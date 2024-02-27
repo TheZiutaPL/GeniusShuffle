@@ -129,6 +129,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
 
         InteractionManager.instance.EnableInteractions(false);
+        cardGraveyard.ClearGraveyard();
 
         List<(CardObject, Vector3)> traversingCards = new List<(CardObject, Vector3)>();
 
@@ -215,8 +216,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"Earned {stats.GetMedalIndex()} medal in {stats.playedTime} seconds");
 
-        yield return new WaitForSeconds(1f);
-        cardGraveyard.ClearGraveyard();
+        yield return new WaitForSeconds(.75f);
 
         if (levelIndex >= 0)
         {
