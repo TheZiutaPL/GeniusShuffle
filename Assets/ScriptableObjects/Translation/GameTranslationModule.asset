@@ -931,8 +931,8 @@ MonoBehaviour:
       ludzko\u015Bci do eksploracji i zamieszkiwania przestrzeni kosmicznej."
   - key: CARD_021_SPACESTATION_NAME
     translations:
-    - Salyut 1
-    - Salut 1
+    - Space Station
+    - Stacja Kosmiczna
   - key: CARD_021_VLADIMIRCHELOMEY_DESC
     translations:
     - Vladimir Chelomey, a Soviet engineer born in 1914, was instrumental in the
@@ -983,6 +983,87 @@ MonoBehaviour:
       wykrywanie promieniowania i ma szerokie zastosowanie w badaniach naukowych
       i przemy\u015Ble. Licznik Geigera, zrodzony z pionierskiej pracy Geigera, pozostaje
       niezb\u0119dnym narz\u0119dziem w monitorowaniu promieniowania i bezpiecze\u0144stwie."
+  - key: CARD_023_LLOYDGROFFCOPEMAN_DESC
+    translations:
+    - Lloyd Groff Copeman, an American inventor, left a significant mark on home
+      refrigeration with his innovative creations. His contributions revolutionized
+      how people stored and accessed ice, particularly through the introduction of
+      the flexible ice cube tray in the early 20th century. Copeman's ingenuity simplified
+      daily tasks, demonstrating his knack for addressing common household challenges
+      with practical solutions. His inventions, including the flexible ice cube tray,
+      continue to impact modern living, highlighting his enduring legacy in home
+      appliance innovation.
+    - "Lloyd Groff Copeman, ameryka\u0144ski wynalazca, odcisn\u0105\u0142 znacz\u0105ce
+      pi\u0119tno na domowym ch\u0142odnictwie dzi\u0119ki swoim innowacyjnym dzie\u0142om.
+      Jego wk\u0142ad zrewolucjonizowa\u0142 spos\xF3b przechowywania i dost\u0119pu
+      do lodu, w szczeg\xF3lno\u015Bci poprzez wprowadzenie elastycznej foremki na
+      kostki lodu na pocz\u0105tku XX wieku. Pomys\u0142owo\u015B\u0107 Copemana
+      upro\u015Bci\u0142a codzienne zadania, demonstruj\u0105c jego talent do rozwi\u0105zywania
+      typowych wyzwa\u0144 domowych za pomoc\u0105 praktycznych rozwi\u0105za\u0144.
+      Jego wynalazki, w tym elastyczna tacka na kostki lodu, nadal maj\u0105 wp\u0142yw
+      na wsp\xF3\u0142czesne \u017Cycie, podkre\u015Blaj\u0105c jego trwa\u0142e
+      dziedzictwo w dziedzinie innowacji urz\u0105dze\u0144 gospodarstwa domowego."
+  - key: CARD_023_FLEXIBLEICECUBETRAY_NAME
+    translations:
+    - Flexible Ice Cube Tray
+    - Elastyczna Foremka Do Lodu
+  - key: CARD_023_FLEXIBLEICECUBETRAY_DESC
+    translations:
+    - The flexible ice cube tray, pioneered by Lloyd Groff Copeman in the early 20th
+      century, transformed the way people made and stored ice cubes. This innovative
+      design offered convenience and ease of use, allowing users to effortlessly
+      remove individual ice cubes without the need for banging or running water over
+      the tray. Copeman's invention revolutionized home refrigeration, making ice
+      cube production simpler and more efficient for consumers. The Flexible Ice
+      Cube Tray remains a staple in households worldwide, showcasing Copeman's ingenuity
+      and enduring legacy in home appliance innovation.
+    - "Elastyczna foremka do lodu, kt\xF3rej pionierem by\u0142 Lloyd Groff Copeman
+      na pocz\u0105tku XX wieku, zmieni\u0142a spos\xF3b, w jaki ludzie wytwarzali
+      i przechowywali kostki lodu. Ta innowacyjna konstrukcja zapewnia\u0142a wygod\u0119
+      i \u0142atwo\u015B\u0107 u\u017Cytkowania, umo\u017Cliwiaj\u0105c u\u017Cytkownikom
+      \u0142atwe wyjmowanie pojedynczych kostek lodu bez konieczno\u015Bci uderzania
+      lub polewania tacki wod\u0105. Wynalazek Copemana zrewolucjonizowa\u0142 domowe
+      ch\u0142odnictwo, czyni\u0105c produkcj\u0119 kostek lodu prostsz\u0105 i bardziej
+      wydajn\u0105 dla konsument\xF3w. Elastyczna tacka na kostki lodu pozostaje
+      podstaw\u0105 w gospodarstwach domowych na ca\u0142ym \u015Bwiecie, pokazuj\u0105c
+      pomys\u0142owo\u015B\u0107 Copemana i trwa\u0142e dziedzictwo w zakresie innowacji
+      w urz\u0105dzeniach domowych."
+  - key: CARD_024_THOMASAHEARN_DESC
+    translations:
+    - Thomas Ahearn, a Canadian inventor born in 1855, made significant contributions
+      to electric appliances, including the electric oven. His innovations revolutionized
+      cooking by introducing electric-powered heating, offering convenience and efficiency
+      to households. Ahearn's entrepreneurial spirit and technological advancements
+      continue to influence modern kitchen appliances, enhancing convenience and
+      culinary possibilities for consumers.
+    - "Thomas Ahearn, kanadyjski wynalazca urodzony w 1855 roku, wni\xF3s\u0142 znacz\u0105cy
+      wk\u0142ad w rozw\xF3j urz\u0105dze\u0144 elektrycznych, w tym piekarnika elektrycznego.
+      Jego innowacje zrewolucjonizowa\u0142y gotowanie, wprowadzaj\u0105c ogrzewanie
+      elektryczne, oferuj\u0105c wygod\u0119 i wydajno\u015B\u0107 gospodarstwom
+      domowym. Duch przedsi\u0119biorczo\u015Bci i post\u0119p technologiczny Ahearna
+      nadal wp\u0142ywaj\u0105 na nowoczesne urz\u0105dzenia kuchenne, zwi\u0119kszaj\u0105c
+      wygod\u0119 i mo\u017Cliwo\u015Bci kulinarne dla konsument\xF3w."
+  - key: CARD_024_ELECTRICOVEN_NAME
+    translations:
+    - Electric Oven
+    - Kuchenka Elektryczna
+  - key: CARD_024_ELECTRICOVEN_DESC
+    translations:
+    - The electric oven, a vital component of modern kitchens, owes its development
+      to innovators like Thomas Ahearn. Born in 1855, Ahearn's contributions to electric
+      appliances revolutionized cooking methods. His work on the electric oven provided
+      households with a convenient and efficient way to prepare meals, shaping the
+      culinary landscape for generations to come. Ahearn's ingenuity continues to
+      influence kitchen technology, enhancing the cooking experience for millions
+      worldwide.
+    - "Kuchenka elektryczna, niezb\u0119dny element nowoczesnych kuchni, zawdzi\u0119cza
+      sw\xF3j rozw\xF3j innowatorom takim jak Thomas Ahearn. Urodzony w 1855 roku,
+      wk\u0142ad Ahearn'a w urz\u0105dzenia elektryczne zrewolucjonizowa\u0142 metody
+      gotowania. Jego praca nad piekarnikiem elektrycznym zapewni\u0142a gospodarstwom
+      domowym wygodny i wydajny spos\xF3b przygotowywania posi\u0142k\xF3w, kszta\u0142tuj\u0105c
+      kulinarny krajobraz dla przysz\u0142ych pokole\u0144. Pomys\u0142owo\u015B\u0107
+      Ahearna nadal wp\u0142ywa na technologi\u0119 kuchenn\u0105, poprawiaj\u0105c
+      wra\u017Cenia kulinarne milion\xF3w ludzi na ca\u0142ym \u015Bwiecie."
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}

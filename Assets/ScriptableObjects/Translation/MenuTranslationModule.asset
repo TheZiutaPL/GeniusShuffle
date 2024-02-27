@@ -90,6 +90,10 @@ MonoBehaviour:
     translations:
     - {fileID: 21300000, guid: e723bfd5059330741b21db85ec6b07f7, type: 3}
     - {fileID: 21300000, guid: 00130e4ad2ba13a45b0270593e6b0521, type: 3}
+  - key: MENU_CAMPAIGN_LEVEL
+    translations:
+    - {fileID: 21300000, guid: bd7730ee56050cf4dac4f8d7ba605b4c, type: 3}
+    - {fileID: 21300000, guid: 5c8f7e6bd01cbd849be903c2119564ec, type: 3}
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
   audioTranslations: []
   errorAudio: {fileID: 0}
