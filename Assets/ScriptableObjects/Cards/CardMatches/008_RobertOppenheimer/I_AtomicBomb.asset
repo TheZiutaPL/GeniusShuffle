@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 1
   cardDescription: CARD_008_ATOMICBOMB_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 053f9851ef0860146ac1a495502aba00, type: 3}
+  cardTexture: {fileID: 2800000, guid: f4f0e926eb46d064bb7b1c2f682c1136, type: 3}

@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 0
   cardDescription: CARD_008_ROBERTOPPENHEIMER_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 3bafd31257df7014d8c853ca8351a5c8, type: 3}
+  cardTexture: {fileID: 2800000, guid: 8a07fd7e363560742969d07c1f22f0f3, type: 3}

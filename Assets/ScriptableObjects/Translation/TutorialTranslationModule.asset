@@ -16,32 +16,65 @@ MonoBehaviour:
   - English
   - Polski
   textTranslations:
-  - key: TUT_1
+  - key: TUT_001_1
     translations:
     - The rules of the game are very simple. You just connect pairs of inventors
       and their inventions. It's kind of like Memory!
     - "Zasady gry s\u0105 bardzo proste. Nale\u017Cy po\u0142\u0105czy\u0107 pary
       wynalazc\xF3w z ich wynalazkami. Troch\u0119 jak w Memory!"
-  - key: TUT_2
+  - key: TUT_001_2
     translations:
-    - If you don't know who made what you can also tell pairs by their background
+    - If you don't know who made what, you can also tell pairs by their background
       color.
-    - "Je\u015Bli nie wiesz kto co stworzy\u0142 mo\u017Cesz r\xF3wnie\u017C rozr\xF3\u017Cnia\u0107
+    - "Je\u015Bli nie wiesz kto co stworzy\u0142, mo\u017Cesz r\xF3wnie\u017C rozr\xF3\u017Cnia\u0107
       pary po kolorze t\u0142a."
-  - key: TUT_3
+  - key: TUT_001_3
     translations:
-    - You can read about these people and their creations by clicking the cards.
+    - You can read about these people and their creations by clicking a card facing
+      upwards.
     - "Mo\u017Cesz przeczyta\u0107 o tych ludziach i ich dzie\u0142ach, klikaj\u0105c
-      karty."
-  - key: TUT_4
+      kart\u0119 u\u0142o\u017Con\u0105 do g\xF3ry."
+  - key: TUT_002_1
     translations:
     - After selecting two cards ring the bell to continue.
     - "Po wybraniu dw\xF3ch kart naci\u015Bnij dzwonek, aby kontynuowa\u0107."
-  - key: TUT_5
+  - key: TUT_002_2
     translations:
     - You can also see all the pairs you collected by visiting the card graveyard.
     - "Mo\u017Cesz tak\u017Ce zobaczy\u0107 wszystkie zebrane pary, odwiedzaj\u0105c
       cmentarz kart."
+  - key: TUT_003_1
+    translations:
+    - If you're playing Campain Level, you'll see a small hourglass.
+    - "Je\u017Celi grasz Poziom Kampanii, zobaczysz przed sob\u0105 ma\u0142\u0105
+      klepsydr\u0119."
+  - key: TUT_003_2
+    translations:
+    - The hourglass indicates how much time is left for you to finish your game before
+      your end score worsens.
+    - "Klepsydra pokazuje ilo\u015B\u0107 pozosta\u0142ego czasu, zanim tw\xF3j wynik
+      ko\u0144cowy pogorszy si\u0119."
+  - key: TUT_003_3
+    translations:
+    - 'There are three different medals: Gold, Silver and Bronze!'
+    - "S\u0105 trzy r\xF3\u017Cne medale: Z\u0142oty, Srebrny i Bronzowy!"
+  - key: TUT_003_4
+    translations:
+    - Time's ticking, but remember, you can always replay a level!
+    - "Czas leci, ale pami\u0119taj, \u017Ce zawsze mo\u017Cesz rozegra\u0107 poziom
+      ponownie!"
+  - key: TUT_004_1
+    translations:
+    - Good luck and have fun! After all, games are meant to be fun, and learning
+      new things is definitely fun!
+    - "Powodzenia i baw si\u0119 dobrze! W ko\u0144cu w grach chodzi o to, \u017Ceby
+      si\u0119 dobrze bawi\u0107, a nauka nowych rzeczy jest bardzo fajna!"
+  - key: TUT_004_2
+    translations:
+    - 'Thanks for playing!
+
+      ~ Flaware Studios'
+    - "Dzi\u0119ki za spr\xF3bowanie naszej gry!\n~ Flaware Studios"
   errorText: 
   spriteTranslations: []
   errorSprite: {fileID: 0}

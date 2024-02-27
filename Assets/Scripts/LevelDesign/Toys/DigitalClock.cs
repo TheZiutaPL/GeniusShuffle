@@ -17,6 +17,6 @@ public class DigitalClock : MonoBehaviour
     private void UpdateClock()
     {
         DateTime currentTime = DateTime.Now;
-        clockText.SetText($"{currentTime.Hour}:{currentTime.Minute}");
+        clockText.SetText($"{currentTime.Hour.ToString("00")}:{currentTime.Minute.ToString("00")}");
     }
 }
