@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2b0ad951f1f314e85eb376eec3e76a, type: 3}
   m_Name: LCC_6
   m_EditorClassIdentifier: 
-  collectionName: Level 3
+  collectionName: Level 6
   cardMatches:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: f2d5938abac8dc5469cc144476cff1a2, type: 2}
+  - {fileID: 11400000, guid: bece9800053661c43b29f926e9c8c201, type: 2}
+  - {fileID: 11400000, guid: baf16471c5b9fa34eae035cd296ce979, type: 2}
+  - {fileID: 11400000, guid: cb529240791c5bf498007f8be3f9de6d, type: 2}
+  - {fileID: 11400000, guid: 60e19c9a646fc504b844c5dc3429e9c6, type: 2}
+  - {fileID: 11400000, guid: ca6b6c3fbd3dda04eb8a45b0e900d885, type: 2}
+  - {fileID: 11400000, guid: c09431cfa92a1c643b024194968cd923, type: 2}
+  - {fileID: 11400000, guid: 0d634f894b82f2e4bb3ed2ac444d0f3b, type: 2}
+  - {fileID: 11400000, guid: 47dcc7f931d6f984bbdf54ed76bbe786, type: 2}
+  - {fileID: 11400000, guid: 8adf0b784923f244cabd792635019e83, type: 2}
+  - {fileID: 11400000, guid: 21df31929797263488a15cd85cb4f8c4, type: 2}
+  - {fileID: 11400000, guid: d1b700566c3f3bf4b90821c5e2333391, type: 2}
