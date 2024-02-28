@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 1
   cardDescription: CARD_009_JOHANNESGUTENBERG_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 3bafd31257df7014d8c853ca8351a5c8, type: 3}
+  cardTexture: {fileID: 2800000, guid: 86156fbf6affff54c9496fa0116ebd46, type: 3}

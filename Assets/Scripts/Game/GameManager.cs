@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Animator restartObject;
     [SerializeField] private TutorialManager tutorialManager;
     [SerializeField] private AudioGroup incorrectChoiceSounds;
+    [SerializeField] private MenuToggle freePlayChallengeModeToggle;
 
     private const string RESTART_OBJECT_SHOW_KEY = "show";
 
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour
     {
         CollectionManager.ApplyCollections();
 
-        InitializeGameStart(-1, 0);
+        InitializeGameStart(-1, freePlayChallengeModeToggle.isOn ? 1 : 0);
     }
 
     public void InitializeGameStart(int level = -1, int mode = -1)

@@ -1064,6 +1064,38 @@ MonoBehaviour:
       kulinarny krajobraz dla przysz\u0142ych pokole\u0144. Pomys\u0142owo\u015B\u0107
       Ahearna nadal wp\u0142ywa na technologi\u0119 kuchenn\u0105, poprawiaj\u0105c
       wra\u017Cenia kulinarne milion\xF3w ludzi na ca\u0142ym \u015Bwiecie."
+  - key: CARD_025_STEAMENGINE_NAME
+    translations:
+    - Steam Engine
+    - Silnik Parowy
+  - key: CARD_025_STEAMENGINE_DESC
+    translations:
+    - The steam engine, transformed by James Watt in the 18th century, revolutionized
+      industry and transportation during the Industrial Revolution. Watt's improvements
+      to the Newcomen engine, including the separate condenser, vastly increased
+      its efficiency and practicality. The steam engine's widespread adoption powered
+      the mechanization of factories and the expansion of railways, shaping the modern
+      world.
+    - "Silnik parowy, opracowany przez Jamesa Watta w XVIII wieku, zrewolucjonizowa\u0142
+      przemys\u0142 i transport podczas rewolucji przemys\u0142owej. Ulepszenia wprowadzone
+      przez Watta do silnika Newcomena, w tym oddzielny skraplacz, znacznie zwi\u0119kszy\u0142y
+      jego wydajno\u015B\u0107 i praktyczno\u015B\u0107. Powszechne zastosowanie
+      silnika parowego przyczyni\u0142o si\u0119 do mechanizacji fabryk i rozwoju
+      kolei, kszta\u0142tuj\u0105c wsp\xF3\u0142czesny \u015Bwiat."
+  - key: CARD_025_JAMESWATT_DESC
+    translations:
+    - James Watt, a Scottish engineer born in 1736, revolutionized industry with
+      his improvements to the steam engine during the Industrial Revolution. His
+      inventions vastly increased engine efficiency, leading to widespread adoption
+      across various sectors and laying the foundation for modern transportation
+      and manufacturing. Watt's legacy as a pioneering engineer continues to shape
+      the world today.
+    - "James Watt, szkocki in\u017Cynier urodzony w 1736 roku, zrewolucjonizowa\u0142
+      przemys\u0142 dzi\u0119ki udoskonaleniu silnika parowego podczas rewolucji
+      przemys\u0142owej. Jego wynalazki znacznie zwi\u0119kszy\u0142y wydajno\u015B\u0107
+      silnika, prowadz\u0105c do powszechnego zastosowania w r\xF3\u017Cnych sektorach
+      i k\u0142ad\u0105c podwaliny pod nowoczesny transport i produkcj\u0119. Dziedzictwo
+      Watta jako pionierskiego in\u017Cyniera nadal kszta\u0142tuje dzisiejszy \u015Bwiat."
   errorText: TRANSLATION_NOT_FOUND
   spriteTranslations: []
   errorSprite: {fileID: 21300000, guid: 0ab2a23b2f74cfc4fa3563c188975888, type: 3}
