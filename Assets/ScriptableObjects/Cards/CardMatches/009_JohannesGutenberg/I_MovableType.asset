@@ -16,4 +16,4 @@ MonoBehaviour:
   translateName: 1
   cardDescription: CARD_009_MOVABLETYPE_DESC
   translateDescription: 1
-  cardTexture: {fileID: 2800000, guid: 053f9851ef0860146ac1a495502aba00, type: 3}
+  cardTexture: {fileID: 2800000, guid: b879190ee2f95024fbd9eeee4b645310, type: 3}
