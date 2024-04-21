@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 #if UNITY_EDITOR
 using UnityEditor;
 
@@ -20,6 +21,8 @@ namespace FlawareStudios.Translation
 
         private TranslationType currentFilterType;
         private string searchText;
+        private int displayCap = 20;
+        private int displayPage;
 
         private int languageCount;
 
@@ -204,9 +207,10 @@ namespace FlawareStudios.Translation
             window.minSize = window.minEditorSize;
         }
 
-        public static void OpenEditorWindow(object translationAsset)
+        public static void OpenEditorWindow(TranslationModule translationModule)
         {
             TranslationEditorWindow window = CreateWindow<TranslationEditorWindow>("Translation Editor Window");
+            window.translationModule = translationModule;
 
             window.minSize = window.minEditorSize;
         }
@@ -238,6 +242,8 @@ namespace FlawareStudios.Translation
                 if (toolsToggle)
                     DrawToolkit();
 
+                DrawPages();
+
                 EditorGUILayout.EndVertical();
 
                 EditorGUILayout.Space(5);
@@ -264,6 +270,8 @@ namespace FlawareStudios.Translation
             searchText = EditorGUILayout.TextField(searchText, EditorStyles.toolbarSearchField);
             currentFilterType = (TranslationType)EditorGUILayout.EnumPopup(currentFilterType, GUILayout.Width(ENUM_FIELD_WIDTH));
             EditorGUILayout.EndHorizontal();
+
+            displayCap = Mathf.Max(EditorGUILayout.IntField("Display Cap", displayCap), 1);
         }
 
         private void DrawToolkit()
@@ -279,14 +287,20 @@ namespace FlawareStudios.Translation
             }
             GUI.enabled = true;
 
-            if (GUILayout.Button("Optimize"))
+            if (GUILayout.Button("Optimize Languages"))
             {
                 translationModule.SetLanguageCount(translationModule.translatedLanguages.Length, true);
 
+                GUIUtility.keyboardControl = 0;
+            }
+
+            if (GUILayout.Button("Delete Empty Keys"))
+            {
                 translationModule.DeleteEmptyKeys();
 
                 GUIUtility.keyboardControl = 0;
             }
+
 
             if (GUILayout.Button("Sort"))
             {
@@ -322,6 +336,67 @@ namespace FlawareStudios.Translation
             EditorGUILayout.EndHorizontal();
         }
 
+        private int GetRowsToDisplay()
+        {
+            int returned = 0;
+            if(currentFilterType == TranslationType.All || currentFilterType == TranslationType.Text) 
+                foreach (var item in translationModule.textTranslations)
+                {
+                    if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
+                        continue;
+
+                    returned++;
+                }
+            if (currentFilterType == TranslationType.All || currentFilterType == TranslationType.Sprite)
+                foreach (var item in translationModule.spriteTranslations)
+                {
+                    if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
+                        continue;
+
+                    returned++;
+                }
+            if (currentFilterType == TranslationType.All || currentFilterType == TranslationType.Audio)
+                foreach (var item in translationModule.audioTranslations)
+                {
+                    if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
+                        continue;
+
+                    returned++;
+                }
+
+            return returned;
+        }
+
+        private void DrawPages()
+        {
+            int rowsToDisplay = GetRowsToDisplay();
+            int pages = rowsToDisplay / displayCap;
+
+            Debug.Log(rowsToDisplay);
+
+            if (rowsToDisplay % displayCap != 0)
+                pages++;
+
+            if (pages > 0 && displayPage >= pages - 1)
+                displayPage = pages - 1;
+
+            EditorGUILayout.BeginHorizontal();
+
+            for (int i = 0; i < pages; i++)
+            {
+                GUI.enabled = i != displayPage;
+                if(GUILayout.Button($"{i + 1}", GUILayout.Width(25), GUILayout.Height(25)))
+                {
+                    int temp = i;
+                    displayPage = temp;
+
+                    scrollPosition = new Vector2();
+                }
+                GUI.enabled = true;
+            }
+            EditorGUILayout.EndHorizontal();
+        }
+
         private void DrawTranslationList()
         {
             int translatedLanguages = translationModule.translatedLanguages.Length;
@@ -336,113 +411,127 @@ namespace FlawareStudios.Translation
             }
             EditorGUILayout.EndHorizontal();
 
+            int displayedTranslations = 0;
+
             switch (currentFilterType)
             {
                 case TranslationType.All:
-                    DrawTextTranslationList(translatedLanguages);
-                    DrawSpriteTranslationList(translatedLanguages);
-                    DrawAudioTranslationList(translatedLanguages);
+                    DrawTextTranslationList(translatedLanguages, ref displayedTranslations);
+                    DrawSpriteTranslationList(translatedLanguages, ref displayedTranslations);
+                    DrawAudioTranslationList(translatedLanguages, ref displayedTranslations);
                     break;
 
                 case TranslationType.Text:
-                    DrawTextTranslationList(translatedLanguages);
+                    DrawTextTranslationList(translatedLanguages, ref displayedTranslations);
                     break;
 
                 case TranslationType.Sprite:
-                    DrawSpriteTranslationList(translatedLanguages);
+                    DrawSpriteTranslationList(translatedLanguages, ref displayedTranslations);
                     break;
 
                 case TranslationType.Audio:
-                    DrawAudioTranslationList(translatedLanguages);
+                    DrawAudioTranslationList(translatedLanguages, ref displayedTranslations);
                     break;
             }
         }
 
-        private void DrawTextTranslationList(int translatedLanguages)
+        private bool DrawTextTranslationList(int translatedLanguages, ref int displayedTranslations)
         {
-            foreach (TranslationCell<string> item in translationModule.textTranslations)
+            if (displayedTranslations >= displayCap)
+                return true;
+
+            List<TranslationCell<string>> translations = new(translationModule.textTranslations);
+            if (!string.IsNullOrWhiteSpace(searchText))
+                translations = translations.Where(x => x.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            for (int i = displayPage * displayCap; i < translations.Count; i++)
             {
-                if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
-                    continue;
+                TranslationCell<string> temp = translations[i];
+
+                displayedTranslations++;
 
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
-                item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
+                temp.key = EditorGUILayout.TextArea(temp.key, editableTextStyle, listItemKeyLayoutOptions);
 
-                for (int i = 0; i < translatedLanguages; i++)
+                for (int j = 0; j < translatedLanguages; j++)
                 {
-                    item.translations[i] = EditorGUILayout.TextArea(item.translations[i], editableTextStyle, listItemLayoutOptions);
+                    temp.translations[j] = EditorGUILayout.TextArea(temp.translations[j], editableTextStyle, listItemLayoutOptions);
                 }
-
-                /*
-                if (GUILayout.Button("D"))
-                {
-                    TranslationCell<string> cachedItem = item;
-                    Debug.Log("Deleting " + cachedItem.key);
-                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.textTranslations, cachedItem);
-                }
-                */
 
                 EditorGUILayout.EndHorizontal();
+
+                if (displayedTranslations >= displayCap)
+                    return true;
             }
+
+            return false;
         }
 
-        private void DrawSpriteTranslationList(int translatedLanguages)
+        private bool DrawSpriteTranslationList(int translatedLanguages, ref int displayedTranslations)
         {
-            foreach (TranslationCell<Sprite> item in translationModule.spriteTranslations)
+            if (displayedTranslations >= displayCap)
+                return true;
+
+            List<TranslationCell<Sprite>> translations = new (translationModule.spriteTranslations);
+            if(!string.IsNullOrWhiteSpace(searchText))
+                translations = translations.Where(x => x.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            for (int i = displayPage * displayCap; i < translations.Count; i++)
             {
-                if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
-                    continue;
+                TranslationCell<Sprite> temp = translations[i];
+
+                displayedTranslations++;
 
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
-                item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
+                temp.key = EditorGUILayout.TextArea(temp.key, editableTextStyle, listItemKeyLayoutOptions);
 
-                for (int i = 0; i < translatedLanguages; i++)
+                for (int j = 0; j < translatedLanguages; j++)
                 {
-                    item.translations[i] = (Sprite)EditorGUILayout.ObjectField(item.translations[i], typeof(Sprite), false, listItemLayoutOptions);
+                    temp.translations[j] = (Sprite)EditorGUILayout.ObjectField(temp.translations[j], typeof(Sprite), false, listItemLayoutOptions);
                 }
-
-                /*
-                if (GUILayout.Button("D"))
-                {
-                    TranslationCell<Sprite> cachedItem = item;
-                    Debug.Log("Deleting " + cachedItem.key);
-                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.spriteTranslations, cachedItem);
-                }
-                */
 
                 EditorGUILayout.EndHorizontal();
+
+                if (displayedTranslations >= displayCap)
+                    return true;
             }
+
+            return false;
         }
 
-        private void DrawAudioTranslationList(int translatedLanguages)
+        private bool DrawAudioTranslationList(int translatedLanguages, ref int displayedTranslations)
         {
-            foreach (TranslationCell<AudioClip> item in translationModule.audioTranslations)
+            if (displayedTranslations >= displayCap)
+                return true;
+
+            List<TranslationCell<AudioClip>> translations = new (translationModule.audioTranslations);
+            if (!string.IsNullOrWhiteSpace(searchText))
+                translations = translations.Where(x => x.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase)).ToList();
+
+            for (int i = displayPage * displayCap; i < translations.Count; i++)
             {
-                if (!string.IsNullOrWhiteSpace(searchText) && !item.key.StartsWith(searchText, System.StringComparison.InvariantCultureIgnoreCase))
-                    continue;
+                TranslationCell<AudioClip> temp = translations[i];
+
+                displayedTranslations++;
 
                 EditorGUILayout.BeginHorizontal(listItemStyle);
 
-                item.key = EditorGUILayout.TextArea(item.key, editableTextStyle, listItemKeyLayoutOptions);
+                temp.key = EditorGUILayout.TextArea(temp.key, editableTextStyle, listItemKeyLayoutOptions);
 
-                for (int i = 0; i < translatedLanguages; i++)
+                for (int j = 0; j < translatedLanguages; j++)
                 {
-                    item.translations[i] = (AudioClip)EditorGUILayout.ObjectField(item.translations[i], typeof(AudioClip), false, listItemLayoutOptions);
+                    temp.translations[j] = (AudioClip)EditorGUILayout.ObjectField(temp.translations[j], typeof(AudioClip), false, listItemLayoutOptions);
                 }
-
-                /*
-                if (GUILayout.Button("D"))
-                {
-                    TranslationCell<AudioClip> cachedItem = item;
-                    Debug.Log("Deleting " + cachedItem.key);
-                    TranslationAssetsUtility.RemoveTranslation(ref translationModule.audioTranslations, cachedItem);
-                }
-                */
 
                 EditorGUILayout.EndHorizontal();
+
+                if (displayedTranslations >= displayCap)
+                    return true;
             }
+
+            return false;
         }
 
         private void DrawTranslationModuleSelection()
@@ -453,7 +542,12 @@ namespace FlawareStudios.Translation
 
             EditorGUI.BeginChangeCheck();
             translationModule = (TranslationModule)EditorGUILayout.ObjectField(translationModule, typeof(TranslationModule), false, GUILayout.Width(OBJECT_FIELD_WIDTH), GUILayout.Height(OBJECT_FIELD_HEIGHT));
-            if (EditorGUI.EndChangeCheck() && translationModule != null) languageCount = translationModule.translatedLanguages.Length; 
+            if (EditorGUI.EndChangeCheck() && translationModule != null)
+            {
+                languageCount = translationModule.translatedLanguages.Length;
+                scrollPosition = new Vector2();
+                displayPage = 0;
+            }
 
             GUILayout.FlexibleSpace();
 

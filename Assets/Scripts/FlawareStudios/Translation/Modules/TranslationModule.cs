@@ -21,17 +21,17 @@ namespace FlawareStudios.Translation
             return -1;
         }
 
-        public TranslationCell<string>[] textTranslations = new TranslationCell<string>[0];
+        [HideInInspector] public TranslationCell<string>[] textTranslations = new TranslationCell<string>[0];
         public string errorText = "TRANSLATION_NOT_FOUND";
         public string GetTextTranslation(string translationKey, int languageIndex) 
             => TranslationAssetsUtility.GetTranslation(ref textTranslations, translationKey, languageIndex, errorText);
 
-        public TranslationCell<Sprite>[] spriteTranslations = new TranslationCell<Sprite>[0];
+        [HideInInspector] public TranslationCell<Sprite>[] spriteTranslations = new TranslationCell<Sprite>[0];
         public Sprite errorSprite;
         public Sprite GetSpriteTranslation(string translationKey, int languageIndex)
             => TranslationAssetsUtility.GetTranslation(ref spriteTranslations, translationKey, languageIndex, errorSprite);
 
-        public TranslationCell<AudioClip>[] audioTranslations = new TranslationCell<AudioClip>[0];
+        [HideInInspector] public TranslationCell<AudioClip>[] audioTranslations = new TranslationCell<AudioClip>[0];
         public AudioClip errorAudio;
         public AudioClip GetAudioTranslation(string translationKey, int languageIndex)
             => TranslationAssetsUtility.GetTranslation(ref audioTranslations, translationKey, languageIndex, errorAudio);
